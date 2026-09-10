@@ -17,10 +17,10 @@ Se você é um agente de IA auxiliando a equipe na produção dos artefatos dest
 
 ## 1. Visão Geral da Tríade Fechada
 
-Para garantir clareza absoluta e eliminar qualquer ambiguidade de avaliação, cada artefato exigido neste checkpoint é apresentado através de três referências:
-1. **O Modelo (Starter Kit):** A estrutura pronta em branco para preenchimento.
-2. **O Exemplo Positivo (Excelente · `A`):** O padrão que atende plenamente à régua de rigor da disciplina, com as anotações críticas do professor.
-3. **O Exemplo Negativo (Fraco / Superficial · `NA`):** Os erros típicos e clichês que resultam em reprovação do artefato, com anotações explicativas.
+Cada artefato exigido neste checkpoint é apresentado através de três referências:
+1. **O Modelo (Starter Kit):** Estrutura pronta em branco para preenchimento.
+2. **O Exemplo Positivo (Excelente · `A`):** Cumpre plenamente o rigor com anotações críticas do professor.
+3. **O Exemplo Negativo (Fraco / Superficial · `NA`):** Erros típicos e clichês com anotações explicativas.
 
 ---
 
@@ -29,22 +29,10 @@ Para garantir clareza absoluta e eliminar qualquer ambiguidade de avaliação, c
 ### Artefato 1: Quadro de Gestão de Missão (Kanban)
 
 #### A. Modelo em Branco (Starter Kit)
-- **Plataforma Recomendada:** Trello ou GitHub Projects.
-- **Estrutura de Colunas:**
-  - `Backlog (CP-01 a CP-03)`
-  - `A Fazer (Sprint 16/09)`
-  - `Em Andamento (WIP Máximo: 1 card por pessoa)`
-  - `Revisão / Validação`
-  - `Concluído`
-- **Template Obrigatório de Card:**
-  ```markdown
-  Título: [Papel] [Responsável] Verbo no infinitivo + objeto direto
-  Descrição:
-  - Objetivo: O que esta tarefa produz concretamente.
-  - Estimativa: [2h a 4h]
-  - Critério de Pronto (DoD): Como verificar se está concluído.
-  - Links / Artefatos gerados: [URL do commit / doc]
-  ```
+- **Plataforma:** Trello ou GitHub Projects.
+- **Colunas:** `Backlog`, `A Fazer (Sprint)`, `Em Andamento (WIP: 1/pessoa)`, `Revisão`, `Concluído`.
+- **Template de Card:** `[Papel] [Responsável] Verbo no infinitivo + objeto direto`
+  - *Descrição:* Objetivo concreto, estimativa (2h a 4h), Critério de Pronto (DoD) testável e link do artefato gerado.
 
 #### B. Exemplo Positivo (Excelente · Atingido Plenamente)
 - **Referência:** Quadro com cards atômicos devidamente distribuídos:
@@ -77,25 +65,9 @@ Para garantir clareza absoluta e eliminar qualquer ambiguidade de avaliação, c
 ### Artefato 2: Configuração de Ambiente & Harness de IA
 
 #### A. Modelo em Branco (Starter Kit)
-- **Comprovação exigida no repositório (`docs/setup-equipe.md`):**
-  ```markdown
-  # Setup Instrumental da Equipe [Nome da Equipe]
-
-  ## 1. Repositório Git & Overleaf
-  - Repositório: `https://github.com/usuario/tecedu-2026-2-equipe-XX`
-  - Overleaf: `https://www.overleaf.com/project/XXXXX`
-  - Membros com acesso confirmado:
-    - [Nome 1] (@github_user1) - Papel: Hacker - [OK]
-    - [Nome 2] (@github_user2) - Papel: Hipster - [OK]
-    - [Nome 3] (@github_user3) - Papel: Hustler - [OK]
-    - [Nome 4] (@github_user4) - Papel: Representante - [OK]
-
-  ## 2. Harness de IA Local
-  - Membro 1: Claude Code vX.X (captura de tela / terminal demonstrando execução no repo)
-  - Membro 2: OpenCode / Antigravity (captura de tela)
-  - Membro 3: GitHub Copilot CLI / Terminal AI (captura de tela)
-  - Membro 4: Claude Code (captura de tela)
-  ```
+- **Comprovação em `docs/setup-equipe.md`:**
+  - *Repositório Git & Overleaf:* Links oficiais e lista dos 4 membros com usuário GitHub e papel declarado.
+  - *Harness de IA Local:* Registro de ferramenta (Claude Code, OpenCode, Antigravity, Copilot CLI) por integrante com captura de tela ou log de terminal no repo.
 
 #### B. Exemplo Positivo (Excelente · Atingido Plenamente)
 - **Referência:**
