@@ -51,16 +51,20 @@ document.addEventListener('DOMContentLoaded', async () => {
     processed = processed.replace(/<table>/g, '<div class="table-wrapper"><table>');
     processed = processed.replace(/<\/table>/g, '</table></div>');
 
-    // URLs para ações
-    const currentPath = window.location.pathname;
+    // URLs e metadados dinâmicos
+    const fileName = docFile.split('/').pop();
+    const pathSegments = window.location.pathname.split('/').filter(Boolean);
+    const dir = document.body.dataset.dir || (pathSegments.length > 1 ? pathSegments[0] : (pathSegments[0] && !pathSegments[0].endsWith('.html') ? pathSegments[0] : 'techedu'));
+    const courseTitle = document.body.dataset.course || 'Tecnologias na Educação · 2026.2';
+    const canonicalPath = document.body.dataset.canonical || `academy/teaching/${dir}/`;
     const rawUrl = docFile;
-    const githubDevUrl = `https://github.dev/lsfcin/lsf-links/blob/main/techedu/${docFile.split('/').pop()}`;
-    const githubWebUrl = `https://github.com/lsfcin/lsf-links/blob/main/techedu/${docFile.split('/').pop()}`;
+    const githubDevUrl = `https://github.dev/lsfcin/lsf-links/blob/main/${dir}/${fileName}`;
+    const githubWebUrl = `https://github.com/lsfcin/lsf-links/blob/main/${dir}/${fileName}`;
 
     app.innerHTML = `
       <div class="top-bar">
         <div class="top-bar-meta">
-          <span>🎓 <strong>Tecnologias na Educação · 2026.2</strong></span>
+          <span>🎓 <strong>${courseTitle}</strong></span>
         </div>
         <div class="top-bar-actions">
           <button class="btn btn-primary" id="copy-btn">📋 Copiar p/ Agente (RAW)</button>
@@ -72,7 +76,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         ${processed}
       </article>
       <footer>
-        <div>Fonte canônica: <code>academy/teaching/tecnologias-na-educacao/</code></div>
+        <div>Fonte canônica: <code>${canonicalPath}</code></div>
         <div>Deploy via <a href="https://pages.cloudflare.com/" target="_blank">Cloudflare Pages</a> · <a href="${githubWebUrl}" target="_blank">Repositório Público</a></div>
       </footer>
       <div class="toast" id="toast">Markdown copiado para a área de transferência!</div>
