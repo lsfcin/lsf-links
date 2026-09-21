@@ -28,7 +28,7 @@ cada artefato possui de 1 a 3 pontos de verificação objetivos e atômicos defi
 
 (opcional) exercícios práticos de fixação podem somar pontos adicionais diretamente no saldo da missão conforme previsto no cronograma.
 
-(opcional) avaliação entre equipes: +1 ponto extra por missão para equipes que realizam revisões de pares aprofundadas, coerentes e construtivas para os colegas.
+(opcional) [1 pt] avaliação entre equipes: ponto extra por missão para equipes que realizam revisões de pares aprofundadas, coerentes e construtivas para os colegas.
 
 calibração intragrupo: formulário anônimo onde cada integrante avalia o engajamento e a contribuição dos pares da sua própria equipe, garantindo justiça interna e evitando caronas.
 
@@ -48,11 +48,11 @@ encontros cronológicos da disciplina e marcos de validação:
 | 18/08 (seg) | abertura e contrato pedagógico | [introdução](url) · quick win |
 | 20/08 (qua) | setup instrumental e introdução a agentes | [ambiente](url) · [[1 pt] exercício 01](url) |
 | 25/08 (seg) | dores autênticas e alavancas contra o óbvio | [problemas](url) |
-| 27/08 (qua) | validação de código e apresentação da missão 01 | [[3 pts] kanban](url)<br>[[3 pts] setup](url)<br>[[3 pts] problemas](url)<br>avaliação entre equipes (+1 pt) |
+| 27/08 (qua) | validação de código e apresentação da missão 01 | [[3 pts] kanban](url)<br>[[3 pts] setup](url)<br>[[3 pts] problemas](url)<br>[1 pt] avaliação entre equipes |
 | 01/09 (seg) | feriado | *sem encontro presencial* |
 | 03/09 (qua) | visão computacional: convolução e filtros | [convolução](url)<br>[filtros](url)<br>[[1 pt] exercício 02](url) |
-| 17/09 (qua) | mapeamento de concorrentes e missão 02 | [[3 pts] concorrentes](url)<br>[[3 pts] benchmark](url)<br>avaliação entre equipes (+1 pt) |
-| 29/10 (qua) | protótipo funcional e missão 03 | [[3 pts] protótipo](url)<br>[[3 pts] experimentos](url)<br>[[3 pts] métricas](url)<br>avaliação entre equipes (+1 pt) |
+| 17/09 (qua) | mapeamento de concorrentes e missão 02 | [[3 pts] concorrentes](url)<br>[[3 pts] benchmark](url)<br>[1 pt] avaliação entre equipes |
+| 29/10 (qua) | protótipo funcional e missão 03 | [[3 pts] protótipo](url)<br>[[3 pts] experimentos](url)<br>[[3 pts] métricas](url)<br>[1 pt] avaliação entre equipes |
 | 03/12 (qua) | defesa pública perante banca examinadora | banca externa de pitch & encerramento |
 
 ---
@@ -72,7 +72,9 @@ albatroz  ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ 
 
 > **legenda:** **kan**ban · **set**up · **pro**blemas · **tec**nologia · **con**correntes · **ben**chmark · **req**uisitos · **arq**uitetura · **pro**tótipo · **tes**tes · **met**ricas · **val**idação · **dep**loy · **art**igo · **pit**ch · **par**es
 
-### entregue
+---
+
+## entregue
 
 repositórios, documentos e materiais validados pelas equipes na turma atual:
 
@@ -84,7 +86,18 @@ repositórios, documentos e materiais validados pelas equipes na turma atual:
 
 ## legado
 
-conquistas e projetos desenvolvidos por turmas anteriores que se desdobraram em trabalhos de conclusão de curso, artigos publicados ou soluções em uso real:
+conquistas e projetos inspiradores de turmas anteriores com desdobramentos reais (tcc, artigos e editais):
 
-- **educa-ai** (2025.2): virou tcc defendido com nota 10 e aprovado em edital de inovação.
-- **tutor-libras** (2025.1): artigo completo aceito no wbie / cbie.
+- **educa-ai (2025.2):** [tcc](url) · [artigo](url) · [vídeo](url)
+- **tutor-libras (2025.1):** [artigo](url) · [código](url)
+
+---
+
+## vocabulário
+
+árvore semântica dos tópicos e vocabulário traduzido com links diretos aos slides correspondentes:
+
+- **educação & agentes**
+  - [`prompt socrático`](url) — condução por perguntas reflexivas
+  - [`ai slop`](url) — respostas genéricas, clichês e sem fundamentação empírica
+  - [`agência discente`](url) — capacidade do aluno de agir com autonomia e autoria
