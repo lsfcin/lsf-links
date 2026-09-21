@@ -62,24 +62,21 @@ document.addEventListener('DOMContentLoaded', async () => {
     const githubWebUrl = `https://github.com/lsfcin/lsf-links/blob/main/${dir}/${fileName}`;
 
     app.innerHTML = `
-      <div class="top-bar">
-        <div class="top-bar-meta">
-          <span>🎓 <strong>${courseTitle}</strong></span>
-        </div>
-        <div class="top-bar-actions">
-          <button class="btn btn-primary" id="copy-btn">📋 Copiar p/ Agente (RAW)</button>
-          <a class="btn" href="${rawUrl}" target="_blank" rel="noopener">⬇️ Ver RAW</a>
-          <a class="btn" href="${githubDevUrl}" target="_blank" rel="noopener" title="Editar online via VS Code no navegador">✏️ Editar (github.dev)</a>
-        </div>
-      </div>
       <article class="markdown-body">
         ${processed}
       </article>
       <footer>
-        <div>Fonte canônica: <code>${canonicalPath}</code></div>
-        <div>Deploy via <a href="https://pages.cloudflare.com/" target="_blank">Cloudflare Pages</a> · <a href="${githubWebUrl}" target="_blank">Repositório Público</a></div>
+        <div class="footer-actions">
+          <button class="btn" id="copy-btn">copiar p/ agente (raw)</button>
+          <a class="btn" href="${rawUrl}" target="_blank" rel="noopener">ver raw</a>
+          <a class="btn" href="${githubDevUrl}" target="_blank" rel="noopener" title="editar online via vs code no navegador">editar (github.dev)</a>
+        </div>
+        <div class="footer-meta">
+          <div>fonte canônica: <code>${canonicalPath}</code></div>
+          <div>deploy via <a href="https://pages.cloudflare.com/" target="_blank">cloudflare pages</a> · <a href="${githubWebUrl}" target="_blank">repositório público</a></div>
+        </div>
       </footer>
-      <div class="toast" id="toast">Markdown copiado para a área de transferência!</div>
+      <div class="toast" id="toast">markdown copiado para a área de transferência!</div>
     `;
 
     // Botão de cópia
@@ -89,10 +86,10 @@ document.addEventListener('DOMContentLoaded', async () => {
       try {
         await navigator.clipboard.writeText(rawMarkdown);
         toast.classList.add('show');
-        copyBtn.innerText = '✓ Copiado!';
+        copyBtn.innerText = 'copiado!';
         setTimeout(() => {
           toast.classList.remove('show');
-          copyBtn.innerText = '📋 Copiar p/ Agente (RAW)';
+          copyBtn.innerText = 'copiar p/ agente (raw)';
         }, 2200);
       } catch (err) {
         window.location.href = rawUrl;
