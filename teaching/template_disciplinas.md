@@ -8,10 +8,12 @@
 > [horário das aulas] · [sala física / laboratório]
 
 <!-- guia-ia
-instruções para o agente / ia de apoio à disciplina:
-1. este arquivo é o documento soberano da disciplina (o próprio site da matéria). ele centraliza comunicação, visão, cronograma com artefatos, painel de progresso, regras de avaliação, entregas das equipes, referências e a árvore de conhecimento / vocabulário da disciplina.
-2. todas as entregas apontam para artefatos modulares na pasta 'artefatos/[x][nome].md' (ex.: 'artefatos/[3]kanban.md'). nunca duplique os passos dos artefatos aqui; aponte para os links canônicos.
-3. ao interagir com o estudante, ajude-o a localizar seu momento no calendário, pré-requisitos no mapa conceitual e os pontos de verificação pendentes nas suas missões.
+instruções para o agente / IA de apoio e manutenção da disciplina:
+1. este arquivo é o documento soberano da disciplina (o próprio site da matéria). ele centraliza comunicação, visão, cronograma com artefatos, painel de progresso, regras de avaliação, entregas das equipes, referências e a árvore de habilidades da disciplina.
+2. publicação na web: este arquivo é espelhado em 'outputs/links/<disciplina>/disciplina.md' e servido via 'outputs/links/<disciplina>/disciplina.html' no Cloudflare Pages (https://lucassf.pages.dev/<disciplina>/disciplina). ao editar o canônico no workspace, sincronize a pasta de links e dê commit/push para atualizar o site ao vivo.
+3. todas as entregas apontam para artefatos modulares na pasta 'artefatos/[x][nome].md' (ex.: 'artefatos/[3]kanban.md'). nunca duplique os passos dos artefatos aqui; aponte para os links canônicos. no cronograma, pontos ficam sempre dentro dos colchetes do link: '[[3] kanban](artefatos/[3]kanban.md)'.
+4. painel de progresso: dados de verificação ficam armazenados no bloco de dados oculto (<!-- painel:dados ... -->) no formato atômico 'v' (feito) ou '-' (pendente) por critério de artefato (ex.: 'kan=vvv, set=vv-'). o bloco renderizado em ASCII monospace (Fira Code) entre '<!-- painel:render -->' e '<!-- painel:fim -->' é derivado diretamente desses dados, mantendo ordem estritamente alfabética e nomes alinhados à direita.
+5. interação socrática: ao interagir com o estudante, ajude-o a localizar seu momento no cronograma, pré-requisitos na árvore de habilidades e pontos pendentes nas missões. nunca dê respostas prontas nem tome decisões pelos alunos.
 -->
 
 ## comunicação
@@ -57,16 +59,16 @@ instruções para o agente / ia de apoio à disciplina:
 
 ## cronograma
 
-encontros cronológicos da disciplina e marcos de validação:
+encontros cronológicos da disciplina e marcos de validação.
 
 | data | descrição | materiais e atividades |
 |:---|:---|:---|
-| 18/08 (seg) | abertura e contrato pedagógico | [introdução](slides-intro.html#1) |
+| 18/08 (seg) | abertura e contrato pedagógico | [[1] introdução](slides-intro.html#1) |
 | 20/08 (qua) | setup instrumental e introdução a agentes | [[1] ambiente](slides-setup.html#1) |
-| 25/08 (seg) | dores autênticas e alavancas contra o óbvio | [problemas](slides-problemas.html#1) |
+| 25/08 (seg) | dores autênticas e alavancas contra o óbvio | [[1] problemas](slides-problemas.html#1) |
 | 27/08 (qua) | validação de código e apresentação da missão 01 | [[3] kanban](artefatos/[3]kanban.md)<br>[[3] setup](artefatos/[3]setup.md)<br>[[3] problemas](artefatos/[3]problemas.md)<br>[1] avaliação |
 | 01/09 (seg) | feriado | *sem encontro presencial* |
-| 03/09 (qua) | visão computacional: convolução e filtros | [convolução](slides-cnn.html#convolucao)<br>[filtros](slides-cnn.html#sobel)<br>[[1] exercício 02](url) |
+| 03/09 (qua) | visão computacional: convolução e filtros | [[1] convolução](slides-cnn.html#convolucao)<br>[[1] filtros](slides-cnn.html#sobel) |
 | 17/09 (qua) | mapeamento de concorrentes e missão 02 | [[3] concorrentes](artefatos/[3]concorrentes.md)<br>[[3] benchmark](artefatos/[3]benchmark.md)<br>[1] avaliação |
 | 29/10 (qua) | protótipo funcional e missão 03 | [[3] protótipo](artefatos/[3]prototipo.md)<br>[[3] experimentos](artefatos/[3]experimentos.md)<br>[[3] métricas](artefatos/[3]metricas.md)<br>[1] avaliação |
 | 03/12 (qua) | defesa pública perante banca examinadora | banca externa de pitch & encerramento |
@@ -75,20 +77,25 @@ encontros cronológicos da disciplina e marcos de validação:
 
 ## painel
 
-acompanhamento transparente dos pontos conquistados em cada artefato ao longo do semestre. a lista é estritamente alfabética (sem rankings):
+acompanhamento transparente dos pontos conquistados em cada artefato ao longo do semestre. a lista é estritamente alfabética (sem rankings).
 
 <!-- painel:dados
 formato: cada critério atômico do artefato é marcado como 'v' (feito) ou '-' (pendente).
-albatroz: kan=vvv, set=vvv, pro=vvv, tec=vvv, con=vvv, ben=vvv, req=vvv, arq=vvv, pro=vvv, tes=vvv, met=vvv, val=vvv, dep=vvv, art=vvv, pit=vvv, par=vvvv
-beta:     kan=vvv, set=vv-, pro=vvv, tec=---, con=vvv, ben=vvv, req=vvv, arq=vvv, pro=vvv, tes=vvv, met=vvv, val=vvv, dep=vvv, art=vvv, pit=vvv, par=vvv-
-gamma:    kan=vvv, set=vvv, pro=vvv, tec=vvv, con=vvv, ben=vvv, req=vvv, arq=vvv, pro=vvv, tes=vvv, met=vvv, val=vvv, dep=vvv, art=vvv, pit=vvv, par=vvvv
+beta:  kan=vvv, set=vvv, pro=vvv, tec=vvv, con=vvv, ben=vvv, req=vvv, arq=vvv, pro=vvv, tes=vvv, met=vvv, val=vvv, dep=vvv, art=vvv, pit=vvv, par=vvvv
+gamma: kan=vvv, set=vv-, pro=vvv, tec=---, con=vvv, ben=vvv, req=vvv, arq=vvv, pro=vvv, tes=vvv, met=vvv, val=vvv, dep=vvv, art=vvv, pit=vvv, par=vvv-
+zeta:  kan=vvv, set=vvv, pro=vvv, tec=vvv, con=vvv, ben=vvv, req=vvv, arq=vvv, pro=vvv, tes=vvv, met=vvv, val=vvv, dep=vvv, art=vvv, pit=vvv, par=vvvv
 -->
 <!-- painel:render -->
 ```text
-          kan set pro tec con ben req arq pro tes met val dep art pit  par    total
-albatroz  ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼  ◼◼◼◼  49 pts
-    beta  ◼◼◼ ◼◼◻ ◼◼◼ ◻◻◻ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼  ◼◼◼◻  43 pts
-   gamma  ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼  ◼◼◼◼  49 pts
+       kan set pro tec con ben req arq pro tes met val dep art pit  par   nota 1
+ beta  ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼  ◼◼◼◼  49 pts
+gamma  ◼◼◼ ◼◼◻ ◼◼◼ ◻◻◻ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼  ◼◼◼◻  43 pts
+ zeta  ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼  ◼◼◼◼  49 pts
+
+       relatório        demo          apresentação   nota 2
+ beta  ◼◼◼◻◻◻◻◻◻◻◻◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
+gamma  ◼◼◼◼◼◼◼◼◼◼◼◼◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
+ zeta  ◼◼◼◼◼◼◼◼◼◻◻◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
 ```
 <!-- painel:fim -->
 
@@ -98,7 +105,7 @@ albatroz  ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ 
 
 ## entregue
 
-repositórios, documentos e materiais validados pelas equipes na turma atual:
+repositórios, documentos e materiais validados pelas equipes na turma atual.
 
 - **beta** | membro 1 (papel do membro 1), membro 2 (papel)  
 *[kanban](url) · [setup](url) · [problemas](url) · [tecnologia](url)*
@@ -111,7 +118,7 @@ repositórios, documentos e materiais validados pelas equipes na turma atual:
 
 ## legado
 
-projetos de turmas anteriores:
+projetos de turmas anteriores.
 
 - **projeto a** | membro 1 (papel do membro 1), membro 2 (papel)  
 *(opcional) destacar caso o projeto tenha gerado desdobramentos reais (tcc, artigos e editais)*  
@@ -124,7 +131,7 @@ projetos de turmas anteriores:
 
 ## referências
 
-leituras clássicas de base e recursos práticos de suporte.
+leituras de base e recursos práticos de suporte.
 
 - [livro 1 / autor / ano / por que vale a pena ler]
 - [livro 2 / autor / ano / por que vale a pena ler]
