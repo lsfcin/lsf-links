@@ -23,7 +23,7 @@ como publicar / atualizar este documento no cloudflare pages (autonomia do profe
 instruções para o agente / IA de apoio e manutenção da disciplina:
 1. este arquivo é o documento soberano da disciplina (o próprio site da matéria). ele centraliza comunicação, visão, cronograma com artefatos, painel de progresso, regras de avaliação, entregas das equipes, referências e a árvore de habilidades da disciplina.
 2. publicação na web: este arquivo é espelhado em 'outputs/links/<disciplina>/disciplina.md' e servido via 'outputs/links/<disciplina>/disciplina.html' no Cloudflare Pages (https://lucassf.pages.dev/<disciplina>/disciplina). ao editar o canônico no workspace, sincronize a pasta de links e dê commit/push para atualizar o site ao vivo.
-3. todas as entregas apontam para artefatos modulares na pasta 'artefatos/[x][nome].md' (ex.: 'artefatos/[3]kanban.md'). nunca duplique os passos dos artefatos aqui; aponte para os links canônicos. no cronograma, pontos ficam sempre dentro dos colchetes do link: '[[3] kanban](artefatos/[3]kanban.md)'.
+3. todas as entregas apontam para artefatos modulares na pasta 'artefatos/<nome>.md' (ex.: 'artefatos/kanban.md'). os pontos de verificação e critérios atômicos pertencem exclusivamente ao arquivo do próprio artefato; o cronograma cita apenas o link limpo do artefato ('[kanban](artefatos/kanban.md)').
 4. painel de progresso: dados de verificação ficam armazenados no bloco de dados oculto (painel:dados ...) no formato atômico 'v' (feito) ou '-' (pendente) por critério de artefato (ex.: 'kan=vvv, set=vv-'). o bloco renderizado em ASCII monospace (Fira Code) entre 'painel:render' e 'painel:fim' é derivado diretamente desses dados, mantendo ordem estritamente alfabética e nomes alinhados à direita.
 5. interação socrática: ao interagir com o estudante, ajude-o a localizar seu momento no cronograma, pré-requisitos na árvore de habilidades e pontos pendentes nas missões. nunca tome decisões pelos alunos, dialogue com eles ponto a ponto.
 -->
@@ -75,14 +75,14 @@ encontros cronológicos da disciplina e marcos de validação.
 
 | data | descrição | materiais e atividades |
 |:---|:---|:---|
-| 18/08 (seg) | abertura e contrato pedagógico | [[1] introdução](slides-intro.html#1) |
-| 20/08 (qua) | setup instrumental e introdução a agentes | [[1] ambiente](slides-setup.html#1) |
-| 25/08 (seg) | dores autênticas e alavancas contra o óbvio | [[1] problemas](slides-problemas.html#1) |
-| 27/08 (qua) | validação de código e apresentação da missão 01 | [[3] kanban](artefatos/[3]kanban.md)<br>[[3] setup](artefatos/[3]setup.md)<br>[[3] problemas](artefatos/[3]problemas.md)<br>[1] avaliação |
+| 18/08 (seg) | abertura e contrato pedagógico | [introdução](slides-intro.html#1) |
+| 20/08 (qua) | setup instrumental e introdução a agentes | [ambiente](slides-setup.html#1) |
+| 25/08 (seg) | dores autênticas e alavancas contra o óbvio | [problemas](slides-problemas.html#1) |
+| 27/08 (qua) | validação de código e apresentação da missão 01 | [kanban](artefatos/kanban.md)<br>[setup](artefatos/setup.md)<br>[problemas](artefatos/problemas.md)<br>avaliação por pares |
 | 01/09 (seg) | feriado | *sem encontro presencial* |
-| 03/09 (qua) | visão computacional: convolução e filtros | [[1] convolução](slides-cnn.html#convolucao)<br>[[1] filtros](slides-cnn.html#sobel) |
-| 17/09 (qua) | mapeamento de concorrentes e missão 02 | [[3] concorrentes](artefatos/[3]concorrentes.md)<br>[[3] benchmark](artefatos/[3]benchmark.md)<br>[1] avaliação |
-| 29/10 (qua) | protótipo funcional e missão 03 | [[3] protótipo](artefatos/[3]prototipo.md)<br>[[3] experimentos](artefatos/[3]experimentos.md)<br>[[3] métricas](artefatos/[3]metricas.md)<br>[1] avaliação |
+| 03/09 (qua) | visão computacional: convolução e filtros | [convolução](slides-cnn.html#convolucao)<br>[filtros](slides-cnn.html#sobel) |
+| 17/09 (qua) | mapeamento de concorrentes e missão 02 | [concorrentes](artefatos/concorrentes.md)<br>[benchmark](artefatos/benchmark.md)<br>avaliação por pares |
+| 29/10 (qua) | protótipo funcional e missão 03 | [protótipo](artefatos/prototipo.md)<br>[experimentos](artefatos/experimentos.md)<br>[métricas](artefatos/metricas.md)<br>avaliação por pares |
 | 03/12 (qua) | defesa pública perante banca examinadora | banca externa de pitch & encerramento |
 
 ---

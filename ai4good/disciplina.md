@@ -71,27 +71,27 @@ encontros cronológicos e marcos de validação (34 encontros letivos · resolu�
 
 | data | tipo | tema e atividades | materiais & artefatos |
 |:---|:---:|:---|:---|
-| 12/08 (qua) | aula 01 | abertura da disciplina e contrato pedagógico | [[1] abertura](https://docs.google.com/presentation/d/1mhJFLULrPU_HoZ5emkeC7AiHCkw5HkHRLm-bCq3e_cE/edit) |
-| 14/08 (sex) | aula 02 | setup instrumental, git, overleaf e harness | [[1] setup](https://docs.google.com/presentation/d/1tPA8BDEXU5S_qBrKspkW81Pj_gzZ0L0UC-flEtiNLEY/edit)<br>[[3] cod](artefatos/[3]cod.md)<br>[[3] pdf](artefatos/[3]pdf.md) |
-| 19/08 (qua) | aula 03 | história da ia, aprendizado e mlp | [[1] história & mlp](https://docs.google.com/presentation/d/1wQFwZ2QkfGKT2MlEHqgt8kW63LQTsX2sfV7fC8P7yts/edit)<br>[1] enigma 01<br>[1] enigma 02 |
-| 21/08 (sex) | aula 04 | prática: implementação de mlp do zero | [[1] prática mlp](https://docs.google.com/presentation/d/1p3rhulc-_ZZxOOpETi8CJyiAJqA0VeiBLAg924iLD5c/edit)<br>[[5] mlp·c](artefatos/[5]mlp-c.md)<br>[[5] mlp·p](artefatos/[5]mlp-p.md) |
-| 26/08 (qua) | aula 05 | arquiteturas: ae, cnn, gnn, rnn e lstm | [[1] arquiteturas](https://docs.google.com/presentation/d/1WqLS7z6YMEyNh4j_k4KNjrc6wkbu00P84ptqehYgFPI/edit)<br>[1] enigma 03<br>[1] enigma 04 |
-| 28/08 (sex) | aula 06 | prática: modificação de arquiteturas | [[1] prática arq](https://docs.google.com/presentation/d/1nxPb6Df7eSBWiZBY0yOaMae0y1FUJ04v4bjINOk2MtQ/edit)<br>[[5] arq·c](artefatos/[5]arq-c.md)<br>[[5] arq·p](artefatos/[5]arq-p.md) |
-| 02/09 (qua) | aula 07 | generativos: gan, destilação e transformers | [[1] transformers](https://docs.google.com/presentation/d/15HQOWSVXE3jbsk7Hg3LzCQBALpnhL-tktCkJTMx0CJU/edit)<br>[1] enigma 05<br>[1] enigma 06 |
-| 04/09 (sex) | aula 08 | prática: experimentos adversariais | [[1] prática adv](https://docs.google.com/presentation/d/1FbH8pLTZzecBH6bkBiG2t2SxnXXZ86yJ7h-R-mPd2r0/edit) |
-| 09/09 (qua) | aula 09 | alinhamento: preservação e agência | [[1] agência](https://docs.google.com/presentation/d/1Ah-BBHvCedf5QWGEw8Zkv_CnhEhRQ5W-KgdUK-fEjVk/edit)<br>[1] enigma 07<br>[1] enigma 08 |
-| 11/09 (sex) | aula 10 | prática: arena dialética (distopia e utopia) | [[1] distopia](https://docs.google.com/presentation/d/1PLQ8zsCanD51ZINLOJNKkuXpFWuMjR2XSvoLSuyeAXg/edit)<br>[[5] arn·c](artefatos/[5]arn-c.md)<br>[[5] arn·p](artefatos/[5]arn-p.md) |
-| 16/09 (qua) | aula 11 | crises tecnológicas e impactos | [[1] crises](https://docs.google.com/presentation/d/1PgIp_SX2wlMYEbGT3i5MMrciRB3NUC_xzDLvCU7O6B0/edit)<br>[1] enigma 09 |
+| 12/08 (qua) | aula 01 | abertura da disciplina e contrato pedagógico | [abertura](https://docs.google.com/presentation/d/1mhJFLULrPU_HoZ5emkeC7AiHCkw5HkHRLm-bCq3e_cE/edit) |
+| 14/08 (sex) | aula 02 | setup instrumental, git, overleaf e harness | [setup](https://docs.google.com/presentation/d/1tPA8BDEXU5S_qBrKspkW81Pj_gzZ0L0UC-flEtiNLEY/edit)<br>[cod](artefatos/cod.md)<br>[pdf](artefatos/pdf.md) |
+| 19/08 (qua) | aula 03 | história da ia, aprendizado e mlp | [história & mlp](https://docs.google.com/presentation/d/1wQFwZ2QkfGKT2MlEHqgt8kW63LQTsX2sfV7fC8P7yts/edit)<br>enigma 01 · enigma 02 |
+| 21/08 (sex) | aula 04 | prática: implementação de mlp do zero | [prática mlp](https://docs.google.com/presentation/d/1p3rhulc-_ZZxOOpETi8CJyiAJqA0VeiBLAg924iLD5c/edit)<br>[mlp·c](artefatos/mlp-c.md)<br>[mlp·p](artefatos/mlp-p.md) |
+| 26/08 (qua) | aula 05 | arquiteturas: ae, cnn, gnn, rnn e lstm | [arquiteturas](https://docs.google.com/presentation/d/1WqLS7z6YMEyNh4j_k4KNjrc6wkbu00P84ptqehYgFPI/edit)<br>enigma 03 · enigma 04 |
+| 28/08 (sex) | aula 06 | prática: modificação de arquiteturas | [prática arq](https://docs.google.com/presentation/d/1nxPb6Df7eSBWiZBY0yOaMae0y1FUJ04v4bjINOk2MtQ/edit)<br>[arq·c](artefatos/arq-c.md)<br>[arq·p](artefatos/arq-p.md) |
+| 02/09 (qua) | aula 07 | generativos: gan, destilação e transformers | [transformers](https://docs.google.com/presentation/d/15HQOWSVXE3jbsk7Hg3LzCQBALpnhL-tktCkJTMx0CJU/edit)<br>enigma 05 · enigma 06 |
+| 04/09 (sex) | aula 08 | prática: experimentos adversariais | [prática adv](https://docs.google.com/presentation/d/1FbH8pLTZzecBH6bkBiG2t2SxnXXZ86yJ7h-R-mPd2r0/edit) |
+| 09/09 (qua) | aula 09 | alinhamento: preservação e agência | [agência](https://docs.google.com/presentation/d/1Ah-BBHvCedf5QWGEw8Zkv_CnhEhRQ5W-KgdUK-fEjVk/edit)<br>enigma 07 · enigma 08 |
+| 11/09 (sex) | aula 10 | prática: arena dialética (distopia e utopia) | [distopia](https://docs.google.com/presentation/d/1PLQ8zsCanD51ZINLOJNKkuXpFWuMjR2XSvoLSuyeAXg/edit)<br>[arn·c](artefatos/arn-c.md)<br>[arn·p](artefatos/arn-p.md) |
+| 16/09 (qua) | aula 11 | crises tecnológicas e impactos | [crises](https://docs.google.com/presentation/d/1PgIp_SX2wlMYEbGT3i5MMrciRB3NUC_xzDLvCU7O6B0/edit)<br>enigma 09 |
 | 18/09 (sex) | aula 12 | prática: exploração de problemas autênticos | especificação de problemas |
-| 23/09 (qua) | aula 13 | caminhos de transformação | [[1] transformação](https://docs.google.com/presentation/d/1PgIp_SX2wlMYEbGT3i5MMrciRB3NUC_xzDLvCU7O6B0/edit)<br>[1] enigma 10 |
-| 25/09 (sex) | aula 14 | prática: ideação com alavancas | entrega: [[5] arq·c](artefatos/[5]arq-c.md) e [[5] arq·p](artefatos/[5]arq-p.md) |
-| 30/09 (qua) | aula 15 | estado da arte e referências acadêmicas | [1] enigma 11 |
+| 23/09 (qua) | aula 13 | caminhos de transformação | [transformação](https://docs.google.com/presentation/d/1PgIp_SX2wlMYEbGT3i5MMrciRB3NUC_xzDLvCU7O6B0/edit)<br>enigma 10 |
+| 25/09 (sex) | aula 14 | prática: ideação com alavancas | entrega: [arq·c](artefatos/arq-c.md) e [arq·p](artefatos/arq-p.md) |
+| 30/09 (qua) | aula 15 | estado da arte e referências acadêmicas | enigma 11 |
 | 02/10 (sex) | aula 16 | prática: mapeamento de competidores | benchmark de soluções |
-| 07/10 (qua) | aula 17 | impacto social e formulação da contribuição | feira de profissões *(aula mantida)*<br>[1] enigma 12 |
+| 07/10 (qua) | aula 17 | impacto social e formulação da contribuição | feira de profissões *(aula mantida)*<br>enigma 12 |
 | 09/10 (sex) | aula 18 | prática: tecnologia-base do projeto | alinhamento de infraestrutura |
-| 14/10 (qua) | aula 19 | metodologia de pesquisa e rigor experimental | [1] enigma 13 |
+| 14/10 (qua) | aula 19 | metodologia de pesquisa e rigor experimental | enigma 13 |
 | 16/10 (sex) | aula 20 | prática: arquitetura modular e dados | diagramação de pipelines |
-| 21/10 (qua) | aula 21 | métricas científicas e baselines | [1] enigma 14 |
+| 21/10 (qua) | aula 21 | métricas científicas e baselines | enigma 14 |
 | 23/10 (sex) | aula 22 | prática: execução dos experimentos | rodadas de testes |
 | 28/10 (qua) | feriado | dia do servidor público federal | *sem encontro presencial* |
 | 30/10 (sex) | aula 23 | prática: consolidação de resultados | fechamento da va1 |
