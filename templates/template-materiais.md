@@ -1,6 +1,15 @@
 # Materiais · [ID_CHECKPOINT]: [NOME_DA_ENTREGA]
 > [NOME_DA_DISCIPLINA] · [SEMESTRE] · Entrega: [DATA_DA_ENTREGA]
 > Link da Planilha Mestre: [URL_DA_PLANILHA] (Coluna K, Linha [LINHA])
+<!-- publicacao
+como publicar / atualizar este documento no cloudflare pages (autonomia do professor):
+1. editar e commitar diretamente em outputs/links:
+   git -C outputs/links commit -am "atualiza template-materiais" && git -C outputs/links push
+2. links resultantes no ar (instantaneo):
+   - visualizacao web (humano): https://lucassf.pages.dev/templates/materiais
+   - visualizacao raw (agente/ia): https://lucassf.pages.dev/templates/template-materiais.md
+   - edicao direta no navegador (sem terminal): botao 'editar (github.dev)' no rodape da pagina
+-->
 
 ## Guia para IAs & Agentes (Harness dos Alunos)
 

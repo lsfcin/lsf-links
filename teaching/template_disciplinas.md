@@ -7,13 +7,25 @@
 > [semestre, ex.: 2026.2]  
 > [horário das aulas] · [sala física / laboratório]
 
+<!-- publicacao
+como publicar / atualizar este documento no cloudflare pages (autonomia do professor):
+1. sincronizar com a pasta publica:
+   cp academy/teaching/structure/templates/template-disciplina.md outputs/links/teaching/template_disciplinas.md
+2. commitar e enviar para o cloudflare pages:
+   git -C outputs/links commit -am "atualiza template de disciplina" && git -C outputs/links push
+3. links resultantes no ar (instantaneo):
+   - visualizacao web (humano): https://lucassf.pages.dev/teaching/template_disciplinas
+   - visualizacao raw (agente/ia): https://lucassf.pages.dev/teaching/template_disciplinas.md
+   - edicao direta no navegador (sem terminal): botao 'editar (github.dev)' no rodape da pagina
+-->
+
 <!-- guia-ia
 instruções para o agente / IA de apoio e manutenção da disciplina:
 1. este arquivo é o documento soberano da disciplina (o próprio site da matéria). ele centraliza comunicação, visão, cronograma com artefatos, painel de progresso, regras de avaliação, entregas das equipes, referências e a árvore de habilidades da disciplina.
 2. publicação na web: este arquivo é espelhado em 'outputs/links/<disciplina>/disciplina.md' e servido via 'outputs/links/<disciplina>/disciplina.html' no Cloudflare Pages (https://lucassf.pages.dev/<disciplina>/disciplina). ao editar o canônico no workspace, sincronize a pasta de links e dê commit/push para atualizar o site ao vivo.
 3. todas as entregas apontam para artefatos modulares na pasta 'artefatos/[x][nome].md' (ex.: 'artefatos/[3]kanban.md'). nunca duplique os passos dos artefatos aqui; aponte para os links canônicos. no cronograma, pontos ficam sempre dentro dos colchetes do link: '[[3] kanban](artefatos/[3]kanban.md)'.
-4. painel de progresso: dados de verificação ficam armazenados no bloco de dados oculto (<!-- painel:dados ... -->) no formato atômico 'v' (feito) ou '-' (pendente) por critério de artefato (ex.: 'kan=vvv, set=vv-'). o bloco renderizado em ASCII monospace (Fira Code) entre '<!-- painel:render -->' e '<!-- painel:fim -->' é derivado diretamente desses dados, mantendo ordem estritamente alfabética e nomes alinhados à direita.
-5. interação socrática: ao interagir com o estudante, ajude-o a localizar seu momento no cronograma, pré-requisitos na árvore de habilidades e pontos pendentes nas missões. nunca dê respostas prontas nem tome decisões pelos alunos.
+4. painel de progresso: dados de verificação ficam armazenados no bloco de dados oculto (painel:dados ...) no formato atômico 'v' (feito) ou '-' (pendente) por critério de artefato (ex.: 'kan=vvv, set=vv-'). o bloco renderizado em ASCII monospace (Fira Code) entre 'painel:render' e 'painel:fim' é derivado diretamente desses dados, mantendo ordem estritamente alfabética e nomes alinhados à direita.
+5. interação socrática: ao interagir com o estudante, ajude-o a localizar seu momento no cronograma, pré-requisitos na árvore de habilidades e pontos pendentes nas missões. nunca tome decisões pelos alunos, dialogue com eles ponto a ponto.
 -->
 
 ## comunicação
