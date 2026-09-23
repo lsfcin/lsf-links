@@ -62,40 +62,40 @@ encontros cronológicos e marcos de validação (34 encontros letivos · resolu�
 
 | data | # | tipo | descrição | materiais |
 |:---|:---:|:---|:---|:---|
-| 12/08 (qua) | 01 | teoria | acordos e enigma teste | [1] [slides · abertura da disciplina](https://docs.google.com/presentation/d/1mhJFLULrPU_HoZ5emkeC7AiHCkw5HkHRLm-bCq3e_cE/edit) |
-| 14/08 (sex) | 02 | prática | configuração base para a disciplina | [3] [artefato · base git repo](artefatos/3-base-git-repo.md)<br>[4] [artefato · latex project](artefatos/4-latex-project.md) |
-| 19/08 (qua) | 03 | teoria | base para redes neurais profundas | [1] [slides · história](https://docs.google.com/presentation/d/1wQFwZ2QkfGKT2MlEHqgt8kW63LQTsX2sfV7fC8P7yts/edit)<br>[1] [slides · linear regression](https://docs.google.com/presentation/d/1wQFwZ2QkfGKT2MlEHqgt8kW63LQTsX2sfV7fC8P7yts/edit)<br>[1] [slides · multilayer perceptron](https://docs.google.com/presentation/d/1wQFwZ2QkfGKT2MlEHqgt8kW63LQTsX2sfV7fC8P7yts/edit) |
-| 21/08 (sex) | 04 | prática | rede neural profunda interativa | [5] [artefato · mlp git repo](artefatos/5-mlp-git-repo.md)<br>[5] [artefato · mlp tech report](artefatos/5-mlp-tech-report.md) |
+| 12/08 (qua) | 01 | teoria | acordos e enigma teste | [`[1] slides · abertura da disciplina`](https://docs.google.com/presentation/d/1mhJFLULrPU_HoZ5emkeC7AiHCkw5HkHRLm-bCq3e_cE/edit) |
+| 14/08 (sex) | 02 | prática | configuração base para a disciplina | [`[3] artefato · base git repo`](artefatos/3-base-git-repo.md)<br>[`[4] artefato · latex project`](artefatos/4-latex-project.md) |
+| 19/08 (qua) | 03 | teoria | base para redes neurais profundas | [`[1] slides · história`](https://docs.google.com/presentation/d/1wQFwZ2QkfGKT2MlEHqgt8kW63LQTsX2sfV7fC8P7yts/edit)<br>[`[1] slides · linear regression`](https://docs.google.com/presentation/d/1wQFwZ2QkfGKT2MlEHqgt8kW63LQTsX2sfV7fC8P7yts/edit)<br>[`[1] slides · multilayer perceptron`](https://docs.google.com/presentation/d/1wQFwZ2QkfGKT2MlEHqgt8kW63LQTsX2sfV7fC8P7yts/edit) |
+| 21/08 (sex) | 04 | prática | rede neural profunda interativa | [`[5] artefato · mlp git repo`](artefatos/5-mlp-git-repo.md)<br>[`[5] artefato · mlp tech report`](artefatos/5-mlp-tech-report.md) |
 | 26/08 (qua) | 05 | mentoria | mlp interativa | |
 | 28/08 (sex) | 06 | checagem | mlp interativa | |
-| 02/09 (qua) | 07 | teoria | arquiteturas de deep learning (1/4) | [1] [slides · autoencoder](https://docs.google.com/presentation/d/1WqLS7z6YMEyNh4j_k4KNjrc6wkbu00P84ptqehYgFPI/edit)<br>[1] [slides · cnn](https://docs.google.com/presentation/d/1WqLS7z6YMEyNh4j_k4KNjrc6wkbu00P84ptqehYgFPI/edit)<br>[1] [slides · gnn](https://docs.google.com/presentation/d/1WqLS7z6YMEyNh4j_k4KNjrc6wkbu00P84ptqehYgFPI/edit) |
-| 04/09 (sex) | 08 | teoria | arquiteturas de deep learning (2/4) | [1] [slides · rnn](https://docs.google.com/presentation/d/1WqLS7z6YMEyNh4j_k4KNjrc6wkbu00P84ptqehYgFPI/edit)<br>[1] [slides · lstm](https://docs.google.com/presentation/d/1WqLS7z6YMEyNh4j_k4KNjrc6wkbu00P84ptqehYgFPI/edit) |
-| 09/09 (qua) | 09 | teoria | arquiteturas de deep learning (3/4) | [1] [slides · gan](https://docs.google.com/presentation/d/15HQOWSVXE3jbsk7Hg3LzCQBALpnhL-tktCkJTMx0CJU/edit)<br>[1] [slides · teacher-student](https://docs.google.com/presentation/d/15HQOWSVXE3jbsk7Hg3LzCQBALpnhL-tktCkJTMx0CJU/edit) |
-| 11/09 (sex) | 10 | prática | modificando uma arquitetura | [5] [artefato · arquitetura git repo](artefatos/5-arquitetura-git-repo.md)<br>[5] [artefato · arquitetura tech report](artefatos/5-arquitetura-tech-report.md) |
-| 16/09 (qua) | 11 | teoria | arquiteturas de deep learning (4/4) | [1] [slides · transformers](https://docs.google.com/presentation/d/15HQOWSVXE3jbsk7Hg3LzCQBALpnhL-tktCkJTMx0CJU/edit) |
+| 02/09 (qua) | 07 | teoria | arquiteturas de deep learning (1/4) | [`[1] slides · autoencoder`](https://docs.google.com/presentation/d/1WqLS7z6YMEyNh4j_k4KNjrc6wkbu00P84ptqehYgFPI/edit)<br>[`[1] slides · cnn`](https://docs.google.com/presentation/d/1WqLS7z6YMEyNh4j_k4KNjrc6wkbu00P84ptqehYgFPI/edit)<br>[`[1] slides · gnn`](https://docs.google.com/presentation/d/1WqLS7z6YMEyNh4j_k4KNjrc6wkbu00P84ptqehYgFPI/edit) |
+| 04/09 (sex) | 08 | teoria | arquiteturas de deep learning (2/4) | [`[1] slides · rnn`](https://docs.google.com/presentation/d/1WqLS7z6YMEyNh4j_k4KNjrc6wkbu00P84ptqehYgFPI/edit)<br>[`[1] slides · lstm`](https://docs.google.com/presentation/d/1WqLS7z6YMEyNh4j_k4KNjrc6wkbu00P84ptqehYgFPI/edit) |
+| 09/09 (qua) | 09 | teoria | arquiteturas de deep learning (3/4) | [`[1] slides · gan`](https://docs.google.com/presentation/d/15HQOWSVXE3jbsk7Hg3LzCQBALpnhL-tktCkJTMx0CJU/edit)<br>[`[1] slides · teacher-student`](https://docs.google.com/presentation/d/15HQOWSVXE3jbsk7Hg3LzCQBALpnhL-tktCkJTMx0CJU/edit) |
+| 11/09 (sex) | 10 | prática | modificando uma arquitetura | [`[5] artefato · arquitetura git repo`](artefatos/5-arquitetura-git-repo.md)<br>[`[5] artefato · arquitetura tech report`](artefatos/5-arquitetura-tech-report.md) |
+| 16/09 (qua) | 11 | teoria | arquiteturas de deep learning (4/4) | [`[1] slides · transformers`](https://docs.google.com/presentation/d/15HQOWSVXE3jbsk7Hg3LzCQBALpnhL-tktCkJTMx0CJU/edit) |
 | 18/09 (sex) | 12 | mentoria | modificando uma arquitetura | |
-| 23/09 (qua) | 13 | teoria | superinteligência e singularidade | [1] [slides · agência](https://docs.google.com/presentation/d/1Ah-BBHvCedf5QWGEw8Zkv_CnhEhRQ5W-KgdUK-fEjVk/edit)<br>[1] [slides · autoaprimoramento](https://docs.google.com/presentation/d/1Ah-BBHvCedf5QWGEw8Zkv_CnhEhRQ5W-KgdUK-fEjVk/edit)<br>[1] [slides · autopreservação](https://docs.google.com/presentation/d/1Ah-BBHvCedf5QWGEw8Zkv_CnhEhRQ5W-KgdUK-fEjVk/edit) |
-| 25/09 (sex) | 14 | prática | multiagentes distopia x utopia | [5] [artefato · arena git repo](artefatos/5-arena-git-repo.md)<br>[5] [artefato · arena tech report](artefatos/5-arena-tech-report.md) |
-| 30/09 (qua) | 15 | teoria | crises e caminhos de transformação | [1] [slides · crises relacionadas](https://docs.google.com/presentation/d/1PgIp_SX2wlMYEbGT3i5MMrciRB3NUC_xzDLvCU7O6B0/edit) |
-| 02/10 (sex) | 16 | prática | brainwriting híbrido | [x] artefato · tbd |
-| 07/10 (qua) | 17 | prática | competidores e contribuição | [x] artefato · tbd |
+| 23/09 (qua) | 13 | teoria | superinteligência e singularidade | [`[1] slides · agência`](https://docs.google.com/presentation/d/1Ah-BBHvCedf5QWGEw8Zkv_CnhEhRQ5W-KgdUK-fEjVk/edit)<br>[`[1] slides · autoaprimoramento`](https://docs.google.com/presentation/d/1Ah-BBHvCedf5QWGEw8Zkv_CnhEhRQ5W-KgdUK-fEjVk/edit)<br>[`[1] slides · autopreservação`](https://docs.google.com/presentation/d/1Ah-BBHvCedf5QWGEw8Zkv_CnhEhRQ5W-KgdUK-fEjVk/edit) |
+| 25/09 (sex) | 14 | prática | multiagentes distopia x utopia | [`[5] artefato · arena git repo`](artefatos/5-arena-git-repo.md)<br>[`[5] artefato · arena tech report`](artefatos/5-arena-tech-report.md) |
+| 30/09 (qua) | 15 | teoria | crises e caminhos de transformação | [`[1] slides · crises relacionadas`](https://docs.google.com/presentation/d/1PgIp_SX2wlMYEbGT3i5MMrciRB3NUC_xzDLvCU7O6B0/edit) |
+| 02/10 (sex) | 16 | prática | brainwriting híbrido | `[x] artefato · tbd` |
+| 07/10 (qua) | 17 | prática | competidores e contribuição | `[x] artefato · tbd` |
 | 09/10 (sex) | 18 | mentoria | refinamento da contribuição | |
-| 14/10 (qua) | 19 | prática | tecnologia base funcional | [x] artefato · tbd |
+| 14/10 (qua) | 19 | prática | tecnologia base funcional | `[x] artefato · tbd` |
 | 16/10 (sex) | 20 | mentoria | definição da contribuição | |
-| 21/10 (qua) | 21 | prática | fluxograma e arquitetura | [x] artefato · tbd |
-| 23/10 (sex) | 22 | prática | desenho dos experimentos | [x] artefato · tbd |
+| 21/10 (qua) | 21 | prática | fluxograma e arquitetura | `[x] artefato · tbd` |
+| 23/10 (sex) | 22 | prática | desenho dos experimentos | `[x] artefato · tbd` |
 | 28/10 (qua) | -- | feriado | dia do servidor público federal | |
 | 30/10 (sex) | 23 | checagem | verificação geral, ponto a ponto | |
-| 04/11 (qua) | 24 | seminário | iteração 1, preliminares | [x] seminário · tbd |
+| 04/11 (qua) | 24 | seminário | iteração 1, preliminares | `[x] seminário · tbd` |
 | 06/11 (sex) | 25 | mentoria | código e artigo | |
-| 11/11 (qua) | 26 | seminário | iteração 2, evolução | [x] seminário · tbd |
+| 11/11 (qua) | 26 | seminário | iteração 2, evolução | `[x] seminário · tbd` |
 | 13/11 (sex) | 27 | mentoria | código e artigo | |
 | 18/11 (qua) | 28 | checagem | revisão cética, crítica e construtiva | |
 | 20/11 (sex) | -- | feriado | dia nacional da consciência negra | |
-| 25/11 (qua) | 29 | seminário | iteração 3, demonstração | [x] seminário · tbd |
+| 25/11 (qua) | 29 | seminário | iteração 3, demonstração | `[x] seminário · tbd` |
 | 27/11 (sex) | 30 | mentoria | acompanhamento final e polimento | |
-| 02/12 (qua) | 31 | seminário | pitch para banca externa | [x] seminário · tbd |
-| 04/12 (sex) | 32 | checagem | va2 · artigo e demo | [x] artefato · tbd<br>[x] artefato · tbd |
+| 02/12 (qua) | 31 | seminário | pitch para banca externa | `[x] seminário · tbd` |
+| 04/12 (sex) | 32 | checagem | va2 · artigo e demo | `[x] artefato · tbd`<br>`[x] artefato · tbd` |
 | 09/12 (qua) | 33 | checagem | va3 · avaliação escrita | |
 | 11/12 (sex) | 34 | checagem | va4 · exame final institucional | |
 
@@ -190,15 +190,15 @@ thiago matheus   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ 
 repositórios e artigos científicos validados na turma 2026.2.
 
 - **albérico** | -
-- **andreza** | [artigo](https://www.overleaf.com/project/6aa1ec39536264564433ddd5)
-- **artur** | [git](https://github.com/Guimaaaas/ai-workspace) · [artigo](https://www.overleaf.com/project/6a920b9163f9ff8ef6829b60) · [slides](https://docs.google.com/presentation/d/1p3rhulc-_ZZxOOpETi8CJyiAJqA0VeiBLAg924iLD5c/edit)
-- **carlos** | [git](https://github.com/Carlos-Eduardo-Ribeiro/projeto-taia.git) · [slides](https://docs.google.com/presentation/d/1p3rhulc-_ZZxOOpETi8CJyiAJqA0VeiBLAg924iLD5c/edit)
-- **cauã** | [git](https://github.com/lira-labs/workspace) · [artigo](https://www.overleaf.com/project/6a920bb3130d092cbf505259) · [slides](https://docs.google.com/presentation/d/1p3rhulc-_ZZxOOpETi8CJyiAJqA0VeiBLAg924iLD5c/edit)
-- **davi** | [git](https://github.com/DaviPac/topicos-avancados-ia) · [artigo](https://www.overleaf.com/project/6a920b9163f9ff8ef6829b60)
+- **andreza** | [`artigo`](https://www.overleaf.com/project/6aa1ec39536264564433ddd5)
+- **artur** | [`git`](https://github.com/Guimaaaas/ai-workspace) · [`artigo`](https://www.overleaf.com/project/6a920b9163f9ff8ef6829b60) · [`slides`](https://docs.google.com/presentation/d/1p3rhulc-_ZZxOOpETi8CJyiAJqA0VeiBLAg924iLD5c/edit)
+- **carlos** | [`git`](https://github.com/Carlos-Eduardo-Ribeiro/projeto-taia.git) · [`slides`](https://docs.google.com/presentation/d/1p3rhulc-_ZZxOOpETi8CJyiAJqA0VeiBLAg924iLD5c/edit)
+- **cauã** | [`git`](https://github.com/lira-labs/workspace) · [`artigo`](https://www.overleaf.com/project/6a920bb3130d092cbf505259) · [`slides`](https://docs.google.com/presentation/d/1p3rhulc-_ZZxOOpETi8CJyiAJqA0VeiBLAg924iLD5c/edit)
+- **davi** | [`git`](https://github.com/DaviPac/topicos-avancados-ia) · [`artigo`](https://www.overleaf.com/project/6a920b9163f9ff8ef6829b60)
 - **edson** | -
-- **gian** | [git](https://github.com/gian881/pure-mlp-scratch) · [artigo](https://www.overleaf.com/project/6a920bab130d092cbf504fca) · [slides](https://docs.google.com/presentation/d/1p3rhulc-_ZZxOOpETi8CJyiAJqA0VeiBLAg924iLD5c/edit)
-- **rayane** | [git](https://github.com/rayfrance/ai4good) · [artigo](https://www.overleaf.com/project/6a920a859c5f584768569a70) · [slides](https://docs.google.com/presentation/d/1p3rhulc-_ZZxOOpETi8CJyiAJqA0VeiBLAg924iLD5c/edit)
-- **thiago brito** | [git](https://github.com/Thiago-Brito/AI4good) · [artigo](https://www.overleaf.com/project/6a920ba2c3f0c914aa7c7185) · [slides](https://docs.google.com/presentation/d/1p3rhulc-_ZZxOOpETi8CJyiAJqA0VeiBLAg924iLD5c/edit)
+- **gian** | [`git`](https://github.com/gian881/pure-mlp-scratch) · [`artigo`](https://www.overleaf.com/project/6a920bab130d092cbf504fca) · [`slides`](https://docs.google.com/presentation/d/1p3rhulc-_ZZxOOpETi8CJyiAJqA0VeiBLAg924iLD5c/edit)
+- **rayane** | [`git`](https://github.com/rayfrance/ai4good) · [`artigo`](https://www.overleaf.com/project/6a920a859c5f584768569a70) · [`slides`](https://docs.google.com/presentation/d/1p3rhulc-_ZZxOOpETi8CJyiAJqA0VeiBLAg924iLD5c/edit)
+- **thiago brito** | [`git`](https://github.com/Thiago-Brito/AI4good) · [`artigo`](https://www.overleaf.com/project/6a920ba2c3f0c914aa7c7185) · [`slides`](https://docs.google.com/presentation/d/1p3rhulc-_ZZxOOpETi8CJyiAJqA0VeiBLAg924iLD5c/edit)
 - **thiago matheus** | -
 - **vinicius** | -
 
@@ -206,10 +206,10 @@ repositórios e artigos científicos validados na turma 2026.2.
 
 ## referências
 
-- **ai for good specialization:** [coursera.org/specializations/ai-for-good](https://www.coursera.org/specializations/ai-for-good) — estudos de caso em saúde, clima e inclusão.
-- **playlist deeplearning.ai:** [youtube.com/playlist?list=PLkDaE6sCZn6HJ1XrZLpKeWQN5XMKhEz_V](https://www.youtube.com/playlist?list=PLkDaE6sCZn6HJ1XrZLpKeWQN5XMKhEz_V) — aulas expositivas complementares.
-- **stanford cs229:** [cs229.stanford.edu](https://cs229.stanford.edu/) — notas teóricas fundamentais sobre aprendizado de máquina, gradiente descendente e retropropagação.
-- **doshi & hauser (science advances, 2024):** [science.org/doi/10.1126/sciadv.adn5290](https://www.science.org/doi/10.1126/sciadv.adn5290) — evidência empírica sobre os impactos de geradores na novidade e diversidade coletiva de histórias criadas.
+- [**ai for good specialization**](https://www.coursera.org/specializations/ai-for-good) — estudos de caso em saúde, clima e inclusão.
+- [**playlist deeplearning.ai**](https://www.youtube.com/playlist?list=PLkDaE6sCZn6HJ1XrZLpKeWQN5XMKhEz_V) — aulas expositivas complementares.
+- [**stanford cs229**](https://cs229.stanford.edu/) — notas teóricas fundamentais sobre aprendizado de máquina, gradiente descendente e retropropagação.
+- [**doshi & hauser (science advances, 2024)**](https://www.science.org/doi/10.1126/sciadv.adn5290) — evidência empírica sobre os impactos de geradores na novidade e diversidade coletiva de histórias criadas.
 
 ---
 

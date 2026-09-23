@@ -85,6 +85,16 @@ body {
   background: var(--code); border: 1px solid var(--border); padding: 0.2em 0.4em; border-radius: 4px;
   color: var(--code-text);
 }
+.markdown-body a code {
+  color: var(--link);
+  border-color: var(--border);
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+.markdown-body a:hover code {
+  border-color: var(--link);
+  text-decoration: underline;
+}
+
 .markdown-body pre {
   background: var(--code); border: 1px solid var(--border); border-radius: 6px;
   color: var(--code-text);
