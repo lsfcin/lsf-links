@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Extrai o primeiro título # para o <title> da página
     const titleMatch = rawMarkdown.match(/^#\s+(.+)$/m);
     if (titleMatch) {
-      document.title = `${titleMatch[1]} · TecEdu`;
+      document.title = titleMatch[1];
     }
 
     // Processa GitHub Alerts antes do marked
