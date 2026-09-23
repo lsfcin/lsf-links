@@ -3,9 +3,8 @@
 # [nome da disciplina]
 
 > prof. lucas silva figueiredo  
-> [universidade / departamento]  
-> [semestre, ex.: 2026.2]  
-> [horário das aulas] · [sala física / laboratório]
+> ufrpe · departamento de computação (dc)  
+> [semestre, ex.: 2026.2] · [dias e horários, ex.: quartas às 20h10 e sextas às 18h30] · [sala física / laboratório, ex.: sala 37]
 
 <!-- publicacao
 como publicar / atualizar este documento no cloudflare pages (autonomia do professor):
@@ -21,110 +20,96 @@ como publicar / atualizar este documento no cloudflare pages (autonomia do profe
 
 <!-- guia-ia
 instruções para o agente / IA de apoio e manutenção da disciplina:
-1. este arquivo é o documento soberano da disciplina (o próprio site da matéria). ele centraliza comunicação, visão, cronograma com artefatos, painel de progresso, regras de avaliação, entregas das equipes, referências e a árvore de habilidades da disciplina.
+1. este arquivo é o documento soberano da disciplina (o próprio site da matéria). ele centraliza comunicação, visão, regras de avaliação, cronograma com artefatos, painel de progresso, entregas dos estudantes, referências e a árvore de habilidades.
 2. publicação na web: este arquivo é espelhado em 'outputs/links/<disciplina>/disciplina.md' e servido via 'outputs/links/<disciplina>/disciplina.html' no Cloudflare Pages (https://lucassf.pages.dev/<disciplina>/disciplina). ao editar o canônico no workspace, sincronize a pasta de links e dê commit/push para atualizar o site ao vivo.
-3. todas as entregas apontam para artefatos modulares na pasta 'artefatos/<nome>.md' (ex.: 'artefatos/kanban.md'). os pontos de verificação e critérios atômicos pertencem exclusivamente ao arquivo do próprio artefato; o cronograma cita apenas o link limpo do artefato ('[kanban](artefatos/kanban.md)').
-4. painel de progresso: dados de verificação ficam armazenados no bloco de dados oculto (painel:dados ...) no formato atômico 'v' (feito) ou '-' (pendente) por critério de artefato (ex.: 'kan=vvv, set=vv-'). o bloco renderizado em ASCII monospace (Fira Code) entre 'painel:render' e 'painel:fim' é derivado diretamente desses dados, mantendo ordem estritamente alfabética e nomes alinhados à direita.
+3. todas as entregas apontam para artefatos modulares na pasta 'artefatos/<n>-<nome>.md' (ex.: 'artefatos/3-base-git-repo.md'). os pontos de verificação e critérios atômicos pertencem exclusivamente ao arquivo do próprio artefato; o cronograma cita o link estilizado no formato `[`[n] tipo · nome`](artefatos/n-nome.md)`.
+4. painel de progresso: dados de verificação ficam armazenados no bloco de dados oculto (painel:dados ...) no formato atômico 'v' (feito) ou '-' (pendente) por critério de artefato (ex.: 'git=vvv, pdf=vvv-'). o bloco renderizado em ASCII monospace entre 'painel:render' e 'painel:fim' é derivado diretamente desses dados, mantendo ordem estritamente alfabética e nomes alinhados à direita. cada critério atendido confere 2 pontos, totalizando 100 pontos acumulados ao longo do curso (50 caixas no total).
 5. interação socrática: ao interagir com o estudante, ajude-o a localizar seu momento no cronograma, pré-requisitos na árvore de habilidades e pontos pendentes nas missões. nunca tome decisões pelos alunos, dialogue com eles ponto a ponto.
 -->
 
 ## comunicação
 
-- **grupo oficial:** [link do whatsapp / telegram / discord]
-- **(opcional) videochamadas:** [link do meet / discord]
-- **(opcional) espaços digitais:** [link do excalidraw / miro]
+- [`telegram`](url-do-grupo) · canal oficial da disciplina
+- [`google meet`](url-da-sala) · videochamadas e encontros remotos
+- [`questionário`](url-do-form) · levantamento de perfil e interesses
 
 ---
 
 ## visão
 
-**a base (ponto de partida):** [descrever o dilema, a dor real ou o gargalo inicial que motiva a existência desta disciplina]
+**base** · [descrever o dilema, a dor real ou o gargalo inicial que motiva a existência desta disciplina]
 
-**o horizonte (onde queremos chegar):** [qual impacto concreto, autonomia e competências duradouras os estudantes constroem ao longo do semestre]
+**horizonte** · [qual impacto concreto, autonomia e competências duradouras os estudantes constroem ao longo do semestre]
 
 ---
 
 ## regras
 
-#### pontos
-
-- a disciplina opera com **pontos acumulados**.
-- estudantes / equipes **partem do zero** e acumulam pontos.
-- os pontos **representam as notas**.
-- **artefatos** possuem de 3 a 5 *pontos verificáveis*.
-- cada ponto é explícito, ou foi alcançado ou não foi.
-- (opcional, remover caso não seja usado na disciplina) **exercícios teóricos** incluídos nos slides e realizados em sala conferem pontos.
-- (opcional, remover caso não seja usado na disciplina) **provas e miniprovas** também conferem pontos.
-- (opcional, remover caso não seja usado na disciplina) **apresentações** feitas para a banca conferem pontos.
-- (opcional, remover caso não seja usado na disciplina) **avaliações por pares** de outras equipes, sendo aprofundadas, coerentes e construtivas conferem pontos.
-- (opcional, remover caso não seja usado na disciplina) **avaliações dos membros** da sua equipe distribuem pontos.
-- os pontos estão disponibilizados no **cronograma**.
-- um **painel** geral com todos os pontos está disponível.
-
-#### composição das notas
-
-- **1a nota:** [descrever quais tipos de atividade compõem a nota 1. ex.: acúmulo dos pontos dos artefatos entregues durante o processo de confecção dos projetos, somados às contribuções com avaliações de outras equipes e aos pontos distribuídos pelas avaliações dos próprios membros neste período].
-- **2a nota:** [descrever quais tipos de atividade compõem a nota 2. ex.: total de pontos acumulados sobre o relatório técnico, o vídeo de demonstração e a avaliação da banca examinadora sobre a apresentação somados aos pontos distribuídos pelas avaliações dos próprios membros.]
-- **3a nota / final:** avaliação individual conforme regimento institucional para quem necessitar de recuperação.
+- a disciplina opera por pontos acumulados
+- cada item de verificação confere 2 pontos
+- a nota 10,0 é obtida acumulando 100 pontos (50 caixas de verificação no total)
+- as formas de conquistar seus pontos são produzindo artefatos, resolvendo enigmas e apresentando resultados
+- cada artefato, enigma e apresentação possui itens de verificação especificados na sua própria definição
+- artefatos são documentos, links de repositórios git, decks de slides
+- enigmas são exercícios teóricos, desafios aplicados em sala, com direito a consulta sem uso de IA
+- em qualquer aula subsequente os enigmas em que você falhou poderão ser refeitos em uma versão modificada
+- apresentações são falas em sala, avaliadas pelo professor ou por uma banca
+- os itens são verificados diretamente pelo professor, um a um, em momentos definidos no cronograma
+- em casos de atrasos, a verificação dos itens pode ser realizada depois desde que combinada com o professor
+- as caixas no painel abaixo mostram todos os itens de verificação da disciplina
+- dialogue com o professor sempre que preciso
 
 ---
 
 ## cronograma
 
-encontros cronológicos da disciplina e marcos de validação.
+encontros cronológicos e marcos de validação.
 
-| data | descrição | materiais e atividades |
-|:---|:---|:---|
-| 18/08 (seg) | abertura e contrato pedagógico | [introdução](slides-intro.html#1) |
-| 20/08 (qua) | setup instrumental e introdução a agentes | [ambiente](slides-setup.html#1) |
-| 25/08 (seg) | dores autênticas e alavancas contra o óbvio | [problemas](slides-problemas.html#1) |
-| 27/08 (qua) | validação de código e apresentação da missão 01 | [kanban](artefatos/kanban.md)<br>[setup](artefatos/setup.md)<br>[problemas](artefatos/problemas.md)<br>avaliação por pares |
-| 01/09 (seg) | feriado | *sem encontro presencial* |
-| 03/09 (qua) | visão computacional: convolução e filtros | [convolução](slides-cnn.html#convolucao)<br>[filtros](slides-cnn.html#sobel) |
-| 17/09 (qua) | mapeamento de concorrentes e missão 02 | [concorrentes](artefatos/concorrentes.md)<br>[benchmark](artefatos/benchmark.md)<br>avaliação por pares |
-| 29/10 (qua) | protótipo funcional e missão 03 | [protótipo](artefatos/prototipo.md)<br>[experimentos](artefatos/experimentos.md)<br>[métricas](artefatos/metricas.md)<br>avaliação por pares |
-| 03/12 (qua) | defesa pública perante banca examinadora | banca externa de pitch & encerramento |
+| data | # | tipo | descrição | materiais |
+|:---|:---:|:---|:---|:---|
+| 12/08 (qua) | 01 | teoria | acordos e enigma inaugural | [`[1] slides · introdução`](url) |
+| 14/08 (sex) | 02 | prática | configuração base para a disciplina | [`[3] artefato · base git repo`](artefatos/3-base-git-repo.md)<br>[`[4] artefato · latex project`](artefatos/4-latex-project.md) |
+| 19/08 (qua) | 03 | teoria | conceitos fundamentais e arquitetura | [`[1] slides · fundamentos`](url) |
+| 21/08 (sex) | 04 | prática | implementação inicial e relatório | [`[5] artefato · projeto git repo`](artefatos/5-projeto-git-repo.md)<br>[`[5] artefato · projeto tech report`](artefatos/5-projeto-tech-report.md) |
+| 26/08 (qua) | 05 | mentoria | acompanhamento e dúvidas | |
+| 28/08 (sex) | 06 | checagem | verificação de marcos e pontuação | |
+
+- **teoria** · aula expositiva focada na aprendizagem de habilidades técnicas por seus componentes teóricos
+- **prática** · aula com acesso à infraestrutura para produção de artefatos
+- **mentoria** · aula de acompanhamento e auxílio sobre o desenvolvimento de uma determinada prática
+- **seminário** · aula em que os alunos apresentam de forma didática e direta os seus resultados
+- **checagem** · aulas avaliativas em que cada item de verificação é analisado e pontuado
 
 ---
 
 ## painel
 
-acompanhamento transparente dos pontos conquistados em cada artefato ao longo do semestre. a lista é estritamente alfabética (sem rankings).
+acompanhamento transparente dos itens de verificação (2 pontos por critério · 50 caixas = 100 pontos no total). lista estritamente alfabética.
 
 <!-- painel:dados
 formato: cada critério atômico do artefato é marcado como 'v' (feito) ou '-' (pendente).
-beta:  kan=vvv, set=vvv, pro=vvv, tec=vvv, con=vvv, ben=vvv, req=vvv, arq=vvv, pro=vvv, tes=vvv, met=vvv, val=vvv, dep=vvv, art=vvv, pit=vvv, par=vvvv
-gamma: kan=vvv, set=vv-, pro=vvv, tec=---, con=vvv, ben=vvv, req=vvv, arq=vvv, pro=vvv, tes=vvv, met=vvv, val=vvv, dep=vvv, art=vvv, pit=vvv, par=vvv-
-zeta:  kan=vvv, set=vvv, pro=vvv, tec=vvv, con=vvv, ben=vvv, req=vvv, arq=vvv, pro=vvv, tes=vvv, met=vvv, val=vvv, dep=vvv, art=vvv, pit=vvv, par=vvvv
+aluno-a: git=vvv, pdf=vvv-, rep=vvvvv, art=vvvvv
+aluno-b: git=vvv, pdf=vvv-, rep=vvvvv, art=vvvv-
 -->
 <!-- painel:render -->
 ```text
-       kan set pro tec con ben req arq pro tes met val dep art pit  par   nota 1
- beta  ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼  ◼◼◼◼  49 pts
-gamma  ◼◼◼ ◼◼◻ ◼◼◼ ◻◻◻ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼  ◼◼◼◻  43 pts
- zeta  ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼  ◼◼◼◼  49 pts
-
-       relatório        demo          apresentação   nota 2
- beta  ◼◼◼◻◻◻◻◻◻◻◻◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
-gamma  ◼◼◼◼◼◼◼◼◼◼◼◼◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
- zeta  ◼◼◼◼◼◼◼◼◼◻◻◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
+                 git pdf  rep   art   ...               total
+       aluno a   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻   32 pts
+       aluno b   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻   30 pts
 ```
 <!-- painel:fim -->
 
-> **kan**ban · **set**up · **pro**blemas · **tec**nologia · **con**correntes · **ben**chmark · **req**uisitos · **arq**uitetura · **pro**tótipo · **tes**tes · **met**ricas · **val**idação · **dep**loy · **art**igo · **pit**ch · **par**es
+> **git:** base git repo · **pdf:** latex project · **rep:** projeto git repo · **art:** projeto tech report
 
 ---
 
 ## entregue
 
-repositórios, documentos e materiais validados pelas equipes na turma atual.
+repositórios e artigos científicos validados na turma atual.
 
-- **beta** | membro 1 (papel do membro 1), membro 2 (papel)  
-*[kanban](url) · [setup](url) · [problemas](url) · [tecnologia](url)*
-- **gamma** | membro 1 (papel do membro 1), membro 2 (papel)  
-*[kanban](url) · [setup](url) · [problemas](url) · [tecnologia](url)*
-- **zeta** | membro 1 (papel do membro 1), membro 2 (papel)  
-*[kanban](url) · [setup](url) · [tecnologia](url)*
+- **aluno a** | [`git`](url) · [`artigo`](url) · [`slides`](url)
+- **aluno b** | [`git`](url) · [`artigo`](url)
+- **aluno c** | -
 
 ---
 
@@ -132,24 +117,17 @@ repositórios, documentos e materiais validados pelas equipes na turma atual.
 
 projetos de turmas anteriores.
 
-- **projeto a** | membro 1 (papel do membro 1), membro 2 (papel)  
-*(opcional) destacar caso o projeto tenha gerado desdobramentos reais (tcc, artigos e editais)*  
-*[kanban](url) · [setup](url) · [problemas](url) · [tecnologia](url)*
-- **projeto b** | membro 1 (papel do membro 1), membro 2 (papel)  
-*(opcional) destacar caso o projeto tenha gerado desdobramentos reais (tcc, artigos e editais)*  
-*[kanban](url) · [setup](url) · [problemas](url) · [tecnologia](url)*
+- **projeto a** | [`git`](url) · [`artigo`](url)
+- **projeto b** | [`git`](url) · [`artigo`](url)
 
 ---
 
 ## referências
 
-leituras de base e recursos práticos de suporte.
+leituras de base e recursos de suporte.
 
-- [livro 1 / autor / ano / por que vale a pena ler]
-- [livro 2 / autor / ano / por que vale a pena ler]
-- **design toolkit (ideo):** `https://www.designkit.org/` — referências de ideação centrada no humano.
-- **toolkit de inovação (tcu):** ferramentas e dinâmicas colaborativas para projetos públicos e sociais.
-- **exemplos de pitch de excelência:** [links de gravações de demonstrações que causam encantamento].
+- [**referência 1**](url) — descrição da referência.
+- [**referência 2**](url) — descrição da referência.
 
 ---
 

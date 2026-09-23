@@ -147,8 +147,6 @@ thiago matheus   ◻◻◻ ◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻�
 
 > **git:** base git repo · **pdf:** latex project · **mlp·c:** mlp git repo · **mlp·p:** mlp tech report · **arq·c:** arquitetura git repo · **arq·p:** arquitetura tech report · **arn·c:** arena git repo · **arn·p:** arena tech report · **enigmas:** 14 investigações em sala
 
-### nota 2 (va2 · 50 pontos · preliminar)
-
 <!-- painel:dados-va2
 alberico:       brw=---, cmp=---, tec=---, arq=---, exp=---, sem=----, art=---, dem=---
 andreza:        brw=---, cmp=---, tec=---, arq=---, exp=---, sem=----, art=---, dem=---
