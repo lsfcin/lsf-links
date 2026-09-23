@@ -4,7 +4,7 @@
 
 > prof. lucas silva figueiredo  
 > ufrpe · departamento de computação (dc)  
-> 2026.2 · quarta|20h10  sexta|18h30 · sala 37
+> 2026.2 · quartas às 20h10 e sextas às 18h30 · sala 37
 
 <!-- publicacao
 publicar no cloudflare pages:
@@ -17,16 +17,16 @@ web: https://lucassf.pages.dev/ai4good | raw: https://lucassf.pages.dev/ai4good/
 instruções para o agente de apoio:
 1. soberania: este arquivo centraliza comunicação, visão, cronograma, painel e habilidades da disciplina.
 2. publicação: espelhado em outputs/links/ai4good/disciplina.md e servido no Cloudflare Pages (https://lucassf.pages.dev/ai4good).
-3. entregas: '·c' para código/repo git e '·p' para relatório técnico LaTeX/Overleaf em artefatos/[x]nome.md.
+3. entregas: '·c' para código/repo git e '·p' para relatório técnico LaTeX/Overleaf em artefatos/<n>-nome.md.
 4. painel: critérios binários ('v'/'-') em painel:dados geram o bloco monospace entre painel:render e painel:fim (2 pts por item).
 5. tutoria: atue como copiloto socrático; audite critérios comprováveis e nunca redija código ou texto pelos alunos.
 -->
 
 ## comunicação
 
-- **telegram oficial:** [t.me/+mW8Smp8VbBlkNjkx](https://t.me/+mW8Smp8VbBlkNjkx)
-- **google meet:** [meet.google.com/zxu-ffar-qrj](https://meet.google.com/zxu-ffar-qrj)
-- **questionário setup:** [lucassf.pages.dev/ai4good/setup](https://lucassf.pages.dev/ai4good/setup)
+- [`telegram`](https://t.me/+mW8Smp8VbBlkNjkx) · avisos e dúvidas da turma
+- [`google meet`](https://meet.google.com/zxu-ffar-qrj) · sala para encontros remotos
+- [`questionário setup`](https://lucassf.pages.dev/ai4good/setup) · cadastro instrumental e nivelamento
 
 ---
 
@@ -63,41 +63,41 @@ encontros cronológicos e marcos de validação (34 encontros letivos · resolu�
 | data | # | tipo | descrição | materiais |
 |:---|:---:|:---|:---|:---|
 | 12/08 (qua) | 01 | teoria | acordos e enigma teste | [1] [slides · abertura da disciplina](https://docs.google.com/presentation/d/1mhJFLULrPU_HoZ5emkeC7AiHCkw5HkHRLm-bCq3e_cE/edit) |
-| 14/08 (sex) | 02 | prática | configuração base para a disciplina | [3] [artefato · base git repo](artefatos/base-git-repo.md)<br>[4] [artefato · latex project](artefatos/latex-project.md) |
+| 14/08 (sex) | 02 | prática | configuração base para a disciplina | [3] [artefato · base git repo](artefatos/3-base-git-repo.md)<br>[4] [artefato · latex project](artefatos/4-latex-project.md) |
 | 19/08 (qua) | 03 | teoria | base para redes neurais profundas | [1] [slides · história](https://docs.google.com/presentation/d/1wQFwZ2QkfGKT2MlEHqgt8kW63LQTsX2sfV7fC8P7yts/edit)<br>[1] [slides · linear regression](https://docs.google.com/presentation/d/1wQFwZ2QkfGKT2MlEHqgt8kW63LQTsX2sfV7fC8P7yts/edit)<br>[1] [slides · multilayer perceptron](https://docs.google.com/presentation/d/1wQFwZ2QkfGKT2MlEHqgt8kW63LQTsX2sfV7fC8P7yts/edit) |
-| 21/08 (sex) | 04 | prática | rede neural profunda interativa | [5] [artefato · mlp git repo](artefatos/mlp-git-repo.md)<br>[5] [artefato · mlp tech report](artefatos/mlp-tech-report.md) |
-| 26/08 (qua) | 05 | mentoria | mlp interativa | acompanhamento de código e métricas |
-| 28/08 (sex) | 06 | checagem | mlp interativa | verificação pontual |
+| 21/08 (sex) | 04 | prática | rede neural profunda interativa | [5] [artefato · mlp git repo](artefatos/5-mlp-git-repo.md)<br>[5] [artefato · mlp tech report](artefatos/5-mlp-tech-report.md) |
+| 26/08 (qua) | 05 | mentoria | mlp interativa | |
+| 28/08 (sex) | 06 | checagem | mlp interativa | |
 | 02/09 (qua) | 07 | teoria | arquiteturas de deep learning (1/4) | [1] [slides · autoencoder](https://docs.google.com/presentation/d/1WqLS7z6YMEyNh4j_k4KNjrc6wkbu00P84ptqehYgFPI/edit)<br>[1] [slides · cnn](https://docs.google.com/presentation/d/1WqLS7z6YMEyNh4j_k4KNjrc6wkbu00P84ptqehYgFPI/edit)<br>[1] [slides · gnn](https://docs.google.com/presentation/d/1WqLS7z6YMEyNh4j_k4KNjrc6wkbu00P84ptqehYgFPI/edit) |
 | 04/09 (sex) | 08 | teoria | arquiteturas de deep learning (2/4) | [1] [slides · rnn](https://docs.google.com/presentation/d/1WqLS7z6YMEyNh4j_k4KNjrc6wkbu00P84ptqehYgFPI/edit)<br>[1] [slides · lstm](https://docs.google.com/presentation/d/1WqLS7z6YMEyNh4j_k4KNjrc6wkbu00P84ptqehYgFPI/edit) |
 | 09/09 (qua) | 09 | teoria | arquiteturas de deep learning (3/4) | [1] [slides · gan](https://docs.google.com/presentation/d/15HQOWSVXE3jbsk7Hg3LzCQBALpnhL-tktCkJTMx0CJU/edit)<br>[1] [slides · teacher-student](https://docs.google.com/presentation/d/15HQOWSVXE3jbsk7Hg3LzCQBALpnhL-tktCkJTMx0CJU/edit) |
-| 11/09 (sex) | 10 | prática | modificando uma arquitetura | [5] [artefato · arquitetura git repo](artefatos/arquitetura-git-repo.md)<br>[5] [artefato · arquitetura tech report](artefatos/arquitetura-tech-report.md) |
+| 11/09 (sex) | 10 | prática | modificando uma arquitetura | [5] [artefato · arquitetura git repo](artefatos/5-arquitetura-git-repo.md)<br>[5] [artefato · arquitetura tech report](artefatos/5-arquitetura-tech-report.md) |
 | 16/09 (qua) | 11 | teoria | arquiteturas de deep learning (4/4) | [1] [slides · transformers](https://docs.google.com/presentation/d/15HQOWSVXE3jbsk7Hg3LzCQBALpnhL-tktCkJTMx0CJU/edit) |
-| 18/09 (sex) | 12 | mentoria | modificando uma arquitetura | alinhamento de experimentos |
+| 18/09 (sex) | 12 | mentoria | modificando uma arquitetura | |
 | 23/09 (qua) | 13 | teoria | superinteligência e singularidade | [1] [slides · agência](https://docs.google.com/presentation/d/1Ah-BBHvCedf5QWGEw8Zkv_CnhEhRQ5W-KgdUK-fEjVk/edit)<br>[1] [slides · autoaprimoramento](https://docs.google.com/presentation/d/1Ah-BBHvCedf5QWGEw8Zkv_CnhEhRQ5W-KgdUK-fEjVk/edit)<br>[1] [slides · autopreservação](https://docs.google.com/presentation/d/1Ah-BBHvCedf5QWGEw8Zkv_CnhEhRQ5W-KgdUK-fEjVk/edit) |
-| 25/09 (sex) | 14 | prática | multiagentes distopia x utopia | [5] [artefato · arena git repo](artefatos/arena-git-repo.md)<br>[5] [artefato · arena tech report](artefatos/arena-tech-report.md) |
+| 25/09 (sex) | 14 | prática | multiagentes distopia x utopia | [5] [artefato · arena git repo](artefatos/5-arena-git-repo.md)<br>[5] [artefato · arena tech report](artefatos/5-arena-tech-report.md) |
 | 30/09 (qua) | 15 | teoria | crises e caminhos de transformação | [1] [slides · crises relacionadas](https://docs.google.com/presentation/d/1PgIp_SX2wlMYEbGT3i5MMrciRB3NUC_xzDLvCU7O6B0/edit) |
 | 02/10 (sex) | 16 | prática | brainwriting híbrido | [x] artefato · tbd |
 | 07/10 (qua) | 17 | prática | competidores e contribuição | [x] artefato · tbd |
-| 09/10 (sex) | 18 | mentoria | refinamento da contribuição | alinhamento de proposta |
+| 09/10 (sex) | 18 | mentoria | refinamento da contribuição | |
 | 14/10 (qua) | 19 | prática | tecnologia base funcional | [x] artefato · tbd |
-| 16/10 (sex) | 20 | mentoria | definição da contribuição | alinhamento de escopo |
+| 16/10 (sex) | 20 | mentoria | definição da contribuição | |
 | 21/10 (qua) | 21 | prática | fluxograma e arquitetura | [x] artefato · tbd |
 | 23/10 (sex) | 22 | prática | desenho dos experimentos | [x] artefato · tbd |
-| 28/10 (qua) | -- | feriado | dia do servidor público federal | *sem encontro presencial* |
-| 30/10 (sex) | 23 | checagem | verificação geral, ponto a ponto | fechamento da va1 |
+| 28/10 (qua) | -- | feriado | dia do servidor público federal | |
+| 30/10 (sex) | 23 | checagem | verificação geral, ponto a ponto | |
 | 04/11 (qua) | 24 | seminário | iteração 1, preliminares | [x] seminário · tbd |
-| 06/11 (sex) | 25 | mentoria | código e artigo | acompanhamento técnico |
+| 06/11 (sex) | 25 | mentoria | código e artigo | |
 | 11/11 (qua) | 26 | seminário | iteração 2, evolução | [x] seminário · tbd |
-| 13/11 (sex) | 27 | mentoria | código e artigo | acompanhamento técnico |
-| 18/11 (qua) | 28 | checagem | revisão cética, crítica e construtiva | auditoria de robustez |
-| 20/11 (sex) | -- | feriado | dia nacional da consciência negra | *sem encontro presencial* |
+| 13/11 (sex) | 27 | mentoria | código e artigo | |
+| 18/11 (qua) | 28 | checagem | revisão cética, crítica e construtiva | |
+| 20/11 (sex) | -- | feriado | dia nacional da consciência negra | |
 | 25/11 (qua) | 29 | seminário | iteração 3, demonstração | [x] seminário · tbd |
-| 27/11 (sex) | 30 | mentoria | acompanhamento final e polimento | ensaio de pitch |
+| 27/11 (sex) | 30 | mentoria | acompanhamento final e polimento | |
 | 02/12 (qua) | 31 | seminário | pitch para banca externa | [x] seminário · tbd |
 | 04/12 (sex) | 32 | checagem | va2 · artigo e demo | [x] artefato · tbd<br>[x] artefato · tbd |
-| 09/12 (qua) | 33 | checagem | va3 · avaliação escrita | prova regimental |
-| 11/12 (sex) | 34 | checagem | va4 · exame final institucional | prova regimental |
+| 09/12 (qua) | 33 | checagem | va3 · avaliação escrita | |
+| 11/12 (sex) | 34 | checagem | va4 · exame final institucional | |
 
 - **teoria** · aula expositiva focada na aprendizagem de habilidades técnicas por seus componentes teóricos
 - **prática** · aula com acesso à infraestrutura para produção de artefatos
@@ -109,41 +109,79 @@ encontros cronológicos e marcos de validação (34 encontros letivos · resolu�
 
 ## painel
 
-acompanhamento transparente dos itens de verificação da nota 1 (va1 · 50 pontos). cada critério confere 2 pontos. lista estritamente alfabética.
+acompanhamento transparente dos itens de verificação (2 pontos por critério). lista estritamente alfabética.
 
-<!-- painel:dados
-alberico:       cod=vvv, pdf=vvv, mlp·c=vvvvv, mlp·p=vvvvv
-andreza:        cod=vvv, pdf=vvv, mlp·c=vvvvv, mlp·p=vvvvv
-artur:          cod=vvv, pdf=vvv, mlp·c=vvvvv, mlp·p=vvvvv
-carlos:         cod=vvv, pdf=vvv, mlp·c=vvvvv, mlp·p=vvvv-
-caua:           cod=vvv, pdf=vvv, mlp·c=vvvvv, mlp·p=vvvvv
-davi:           cod=vvv, pdf=vvv, mlp·c=vvvvv, mlp·p=vvvvv
-edson:          cod=---, pdf=---, mlp·c=-----, mlp·p=-----
-gian:           cod=vvv, pdf=vvv, mlp·c=vvvvv, mlp·p=vvvvv
-rayane:         cod=vvv, pdf=vvv, mlp·c=vvvvv, mlp·p=vvvvv
-thiago-brito:   cod=vvv, pdf=vvv, mlp·c=vvvvv, mlp·p=vvvvv
-thiago-matheus: cod=---, pdf=---, mlp·c=-----, mlp·p=-----
-vinicius:       cod=---, pdf=---, mlp·c=-----, mlp·p=-----
+### nota 1 (va1 · 50 pontos)
+
+<!-- painel:dados-va1
+alberico:       git=vvv, pdf=vvv-, mlp·c=vvvvv, mlp·p=vvvvv
+andreza:        git=vvv, pdf=vvv-, mlp·c=vvvvv, mlp·p=vvvvv
+artur:          git=vvv, pdf=vvv-, mlp·c=vvvvv, mlp·p=vvvvv
+carlos:         git=vvv, pdf=vvv-, mlp·c=vvvvv, mlp·p=vvvv-
+caua:           git=vvv, pdf=vvv-, mlp·c=vvvvv, mlp·p=vvvvv
+davi:           git=vvv, pdf=vvv-, mlp·c=vvvvv, mlp·p=vvvvv
+edson:          git=---, pdf=----, mlp·c=-----, mlp·p=-----
+gian:           git=vvv, pdf=vvv-, mlp·c=vvvvv, mlp·p=vvvvv
+rayane:         git=vvv, pdf=vvv-, mlp·c=vvvvv, mlp·p=vvvvv
+thiago-brito:   git=vvv, pdf=vvv-, mlp·c=vvvvv, mlp·p=vvvvv
+thiago-matheus: git=---, pdf=----, mlp·c=-----, mlp·p=-----
+vinicius:       git=---, pdf=----, mlp·c=-----, mlp·p=-----
 -->
-<!-- painel:render -->
+<!-- painel:render-va1 -->
 ```text
-                 cod pdf mlp·c mlp·p arq·c arq·p arn·c arn·p        enigmas nota 1
-      albérico   ◼◼◼ ◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
-       andreza   ◼◼◼ ◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
-         artur   ◼◼◼ ◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
-        carlos   ◼◼◼ ◼◼◼ ◼◼◼◼◼ ◼◼◼◼◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 30 pts
-          cauã   ◼◼◼ ◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
-          davi   ◼◼◼ ◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
-         edson   ◻◻◻ ◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 00 pts
-          gian   ◼◼◼ ◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
-        rayane   ◼◼◼ ◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
-  thiago brito   ◼◼◼ ◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
-thiago matheus   ◻◻◻ ◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 00 pts
-      vinicius   ◻◻◻ ◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 00 pts
+                 git pdf  mlp·c mlp·p arq·c arq·p arn·c arn·p enigmas        nota 1
+      albérico   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
+       andreza   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
+         artur   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
+        carlos   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 30 pts
+          cauã   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
+          davi   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
+         edson   ◻◻◻ ◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 00 pts
+          gian   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
+        rayane   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
+  thiago brito   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
+thiago matheus   ◻◻◻ ◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 00 pts
+      vinicius   ◻◻◻ ◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 00 pts
 ```
-<!-- painel:fim -->
+<!-- painel:fim-va1 -->
 
-> **cod:** repo git · **pdf:** overleaf e refs · **mlp·c / mlp·p:** código e relatório mlp · **arq·c / arq·p:** código e relatório arquitetura · **arn·c / arn·p:** código e relatório arena · **enigmas:** 14 investigações em sala (2 pts por item)
+> **git:** base git repo · **pdf:** latex project · **mlp·c:** mlp git repo · **mlp·p:** mlp tech report · **arq·c:** arquitetura git repo · **arq·p:** arquitetura tech report · **arn·c:** arena git repo · **arn·p:** arena tech report · **enigmas:** 14 investigações em sala
+
+### nota 2 (va2 · 50 pontos · preliminar)
+
+<!-- painel:dados-va2
+alberico:       brw=---, cmp=---, tec=---, arq=---, exp=---, sem=----, art=---, dem=---
+andreza:        brw=---, cmp=---, tec=---, arq=---, exp=---, sem=----, art=---, dem=---
+artur:          brw=---, cmp=---, tec=---, arq=---, exp=---, sem=----, art=---, dem=---
+carlos:         brw=---, cmp=---, tec=---, arq=---, exp=---, sem=----, art=---, dem=---
+caua:           brw=---, cmp=---, tec=---, arq=---, exp=---, sem=----, art=---, dem=---
+davi:           brw=---, cmp=---, tec=---, arq=---, exp=---, sem=----, art=---, dem=---
+edson:          brw=---, cmp=---, tec=---, arq=---, exp=---, sem=----, art=---, dem=---
+gian:           brw=---, cmp=---, tec=---, arq=---, exp=---, sem=----, art=---, dem=---
+rayane:         brw=---, cmp=---, tec=---, arq=---, exp=---, sem=----, art=---, dem=---
+thiago-brito:   brw=---, cmp=---, tec=---, arq=---, exp=---, sem=----, art=---, dem=---
+thiago-matheus: brw=---, cmp=---, tec=---, arq=---, exp=---, sem=----, art=---, dem=---
+vinicius:       brw=---, cmp=---, tec=---, arq=---, exp=---, sem=----, art=---, dem=---
+-->
+<!-- painel:render-va2 -->
+```text
+                 brw cmp tec arq exp sem  art dem nota 2
+      albérico   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻◻ 00 pts
+       andreza   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻◻ 00 pts
+         artur   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻◻ 00 pts
+        carlos   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻◻ 00 pts
+          cauã   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻◻ 00 pts
+          davi   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻◻ 00 pts
+         edson   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻◻ 00 pts
+          gian   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻◻ 00 pts
+        rayane   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻◻ 00 pts
+  thiago brito   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻◻ 00 pts
+thiago matheus   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻◻ 00 pts
+      vinicius   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻ ◻◻◻ 00 pts
+```
+<!-- painel:fim-va2 -->
+
+> **brw:** brainwriting híbrido · **cmp:** competidores e contribuição · **tec:** tecnologia base funcional · **arq:** fluxograma e arquitetura · **exp:** desenho dos experimentos · **sem:** seminários de pesquisa · **art:** artigo técnico final · **dem:** demonstração funcional
 
 ---
 
