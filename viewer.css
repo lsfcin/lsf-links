@@ -132,13 +132,13 @@ body {
 .markdown-body table th:first-child,
 .markdown-body table td:first-child {
   text-align: center;
-  width: 90px;
+  width: 80px;
   white-space: nowrap;
 }
 .markdown-body table th:nth-child(2),
 .markdown-body table td:nth-child(2) {
   text-align: left;
-  width: 48%;
+  width: 36%;
   overflow-wrap: break-word;
 }
 .markdown-body table th:nth-child(3),
