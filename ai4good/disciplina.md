@@ -62,21 +62,21 @@ para o agente que apoia um aluno desta disciplina:
 
 | data | descrição | materiais |
 |:---:|:---|:---|
-| · 01 ·<br>12/08<br>· qua · | teoria<br>**acordos e enigma teste** | [`[1] slides · abertura`](https://lucassf.pages.dev/ai4good/abertura) |
-| · 02 ·<br>14/08<br>· sex · | prática<br>**configuração base para a disciplina** | [`[3] artefato · git repo`](artefatos/3-base-git-repo.md)<br>[`[4] artefato · latex project`](artefatos/4-latex-project.md) |
-| · 03 ·<br>19/08<br>· qua · | teoria<br>**base para redes neurais profundas** | [`[1] slides · história`](https://lucassf.pages.dev/ai4good/historia)<br>[`[1] slides · regressão linear`](https://lucassf.pages.dev/ai4good/regressao-linear)<br>[`[1] slides · perceptron`](https://lucassf.pages.dev/ai4good/perceptron-multicamadas) |
-| · 04 ·<br>21/08<br>· sex · | prática<br>**rede neural profunda interativa** | [`[5] artefato · mlp git repo`](artefatos/5-mlp-git-repo.md)<br>[`[5] artefato · mlp tech report`](artefatos/5-mlp-tech-report.md) |
-| · 05 ·<br>26/08<br>· qua · | mentoria<br>**mlp interativa** | |
-| · 06 ·<br>28/08<br>· sex · | checagem<br>**mlp interativa** | |
-| · 07 ·<br>02/09<br>· qua · | teoria<br>**arquiteturas de deep learning (1/4)** | [`[1] slides · autocodificadores`](https://lucassf.pages.dev/ai4good/autocodificadores)<br>[`[1] slides · redes convolucionais`](https://lucassf.pages.dev/ai4good/redes-convolucionais)<br>[`[1] slides · redes de grafos`](https://lucassf.pages.dev/ai4good/redes-de-grafos) |
-| · 08 ·<br>04/09<br>· sex · | teoria<br>**arquiteturas de deep learning (2/4)** | [`[1] slides · redes recorrentes`](https://lucassf.pages.dev/ai4good/redes-recorrentes)<br>[`[1] slides · memória curta e longa`](https://lucassf.pages.dev/ai4good/memoria-longa-de-curto-prazo) |
-| · 09 ·<br>09/09<br>· qua · | teoria<br>**arquiteturas de deep learning (3/4)** | [`[1] slides · redes adversariais`](https://lucassf.pages.dev/ai4good/redes-adversariais)<br>[`[1] slides · redes professor-aluno`](https://lucassf.pages.dev/ai4good/professor-aluno) |
+| · 01 ·<br>12/08<br>· qua · | teoria<br>**aula de abertura, acordos e enigma teste** | [`[1] slides · abertura`](https://lucassf.pages.dev/ai4good/abertura) |
+| · 02 ·<br>14/08<br>· sex · | prática<br>**harness, repositório e overleaf, configuração base para a disciplina** | [`[3] artefato · git repo`](artefatos/3-base-git-repo.md)<br>[`[4] artefato · latex project`](artefatos/4-latex-project.md) |
+| · 03 ·<br>19/08<br>· qua · | teoria<br>**história da IA, princípios matemáticos de aprendizagem supervisionada** | [`[1] slides · história`](https://lucassf.pages.dev/ai4good/historia)<br>[`[1] slides · regressão linear`](https://lucassf.pages.dev/ai4good/regressao-linear)<br>[`[1] slides · perceptron`](https://lucassf.pages.dev/ai4good/perceptron-multicamadas) |
+| · 04 ·<br>21/08<br>· sex · | prática<br>**construindo uma rede neural profunda interativa** | [`[5] artefato · mlp git repo`](artefatos/5-mlp-git-repo.md)<br>[`[5] artefato · mlp tech report`](artefatos/5-mlp-tech-report.md) |
+| · 05 ·<br>26/08<br>· qua · | mentoria<br>**multilayer perceptron interativa** | |
+| · 06 ·<br>28/08<br>· sex · | checagem<br>**multilayer perceptron interativa** | |
+| · 07 ·<br>02/09<br>· qua · | teoria<br>**arquiteturas de deep learning, codificação, imagens e grafos** | [`[1] slides · autocodificadores`](https://lucassf.pages.dev/ai4good/autocodificadores)<br>[`[1] slides · redes convolucionais`](https://lucassf.pages.dev/ai4good/redes-convolucionais)<br>[`[1] slides · redes de grafos`](https://lucassf.pages.dev/ai4good/redes-de-grafos) |
+| · 08 ·<br>04/09<br>· sex · | teoria<br>**arquiteturas de deep learning, temporalidade, processamento de linguagem** | [`[1] slides · redes recorrentes`](https://lucassf.pages.dev/ai4good/redes-recorrentes)<br>[`[1] slides · memória curta e longa`](https://lucassf.pages.dev/ai4good/memoria-longa-de-curto-prazo) |
+| · 09 ·<br>09/09<br>· qua · | teoria<br>**arquiteturas de deep learning, competição e colaboração** | [`[1] slides · redes adversariais`](https://lucassf.pages.dev/ai4good/redes-adversariais)<br>[`[1] slides · redes professor-aluno`](https://lucassf.pages.dev/ai4good/professor-aluno) |
 | · 10 ·<br>11/09<br>· sex · | prática<br>**modificando uma arquitetura** | [`[5] artefato · arquitetura git repo`](artefatos/5-arquitetura-git-repo.md)<br>[`[5] artefato · arquitetura tech report`](artefatos/5-arquitetura-tech-report.md) |
-| · 11 ·<br>16/09<br>· qua · | teoria<br>**arquiteturas de deep learning (4/4)** | [`[1] slides · transformers`](https://lucassf.pages.dev/ai4good/transformers)<br>[`[0] slides · modelos de linguagem`](https://lucassf.pages.dev/ai4good/modelos-de-linguagem) |
+| · 11 ·<br>16/09<br>· qua · | teoria<br>**arquiteturas de deep learning, camada de atenção** | [`[1] slides · transformers`](https://lucassf.pages.dev/ai4good/transformers)<br>[`[0] slides · modelos de linguagem`](https://lucassf.pages.dev/ai4good/modelos-de-linguagem) |
 | · 12 ·<br>18/09<br>· sex · | mentoria<br>**modificando uma arquitetura** | |
-| · 13 ·<br>23/09<br>· qua · | teoria<br>**superinteligência e singularidade** | [`[1] slides · agência`](https://lucassf.pages.dev/ai4good/agencia)<br>[`[1] slides · autoaprimoramento`](https://lucassf.pages.dev/ai4good/autoaprimoramento)<br>[`[0] slides · autopreservação`](https://lucassf.pages.dev/ai4good/autopreservacao) |
+| · 13 ·<br>23/09<br>· qua · | teoria<br>**superinteligência e singularidade, filosofia, experimentos e casos reais** | [`[1] slides · agência`](https://lucassf.pages.dev/ai4good/agencia)<br>[`[1] slides · autoaprimoramento`](https://lucassf.pages.dev/ai4good/autoaprimoramento)<br>[`[0] slides · autopreservação`](https://lucassf.pages.dev/ai4good/autopreservacao) |
 | · 14 ·<br>25/09<br>· sex · | prática<br>**multiagentes distopia x utopia** | [`[5] artefato · arena git repo`](artefatos/5-arena-git-repo.md)<br>[`[5] artefato · arena tech report`](artefatos/5-arena-tech-report.md) |
-| · 15 ·<br>30/09<br>· qua · | teoria<br>**crises e caminhos de transformação** | [`[1] slides · crises`](https://lucassf.pages.dev/ai4good/crises) |
+| · 15 ·<br>30/09<br>· qua · | teoria<br>**crises relacionadas à IA e potenciais caminhos de transformação** | [`[1] slides · crises`](https://lucassf.pages.dev/ai4good/crises) |
 | · 16 ·<br>02/10<br>· sex · | prática<br>**brainwriting híbrido** | `[x] artefato · tbd` |
 | · 17 ·<br>07/10<br>· qua · | prática<br>**competidores e contribuição** | `[x] artefato · tbd` |
 | · 18 ·<br>09/10<br>· sex · | mentoria<br>**refinamento da contribuição** | |
