@@ -112,13 +112,9 @@ body {
 .table-wrapper {
   overflow-x: auto;
   margin-bottom: 1.25em;
-  display: flex;
-  justify-content: center;
 }
 .markdown-body table {
-  width: max-content;
-  max-width: 100%;
-  margin: 0 auto;
+  width: 100%;
   border-collapse: collapse;
   font-size: 14px;
   border-top: 1px solid var(--border);
@@ -136,14 +132,13 @@ body {
 .markdown-body table th:first-child,
 .markdown-body table td:first-child {
   text-align: center;
-  width: 70px;
+  width: 90px;
   white-space: nowrap;
 }
 .markdown-body table th:nth-child(2),
 .markdown-body table td:nth-child(2) {
   text-align: left;
-  width: 210px;
-  max-width: 210px;
+  width: 48%;
   overflow-wrap: break-word;
 }
 .markdown-body table th:nth-child(3),
@@ -157,9 +152,6 @@ body {
   text-align: right;
 }
 @media (max-width: 600px) {
-  .table-wrapper {
-    display: block;
-  }
   .markdown-body table {
     width: 100%;
   }
@@ -180,7 +172,8 @@ body {
   background: var(--card); border-radius: 0 4px 4px 0;
 }
 .markdown-body blockquote p:last-child { margin-bottom: 0; }
-.markdown-body pre + blockquote {
+.markdown-body pre + blockquote,
+.markdown-body .table-wrapper + blockquote {
   background: transparent;
   border-left: none;
   padding: 0.25rem 0.5rem;
@@ -190,7 +183,8 @@ body {
   margin-top: -0.5em;
   margin-bottom: 1.5em;
 }
-.markdown-body pre + blockquote strong {
+.markdown-body pre + blockquote strong,
+.markdown-body .table-wrapper + blockquote strong {
   color: inherit;
   font-weight: 600;
   opacity: 0.8;
