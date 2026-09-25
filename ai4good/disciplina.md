@@ -53,51 +53,51 @@ para o agente que apoia um aluno desta disciplina:
 - use IA, porém lembre de conduzir as escolhas e revisar, o que não souber explicar não será contabilizado
 - o professor verifica os itens um a um, nas aulas de checagem
 - atrasou? combine uma checagem com o professor: o item é verificado depois e vale o mesmo
-- o painel é público, os itens são dados de antemão, ninguém está atrás, só ainda não entregou
+- o painel é público, os itens são dados de antemão, ninguém está atrás, basta entregar
 - dialogue com o professor sempre que precisar
 
 ---
 
 ## cronograma
 
-| data | # | tipo | descrição | materiais |
-|:---|:---:|:---|:---|:---|
-| 12/08 (qua) | 01 | teoria | acordos e enigma teste | [`[1] slides · abertura`](https://lucassf.pages.dev/ai4good/abertura) |
-| 14/08 (sex) | 02 | prática | configuração base para a disciplina | [`[3] artefato · git repo`](artefatos/3-base-git-repo.md)<br>[`[4] artefato · latex project`](artefatos/4-latex-project.md) |
-| 19/08 (qua) | 03 | teoria | base para redes neurais profundas | [`[1] slides · história`](https://lucassf.pages.dev/ai4good/historia)<br>[`[1] slides · regressão linear`](https://lucassf.pages.dev/ai4good/regressao-linear)<br>[`[1] slides · perceptron`](https://lucassf.pages.dev/ai4good/perceptron-multicamadas) |
-| 21/08 (sex) | 04 | prática | rede neural profunda interativa | [`[5] artefato · mlp git repo`](artefatos/5-mlp-git-repo.md)<br>[`[5] artefato · mlp tech report`](artefatos/5-mlp-tech-report.md) |
-| 26/08 (qua) | 05 | mentoria | mlp interativa | |
-| 28/08 (sex) | 06 | checagem | mlp interativa | |
-| 02/09 (qua) | 07 | teoria | arquiteturas de deep learning (1/4) | [`[1] slides · autocodificadores`](https://lucassf.pages.dev/ai4good/autocodificadores)<br>[`[1] slides · redes convolucionais`](https://lucassf.pages.dev/ai4good/redes-convolucionais)<br>[`[1] slides · redes de grafos`](https://lucassf.pages.dev/ai4good/redes-de-grafos) |
-| 04/09 (sex) | 08 | teoria | arquiteturas de deep learning (2/4) | [`[1] slides · redes recorrentes`](https://lucassf.pages.dev/ai4good/redes-recorrentes)<br>[`[1] slides · memória curta e longa`](https://lucassf.pages.dev/ai4good/memoria-longa-de-curto-prazo) |
-| 09/09 (qua) | 09 | teoria | arquiteturas de deep learning (3/4) | [`[1] slides · redes adversariais`](https://lucassf.pages.dev/ai4good/redes-adversariais)<br>[`[1] slides · redes professor-aluno`](https://lucassf.pages.dev/ai4good/professor-aluno) |
-| 11/09 (sex) | 10 | prática | modificando uma arquitetura | [`[5] artefato · arquitetura git repo`](artefatos/5-arquitetura-git-repo.md)<br>[`[5] artefato · arquitetura tech report`](artefatos/5-arquitetura-tech-report.md) |
-| 16/09 (qua) | 11 | teoria | arquiteturas de deep learning (4/4) | [`[1] slides · transformers`](https://lucassf.pages.dev/ai4good/transformers)<br>[`[0] slides · modelos de linguagem`](https://lucassf.pages.dev/ai4good/modelos-de-linguagem) |
-| 18/09 (sex) | 12 | mentoria | modificando uma arquitetura | |
-| 23/09 (qua) | 13 | teoria | superinteligência e singularidade | [`[1] slides · agência`](https://lucassf.pages.dev/ai4good/agencia)<br>[`[1] slides · autoaprimoramento`](https://lucassf.pages.dev/ai4good/autoaprimoramento)<br>[`[0] slides · autopreservação`](https://lucassf.pages.dev/ai4good/autopreservacao) |
-| 25/09 (sex) | 14 | prática | multiagentes distopia x utopia | [`[5] artefato · arena git repo`](artefatos/5-arena-git-repo.md)<br>[`[5] artefato · arena tech report`](artefatos/5-arena-tech-report.md) |
-| 30/09 (qua) | 15 | teoria | crises e caminhos de transformação | [`[1] slides · crises`](https://lucassf.pages.dev/ai4good/crises) |
-| 02/10 (sex) | 16 | prática | brainwriting híbrido | `[x] artefato · tbd` |
-| 07/10 (qua) | 17 | prática | competidores e contribuição | `[x] artefato · tbd` |
-| 09/10 (sex) | 18 | mentoria | refinamento da contribuição | |
-| 14/10 (qua) | 19 | prática | tecnologia base funcional | `[x] artefato · tbd` |
-| 16/10 (sex) | 20 | mentoria | definição da contribuição | |
-| 21/10 (qua) | 21 | prática | fluxograma e arquitetura | `[x] artefato · tbd` |
-| 23/10 (sex) | 22 | prática | desenho dos experimentos | `[x] artefato · tbd` |
-| 28/10 (qua) | -- | feriado | dia do servidor público federal | |
-| 30/10 (sex) | 23 | checagem | verificação geral, ponto a ponto | |
-| 04/11 (qua) | 24 | seminário | iteração 1, preliminares | `[x] seminário · tbd` |
-| 06/11 (sex) | 25 | mentoria | código e artigo | |
-| 11/11 (qua) | 26 | seminário | iteração 2, evolução | `[x] seminário · tbd` |
-| 13/11 (sex) | 27 | mentoria | código e artigo | |
-| 18/11 (qua) | 28 | checagem | revisão cética, crítica e construtiva | |
-| 20/11 (sex) | -- | feriado | dia nacional da consciência negra | |
-| 25/11 (qua) | 29 | seminário | iteração 3, demonstração | `[x] seminário · tbd` |
-| 27/11 (sex) | 30 | mentoria | acompanhamento final e polimento | |
-| 02/12 (qua) | 31 | seminário | pitch para banca externa | `[x] seminário · tbd` |
-| 04/12 (sex) | 32 | checagem | va2 · artigo e demo | `[x] artefato · tbd`<br>`[x] artefato · tbd` |
-| 09/12 (qua) | 33 | checagem | va3 · avaliação escrita | |
-| 11/12 (sex) | 34 | checagem | va4 · exame final institucional | |
+| data | descrição | materiais |
+|:---:|:---|:---|
+| #01<br>12/08<br>(qua) | teoria · acordos e enigma teste | [`[1] slides · abertura`](https://lucassf.pages.dev/ai4good/abertura) |
+| #02<br>14/08<br>(sex) | prática · configuração base para a disciplina | [`[3] artefato · git repo`](artefatos/3-base-git-repo.md)<br>[`[4] artefato · latex project`](artefatos/4-latex-project.md) |
+| #03<br>19/08<br>(qua) | teoria · base para redes neurais profundas | [`[1] slides · história`](https://lucassf.pages.dev/ai4good/historia)<br>[`[1] slides · regressão linear`](https://lucassf.pages.dev/ai4good/regressao-linear)<br>[`[1] slides · perceptron`](https://lucassf.pages.dev/ai4good/perceptron-multicamadas) |
+| #04<br>21/08<br>(sex) | prática · rede neural profunda interativa | [`[5] artefato · mlp git repo`](artefatos/5-mlp-git-repo.md)<br>[`[5] artefato · mlp tech report`](artefatos/5-mlp-tech-report.md) |
+| #05<br>26/08<br>(qua) | mentoria · mlp interativa | |
+| #06<br>28/08<br>(sex) | checagem · mlp interativa | |
+| #07<br>02/09<br>(qua) | teoria · arquiteturas de deep learning (1/4) | [`[1] slides · autocodificadores`](https://lucassf.pages.dev/ai4good/autocodificadores)<br>[`[1] slides · redes convolucionais`](https://lucassf.pages.dev/ai4good/redes-convolucionais)<br>[`[1] slides · redes de grafos`](https://lucassf.pages.dev/ai4good/redes-de-grafos) |
+| #08<br>04/09<br>(sex) | teoria · arquiteturas de deep learning (2/4) | [`[1] slides · redes recorrentes`](https://lucassf.pages.dev/ai4good/redes-recorrentes)<br>[`[1] slides · memória curta e longa`](https://lucassf.pages.dev/ai4good/memoria-longa-de-curto-prazo) |
+| #09<br>09/09<br>(qua) | teoria · arquiteturas de deep learning (3/4) | [`[1] slides · redes adversariais`](https://lucassf.pages.dev/ai4good/redes-adversariais)<br>[`[1] slides · redes professor-aluno`](https://lucassf.pages.dev/ai4good/professor-aluno) |
+| #10<br>11/09<br>(sex) | prática · modificando uma arquitetura | [`[5] artefato · arquitetura git repo`](artefatos/5-arquitetura-git-repo.md)<br>[`[5] artefato · arquitetura tech report`](artefatos/5-arquitetura-tech-report.md) |
+| #11<br>16/09<br>(qua) | teoria · arquiteturas de deep learning (4/4) | [`[1] slides · transformers`](https://lucassf.pages.dev/ai4good/transformers)<br>[`[0] slides · modelos de linguagem`](https://lucassf.pages.dev/ai4good/modelos-de-linguagem) |
+| #12<br>18/09<br>(sex) | mentoria · modificando uma arquitetura | |
+| #13<br>23/09<br>(qua) | teoria · superinteligência e singularidade | [`[1] slides · agência`](https://lucassf.pages.dev/ai4good/agencia)<br>[`[1] slides · autoaprimoramento`](https://lucassf.pages.dev/ai4good/autoaprimoramento)<br>[`[0] slides · autopreservação`](https://lucassf.pages.dev/ai4good/autopreservacao) |
+| #14<br>25/09<br>(sex) | prática · multiagentes distopia x utopia | [`[5] artefato · arena git repo`](artefatos/5-arena-git-repo.md)<br>[`[5] artefato · arena tech report`](artefatos/5-arena-tech-report.md) |
+| #15<br>30/09<br>(qua) | teoria · crises e caminhos de transformação | [`[1] slides · crises`](https://lucassf.pages.dev/ai4good/crises) |
+| #16<br>02/10<br>(sex) | prática · brainwriting híbrido | `[x] artefato · tbd` |
+| #17<br>07/10<br>(qua) | prática · competidores e contribuição | `[x] artefato · tbd` |
+| #18<br>09/10<br>(sex) | mentoria · refinamento da contribuição | |
+| #19<br>14/10<br>(qua) | prática · tecnologia base funcional | `[x] artefato · tbd` |
+| #20<br>16/10<br>(sex) | mentoria · definição da contribuição | |
+| #21<br>21/10<br>(qua) | prática · fluxograma e arquitetura | `[x] artefato · tbd` |
+| #22<br>23/10<br>(sex) | prática · desenho dos experimentos | `[x] artefato · tbd` |
+| --<br>28/10<br>(qua) | feriado · dia do servidor público federal | |
+| #23<br>30/10<br>(sex) | checagem · verificação geral, ponto a ponto | |
+| #24<br>04/11<br>(qua) | seminário · iteração 1, preliminares | `[x] seminário · tbd` |
+| #25<br>06/11<br>(sex) | mentoria · código e artigo | |
+| #26<br>11/11<br>(qua) | seminário · iteração 2, evolução | `[x] seminário · tbd` |
+| #27<br>13/11<br>(sex) | mentoria · código e artigo | |
+| #28<br>18/11<br>(qua) | checagem · revisão cética, crítica e construtiva | |
+| --<br>20/11<br>(sex) | feriado · dia nacional da consciência negra | |
+| #29<br>25/11<br>(qua) | seminário · iteração 3, demonstração | `[x] seminário · tbd` |
+| #30<br>27/11<br>(sex) | mentoria · acompanhamento final e polimento | |
+| #31<br>02/12<br>(qua) | seminário · pitch para banca externa | `[x] seminário · tbd` |
+| #32<br>04/12<br>(sex) | checagem · va2 · artigo e demo | `[x] artefato · tbd`<br>`[x] artefato · tbd` |
+| #33<br>09/12<br>(qua) | checagem · va3 · avaliação escrita | |
+| #34<br>11/12<br>(sex) | checagem · va4 · exame final institucional | |
 
 - **teoria** · aula expositiva focada na aprendizagem de habilidades técnicas por seus componentes teóricos
 - **prática** · aula com acesso à infraestrutura para produção de artefatos
@@ -121,25 +121,25 @@ davi: git=vvv, tex=vvv-, mlp·c=vvvvv, mlp·p=vvvvv, arq·c=-----, arq·p=-----,
 edson: git=---, tex=----, mlp·c=-----, mlp·p=-----, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=--------------
 gian: git=vvv, tex=vvv-, mlp·c=vvvvv, mlp·p=vvvvv, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=--------------
 rayane: git=vvv, tex=vvv-, mlp·c=vvvvv, mlp·p=vvvvv, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=--------------
-thiago brito: git=vvv, tex=vvv-, mlp·c=vvvvv, mlp·p=vvvvv, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=--------------
-thiago matheus: git=---, tex=----, mlp·c=-----, mlp·p=-----, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=--------------
+thiago b.: git=vvv, tex=vvv-, mlp·c=vvvvv, mlp·p=vvvvv, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=--------------
+thiago m.: git=---, tex=----, mlp·c=-----, mlp·p=-----, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=--------------
 vinicius: git=---, tex=----, mlp·c=-----, mlp·p=-----, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=--------------
 -->
 <!-- painel-va1:start -->
 ```text
-                 git tex  mlp·c mlp·p arq·c arq·p arn·c arn·p enigmas        nota 1
-      albérico   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
-       andreza   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
-         artur   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
-        carlos   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 30 pts
-          cauã   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
-          davi   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
-         edson   ◻◻◻ ◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 00 pts
-          gian   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
-        rayane   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
-  thiago brito   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
-thiago matheus   ◻◻◻ ◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 00 pts
-      vinicius   ◻◻◻ ◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 00 pts
+            git tex  mlp·c mlp·p arq·c arq·p arn·c arn·p enigmas        nota 1
+ albérico   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
+  andreza   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
+    artur   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
+   carlos   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 30 pts
+     cauã   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
+     davi   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
+    edson   ◻◻◻ ◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 00 pts
+     gian   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
+   rayane   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
+thiago b.   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 32 pts
+thiago m.   ◻◻◻ ◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 00 pts
+ vinicius   ◻◻◻ ◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻ 00 pts
 ```
 <!-- painel-va1:end -->
 
