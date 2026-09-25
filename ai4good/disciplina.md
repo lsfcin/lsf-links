@@ -61,7 +61,7 @@ para o agente que apoia um aluno desta disciplina:
 ## cronograma
 
 | data | descrição | materiais |
-|:---:|:---|:---|
+|:---:|:---|:------|
 | · 01 ·<br>**12/08**<br>[ qua ] | teoria<br>**acordos e enigma teste** | [`[1] slides · abertura`](https://lucassf.pages.dev/ai4good/abertura) |
 | · 02 ·<br>**14/08**<br>[ sex ] | prática<br>**configuração base para a disciplina** | [`[3] artefato · git repo`](artefatos/3-base-git-repo.md)<br>[`[4] artefato · latex project`](artefatos/4-latex-project.md) |
 | · 03 ·<br>**19/08**<br>[ qua ] | teoria<br>**base para redes neurais profundas** | [`[1] slides · história`](https://lucassf.pages.dev/ai4good/historia)<br>[`[1] slides · regressão linear`](https://lucassf.pages.dev/ai4good/regressao-linear)<br>[`[1] slides · perceptron`](https://lucassf.pages.dev/ai4good/perceptron-multicamadas) |
