@@ -52,14 +52,16 @@ document.addEventListener('DOMContentLoaded', async () => {
     processed = processed.replace(/<\/table>/g, '</table></div>');
 
     // URLs e metadados dinâmicos
-    const fileName = docFile.split('/').pop();
     const pathSegments = window.location.pathname.split('/').filter(Boolean);
     const dir = document.body.dataset.dir || (pathSegments.length > 1 ? pathSegments[0] : (pathSegments[0] && !pathSegments[0].endsWith('.html') ? pathSegments[0] : 'techedu'));
     const courseTitle = document.body.dataset.course || 'Tecnologias na Educação · 2026.2';
-    const canonicalPath = document.body.dataset.canonical || `academy/teaching/${dir}/`;
-    const rawUrl = docFile;
-    const githubDevUrl = `https://github.dev/lsfcin/lsf-links/blob/main/${dir}/${fileName}`;
-    const githubWebUrl = `https://github.com/lsfcin/lsf-links/blob/main/${dir}/${fileName}`;
+    const pageCanonical = document.body.dataset.canonical || `academy/teaching/${dir}/`;
+    // a doc opened through ?doc= lives beside the page: its canonical and public paths follow docFile
+    const canonicalPath = params.get('doc') ? pageCanonical.replace(/[^/]*$/, '') + docFile : pageCanonical;
+    const pageDir = `/${dir}/`;
+    const rawUrl = pageDir + docFile;
+    const githubDevUrl = `https://github.dev/lsfcin/lsf-links/blob/main/${dir}/${docFile}`;
+    const githubWebUrl = `https://github.com/lsfcin/lsf-links/blob/main/${dir}/${docFile}`;
 
     app.innerHTML = `
       <article class="markdown-body">
@@ -67,8 +69,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       </article>
       <footer>
         <div class="footer-actions">
-          <button class="btn" id="copy-btn">copiar p/ agente (raw)</button>
-          <a class="btn" href="${rawUrl}" target="_blank" rel="noopener">ver raw</a>
+          <button class="btn" id="copy-btn">copiar p/ IA (texto puro)</button>
+          <a class="btn" href="${rawUrl}" target="_blank" rel="noopener">ver texto puro (raw)</a>
           <a class="btn" href="${githubDevUrl}" target="_blank" rel="noopener" title="editar online via vs code no navegador">editar (github.dev)</a>
         </div>
         <div class="footer-meta">
@@ -78,6 +80,16 @@ document.addEventListener('DOMContentLoaded', async () => {
       </footer>
       <div class="toast" id="toast">markdown copiado para a área de transferência!</div>
     `;
+
+    // Links to our own .md open formatted, through this viewer, with the same footer
+    const docBase = new URL(docFile, window.location.origin + pageDir);
+    app.querySelectorAll('article a[href]').forEach((a) => {
+      const href = a.getAttribute('href');
+      if (/^([a-z]+:|\/\/|#)/i.test(href)) return;
+      const target = new URL(href, docBase);
+      if (!target.pathname.endsWith('.md') || !target.pathname.startsWith(pageDir)) return;
+      a.href = `${pageDir}?doc=${encodeURIComponent(target.pathname.slice(pageDir.length))}${target.hash}`;
+    });
 
     // Botão de cópia
     const copyBtn = document.getElementById('copy-btn');
@@ -89,7 +101,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         copyBtn.innerText = 'copiado!';
         setTimeout(() => {
           toast.classList.remove('show');
-          copyBtn.innerText = 'copiar p/ agente (raw)';
+          copyBtn.innerText = 'copiar p/ IA (texto puro)';
         }, 2200);
       } catch (err) {
         window.location.href = rawUrl;
