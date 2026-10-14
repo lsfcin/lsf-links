@@ -8,6 +8,8 @@
 > 2026.2 · quartas às 20h10 e sextas às 18h30 · sala 37
 
 <!-- publicacao
+guia passo a passo para o professor (links curtos, atualização e publicação sem IA):
+   academy/teaching/classes/GUIA-LINKS.md
 para o professor (ou o agente dele): marcar itens em painel:dados-va1 ('v' feito, '-' pendente);
 se cronograma, ementa ou slides foram alterados, conferir se academy/teaching/classes/ai4good/arvore.yaml
 precisa de novos nós ou ajuste de links. depois um comando só (redesenha painel + árvore e publica, ~30 s):
@@ -82,7 +84,7 @@ para o agente que apoia um aluno desta disciplina:
 | · 16 ·<br>02/10<br>· sex · | prática<br>**brainwriting híbrido** | `[x] artefato · tbd` |
 | · 17 ·<br>07/10<br>· qua · | prática<br>**competidores e contribuição** | `[x] artefato · tbd` |
 | · 18 ·<br>09/10<br>· sex · | mentoria<br>**refinamento da contribuição** | |
-| · 19 ·<br>14/10<br>· qua · | prática<br>**tecnologia base funcional** | `[x] artefato · tbd` |
+| · 19 ·<br>14/10<br>· qua · | prática<br>**brainwriting híbrido** | [`[3] artefato · brainwriting híbrido`](artefatos/3-brainwriting-hibrido.md) |
 | · 20 ·<br>16/10<br>· sex · | mentoria<br>**definição da contribuição** | |
 | · 21 ·<br>21/10<br>· qua · | prática<br>**fluxograma e arquitetura** | `[x] artefato · tbd` |
 | · 22 ·<br>23/10<br>· sex · | prática<br>**desenho dos experimentos** | `[x] artefato · tbd` |
@@ -148,38 +150,38 @@ thiago m.   ◻◻◻ ◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻�
 > **git:** base git repo · **tex:** latex project · **mlp·c:** mlp git repo · **mlp·p:** mlp tech report · **arq·c:** arquitetura git repo · **arq·p:** arquitetura tech report · **arn·c:** arena git repo · **arn·p:** arena tech report · **enigmas:** 14 investigações em sala
 
 <!-- painel:dados-va2
-albérico: brw=---, cmp=---, tec=---, arq=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=----, pitch=------------
-andreza: brw=---, cmp=---, tec=---, arq=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=----, pitch=------------
-artur: brw=---, cmp=---, tec=---, arq=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=----, pitch=------------
-carlos: brw=---, cmp=---, tec=---, arq=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=----, pitch=------------
-cauã: brw=---, cmp=---, tec=---, arq=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=----, pitch=------------
-davi: brw=---, cmp=---, tec=---, arq=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=----, pitch=------------
-edson: brw=---, cmp=---, tec=---, arq=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=----, pitch=------------
-gian: brw=---, cmp=---, tec=---, arq=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=----, pitch=------------
-rayane: brw=---, cmp=---, tec=---, arq=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=----, pitch=------------
-thiago b.: brw=---, cmp=---, tec=---, arq=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=----, pitch=------------
-thiago m.: brw=---, cmp=---, tec=---, arq=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=----, pitch=------------
-vinicius: brw=---, cmp=---, tec=---, arq=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=----, pitch=------------
+albérico: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
+andreza: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
+artur: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
+carlos: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
+cauã: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
+davi: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
+edson: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
+gian: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
+rayane: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
+thiago b.: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
+thiago m.: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
+vinicius: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
 -->
 <!-- painel-va2:start -->
 ```text
-            brw cmp tec arq exp sem1 sem2 sem3 artigo demo pitch         nota 2
- albérico   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
-  andreza   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
-    artur   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
-   carlos   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
-     cauã   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
-     davi   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
-    edson   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
-     gian   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
-   rayane   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
-thiago b.   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
-thiago m.   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
- vinicius   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
+            brw cmp tec flx exp sem1 sem2 sem3 artigo demo  pitch         nota 2
+ albérico   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
+  andreza   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
+    artur   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
+   carlos   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
+     cauã   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
+     davi   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
+    edson   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
+     gian   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
+   rayane   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
+thiago b.   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
+thiago m.   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
+ vinicius   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
 ```
 <!-- painel-va2:end -->
 
-> **brw:** brainwriting híbrido · **cmp:** competidores e contribuição · **tec:** tecnologia base demonstrável · **arq:** fluxograma e arquitetura · **exp:** desenho dos experimentos · **sem:** seminários de pesquisa · **artigo** técnico final · **demo:** demonstração funcional · **pitch** (apresentação para a banca)
+> **brw:** brainwriting híbrido · **cmp:** competidores e contribuição · **tec:** tecnologia base demonstrável · **flx:** fluxograma e arquitetura · **exp:** desenho dos experimentos · **sem:** seminários de pesquisa · **artigo** técnico final · **demo:** demonstração funcional · **pitch** (apresentação para a banca)
 
 ---
 
