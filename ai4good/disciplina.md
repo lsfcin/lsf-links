@@ -187,20 +187,20 @@ thiago m.   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻�
 
 ## entregue
 
-repositórios e artigos científicos validados na turma 2026.2.
+os links dos artefatos da turma 2026.2. para entregar, clique no código tracejado ao lado do seu nome e informe matrícula + link. confira numa aba anônima que o link abre sem login.
 
-- **albérico** | -
-- **andreza** | [`tex`](https://www.overleaf.com/project/6aa1ec39536264564433ddd5)
-- **artur** | [`git`](https://github.com/Guimaaaas/ai-workspace) · [`tex`](https://www.overleaf.com/project/6a920b9163f9ff8ef6829b60) · [`slides`](https://docs.google.com/presentation/d/1p3rhulc-_ZZxOOpETi8CJyiAJqA0VeiBLAg924iLD5c/edit)
-- **carlos** | [`git`](https://github.com/Carlos-Eduardo-Ribeiro/projeto-taia.git) · [`slides`](https://docs.google.com/presentation/d/1p3rhulc-_ZZxOOpETi8CJyiAJqA0VeiBLAg924iLD5c/edit)
-- **cauã** | [`git`](https://github.com/lira-labs/workspace) · [`tex`](https://www.overleaf.com/project/6a920bb3130d092cbf505259) · [`slides`](https://docs.google.com/presentation/d/1p3rhulc-_ZZxOOpETi8CJyiAJqA0VeiBLAg924iLD5c/edit)
-- **davi** | [`git`](https://github.com/DaviPac/topicos-avancados-ia) · [`tex`](https://www.overleaf.com/project/6a920b9163f9ff8ef6829b60)
-- **edson** | -
-- **gian** | [`git`](https://github.com/gian881/pure-mlp-scratch) · [`tex`](https://www.overleaf.com/project/6a920bab130d092cbf504fca) · [`slides`](https://docs.google.com/presentation/d/1p3rhulc-_ZZxOOpETi8CJyiAJqA0VeiBLAg924iLD5c/edit)
-- **rayane** | [`git`](https://github.com/rayfrance/ai4good) · [`tex`](https://www.overleaf.com/project/6a920a859c5f584768569a70) · [`slides`](https://docs.google.com/presentation/d/1p3rhulc-_ZZxOOpETi8CJyiAJqA0VeiBLAg924iLD5c/edit)
-- **thiago brito** | [`git`](https://github.com/Thiago-Brito/AI4good) · [`tex`](https://www.overleaf.com/project/6a920ba2c3f0c914aa7c7185) · [`slides`](https://docs.google.com/presentation/d/1p3rhulc-_ZZxOOpETi8CJyiAJqA0VeiBLAg924iLD5c/edit)
-- **thiago matheus** | -
-- **vinicius** | -
+- **albérico** | `git` `tex` `slides` `mlp·c` `mlp·p` `arq·c` `arq·p` `arn·c` `arn·p` `brw` `cmp` `tec` `flx` `exp` `sem1` `sem2` `sem3` `artigo` `demo` `pitch`
+- **andreza** | `git` `tex` `slides` `mlp·c` `mlp·p` `arq·c` `arq·p` `arn·c` `arn·p` `brw` `cmp` `tec` `flx` `exp` `sem1` `sem2` `sem3` `artigo` `demo` `pitch`
+- **artur** | `git` `tex` `slides` `mlp·c` `mlp·p` `arq·c` `arq·p` `arn·c` `arn·p` `brw` `cmp` `tec` `flx` `exp` `sem1` `sem2` `sem3` `artigo` `demo` `pitch`
+- **carlos** | `git` `tex` `slides` `mlp·c` `mlp·p` `arq·c` `arq·p` `arn·c` `arn·p` `brw` `cmp` `tec` `flx` `exp` `sem1` `sem2` `sem3` `artigo` `demo` `pitch`
+- **cauã** | `git` `tex` `slides` `mlp·c` `mlp·p` `arq·c` `arq·p` `arn·c` `arn·p` `brw` `cmp` `tec` `flx` `exp` `sem1` `sem2` `sem3` `artigo` `demo` `pitch`
+- **davi** | `git` `tex` `slides` `mlp·c` `mlp·p` `arq·c` `arq·p` `arn·c` `arn·p` `brw` `cmp` `tec` `flx` `exp` `sem1` `sem2` `sem3` `artigo` `demo` `pitch`
+- **edson** | `git` `tex` `slides` `mlp·c` `mlp·p` `arq·c` `arq·p` `arn·c` `arn·p` `brw` `cmp` `tec` `flx` `exp` `sem1` `sem2` `sem3` `artigo` `demo` `pitch`
+- **gian** | `git` `tex` `slides` `mlp·c` `mlp·p` `arq·c` `arq·p` `arn·c` `arn·p` `brw` `cmp` `tec` `flx` `exp` `sem1` `sem2` `sem3` `artigo` `demo` `pitch`
+- **rayane** | `git` `tex` `slides` `mlp·c` `mlp·p` `arq·c` `arq·p` `arn·c` `arn·p` `brw` `cmp` `tec` `flx` `exp` `sem1` `sem2` `sem3` `artigo` `demo` `pitch`
+- **thiago b.** | `git` `tex` `slides` `mlp·c` `mlp·p` `arq·c` `arq·p` `arn·c` `arn·p` `brw` `cmp` `tec` `flx` `exp` `sem1` `sem2` `sem3` `artigo` `demo` `pitch`
+- **thiago m.** | `git` `tex` `slides` `mlp·c` `mlp·p` `arq·c` `arq·p` `arn·c` `arn·p` `brw` `cmp` `tec` `flx` `exp` `sem1` `sem2` `sem3` `artigo` `demo` `pitch`
+- **vinicius** | `git` `tex` `slides` `mlp·c` `mlp·p` `arq·c` `arq·p` `arn·c` `arn·p` `brw` `cmp` `tec` `flx` `exp` `sem1` `sem2` `sem3` `artigo` `demo` `pitch`
 
 ---
 
