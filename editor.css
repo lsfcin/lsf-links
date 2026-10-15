@@ -1,11 +1,7 @@
 /* editor.css — the editor, the delivery slots and their popover; loaded by editor.js */
-.btn-primary { background: var(--link); border-color: var(--link); color: #fff; }
-.btn-primary:hover { background: var(--hover); border-color: var(--hover); color: #fff; }
+.btn-primary { background: var(--link); border-color: var(--link); color: var(--on-link); }
+.btn-primary:hover { background: var(--hover); border-color: var(--hover); color: var(--on-link); }
 .btn:disabled { opacity: 0.6; cursor: wait; }
-
-/* delivery slots: a code under "## entregue" with no link yet */
-.markdown-body code.slot { cursor: pointer; border: 1px dashed var(--muted); background: transparent; color: var(--muted); }
-.markdown-body code.slot:hover, .markdown-body code.slot:focus { border-color: var(--link); color: var(--link); outline: none; }
 
 /* the small form that opens below a click */
 .popover {
@@ -43,3 +39,22 @@ body.editing { overflow: hidden; }
   .editor-split { grid-template-columns: 1fr; grid-template-rows: 1fr 1fr; }
   .editor-split textarea { border-right: 0; border-bottom: 1px solid var(--border); }
 }
+
+/* the panel (painel.js): painel.py's text with spans; names stick left, points stick right, boxes scroll */
+.markdown-body pre.painel { padding: 1rem 0; }
+.painel .ln { display: block; min-width: 100%; width: max-content; }
+.painel .nm, .painel .pts { position: sticky; z-index: 1; display: inline-block; background: var(--code); }
+.painel .nm { left: 0; padding-left: 1rem; color: var(--name); }
+.painel .pts { right: 0; padding: 0 1rem 0 0.6ch; }
+.painel .g, .painel .hd { cursor: pointer; border-radius: 3px; color: var(--idle); }
+.painel .g.has { color: var(--link); }
+.painel .off { cursor: default; }
+.painel .g:not(.off):hover, .painel .hd:not(.off):hover, .painel .g:not(.off):focus, .painel .hd:not(.off):focus { background: var(--tint-strong); outline: none; }
+.painel .hd.aim, .painel .nm.aim .who { background: var(--tint); color: var(--link); border-radius: 3px; }
+.painel-hint { font-size: 13px; color: var(--muted); margin-bottom: 0.4rem; }
+.painel-hint .has { color: var(--link); }
+.painel-items { margin: 0; padding-left: 1.4rem; font-size: 13px; }
+ul.painel-items { list-style: none; padding-left: 0; }
+.painel-box { font-family: 'Fira Code', ui-monospace, monospace; }
+.painel-check { flex-direction: row !important; align-items: baseline; gap: 0.45rem !important; color: var(--text) !important; font-size: 13px !important; cursor: pointer; }
+.popover .btn[href] { align-self: flex-start; }

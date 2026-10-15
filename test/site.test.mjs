@@ -5,7 +5,7 @@ const site = await import(`${L}/lib/index.js`);
 const { onRequestPost: entrega } = await import(`${L}/functions/api/entrega.js`);
 const { onRequestPost: save } = await import(`${L}/functions/api/save.js`);
 
-const PAGE = `# x\n\n## entregue\n\nrepos.\n\n- **edson** | \`git\` · \`mlp·c\` · \`brw\`\n- **vinicius** | \`git\` · \`mlp·c\` · \`brw\`\n- **andreza** | [\`git\`](https://github.com/a/b) · \`brw\`\n\n---\n\n## outra\n\n- **edson** | \`brw\`\n`;
+const PAGE = `# x\n\n<!-- painel:dados-va2\nedson: git=---, mlp·c=-----, brw=---\nvinicius: git=---, mlp·c=-----, brw=---\nandreza: git=vvv, mlp·c=-----, brw=---\n-->\n\n## outra\n\n- **edson** | \`pitch\`\n`;
 
 test('allowed: course md only', () => {
   assert.ok(site.allowed('ai4good/disciplina.md'));
@@ -13,7 +13,7 @@ test('allowed: course md only', () => {
   for (const p of ['viewer.js', '_redirects', 'ai4good/../x.md', 'functions/api/save.js', 'outro/x.md']) assert.ok(!site.allowed(p), p);
 });
 
-test('a slot exists only where the entregue section declares it', () => {
+test('a slot exists only where the panel data declares it', () => {
   assert.ok(site.hasSlot(PAGE, 'edson', 'mlp·c'));
   assert.ok(!site.hasSlot(PAGE, 'edson', 'pitch'));
   assert.ok(!site.hasSlot(PAGE, 'ninguem', 'git'));
@@ -79,6 +79,14 @@ test('a code the page does not list as a slot is refused', async () => {
   assert.deepEqual(repo.commits, []);
 });
 
+test('delivered from the header, the matrícula says who the student is', async () => {
+  const repo = fakeWorld(PAGE);
+  const r = await entrega(post({ page: 'ai4good/disciplina.md', codigo: 'git', matricula: '333', url: 'https://d/2' }));
+  assert.deepEqual((await r.json()).nomes, ['andreza']);
+  assert.deepEqual(repo.commits, ['entrega: andreza git']);
+  assert.equal((await entrega(post({ page: 'ai4good/disciplina.md', codigo: 'git', matricula: '999', url: 'https://d/2' }))).status, 401);
+});
+
 test('a wrong matrícula writes nothing', async () => {
   const repo = fakeWorld(PAGE);
   const r = await entrega(post({ page: 'ai4good/disciplina.md', nome: 'andreza', codigo: 'brw', matricula: '111', url: 'https://d/1' }));
@@ -94,4 +102,33 @@ test('save refuses a stale version and a bad password', async () => {
   assert.equal((await save(post({ password: 'pw', path: 'ai4good/disciplina.md', text: 'novo', sha: 's0' }))).status, 200);
   assert.equal(repo.files['ai4good/disciplina.md'].text, 'novo');
   assert.deepEqual(repo.commits, ['editor: ai4good/disciplina.md']);
+});
+
+// painel.js draws the panel from its data block: stripped of its spans, it must be painel.py's drawing, character for character
+await import(`${L}/painel.js`);
+const P = globalThis.lsfPainelCore;
+const COURSE = `${L}/ai4good/disciplina.md`; // the published mirror: cfpages publish keeps it equal to the workspace page
+test('the clickable panel is the text painel.py drew, on the real page', async () => {
+  const md = (await import('node:fs')).readFileSync(COURSE, 'utf8');
+  const panels = P.parse(md);
+  assert.ok(panels.length >= 2);
+  for (const { id, rows } of panels) {
+    const html = P.draw(id, rows, new Set(), () => ({ title: '', items: [] }));
+    const text = html.replace(/<span class="ln">/g, '\n').replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').slice(1);
+    const drawn = md.match(new RegExp(`<!-- painel-${id}:start -->\n\`\`\`text\n([\\s\\S]*?)\n\`\`\``))[1];
+    assert.equal(text.split('\n').map((l) => l.trimEnd()).join('\n'), drawn);
+    for (const [name, items] of rows) for (const [code] of items) assert.ok(site.hasSlot(md, name, code), `${name} ${code}`);
+  }
+});
+
+test('remark changes one student, one code, one panel', () => {
+  const md = '<!-- painel:dados-va1\nana: git=---, tex=----\nbia: git=---, tex=----\n-->\n<!-- painel:dados-va2\nana: git=---\n-->';
+  assert.equal(P.remark(md, 'va1', 'ana', 'tex', 'vv--'), md.replace('ana: git=---, tex=----', 'ana: git=---, tex=vv--'));
+  assert.equal(P.remark(md, 'va1', 'bia', 'git', 'v--'), md.replace('bia: git=---', 'bia: git=v--'));
+});
+
+test('an artefato names its code and items; the legend names the rest', () => {
+  const a = P.artefato('# [3] artefato · base git repo\n\n> **código no painel:** `git`  \n\n1. [ ] **commit inaugural:** x\n2. [ ] **árvore integrada:** y\n', 'artefatos/3.md');
+  assert.deepEqual(a, { code: 'git', title: 'base git repo', doc: 'artefatos/3.md', items: ['commit inaugural', 'árvore integrada'] });
+  assert.deepEqual(P.legend('> **cmp:** competidores · **artigo** técnico final\n'), { cmp: 'competidores', artigo: 'artigo técnico final' });
 });
