@@ -1,5 +1,5 @@
 export function allowed(path: any): boolean;
-export function hasSlot(md: any, name: any, code: any): any;
+export function hasSlot(md: any, name: any, code: any): boolean;
 export function upsert(tsv: any, name: any, code: any, url: any): string;
 export function linkProblem(url: any, fetcher?: typeof fetch, ms?: number): Promise<string | null>;
 export function readFile(env: any, path: any, { missing }?: {

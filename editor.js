@@ -1,4 +1,4 @@
-// editor.js — what writes back to the site: the password-gated editor and the delivery slots.
+// editor.js — what writes back to the site: the password-gated editor, and the popover painel.js delivers through.
 // viewer.js loads it once the page is drawn and hands over what both use; viewing never waits on it.
 window.lsfEditor = (ctx) => {
   const { article, render, relink, say, sitePath, pageDir } = ctx;
@@ -14,12 +14,13 @@ window.lsfEditor = (ctx) => {
     return data;
   };
 
-  // A small form that opens right below what was clicked; one at a time.
-  function popover(anchor, html, onSubmit) {
+  // A small form that opens right below what was clicked; one at a time. Without onSubmit it only shows.
+  function popover(anchor, html, onSubmit, ok = 'ok') {
     document.querySelectorAll('.popover').forEach((p) => p.remove());
     const box = document.createElement('form');
     box.className = 'popover';
-    box.innerHTML = `${html}<div class="popover-actions"><button type="button" class="btn" data-close>cancelar</button><button class="btn btn-primary">ok</button></div><div class="popover-error"></div>`;
+    const submit = onSubmit ? `<button class="btn btn-primary">${ok}</button>` : '';
+    box.innerHTML = `${html}<div class="popover-actions"><button type="button" class="btn" data-close>${onSubmit ? 'cancelar' : 'fechar'}</button>${submit}</div><div class="popover-error"></div>`;
     document.body.appendChild(box);
     const r = anchor.getBoundingClientRect();
     const left = Math.max(8, Math.min(r.left + window.scrollX, window.scrollX + document.documentElement.clientWidth - box.offsetWidth - 8));
@@ -29,76 +30,29 @@ window.lsfEditor = (ctx) => {
     box.querySelector('input')?.focus();
     box.onsubmit = async (e) => {
       e.preventDefault();
+      if (!onSubmit) return;
       const err = box.querySelector('.popover-error');
-      const ok = box.querySelector('.btn-primary');
+      const btn = box.querySelector('.btn-primary');
       err.textContent = '';
-      ok.disabled = true;
-      ok.textContent = 'aguarde…';
+      btn.disabled = true;
+      btn.textContent = 'aguarde…';
       try {
         await onSubmit(Object.fromEntries(new FormData(box)));
         box.remove();
       } catch (x) {
         err.textContent = x.message;
-        ok.disabled = false;
-        ok.textContent = 'ok';
+        btn.disabled = false;
+        btn.textContent = ok;
       }
     };
   }
 
-  const linkCode = (c, url) => {
-    const a = document.createElement('a');
-    a.href = url;
-    a.target = '_blank';
-    a.rel = 'noopener';
-    c.classList.remove('slot');
-    c.replaceWith(a);
-    a.appendChild(c);
-  };
-
-  // Delivery slots: under "## entregue" the page lists each student's codes; entregas.tsv beside it
-  // holds the links. A code with a row becomes a link, one without is a slot its student can fill.
-  async function slots(root) {
-    const heading = [...root.querySelectorAll('h2')].find((h) => h.textContent.trim() === 'entregue');
-    if (!heading) return;
-    const tsv = await fetch(`${pageDir}entregas.tsv`, { cache: 'no-store' }).then((r) => (r.ok ? r.text() : '')).catch(() => '');
-    const delivered = {};
-    tsv.split('\n').filter((l) => l && !l.startsWith('#')).forEach((l) => {
-      const [n, c, u] = l.split('\t');
-      if (u) delivered[`${n}\t${c}`] = u;
-    });
-    for (let el = heading.nextElementSibling; el && !/^(H2|HR)$/.test(el.tagName); el = el.nextElementSibling) {
-      el.querySelectorAll('li').forEach((li) => {
-        const nome = li.querySelector('strong')?.textContent.trim();
-        li.querySelectorAll('code').forEach((code) => {
-          if (!nome || code.closest('a')) return;
-          const url = delivered[`${nome}\t${code.textContent}`];
-          if (url) return linkCode(code, url);
-          code.classList.add('slot');
-          code.tabIndex = 0;
-          code.title = `entregar ${code.textContent}`;
-          const open = () => popover(code, `
-              <div class="popover-title">entregar <code>${code.textContent}</code> · ${nome}</div>
-              <label>matrícula<input name="matricula" inputmode="numeric" autocomplete="off" required></label>
-              <label>link do artefato<input name="url" type="url" placeholder="https://" required></label>
-              <p class="popover-note">confira numa aba anônima que o link abre sem login. no overleaf, use o link de leitura (share → view only: overleaf.com/read/…).</p>`,
-            async ({ matricula, url }) => {
-              const { nomes } = await post('entrega', { page: sitePath, nome, codigo: code.textContent, matricula, url });
-              // the page itself catches up on the next deploy (~1 min); fill the slots now
-              root.querySelectorAll('li').forEach((other) => {
-                if (!nomes.includes(other.querySelector('strong')?.textContent.trim())) return;
-                other.querySelectorAll('code.slot').forEach((c) => {
-                  if (c.textContent === code.textContent) linkCode(c, url.trim());
-                });
-              });
-              say('entregue!');
-            });
-          code.onclick = open;
-          code.onkeydown = (e) => { if (e.key === 'Enter') open(); };
-        });
-      });
-    }
-  }
-  slots(article);
+  // The panel (delivery, legend, the teacher's marks) lives in painel.js; the editor re-draws it after a save.
+  let painel = () => {};
+  const pjs = document.createElement('script');
+  pjs.src = '/painel.js';
+  pjs.onload = () => { painel = window.lsfPainel(ctx, { popover, post, password: () => remembered() }); };
+  document.head.appendChild(pjs);
 
   // The editor opens only after the server accepts the password; the tab remembers it until closed.
   const GENERATED = ['<!-- painel:dados-', '<!-- habilidades:start -->'];
@@ -142,7 +96,7 @@ window.lsfEditor = (ctx) => {
         ctx.raw = area.value;
         article.innerHTML = render(ctx.raw);
         relink(article);
-        slots(article);
+        painel();
         say('salvo: no ar em ~1 min');
       } catch (x) {
         say(x.message);

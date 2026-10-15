@@ -1,17 +1,20 @@
-// POST {page, nome, codigo, matricula, url} → {nomes}: a student puts a link in their own slot.
+// POST {page, nome?, codigo, matricula, url} → {nomes}: a student puts a link in their own slot.
+// Without nome (delivered from the panel's header) the matrícula says who the student is.
 // The roster is the TURMAS secret: {"ai4good": {"matriculas": {"andreza": "…"}, "duplas": [["edson", "vinicius"]]}}.
 // A pair delivers once and both slots fill. The link goes to <course>/entregas.tsv, not to the page.
 import { allowed, hasSlot, json, linkProblem, readFile, upsert, writeFile } from '../../lib/index.js';
 
 export async function onRequestPost({ request, env }) {
-  const { page, nome, codigo, matricula, url } = await request.json().catch(() => ({}));
+  const { page, codigo, matricula, url, ...body } = await request.json().catch(() => ({}));
   if (!allowed(page)) return json({ error: 'página desconhecida' }, 400);
   const course = page.split('/')[0];
   const turma = JSON.parse(env.TURMAS || '{}')[course];
+  const given = String(matricula || '').replace(/\D/g, '');
+  const nome = body.nome || Object.keys(turma?.matriculas || {}).find((n) => turma.matriculas[n] === given);
   const certa = turma && turma.matriculas[nome];
-  if (!certa || String(matricula || '').replace(/\D/g, '') !== certa) {
+  if (!certa || given !== certa) {
     await new Promise((r) => setTimeout(r, 2000));
-    return json({ error: 'essa matrícula não é a de ' + nome }, 401);
+    return json({ error: nome ? 'essa matrícula não é a de ' + nome : 'matrícula não encontrada na turma' }, 401);
   }
   const problem = await linkProblem(String(url || '').trim());
   if (problem) return json({ error: problem }, 400);
