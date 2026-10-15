@@ -1,0 +1,45 @@
+/* editor.css — the editor, the delivery slots and their popover; loaded by editor.js */
+.btn-primary { background: var(--link); border-color: var(--link); color: #fff; }
+.btn-primary:hover { background: var(--hover); border-color: var(--hover); color: #fff; }
+.btn:disabled { opacity: 0.6; cursor: wait; }
+
+/* delivery slots: a code under "## entregue" with no link yet */
+.markdown-body code.slot { cursor: pointer; border: 1px dashed var(--muted); background: transparent; color: var(--muted); }
+.markdown-body code.slot:hover, .markdown-body code.slot:focus { border-color: var(--link); color: var(--link); outline: none; }
+
+/* the small form that opens below a click */
+.popover {
+  position: absolute; z-index: 90; width: min(320px, calc(100vw - 16px)); padding: 0.9rem;
+  background: var(--bg); border: 1px solid var(--border); border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18); display: flex; flex-direction: column; gap: 0.6rem; font-size: 14px;
+}
+.popover label { display: flex; flex-direction: column; gap: 0.25rem; color: var(--muted); font-size: 13px; }
+.popover input {
+  font: inherit; padding: 0.4rem 0.55rem; border: 1px solid var(--border); border-radius: 6px;
+  background: var(--card); color: var(--text);
+}
+.popover-title { font-weight: 600; }
+.popover-note { color: var(--muted); font-size: 12px; line-height: 1.45; }
+.popover-actions { display: flex; justify-content: flex-end; gap: 0.5rem; }
+.popover-error { color: var(--ac-b); font-size: 13px; }
+.popover-error:empty { display: none; }
+
+/* the editor: raw markdown left, the page as it will look right */
+body.editing { overflow: hidden; }
+.editor { position: fixed; inset: 0; z-index: 80; background: var(--bg); display: flex; flex-direction: column; }
+.editor-bar {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem;
+  padding: 0.6rem 1rem; border-bottom: 1px solid var(--border); background: var(--card); font-size: 13px;
+}
+.editor-actions { display: flex; gap: 0.5rem; }
+.editor-warn { padding: 0.5rem 1rem; font-size: 13px; background: var(--aw-bg); border-bottom: 1px solid var(--aw-b); }
+.editor-split { flex: 1; display: grid; grid-template-columns: 1fr 1fr; min-height: 0; }
+.editor-split textarea {
+  resize: none; border: 0; border-right: 1px solid var(--border); padding: 1rem; outline: none;
+  font: 13px/1.55 "Fira Code", ui-monospace, monospace; background: var(--bg); color: var(--text);
+}
+.editor-preview { overflow: auto; padding: 1rem 1.5rem 3rem; }
+@media (max-width: 768px) {
+  .editor-split { grid-template-columns: 1fr; grid-template-rows: 1fr 1fr; }
+  .editor-split textarea { border-right: 0; border-bottom: 1px solid var(--border); }
+}
