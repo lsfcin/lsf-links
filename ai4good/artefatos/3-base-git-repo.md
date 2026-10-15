@@ -1,6 +1,6 @@
 # [3] artefato · base git repo
 
-> **código no painel:** `cod`  
+> **código no painel:** `git`  
 > **pontuação total:** 6 pontos (3 itens de verificação · 2 pontos por item)
 
 ## descrição

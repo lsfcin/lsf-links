@@ -116,7 +116,7 @@ para o agente que apoia um aluno desta disciplina:
 acompanhamento transparente dos itens de verificação (2 pontos por ◻). lista estritamente alfabética.
 
 <!-- painel:dados-va1
-albérico: git=vvv, tex=vvv-, mlp·c=vvvvv, mlp·p=vvvvv, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=--------------
+albérico: git=---, tex=----, mlp·c=-----, mlp·p=-----, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=--------------
 andreza: git=vvv, tex=vvv-, mlp·c=vvvvv, mlp·p=vvvvv, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=--------------
 artur: git=vvv, tex=vvv-, mlp·c=vvvvv, mlp·p=vvvvv, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=--------------
 carlos: git=vvv, tex=vvv-, mlp·c=vvvvv, mlp·p=vvvv-, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=--------------
@@ -132,7 +132,7 @@ vinicius: git=---, tex=----, mlp·c=-----, mlp·p=-----, arq·c=-----, arq·p=--
 <!-- painel-va1:start -->
 ```text
             git tex  mlp·c mlp·p arq·c arq·p arn·c arn·p enigmas         nota 1
- albérico   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻  32 pts
+ albérico   ◻◻◻ ◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
   andreza   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻  32 pts
     artur   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻  32 pts
    carlos   ◼◼◼ ◼◼◼◻ ◼◼◼◼◼ ◼◼◼◼◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻◻  30 pts
@@ -182,25 +182,6 @@ thiago m.   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻�
 <!-- painel-va2:end -->
 
 > **brw:** brainwriting híbrido · **cmp:** competidores e contribuição · **tec:** tecnologia base demonstrável · **flx:** fluxograma e arquitetura · **exp:** desenho dos experimentos · **sem:** seminários de pesquisa · **artigo** técnico final · **demo:** demonstração funcional · **pitch** (apresentação para a banca)
-
----
-
-## entregue
-
-os links dos artefatos da turma 2026.2. para entregar, clique no código tracejado ao lado do seu nome e informe matrícula + link. confira numa aba anônima que o link abre sem login.
-
-- **albérico** | `git` `tex` `slides` `mlp·c` `mlp·p` `arq·c` `arq·p` `arn·c` `arn·p` `brw` `cmp` `tec` `flx` `exp` `sem1` `sem2` `sem3` `artigo` `demo` `pitch`
-- **andreza** | `git` `tex` `slides` `mlp·c` `mlp·p` `arq·c` `arq·p` `arn·c` `arn·p` `brw` `cmp` `tec` `flx` `exp` `sem1` `sem2` `sem3` `artigo` `demo` `pitch`
-- **artur** | `git` `tex` `slides` `mlp·c` `mlp·p` `arq·c` `arq·p` `arn·c` `arn·p` `brw` `cmp` `tec` `flx` `exp` `sem1` `sem2` `sem3` `artigo` `demo` `pitch`
-- **carlos** | `git` `tex` `slides` `mlp·c` `mlp·p` `arq·c` `arq·p` `arn·c` `arn·p` `brw` `cmp` `tec` `flx` `exp` `sem1` `sem2` `sem3` `artigo` `demo` `pitch`
-- **cauã** | `git` `tex` `slides` `mlp·c` `mlp·p` `arq·c` `arq·p` `arn·c` `arn·p` `brw` `cmp` `tec` `flx` `exp` `sem1` `sem2` `sem3` `artigo` `demo` `pitch`
-- **davi** | `git` `tex` `slides` `mlp·c` `mlp·p` `arq·c` `arq·p` `arn·c` `arn·p` `brw` `cmp` `tec` `flx` `exp` `sem1` `sem2` `sem3` `artigo` `demo` `pitch`
-- **edson** | `git` `tex` `slides` `mlp·c` `mlp·p` `arq·c` `arq·p` `arn·c` `arn·p` `brw` `cmp` `tec` `flx` `exp` `sem1` `sem2` `sem3` `artigo` `demo` `pitch`
-- **gian** | `git` `tex` `slides` `mlp·c` `mlp·p` `arq·c` `arq·p` `arn·c` `arn·p` `brw` `cmp` `tec` `flx` `exp` `sem1` `sem2` `sem3` `artigo` `demo` `pitch`
-- **rayane** | `git` `tex` `slides` `mlp·c` `mlp·p` `arq·c` `arq·p` `arn·c` `arn·p` `brw` `cmp` `tec` `flx` `exp` `sem1` `sem2` `sem3` `artigo` `demo` `pitch`
-- **thiago b.** | `git` `tex` `slides` `mlp·c` `mlp·p` `arq·c` `arq·p` `arn·c` `arn·p` `brw` `cmp` `tec` `flx` `exp` `sem1` `sem2` `sem3` `artigo` `demo` `pitch`
-- **thiago m.** | `git` `tex` `slides` `mlp·c` `mlp·p` `arq·c` `arq·p` `arn·c` `arn·p` `brw` `cmp` `tec` `flx` `exp` `sem1` `sem2` `sem3` `artigo` `demo` `pitch`
-- **vinicius** | `git` `tex` `slides` `mlp·c` `mlp·p` `arq·c` `arq·p` `arn·c` `arn·p` `brw` `cmp` `tec` `flx` `exp` `sem1` `sem2` `sem3` `artigo` `demo` `pitch`
 
 ---
 

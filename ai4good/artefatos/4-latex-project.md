@@ -1,6 +1,6 @@
 # [4] artefato · latex project
 
-> **código no painel:** `pdf`  
+> **código no painel:** `tex`  
 > **pontuação total:** 8 pontos (4 itens de verificação · 2 pontos por item)
 
 ## descrição
