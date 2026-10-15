@@ -38,7 +38,7 @@ function legend(md) {
   return out;
 }
 
-const marked = (m) => [...m].filter((x) => x === 'v').length;
+const doneCount = (m) => [...m].filter((x) => x === 'v').length;
 
 // one panel as HTML whose text is painel.py's drawing; links: Set of "name\tcode", info(code) → {title, items}
 function draw(id, rows, links, info) {
@@ -51,7 +51,7 @@ function draw(id, rows, links, info) {
       const boxes = [...m].map((x, k) => `<span title="${esc(`${k + 1} · ${its[k] || `item ${k + 1}`}`)}">${x === 'v' ? DONE : PENDING}</span>`).join('');
       return `<span class="g${links.has(`${name}\t${c}`) ? ' has' : ''}${live(c)} data-row="${ri}" data-col="${gi}">${boxes}</span>`;
     }).join(' ');
-    const pts = String(2 * items.reduce((s, [, m]) => s + marked(m), 0)).padStart(2, '0').padStart(3);
+    const pts = String(2 * items.reduce((s, [, m]) => s + doneCount(m), 0)).padStart(2, '0').padStart(3);
     return `<span class="ln"><span class="nm" data-row="${ri}">${' '.repeat(width - name.length)}<span class="who">${esc(name)}</span>   </span>${groups} <span class="pts">${pts} pts</span></span>`;
   });
   const label = `nota ${id.replace(/\D/g, '')}`.padStart(7);
@@ -76,7 +76,7 @@ function mount(ctx, { popover, post, password }) {
     for (let n = walk.nextNode(); n; n = walk.nextNode()) {
       if (n.data.trim() !== `painel-${id}:start`) continue;
       let el = n.nextSibling;
-      while (el && el.nodeType !== 1) el = el.nextSibling;
+      while (el && (el.nodeType !== 1 || el.classList.contains('painel-hint'))) el = el.nextSibling; // the hint sits between, after the first draw
       return el && el.tagName === 'PRE' ? el : null;
     }
     return null;
@@ -134,7 +134,7 @@ function mount(ctx, { popover, post, password }) {
     const marks = rows[ri][1][gi][1];
     const url = links.get(`${nome}\t${code}`);
     const top = `<div class="popover-title"><code>${esc(code)}</code> · ${esc(nome)}</div>${sub}`;
-    const score = `<div class="popover-note">${2 * marked(marks)}/${2 * width} pts</div>`;
+    const score = `<div class="popover-note">${2 * doneCount(marks)}/${2 * width} pts</div>`;
     const openLink = url ? `<a class="btn" href="${esc(url)}" target="_blank" rel="noopener">abrir entrega ↗</a>` : '';
     const pw = password();
     if (pw) {

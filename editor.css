@@ -58,3 +58,5 @@ ul.painel-items { list-style: none; padding-left: 0; }
 .painel-box { font-family: 'Fira Code', ui-monospace, monospace; }
 .painel-check { flex-direction: row !important; align-items: baseline; gap: 0.45rem !important; color: var(--text) !important; font-size: 13px !important; cursor: pointer; }
 .popover .btn[href] { align-self: flex-start; }
+.popover a { color: var(--link); }
+.popover input[type="checkbox"] { accent-color: var(--link); }

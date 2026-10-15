@@ -21,4 +21,4 @@ declare const DONE: "\u25FC";
 declare const PENDING: "\u25FB";
 declare function esc(s: any): string;
 declare function reEsc(s: any): any;
-declare function marked(m: any): number;
+declare function doneCount(m: any): number;
