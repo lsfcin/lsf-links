@@ -10,7 +10,7 @@
 |:-:|:--|
 | [x] | alimentação com veneno e ultraprocessados (vs. feiras agroecológicas) |
 
-por que esta crise: quando vou à feira, vejo produtor tentando vender o que trouxe sem saber quanto vai voltar para casa. quero que comprar direto seja conveniente e que quem planta tenha informação para negociar melhor.
+por que esta crise: na feira do meu bairro vejo produtor tentando vender o que trouxe sem saber quanto vai voltar para casa. enquanto isso, comprar no supermercado é mais fácil, e lá a prateleira mais à mão é de biscoito e refrigerante. quero que comprar comida fresca direto de quem planta seja tão fácil quanto.
 
 **tecnologias de IA** (marque 3 e chame de A, B, C):
 
@@ -32,11 +32,11 @@ por que esta crise: quando vou à feira, vejo produtor tentando vender o que tro
 
 | clichê | o que acerta | onde fica raso |
 |:--|:--|:--|
-| marketplace de produtores | aproxima oferta e procura e permite reservar. | catálogo parado não acompanha estoque vendido na banca; cadastrar tudo vira outro trabalho. |
-| chatbot de alimentação saudável | responde dúvidas na hora da compra. | saber que verdura faz bem não resolve disponibilidade, deslocamento ou renda do produtor. |
-| mapa de feiras | ajuda quem não sabe onde comprar. | localização não informa se ainda há o produto quando a pessoa chega. |
-| campanha “compre local” | dá visibilidade e pode trazer a primeira compra. | depende de disposição moral; não garante conveniência para a próxima compra. |
-| dashboard de preços | ajuda a perceber diferenças e negociar. | uma média sem unidade, qualidade e horário compara produtos diferentes e pode apertar ainda mais o produtor. |
+| marketplace de produtores | aproxima quem vende de quem compra e permite reservar. | o catálogo fica parado: não sabe o que já foi vendido na banca, e cadastrar tudo vira outro trabalho para o feirante. |
+| chatbot de alimentação saudável | responde dúvidas na hora da compra. | saber que verdura faz bem não resolve se ela está à venda perto, nem a renda de quem planta. |
+| mapa de feiras | ajuda quem não sabe onde comprar. | diz onde é a feira, não se ainda tem o produto quando a pessoa chega. |
+| campanha "compre local" | dá visibilidade e pode trazer a primeira compra. | depende de boa vontade; não deixa a segunda compra mais fácil. |
+| painel de preços | ajuda a comparar e negociar. | uma média de preço não diz unidade, qualidade nem horário: compara coisas diferentes e pode apertar ainda mais o produtor. |
 
 ## 3 · matriz 3 × 3 e a minha ideia
 
@@ -44,85 +44,102 @@ cada célula: **nome** · frase de até 20 palavras (quem usa, o que faz).
 
 | | 1 · plataformas de dois lados | 2 · mensageria leve e bots | 3 · pagamento instantâneo |
 |:--|:--|:--|:--|
-| **A · visão e OCR** | **lote à vista** · produtor fotografa lotes; visão sugere produtos para compradores compatíveis, com quantidade e qualidade confirmadas pelo produtor. | **placa que responde** · feirante fotografa sua placa; OCR transforma preços em mensagem de disponibilidade para clientes. | **confere banca** · feirante fotografa pedido numerado; OCR recupera referência e confere recebimento Pix por integração autorizada. |
-| **B · modelos locais** | **encaixa colheita** · produtor descreve oferta; modelo local estrutura condições para encontrar cozinhas com pedidos compatíveis. | **rastro da banca** · feirante transforma mensagens próprias em pedidos organizados no aparelho, sem redigitar nomes e quantidades. | **sobra quanto** · produtor consulta registros locais; modelo explica margem após conferir custos e pagamentos Pix, com contas determinísticas. |
-| **C · voz** | **pregão falado** · produtor anuncia lote por voz; compradores recebem ofertas estruturadas e devolvem contrapropostas faladas. | **reserva no gogó** · feirante dita disponibilidade no WhatsApp; cliente responde por áudio e recebe reserva para retirada. | **recebe e escuta** · feirante ouve confirmação de Pix recebido, consultada na conta autorizada, enquanto pesa produtos. |
+| **A · visão e OCR** | **lote à vista** · produtor fotografa os lotes; compradores próximos veem o que tem e quanto, e o produtor confirma. | **placa que responde** · feirante fotografa a placa de preços; o OCR vira mensagem de "tem hoje" para os clientes. | **confere banca** · feirante fotografa o pedido numerado; o app acha o Pix daquele pedido e mostra se já caiu. |
+| **B · modelos locais** | **encaixa colheita** · produtor diz o que vai colher; o modelo no celular acha cozinhas que pediram aquilo. | **rastro da banca** · feirante transforma as mensagens que já troca com clientes em pedidos organizados, sem redigitar. | **sobra quanto** · produtor pergunta quanto sobrou na semana; o modelo explica, e as contas são feitas por fórmula. |
+| **C · voz** | **pregão falado** · produtor anuncia o lote por voz; compradores recebem a oferta escrita e respondem por áudio. | **reserva no gogó** · feirante dita no WhatsApp o que tem; cliente responde por áudio e reserva para buscar. | **recebe e escuta** · feirante ouve "Pix de 23 reais recebido" enquanto pesa, sem pegar o celular. |
 
 **as 9 no mapa impacto × viabilidade:**
 
 | | viabilidade alta | viabilidade baixa |
 |:--|:--|:--|
-| **impacto alto** | **rastro da banca** — pode tornar a venda direta recorrente sem outro cadastro; o caderno privado cabe num piloto com poucas bancas.<br>**reserva no gogó** — pode tornar a compra direta previsível para quem hoje depende do supermercado; reservas com retirada presencial cabem no semestre. | **lote à vista** — pode abrir compradores para lotes antes vendidos ao atravessador; exige atualizar disponibilidade e reunir os dois lados.<br>**encaixa colheita** — pode orientar carregamentos por pedidos de cozinhas; exige compradores comprometidos e condições comerciais comparáveis.<br>**pregão falado** — pode ampliar a negociação direta entre produtores e compradores; exige participação simultânea e confirmação das contrapropostas. |
-| **impacto baixo** | **placa que responde** — melhora divulgação, mas sozinha não reorganiza a venda; fotografar e converter poucas placas é testável.<br>**confere banca** — reduz erros de conferência, mas não cria compradores; um piloto com pedidos numerados e integração autorizada é delimitado.<br>**recebe e escuta** — poupa consultas à tela, mas não muda a negociação; confirmar recebimentos de uma conta é um teste delimitado. | **sobra quanto** — melhora a gestão individual, mas sozinho não reorganiza o acesso ao mercado; reunir custos confiáveis é mais difícil que explicar pagamentos. |
+| **impacto alto** | **rastro da banca** — pode tornar a compra direta um hábito, sem cadastro extra; dá para testar com poucas bancas.<br>**reserva no gogó** — deixa a compra direta garantida para quem hoje vai ao supermercado por segurança; reserva com retirada cabe no semestre. | **lote à vista** — pode tirar o atravessador da venda dos lotes; mas precisa juntar compradores e manter a oferta em dia.<br>**encaixa colheita** — o pedido das cozinhas guiaria o que levar; mas precisa de cozinhas que se comprometam a comprar.<br>**pregão falado** — amplia a negociação direta; mas precisa de produtor e comprador ao mesmo tempo. |
+| **impacto baixo** | **placa que responde** — divulga, mas sozinha não muda a venda; fácil de testar com poucas placas.<br>**confere banca** — evita erro na conferência, mas não traz cliente novo; teste pequeno.<br>**recebe e escuta** — poupa olhar a tela, mas não muda a negociação; teste pequeno. | **sobra quanto** — ajuda cada um a se organizar, mas não abre mercado; juntar custos confiáveis é difícil. |
 
-onde discordei da IA, e por quê: a IA colocou “rastro da banca” em viabilidade baixa porque seria preciso integrar várias feiras. passei para alta porque consigo testar primeiro o caderno privado com poucas bancas, comparando tempo e erros com a anotação atual. isso testa o benefício que sustentaria a adesão; não comprova ainda que uma rede coletiva funciona. mantive “encaixa colheita” em baixa porque não consigo simular compromisso de compra só com um protótipo.
+onde discordei da IA, e por quê: a IA pôs o rastro da banca em viabilidade baixa porque teria de ligar várias feiras. passei para alta: consigo testar o caderno com 3 ou 4 bancas, comparando tempo e erros com o caderno de papel. isso não prova que a rede inteira funciona, só que o feirante ganha algo logo no começo. mantive o encaixa colheita em baixa: não dá para simular cozinha que se compromete a comprar só com um protótipo.
 
-**minha ideia escolhida:** **rastro da banca** · feirante transforma suas mensagens de negociação em um caderno privado de pedidos, confirmando os campos antes de registrar.
+**minha ideia escolhida:** **rastro da banca** · feirante transforma suas mensagens de negociação num caderno de pedidos só dele, confirmando cada pedido antes de salvar.
 
 **por que ela, sem IA, em até 3 linhas:**
 
 escolho o rastro da banca porque o feirante ganha um caderno útil já no primeiro pedido.  
-eu consigo comparar esse uso com a anotação atual sem montar uma plataforma com compradores novos.  
-quero começar poupando trabalho de quem vende; depois posso ligar esse registro à organização da próxima feira.
+consigo comparar com o jeito que ele anota hoje, sem montar uma plataforma com compradores novos.  
+quero começar poupando trabalho de quem vende; depois ligo esse registro à organização da próxima feira.
 
 ## 4 · motores
 
 | motor | o que foi [verbo] | nome | frase | o que mudou em relação à ideia |
 |:--|:--|:--|:--|:--|
-| inverter | quem faz o primeiro pedido: antes o feirante oferecia; agora a cozinha pede primeiro. | **pedido antes da roça** | cozinhas anunciam necessidades recorrentes; produtores transformam essas mensagens em propostas de fornecimento antes da colheita. | o caderno deixa de começar na oferta do feirante: o comprador declara sua necessidade e o produtor responde antes de preparar o carregamento. |
-| canalizar | a conferência das próprias vendas, que o feirante já faz para não perder dinheiro. | **rastro coletivo** | ao conferir suas vendas para não perder dinheiro, feirantes geram tendências agregadas que ajudam a planejar os próximos carregamentos. | a conferência que interessa ao próprio feirante produz um sinal coletivo, com consentimento; ninguém precisa preencher um relatório para ajudar os outros. |
-| transplantar | o agendamento por horário, das consultas médicas para a retirada na feira. | **janela de retirada** | como no agendamento de consultas, clientes reservam horários; o caderno distribui separação e atendimento ao longo da feira. | o pedido passa a ocupar uma janela com capacidade limitada; o mecanismo de agenda entra na organização da banca. |
-| reescalar | o tamanho da operação: de uma banca inteira para uma caixa. | **feira de uma caixa** | como hipótese de redução cem vezes, o caderno organiza uma caixa compartilhada por moradores de um prédio, sem banca completa. | a unidade de operação passa da banca inteira para uma caixa; o teste muda para divisão de produtos e retirada num prédio. |
-| trocar a persona | saiu o feirante, entrou a cozinheira de restaurante pequeno. | **compra da cozinha** | cozinheira de restaurante pequeno transforma mensagens de fornecedores em pedidos comparáveis e calcula custo por porção com contas verificáveis. | quem usa o caderno passa a ser a compradora; a decisão deixa de ser quanto levar à feira e passa a ser quanto custa servir. |
-| trocar o contexto | do horário da feira para a troca de turno de quem trabalha. | **feira no intervalo** | produtores organizam pelo caderno reservas de trabalhadores de turno, com retirada na troca de expediente. | o atendimento sai do horário habitual da feira e acompanha o expediente dos compradores; pedidos precisam respeitar essa janela. |
-| trocar a tecnologia | de modelo local para rede neural de grafos. | **frete de volta** | uma rede neural de grafos estima tempos de viagens de retorno para transportar os lotes registrados; produtores comparam custos antes de aceitar. | o registro de pedidos vira entrada para coordenar transporte; redes de grafos, fora da matriz, estimam tempos, e regras verificam capacidade e custo. |
-| juntar | rastro da banca + reserva no gogó. | **colheita marcada** | juntar o rastro da banca à reserva no gogó permite consolidar encomendas antes do carregamento e combinar retirada por áudio. | o caderno deixa de apenas organizar mensagens: reserva confirmada e retirada combinada passam a orientar separação e carregamento. |
-| restringir | a tela: o feirante não pode olhar o celular enquanto atende. | **banca sem tela** | sem olhar o celular durante atendimento, feirante dita pedidos e escuta os campos que precisam de confirmação. | a operação precisa funcionar por voz durante o trabalho; a tela deixa de ser uma etapa obrigatória para confirmar o pedido. |
+| inverter | quem faz o primeiro pedido: antes o feirante oferecia; agora a cozinha pede primeiro. | **pedido antes da roça** | cozinhas mandam o que precisam toda semana; o produtor responde com uma proposta antes de colher. | o caderno não começa mais na oferta do feirante: o comprador diz o que quer e o produtor responde antes de montar a carga. |
+| canalizar | a conferência das próprias vendas, que o feirante já faz para não perder dinheiro. | **rastro coletivo** | ao conferir as próprias vendas, os feirantes juntos mostram o que mais sai e ajudam a planejar a próxima feira. | a conta que cada um já faz para si vira informação para todos, se ele aceitar; ninguém preenche relatório para ajudar os outros. |
+| transplantar | o agendamento por horário, das consultas médicas para a retirada na feira. | **janela de retirada** | como numa consulta, o cliente marca a hora de buscar; o caderno espalha o trabalho de separar ao longo da feira. | o pedido ganha hora marcada, com vagas limitadas por horário. |
+| reescalar | o tamanho da operação: de uma banca inteira para uma caixa. | **feira de uma caixa** | os moradores de um prédio dividem uma caixa de feira; o caderno organiza quem pegou o quê. | em vez de uma banca inteira, uma caixa; o teste vira dividir produtos num prédio. |
+| trocar a persona | saiu o feirante, entrou a cozinheira de restaurante pequeno. | **compra da cozinha** | a dona de um restaurante pequeno organiza as mensagens dos fornecedores e vê quanto custa cada prato. | quem usa passa a ser quem compra; a pergunta vira quanto custa servir. |
+| trocar o contexto | do horário da feira para a troca de turno de quem trabalha. | **feira no intervalo** | produtores atendem reservas de quem trabalha por turno, com retirada na troca de expediente. | a feira vai até o horário de quem não consegue ir de manhã. |
+| trocar a tecnologia | de modelo local para rede neural de grafos. | **frete de volta** | uma rede neural de grafos estima o tempo de caminhões que voltam vazios; o produtor compara o custo antes de aceitar. | os pedidos viram carga para um frete que já existe; a rede de grafos estima os tempos e regras simples conferem custo e espaço. |
+| juntar | rastro da banca + reserva no gogó. | **colheita marcada** | as reservas por áudio entram no caderno antes da feira, e o produtor sabe o que levar. | o caderno deixa de só organizar mensagens: reserva confirmada e hora de buscar passam a dizer o que colher e levar. |
+| restringir | a tela: o feirante não pode olhar o celular enquanto atende. | **banca sem tela** | sem olhar o celular, o feirante dita o pedido e ouve só o que precisa confirmar. | tudo tem de funcionar por voz durante o trabalho; a tela deixa de ser obrigatória. |
 
 ## 5 · o que fica e o que sai
 
-**o que eu gostei:** gostei da colheita marcada porque o registro passa a ajudar antes de sair para a feira. também quero a banca sem tela: se eu tiver de parar o atendimento para preencher um formulário, perdi a vantagem que me fez escolher o rastro.
+**o que eu gostei:** da colheita marcada, porque o caderno passa a ajudar antes de sair para a feira. e da banca sem tela: se o feirante tiver de parar o atendimento para preencher formulário, perde a vantagem que me fez escolher o rastro.
 
-**o que achei interessante:** no rastro coletivo, conferir a própria venda para não perder dinheiro também ajuda a decidir o próximo carregamento. eu não teria pensado que um caderno particular pudesse virar informação para a associação sem expor cada banca.
+**o que achei interessante:** no rastro coletivo, a conta que cada feirante já faz para não perder dinheiro também ajuda a decidir a próxima carga. eu não teria pensado que um caderno particular pudesse virar informação para a associação sem expor ninguém.
 
-**o que eu descarto, e por quê:** deixo frete de volta para depois porque exige transportadores e outro problema de previsão. descarto a feira de uma caixa neste semestre: dividir produtos num prédio não testa o atendimento de uma banca. pedido antes da roça continua interessante, mas depende de cozinhas comprometidas antes de entregar valor ao produtor.
+**o que eu descarto, e por quê:** o frete de volta fica para depois: precisa de transportadores e é outro problema. descarto a feira de uma caixa neste semestre: dividir produtos num prédio não testa o atendimento de uma banca. o pedido antes da roça continua interessante, mas só funciona com cozinhas comprometidas antes de o produtor ganhar alguma coisa.
 
 **minha ideia completa:** **rastro da banca · colheita marcada**
 
-feirantes aproveitam mensagens e áudios habituais para registrar pedidos; clientes reservam produtos e combinam uma janela de retirada.  
-transformers de voz e um modelo local extraem os campos; o feirante confirma por voz, e regras organizam horários, contas e recebimentos.  
-antes da feira, o caderno consolida encomendas para orientar o carregamento; depois, vendas confirmadas alimentam tendências coletivas mediante consentimento.  
-a associação compartilha apenas tendências amplas de quantidade, sem preços individuais nem estoque atual: comprar direto ganha conveniência e o produtor ganha informação para negociar.
+feirantes usam as mensagens e áudios que já trocam com clientes para registrar pedidos; o cliente reserva e combina a hora de buscar.  
+um transformer de voz transcreve, e um modelo pequeno no celular tira produto, quantidade e hora; o feirante confirma falando, e as contas são feitas por regra.  
+antes da feira, o caderno junta as encomendas e diz o que levar; depois, se cada feirante aceitar, a associação vê só o total do que mais saiu, sem preço nem cliente de ninguém.  
+comprar comida fresca fica tão garantido quanto ir ao supermercado: menos famílias trocam a feira pelo biscoito e pelo congelado por falta de tempo, e o produtor vende mais sem atravessador.
 
 ## 6 · refinamento
 
-**a · e se todo mundo usasse?** como hipótese para cinco anos, imagino uma rede nacional de feiras, governada pelas associações, coordenando carregamentos por reservas e vendas observadas. o produtor venderia direto, sem atravessador, com compradores recorrentes e informação própria para negociar. famílias garantiriam produtos e retirada sem percorrer bancas à toa; menos comida voltaria sem venda. o feirante entra para trabalhar menos e vender mais; o cliente, para garantir sua compra. essa conveniência alimenta a rede.
+**a · e se todo mundo usasse?**
 
-**b · a IA que não pode faltar.** técnica: transformers para reconhecimento de fala e um modelo de linguagem pequeno executado localmente
+o tamanho da crise hoje:
+- 80,5% das crianças de 6 meses a 2 anos já comem ultraprocessados ([ENANI-2019, Pesquisa FAPESP](https://revistapesquisa.fapesp.br/anemia-e-deficiencia-de-nutrientes-caem-e-excesso-de-peso-cresce-entre-criancas-de-ate-5-anos/)).
+- o consumo de ultraprocessados está ligado a cerca de 57 mil mortes prematuras por ano no Brasil, 10,5% das mortes entre 30 e 69 anos ([Nilson et al., 2022, AJPM](https://www.elsevier.com/about/press-releases/ultraprocessed-foods-linked-to-premature-deaths)).
+- hipertensão, diabetes e obesidade custaram R$ 3,45 bilhões ao SUS em 2018 ([Nilson et al., 2020, OPAS](https://journal.paho.org/en/articles/costs-attributable-obesity-hypertension-and-diabetes-unified-health-system-brazil-2018)).
+- só o Carrefour, grupo francês, faturou R$ 115,4 bilhões em 2023, cerca de 11% de tudo o que os supermercados venderam no país, R$ 1 trilhão ([ranking ABRAS, SuperVarejo](https://www.supervarejo.com.br/varejo/carrefour-lidera-pela-oitava-vez-consecutiva-o-ranking-abras)).
 
-por que sem ela não roda: o primeiro transcreve áudio; o segundo extrai produto, unidade, quantidade e retirada, apontando ambiguidades sem inventar conversões. cálculos, horários e conferência de pagamento usam regras. sem os modelos, seria possível registrar vendas manualmente, mas desapareceria o mecanismo central: reaproveitar a conversa habitual sem exigir outro cadastro. a indispensabilidade depende de demonstrar essa economia de esforço em campo; se um formulário for tão fácil quanto, retiro a alegação e volto aos motores.
+se todo mundo usasse por 5 anos (a minha aposta):
+- se as feiras com reserva ficassem com 5% do que hoje vai para os supermercados, seriam uns R$ 50 bilhões por ano pagos direto a quem planta e circulando no bairro, em vez de irem para o caixa de grandes grupos.
+- se isso tirasse 10% das calorias de ultraprocessados da mesa, o mesmo estudo das 57 mil mortes estima cerca de 5,9 mil vidas poupadas por ano, e uma parte dos R$ 3,45 bilhões do SUS deixaria de ser gasta.
+- as crianças comeriam mais fruta e verdura em casa, porque a família garante a feira da semana em vez de completar a despensa com biscoito.
+
+por que cada pessoa usaria: o feirante, para trabalhar menos e vender mais; o cliente, para garantir o que quer sem viagem perdida. ninguém precisa querer ajudar.
+
+**b · a IA que não pode faltar.** técnica: um transformer de reconhecimento de fala e um modelo de linguagem pequeno rodando no celular
+
+por que sem ela não roda: o primeiro transforma o áudio em texto; o segundo tira produto, unidade, quantidade e hora, e pergunta quando algo está ambíguo ("meia caixa de quê?"). contas, horários e Pix são feitos por regra. sem os modelos, o feirante poderia anotar tudo à mão, mas aí some o que faz a ideia funcionar: aproveitar a conversa que ele já tem, sem cadastro extra. se no teste um formulário simples for tão fácil quanto, eu retiro a IA e volto aos motores.
 
 **c · críticas de quem está de fora**
 
 | crítica | saída 1 | saída 2 | minha decisão |
 |:--|:--|:--|:--|
-| barulho, sotaque e “meia caixa” podem virar quantidade ou preço errado; confirmar tudo pode custar mais trabalho que anotar. | começar com poucos produtos e confirmação falada de quantidade, unidade e preço. | começar com mensagens escritas; incorporar voz somente após medir erros e tempo. | escolho a primeira numa feira piloto, comparando esforço e erros com o caderno atual. se não poupar trabalho com segurança, adoto a segunda antes de ampliar. |
-| feirantes podem abandonar mais uma ferramenta; vendas de quem aderiu não representam toda a procura, especialmente sem dinheiro e aparelhos compatíveis. | apoiar o piloto numa associação, aceitar confirmação de vendas em dinheiro e informar cobertura e lacunas nos resumos. | começar apenas com o caderno privado e reservas de clientes habituais, em aparelhos disponíveis, adiando sinais coletivos. | começo pela segunda para testar se o benefício sustenta o uso. só avanço ao coletivo com a primeira; nunca chamo venda observada de demanda total. |
-| um comprador grande pode inferir quem está com sobra e pressionar preços; numa feira pequena, retirar nomes não impede identificação. | restringir acesso aos participantes, suprimir recortes com poucas bancas e atrasar publicação. | compartilhar apenas tendências amplas de quantidade; manter preços, clientes e estoque atual no aparelho. | escolho a segunda com supressão de grupos pequenos. a associação administra permissões; sem proteção contra inferência, mantenho apenas o uso privado enquanto redesenho o compartilhamento. |
+| barulho e sotaque viram pedido errado. | começar com poucos produtos e confirmar por voz quantidade, unidade e preço. | começar só com mensagens escritas e pôr a voz depois. | **saída 1**, numa feira piloto, medindo erros e tempo contra o caderno de papel. |
+| feirantes largam mais um app. | apoiar o piloto numa associação de feirantes. | começar só com o caderno de cada um e clientes que já compram dele. | **saída 2**: primeiro o feirante precisa ganhar algo sozinho; a parte coletiva vem depois. |
+| um comprador grande descobre quem está com sobra e força o preço para baixo. | só participantes veem os dados, e com atraso. | a associação vê só o total do que mais saiu; preço, cliente e estoque ficam no celular de cada um. | **saída 2**: se nem o total for seguro numa feira pequena, fica só o caderno particular. |
 
 ## 7 · resumo, sem IA
 
-a concentração do varejo deixa o produtor familiar com pouca informação para organizar sua venda direta.  
-o rastro da banca · colheita marcada transforma conversas em pedidos confirmados, reservas e retiradas combinadas.  
-transformers de voz e um modelo local extraem os campos; regras conferem contas e organizam horários.  
-em escala, uma rede nacional de feiras poderia orientar carregamentos e sustentar vendas sem atravessador, com menos comida perdida.  
-cada feirante usa para trabalhar menos e vender mais; cada cliente, para garantir produto e retirada.
+as famílias trocam a feira por ultraprocessado porque o supermercado é mais garantido, e o produtor vende sem saber o que vai sobrar.  
+o rastro da banca · colheita marcada transforma as conversas da banca em pedidos confirmados, com reserva e hora de buscar.  
+um transformer de voz e um modelo no celular tiram os dados do áudio; regras fazem as contas.  
+se todo mundo usasse, bilhões passariam a ir direto para quem planta, e menos ultraprocessado chegaria à mesa das crianças.  
+o feirante usa para trabalhar menos e vender mais; o cliente, para garantir o que quer.
 
 ## anotações do professor
 
-- “catálogo parado” identifica uma limitação concreta do marketplace; “sem redigitar nomes e quantidades” transforma essa limitação em requisito.
-- “não comprova ainda que uma rede coletiva funciona” delimita a discordância com a IA: testar o caderno sustenta a viabilidade inicial, sem fingir que valida toda a visão.
-- “reserva confirmada e retirada combinada passam a orientar separação e carregamento” mostra uma mudança de mecanismo. os nove motores partem da mesma ideia e explicam o que mudou.
-- “antes da feira” e “depois, vendas confirmadas alimentam tendências coletivas” mostram uma mistura efetiva: juntar melhora o carregamento, canalizar produz informação coletiva e restringir permite confirmar durante o atendimento.
-- “uma rede nacional de feiras” e “sem atravessador” permitem imaginar uma transformação concreta; “trabalhar menos e vender mais” e “garantir sua compra” explicam a adesão individualista.
-- “se um formulário for tão fácil quanto, retiro a alegação” põe a IA à prova. “nunca chamo venda observada de demanda total” e “manter preços, clientes e estoque atual no aparelho” mostram críticas incorporadas às decisões.
+cada anotação cita uma frase do exemplo e explica por que ela é o padrão que buscamos.
+
+1. **§ 1, por que esta crise.** "vejo produtor tentando vender o que trouxe sem saber quanto vai voltar para casa": a crise começa numa cena que o aluno viu de verdade. uma frase como "alimentação é importante" serviria para qualquer pessoa; esta só serve para ele, e mostra que ele conhece o problema de perto.
+2. **§ 2, clichês.** "o catálogo fica parado: não sabe o que já foi vendido na banca": o clichê (marketplace) não é criticado por ser comum, mas pelo que dá errado na feira. e essa falha vira a ideia dele: registrar pedidos "sem redigitar".
+3. **§ 3, matriz.** "feirante dita no WhatsApp o que tem; cliente responde por áudio e reserva para buscar": dá para ver quem faz o quê, com qual ferramenta. toda célula da matriz tem de ser lida assim, sem o leitor precisar perguntar "como assim?".
+4. **§ 3, onde discordei da IA.** "consigo testar o caderno com 3 ou 4 bancas, comparando tempo e erros com o caderno de papel": discordar da IA vale quando você mostra um teste que cabe no semestre, e não só a sua opinião.
+5. **§ 4, motores.** "o comprador diz o que quer e o produtor responde antes de montar a carga": isto é inverter de verdade, porque mudou quem começa o pedido. a coluna "o que foi invertido" diz isso em uma linha; se você não consegue escrevê-la, o motor não foi usado.
+6. **§ 5, o que eu descarto.** "dividir produtos num prédio não testa o atendimento de uma banca": descartar com motivo é o que faz a ideia completa ser uma escolha, e não uma soma de tudo o que apareceu.
+7. **§ 6a, e se todo mundo usasse.** "80,5% das crianças de 6 meses a 2 anos já comem ultraprocessados" e "uns R$ 50 bilhões por ano pagos direto a quem planta": primeiro o tamanho do problema, com número e fonte; depois uma aposta com número, que diz de qual dado parte e pode dar errado. e "trabalhar menos e vender mais" é interesse próprio, como no Waze: ninguém precisa querer ajudar.
+8. **§ 6b e 6c, a IA e as críticas.** "se um formulário simples for tão fácil quanto, eu retiro a IA": o aluno diz o que provaria que a IA não é necessária. nas críticas, "barulho e sotaque viram pedido errado" só vale para esta ideia, e cada linha termina com **uma** decisão.

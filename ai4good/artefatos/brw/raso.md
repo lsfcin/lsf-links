@@ -120,9 +120,13 @@ as pessoas participariam para ajudar os produtores e fortalecer a comunidade.
 
 ## anotações do professor
 
-- “seria melhor inovar” e “é uma solução comum demais” tratam familiaridade como defeito. o aluno escolhe um marketplace sem explicar a sutileza que o diferenciaria.
-- “tem bastante potencial” não fundamenta impacto; “falar é simples” confunde o hábito de enviar áudio com a viabilidade de interpretar e confirmar pedidos.
-- “o foco passa a ser o consumidor” não inverte uma ideia que já recomendava produtos ao consumidor. “as compras geram dados que podem ajudar todos” não explica qual sinal produz qual benefício.
-- “chatbot, dashboard, integração com WhatsApp e pagamento por Pix” e “perfis, curtidas e compartilhamentos” formam uma soma de funcionalidades; falta mostrar como a mistura muda o mecanismo da ideia escolhida.
-- “a vida das pessoas melhoraria” permanece vaga mesmo com Brasil e cinco anos. “as pessoas vão querer ajudar” depende de altruísmo e deixa sem resposta o incentivo individualista.
-- “analisar os dados” não demonstra a operação que exige IA avançada. “melhorar a segurança” e “adotar boas práticas” preenchem a tabela sem identificar ameaça, proteção ou decisão verificável.
+cada anotação cita uma frase do exemplo e explica onde ela falha. compare com o mesmo trecho no [exemplo excelente](excelente.md).
+
+1. **§ 2, clichês.** "já existem muitos; seria melhor inovar" e "é uma solução comum demais": estas linhas serviriam para qualquer tema. não dizem o que o clichê erra **na feira**, então não ensinam onde a ideia precisa ser diferente. no excelente, o marketplace é criticado porque "o catálogo fica parado".
+2. **§ 3, matriz.** "dicas por foto · consumidor envia imagens no WhatsApp e recebe dicas para comprar melhor na feira": foto de quê? que dica? quem lê não entende o que acontece. o mesmo vale para "feira inteligente" e "pix inteligente": a palavra "inteligente" no nome não explica o que a ideia faz.
+3. **§ 3, a escolha.** "concordei com quase tudo" e "escolhi a feira inteligente porque é a mais interessante": a escolha não tem motivo. e a feira inteligente é o mesmo marketplace que o próprio aluno chamou de "sem novidade" no § 2.
+4. **§ 4, motores.** "o foco passa a ser o consumidor": a ideia já recomendava produtos ao consumidor, então nada foi invertido. a coluna "o que foi invertido" diz só "o foco", sem dizer de quem para quem. motor que não muda o funcionamento da ideia é só troca de nome.
+5. **§ 5, o que fica e o que sai.** "achei interessante levar o aplicativo para todo o Brasil": crescer não é ideia, é desejo. junto com "reúne mais funções" e "descarto… porque tem menos funcionalidades", mostra que o aluno escolheu por quantidade, e a ideia completa virou uma lista de recursos (chatbot, dashboard, curtidas…).
+6. **§ 6a, e se todo mundo usasse.** "a vida das pessoas melhoraria" e "as pessoas vão querer ajudar": não há um número de hoje, nem uma aposta que alguém possa conferir. e quem usa só por bondade para de usar no primeiro aperto. no excelente, o tamanho do problema vem com dado e fonte, e a projeção diz de qual dado parte.
+7. **§ 6b, a IA que não pode faltar.** "o projeto usa IA para analisar os dados": recomendar o produtor mais perto se faz com uma lista ordenada por distância. se uma regra simples resolve, a IA não é indispensável, e o guia manda voltar ao passo 4 e trocar a tecnologia.
+8. **§ 6c, críticas.** "melhorar a segurança" e "adotar boas práticas": estas críticas e saídas serviriam para qualquer aplicativo. falta dizer qual dado vaza, para quem, e o que exatamente o aluno decidiu fazer.
