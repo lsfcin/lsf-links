@@ -85,7 +85,7 @@ para o agente que apoia um aluno desta disciplina:
 | · 17 ·<br>07/10<br>· qua · | prática<br>**competidores e contribuição** | `[x] artefato · tbd` |
 | · 18 ·<br>09/10<br>· sex · | mentoria<br>**refinamento da contribuição** | |
 | · 19 ·<br>14/10<br>· qua · | prática<br>**brainwriting híbrido** | [`[3] artefato · brainwriting híbrido`](artefatos/3-brainwriting-hibrido.md) |
-| · 20 ·<br>16/10<br>· sex · | mentoria<br>**definição da contribuição** | |
+| · 20 ·<br>16/10<br>· sex · | mentoria<br>**definição da contribuição** | [`[3] artefato · competidores e contribuição`](artefatos/3-competidores-e-contribuicao.md) |
 | · 21 ·<br>21/10<br>· qua · | prática<br>**fluxograma e arquitetura** | `[x] artefato · tbd` |
 | · 22 ·<br>23/10<br>· sex · | prática<br>**desenho dos experimentos** | `[x] artefato · tbd` |
 | · -- ·<br>28/10<br>· qua · | feriado<br>**dia do servidor público federal** | |
