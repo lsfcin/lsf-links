@@ -30,6 +30,7 @@ ficha: **C**enário · **U**suário · **P**roblema · **T**ecnologia, cada um *
 | [Farmerline](https://farmerline.co/) | mensagens de voz em línguas locais para agricultores (Gana). | voz para quem não lê, em escala. | informa (clima, preço), não registra venda. | ≠ ≈ ≠ ≈ |
 | [Whisper](https://github.com/openai/whisper) | modelo aberto de transcrição de fala. | transcreve português e roda em versões pequenas. | é uma peça, não um produto: ninguém vende com ele sozinho. | ≠ ≠ ≠ = |
 | [Raízs](https://www.raizs.com.br/) | loja on-line de orgânicos de pequenos produtores, com entrega. | a compra é garantida e chega em casa. | ela é o intermediário: o produtor não fala com o cliente. | ≠ ≈ ≠ ≠ |
+| **[agente de vendas da Meta](https://canaltech.com.br/apps/whatsapp-libera-ia-que-fala-pela-sua-empresa-e-funciona-24h-por-dia/)** (achado no passo 7) | IA dentro do WhatsApp Business que responde clientes, recomenda produtos e fecha vendas. | já está no app que o feirante usa, e começou grátis. | roda na nuvem da Meta; não soma encomendas nem planeja colheita. | ≈ ≈ ≈ ≈ |
 
 ## 3 · catálogo de artigos
 
@@ -71,6 +72,7 @@ eixos tirados da conversa nova com os 6 trabalhos; os dois últimos são onde a 
 | Avaaj Otalo | ✘ | ◐ | ✘ | ✘ | ✘ | ✘ | ✔ |
 | fala vs. teclado (Patel, 2009) | ✘ | ✔ | ✘ | ✘ | ? | ✘ | ✔ |
 | Infrastructuring Food Democracy | ✘ | ✘ | ✔ | ✔ | ◐ | ✔ | ✔ |
+| agente de vendas da Meta | ✔ | ? | ◐ | ✘ | ✘ | ◐ | ◐ |
 | **a minha ideia** | ✔ | ✔ | ✔ | ✔ | ✔ | ✘ | ✘ |
 
 **evidência:**
@@ -80,6 +82,7 @@ eixos tirados da conversa nova com os 6 trabalhos; os dois últimos são onde a 
 - Avaaj Otalo: grava a voz, mas a navegação é por teclado e quem responde é gente; 51 agricultores por 7 meses.
 - fala vs. teclado: o reconhecimento de fala é o objeto do estudo; 45 participantes.
 - Infrastructuring Food Democracy: o hub junta os pedidos por ciclo; a plataforma é de uma cooperativa, não do vendedor.
+- agente de vendas da Meta: responde e fecha vendas no WhatsApp, recomenda produtos; a liberação é gradual, e a reportagem não diz se entende áudio.
 
 ## 6 · a contribuição
 
@@ -91,7 +94,7 @@ eixos tirados da conversa nova com os 6 trabalhos; os dois últimos são onde a 
 
 o que a conversa nova achou: o [agente de vendas com IA](https://canaltech.com.br/apps/whatsapp-libera-ia-que-fala-pela-sua-empresa-e-funciona-24h-por-dia/) que a Meta liberou dentro do próprio WhatsApp Business (junho de 2026). abri: ele responde clientes, recomenda produtos e fecha vendas.
 
-o que eu mudei: entrou no catálogo e é agora o mais próximo. a frase ficou, porque ele roda na nuvem da Meta e não soma encomendas para a colheita. mas aprendi que "entender a conversa" deixou de ser diferencial: a minha contribuição está nos dados que ficam no celular e na colheita marcada.
+o que eu mudei: entrou no catálogo e na matriz, e é agora o mais próximo. a frase ficou, porque ele roda na nuvem da Meta e não soma encomendas para a colheita. mas aprendi que "entender a conversa" deixou de ser diferencial: a minha contribuição está nos dados que ficam no celular e na colheita marcada.
 
 ## 8 · resumo, sem IA
 
