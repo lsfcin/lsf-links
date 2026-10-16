@@ -130,22 +130,8 @@ body {
   border-right: none;
   text-align: left;
   background: transparent;
-}
-.markdown-body table th:first-child,
-.markdown-body table td:first-child {
-  text-align: center;
-  width: 80px;
-  white-space: nowrap;
-}
-.markdown-body table th:nth-child(2),
-.markdown-body table td:nth-child(2) {
-  text-align: left;
-  width: 36%;
+  min-width: 7ch;
   overflow-wrap: break-word;
-}
-.markdown-body table th:nth-child(3),
-.markdown-body table td:nth-child(3) {
-  text-align: left;
 }
 .markdown-body th[align="center"], .markdown-body td[align="center"] {
   text-align: center;
@@ -159,11 +145,6 @@ body {
   }
   .markdown-body th, .markdown-body td {
     padding: 8px 6px;
-  }
-  .markdown-body table th:nth-child(2),
-  .markdown-body table td:nth-child(2) {
-    width: auto;
-    max-width: 140px;
   }
 }
 .markdown-body th { font-weight: 600; }

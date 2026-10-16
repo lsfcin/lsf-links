@@ -29,15 +29,18 @@ body.editing { overflow: hidden; }
 }
 .editor-actions { display: flex; gap: 0.5rem; }
 .editor-warn { padding: 0.5rem 1rem; font-size: 13px; background: var(--aw-bg); border-bottom: 1px solid var(--aw-b); }
-.editor-split { flex: 1; display: grid; grid-template-columns: 1fr 1fr; min-height: 0; }
+.editor-split { flex: 1; display: grid; grid-template-columns: var(--split, 50%) 6px 1fr; min-height: 0; }
+.editor-handle { cursor: col-resize; touch-action: none; background: var(--border); }
+.editor-handle:hover { background: var(--link); }
 .editor-split textarea {
-  resize: none; border: 0; border-right: 1px solid var(--border); padding: 1rem; outline: none;
+  resize: none; border: 0; padding: 1rem; outline: none; min-width: 0;
   font: 13px/1.55 "Fira Code", ui-monospace, monospace; background: var(--bg); color: var(--text);
 }
 .editor-preview { overflow: auto; padding: 1rem 1.5rem 3rem; }
 @media (max-width: 768px) {
   .editor-split { grid-template-columns: 1fr; grid-template-rows: 1fr 1fr; }
-  .editor-split textarea { border-right: 0; border-bottom: 1px solid var(--border); }
+  .editor-split textarea { border-bottom: 1px solid var(--border); }
+  .editor-handle { display: none; }
 }
 
 /* the panel (painel.js): painel.py's text with spans; names stick left, points stick right, boxes scroll */

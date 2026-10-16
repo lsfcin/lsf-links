@@ -81,12 +81,27 @@ window.lsfEditor = (ctx) => {
       ${warn}
       <div class="editor-split">
         <textarea spellcheck="false"></textarea>
+        <div class="editor-handle" title="arraste; duplo clique volta ao meio"></div>
         <article class="markdown-body editor-preview"></article>
       </div>`;
     document.body.appendChild(pane);
     const area = pane.querySelector('textarea');
     const preview = pane.querySelector('.editor-preview');
     area.value = text;
+    // the handle between the halves: drag to resize (20–80%), double-click back to half; the browser remembers it
+    const split = pane.querySelector('.editor-split');
+    const handle = pane.querySelector('.editor-handle');
+    const setSplit = (pct) => split.style.setProperty('--split', `${pct}%`);
+    try { const s = Number(localStorage.getItem('lsf-split')); if (s) setSplit(s); } catch {}
+    const keep = (pct) => { setSplit(pct); try { localStorage.setItem('lsf-split', pct); } catch {} };
+    handle.onpointerdown = (e) => {
+      e.preventDefault();
+      handle.setPointerCapture(e.pointerId);
+      const r = split.getBoundingClientRect();
+      handle.onpointermove = (m) => setSplit(Math.round(Math.min(80, Math.max(20, ((m.clientX - r.left) / r.width) * 100))));
+      handle.onpointerup = () => { handle.onpointermove = null; keep(parseFloat(split.style.getPropertyValue('--split')) || 50); };
+    };
+    handle.ondblclick = () => keep(50);
     const update = () => { preview.innerHTML = render(area.value); };
     const save = async () => {
       const btn = pane.querySelector('[data-act=save]');
