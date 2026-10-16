@@ -153,7 +153,7 @@ thiago m.   ◻◻◻ ◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻�
 albérico: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
 andreza: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
 artur: brw=vvv, cmp=---, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
-carlos: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
+carlos: brw=vvv, cmp=---, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
 cauã: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
 davi: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
 edson: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
