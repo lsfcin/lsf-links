@@ -77,17 +77,17 @@ onde discordei da IA, e por quê: [preencha]
 
 ## 4 · motores
 
-| motor | nome | frase | o que mudou em relação à ideia |
-|:--|:--|:--|:--|
-| inverter | [preencha] | | |
-| canalizar | | | |
-| transplantar | | | |
-| reescalar | | | |
-| trocar a persona | | | |
-| trocar o contexto | | | |
-| trocar a tecnologia | | | |
-| juntar | | | |
-| restringir | | | |
+| motor | o que foi [verbo] | nome | frase | o que mudou em relação à ideia |
+|:--|:--|:--|:--|:--|
+| inverter | o que foi invertido: [preencha] | [preencha] | | |
+| canalizar | o que foi canalizado: | | | |
+| transplantar | o que foi transplantado, e de onde: | | | |
+| reescalar | o que foi reescalado: | | | |
+| trocar a persona | quem saiu, quem entrou: | | | |
+| trocar o contexto | de onde, para onde: | | | |
+| trocar a tecnologia | de qual, para qual: | | | |
+| juntar | o que foi juntado: | | | |
+| restringir | o que foi restringido: | | | |
 
 ## 5 · o que fica e o que sai
 
@@ -101,13 +101,19 @@ onde discordei da IA, e por quê: [preencha]
 
 ## 6 · refinamento
 
-**a · e se todo mundo usasse?** [preencha: o efeito concreto na crise e o incentivo individualista, em até 80 palavras]
+**a · e se todo mundo usasse?**
 
-**b · a IA que não pode faltar.** técnica: [preencha] · aula da disciplina: [preencha: título da aula]
+o tamanho da crise hoje: [preencha: 3 a 5 dados, cada um com o link da fonte]
+
+se todo mundo usasse por 5 anos: [preencha: o que muda, em pontos específicos e com números arriscados; de qual dado cada número parte]
+
+por que cada pessoa usaria: [preencha: o interesse próprio, sem heroísmo nem altruísmo]
+
+**b · a IA que não pode faltar.** técnica: [preencha]
 
 por que sem ela não roda: [preencha]
 
-**c · o cético e as saídas**
+**c · críticas de quem está de fora**
 
 | crítica | saída 1 | saída 2 | minha decisão |
 |:--|:--|:--|:--|

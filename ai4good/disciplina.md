@@ -1,5 +1,5 @@
 <!-- a página pública da disciplina (lucassf.pages.dev/ai4good): regras, cronograma, painel e habilidades. -->
-![banner ai4good](https://images.unsplash.com/photo-1674027444485-cec3da58eef4?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb)
+![banner ai4good](/ai4good/banner.webp)
 
 # tópicos avançados em IA · ai4good
 

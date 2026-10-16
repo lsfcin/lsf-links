@@ -67,17 +67,17 @@ quero começar poupando trabalho de quem vende; depois posso ligar esse registro
 
 ## 4 · motores
 
-| motor | nome | frase | o que mudou em relação à ideia |
-|:--|:--|:--|:--|
-| inverter | **pedido antes da roça** | cozinhas anunciam necessidades recorrentes; produtores transformam essas mensagens em propostas de fornecimento antes da colheita. | o caderno deixa de começar na oferta do feirante: o comprador declara sua necessidade e o produtor responde antes de preparar o carregamento. |
-| canalizar | **rastro coletivo** | ao conferir suas vendas para não perder dinheiro, feirantes geram tendências agregadas que ajudam a planejar os próximos carregamentos. | a conferência que interessa ao próprio feirante produz um sinal coletivo, com consentimento; ninguém precisa preencher um relatório para ajudar os outros. |
-| transplantar | **janela de retirada** | como no agendamento de consultas, clientes reservam horários; o caderno distribui separação e atendimento ao longo da feira. | o pedido passa a ocupar uma janela com capacidade limitada; o mecanismo de agenda entra na organização da banca. |
-| reescalar | **feira de uma caixa** | como hipótese de redução cem vezes, o caderno organiza uma caixa compartilhada por moradores de um prédio, sem banca completa. | a unidade de operação passa da banca inteira para uma caixa; o teste muda para divisão de produtos e retirada num prédio. |
-| trocar a persona | **compra da cozinha** | cozinheira de restaurante pequeno transforma mensagens de fornecedores em pedidos comparáveis e calcula custo por porção com contas verificáveis. | quem usa o caderno passa a ser a compradora; a decisão deixa de ser quanto levar à feira e passa a ser quanto custa servir. |
-| trocar o contexto | **feira no intervalo** | produtores organizam pelo caderno reservas de trabalhadores de turno, com retirada na troca de expediente. | o atendimento sai do horário habitual da feira e acompanha o expediente dos compradores; pedidos precisam respeitar essa janela. |
-| trocar a tecnologia | **frete de volta** | uma rede neural de grafos estima tempos de viagens de retorno para transportar os lotes registrados; produtores comparam custos antes de aceitar. | o registro de pedidos vira entrada para coordenar transporte; redes de grafos, fora da matriz, estimam tempos, e regras verificam capacidade e custo. |
-| juntar | **colheita marcada** | juntar o rastro da banca à reserva no gogó permite consolidar encomendas antes do carregamento e combinar retirada por áudio. | o caderno deixa de apenas organizar mensagens: reserva confirmada e retirada combinada passam a orientar separação e carregamento. |
-| restringir | **banca sem tela** | sem olhar o celular durante atendimento, feirante dita pedidos e escuta os campos que precisam de confirmação. | a operação precisa funcionar por voz durante o trabalho; a tela deixa de ser uma etapa obrigatória para confirmar o pedido. |
+| motor | o que foi [verbo] | nome | frase | o que mudou em relação à ideia |
+|:--|:--|:--|:--|:--|
+| inverter | quem faz o primeiro pedido: antes o feirante oferecia; agora a cozinha pede primeiro. | **pedido antes da roça** | cozinhas anunciam necessidades recorrentes; produtores transformam essas mensagens em propostas de fornecimento antes da colheita. | o caderno deixa de começar na oferta do feirante: o comprador declara sua necessidade e o produtor responde antes de preparar o carregamento. |
+| canalizar | a conferência das próprias vendas, que o feirante já faz para não perder dinheiro. | **rastro coletivo** | ao conferir suas vendas para não perder dinheiro, feirantes geram tendências agregadas que ajudam a planejar os próximos carregamentos. | a conferência que interessa ao próprio feirante produz um sinal coletivo, com consentimento; ninguém precisa preencher um relatório para ajudar os outros. |
+| transplantar | o agendamento por horário, das consultas médicas para a retirada na feira. | **janela de retirada** | como no agendamento de consultas, clientes reservam horários; o caderno distribui separação e atendimento ao longo da feira. | o pedido passa a ocupar uma janela com capacidade limitada; o mecanismo de agenda entra na organização da banca. |
+| reescalar | o tamanho da operação: de uma banca inteira para uma caixa. | **feira de uma caixa** | como hipótese de redução cem vezes, o caderno organiza uma caixa compartilhada por moradores de um prédio, sem banca completa. | a unidade de operação passa da banca inteira para uma caixa; o teste muda para divisão de produtos e retirada num prédio. |
+| trocar a persona | saiu o feirante, entrou a cozinheira de restaurante pequeno. | **compra da cozinha** | cozinheira de restaurante pequeno transforma mensagens de fornecedores em pedidos comparáveis e calcula custo por porção com contas verificáveis. | quem usa o caderno passa a ser a compradora; a decisão deixa de ser quanto levar à feira e passa a ser quanto custa servir. |
+| trocar o contexto | do horário da feira para a troca de turno de quem trabalha. | **feira no intervalo** | produtores organizam pelo caderno reservas de trabalhadores de turno, com retirada na troca de expediente. | o atendimento sai do horário habitual da feira e acompanha o expediente dos compradores; pedidos precisam respeitar essa janela. |
+| trocar a tecnologia | de modelo local para rede neural de grafos. | **frete de volta** | uma rede neural de grafos estima tempos de viagens de retorno para transportar os lotes registrados; produtores comparam custos antes de aceitar. | o registro de pedidos vira entrada para coordenar transporte; redes de grafos, fora da matriz, estimam tempos, e regras verificam capacidade e custo. |
+| juntar | rastro da banca + reserva no gogó. | **colheita marcada** | juntar o rastro da banca à reserva no gogó permite consolidar encomendas antes do carregamento e combinar retirada por áudio. | o caderno deixa de apenas organizar mensagens: reserva confirmada e retirada combinada passam a orientar separação e carregamento. |
+| restringir | a tela: o feirante não pode olhar o celular enquanto atende. | **banca sem tela** | sem olhar o celular durante atendimento, feirante dita pedidos e escuta os campos que precisam de confirmação. | a operação precisa funcionar por voz durante o trabalho; a tela deixa de ser uma etapa obrigatória para confirmar o pedido. |
 
 ## 5 · o que fica e o que sai
 
@@ -98,11 +98,11 @@ a associação compartilha apenas tendências amplas de quantidade, sem preços 
 
 **a · e se todo mundo usasse?** como hipótese para cinco anos, imagino uma rede nacional de feiras, governada pelas associações, coordenando carregamentos por reservas e vendas observadas. o produtor venderia direto, sem atravessador, com compradores recorrentes e informação própria para negociar. famílias garantiriam produtos e retirada sem percorrer bancas à toa; menos comida voltaria sem venda. o feirante entra para trabalhar menos e vender mais; o cliente, para garantir sua compra. essa conveniência alimenta a rede.
 
-**b · a IA que não pode faltar.** técnica: transformers para reconhecimento de fala e um modelo de linguagem pequeno executado localmente · aula da disciplina: transformers / modelos de linguagem
+**b · a IA que não pode faltar.** técnica: transformers para reconhecimento de fala e um modelo de linguagem pequeno executado localmente
 
 por que sem ela não roda: o primeiro transcreve áudio; o segundo extrai produto, unidade, quantidade e retirada, apontando ambiguidades sem inventar conversões. cálculos, horários e conferência de pagamento usam regras. sem os modelos, seria possível registrar vendas manualmente, mas desapareceria o mecanismo central: reaproveitar a conversa habitual sem exigir outro cadastro. a indispensabilidade depende de demonstrar essa economia de esforço em campo; se um formulário for tão fácil quanto, retiro a alegação e volto aos motores.
 
-**c · o cético e as saídas**
+**c · críticas de quem está de fora**
 
 | crítica | saída 1 | saída 2 | minha decisão |
 |:--|:--|:--|:--|

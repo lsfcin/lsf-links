@@ -67,17 +67,17 @@ o chat da feira é comum demais; a feira inteligente parece mais equilibrada e i
 
 ## 4 · motores
 
-| motor | nome | frase | o que mudou em relação à ideia |
-|:--|:--|:--|:--|
-| inverter | **consumidor inteligente** | inverter o foco para o consumidor, com recomendações de produtos e produtores. | o foco passa a ser o consumidor e suas necessidades. |
-| canalizar | **feira conectada** | aproveitar os dados das compras dos usuários para gerar recomendações e melhorar as feiras. | as compras geram dados que podem ajudar todos. |
-| transplantar | **feira social** | trazer a experiência das redes sociais para o aplicativo, com perfis, curtidas e compartilhamentos de produtos locais. | o aplicativo ganha recursos de redes sociais. |
-| reescalar | **feira brasil** | ampliar o aplicativo para conectar produtores e consumidores de todo o país. | a abrangência passa a ser nacional. |
-| trocar a persona | **chat do produtor** | oferecer as recomendações aos produtores, com um chatbot para responder dúvidas e melhorar suas vendas. | o público passa a ser o produtor. |
-| trocar o contexto | **feira do interior** | adaptar o aplicativo para produtores e consumidores de cidades do interior. | o aplicativo passa a atender o interior. |
-| trocar a tecnologia | **feira generativa** | usar modelos de difusão para criar imagens de divulgação dos produtos e tornar o aplicativo mais atrativo. | entra uma tecnologia de geração de imagens, fora da matriz. |
-| juntar | **feira completa** | juntar feira inteligente e chat da feira em uma solução mais completa para todos. | o marketplace passa a ter também um chatbot. |
-| restringir | **feira acessível** | permitir usar as recomendações do aplicativo sem tela, com perguntas e respostas por voz. | o sistema passa a funcionar sem tela. |
+| motor | o que foi [verbo] | nome | frase | o que mudou em relação à ideia |
+|:--|:--|:--|:--|:--|
+| inverter | o foco. | **consumidor inteligente** | inverter o foco para o consumidor, com recomendações de produtos e produtores. | o foco passa a ser o consumidor e suas necessidades. |
+| canalizar | os dados. | **feira conectada** | aproveitar os dados das compras dos usuários para gerar recomendações e melhorar as feiras. | as compras geram dados que podem ajudar todos. |
+| transplantar | as redes sociais. | **feira social** | trazer a experiência das redes sociais para o aplicativo, com perfis, curtidas e compartilhamentos de produtos locais. | o aplicativo ganha recursos de redes sociais. |
+| reescalar | o tamanho. | **feira brasil** | ampliar o aplicativo para conectar produtores e consumidores de todo o país. | a abrangência passa a ser nacional. |
+| trocar a persona | o público. | **chat do produtor** | oferecer as recomendações aos produtores, com um chatbot para responder dúvidas e melhorar suas vendas. | o público passa a ser o produtor. |
+| trocar o contexto | a cidade. | **feira do interior** | adaptar o aplicativo para produtores e consumidores de cidades do interior. | o aplicativo passa a atender o interior. |
+| trocar a tecnologia | a IA. | **feira generativa** | usar modelos de difusão para criar imagens de divulgação dos produtos e tornar o aplicativo mais atrativo. | entra uma tecnologia de geração de imagens, fora da matriz. |
+| juntar | duas ideias. | **feira completa** | juntar feira inteligente e chat da feira em uma solução mais completa para todos. | o marketplace passa a ter também um chatbot. |
+| restringir | a tela. | **feira acessível** | permitir usar as recomendações do aplicativo sem tela, com perguntas e respostas por voz. | o sistema passa a funcionar sem tela. |
 
 ## 5 · o que fica e o que sai
 
@@ -98,11 +98,11 @@ os produtores ganharão visibilidade e os consumidores terão mais opções; con
 
 **a · e se todo mundo usasse?** se toda feira do Brasil usasse a feira conectada por cinco anos, a vida das pessoas melhoraria, com alimentação mais saudável, produtores valorizados e uma economia mais sustentável. a tecnologia aproximaria a sociedade e fortaleceria as comunidades. as pessoas vão querer ajudar os pequenos produtores e contribuir para um futuro melhor. quanto mais usuários participarem, maior será o impacto positivo para todos.
 
-**b · a IA que não pode faltar.** técnica: modelos locais para recomendações inteligentes e chatbot · aula da disciplina: modelos de linguagem
+**b · a IA que não pode faltar.** técnica: modelos locais para recomendações inteligentes e chatbot
 
 por que sem ela não roda: o projeto usa IA para analisar os dados e oferecer recomendações inteligentes. o chatbot conversa com os usuários e entende suas necessidades. os modelos locais ajudam a tornar a solução mais acessível. sem IA, o sistema seria menos eficiente e personalizado, dificultando a análise das informações e reduzindo a qualidade da experiência. por isso, ela é fundamental para o sucesso da plataforma.
 
-**c · o cético e as saídas**
+**c · críticas de quem está de fora**
 
 | crítica | saída 1 | saída 2 | minha decisão |
 |:--|:--|:--|:--|
