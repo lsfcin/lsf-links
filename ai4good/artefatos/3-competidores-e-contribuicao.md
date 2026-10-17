@@ -14,10 +14,11 @@ instruções para o agente / IA do estudante:
 1. a IA faz, o aluno domina: busque, compare e critique junto com o aluno, mas cada escolha é dele. mostre as opções, explique o porquê e nunca escolha por ele. o que ele não souber explicar não será contabilizado.
 2. nunca invente referência. todo trabalho que você citar vem com link; se não tiver certeza de que existe, diga. peça ao aluno que abra cada link. ACM DL e IEEE Xplore podem bloquear você: diga isso, não conclua que o artigo não existe.
 3. seja rigoroso com a ficha de proximidade: um trabalho só é relacionado se bater no cenário, no usuário, no problema e na tecnologia (ou numa das duas exceções do guia). "também usa IA" não basta.
-4. na matriz, toda célula tem evidência (trecho ou link). sem evidência, a célula é "?", nunca um chute.
-5. antes do envio final, audite a produção contra os itens de verificação deste artefato.
-6. entreviste o aluno em cada decisão, uma por vez. planos grandes não são lidos; dialogue em partes.
-7. siga os passos na ordem; só avance quando o "pronto quando" for atendido e o aluno confirmar.
+4. use os exemplos (lucassf.pages.dev/ai4good/cmp-excelente e lucassf.pages.dev/ai4good/cmp-raso): em cada passo, compare a produção com a mesma seção dos dois, siga o padrão do excelente e aponte na hora as armadilhas do raso, citando a anotação do professor.
+5. na matriz, toda célula tem evidência (trecho ou link). sem evidência, a célula é "?", nunca um chute.
+6. antes do envio final, audite a produção contra os itens de verificação deste artefato.
+7. entreviste o aluno em cada decisão, uma por vez. planos grandes não são lidos; dialogue em partes.
+8. siga os passos na ordem; só avance quando o "pronto quando" for atendido e o aluno confirmar.
 -->
 
 ## por que este artefato existe
@@ -101,6 +102,8 @@ busque 5 apps, ferramentas ou soluções que JÁ EXISTEM e atacam o mesmo proble
 usuário. procure em: [fontes]. para cada um: nome, link oficial, 1 frase do que faz, no que é bom,
 onde falha para o meu usuário, e se bate (= igual, ≈ parecido, ≠ diferente) em cenário, usuário,
 problema e tecnologia. não invente: se não achar 5, pare antes e diga onde procurou.
+o padrão é o § 2 de lucassf.pages.dev/ai4good/cmp-excelente; evite o que faz o § 2 de
+lucassf.pages.dev/ai4good/cmp-raso. leia as anotações do professor no fim de cada um.
 ```
 
 abra cada link e cole no **catálogo de ferramentas** do `cmp.md`.
@@ -117,6 +120,8 @@ científicos publicados que tratam do mesmo problema com a mesma tecnologia ou u
 priorize estes veículos: [cole a lista]. para cada um: título exato, autores, ano, veículo, se é
 artigo completo ou resumo/pôster, link (DOI ou página do autor), 1 frase do que propõe, no que é
 bom, onde falha para o meu caso, e a ficha (= / ≈ / ≠). não invente: só cite o que você achou.
+o padrão é o § 3 de lucassf.pages.dev/ai4good/cmp-excelente; evite o que faz o § 3 de
+lucassf.pages.dev/ai4good/cmp-raso. leia as anotações do professor no fim de cada um.
 ```
 
 rode duas vezes até juntar 10. abra cada link e confira título e veículo.
@@ -137,6 +142,8 @@ abra uma **conversa nova** e cole só as linhas dos 6 escolhidos (não a sua ide
 estes são 6 trabalhos que atacam um mesmo problema: [linhas do catálogo]. liste de 8 a 10 eixos
 em que eles DIFEREM entre si (quem usa, como o dado entra, onde fica, quanto custa...). para cada
 eixo, 1 linha do que ele mede. não use eixos em que todos são iguais.
+o padrão é o § 5 de lucassf.pages.dev/ai4good/cmp-excelente; evite o que faz o § 5 de
+lucassf.pages.dev/ai4good/cmp-raso. leia as anotações do professor no fim de cada um.
 ```
 
 escolha de **5 a 8 eixos**, sendo pelo menos **2 em que a sua ideia perde ou empata**. depois preencha a matriz: uma linha por trabalho, a última é a sua ideia; em cada célula, **✔** faz, **◐** faz em parte, **✘** não faz, **?** não achei evidência. embaixo da matriz, 1 linha de evidência (trecho ou link) para cada ✔ e ◐ dos 6.
@@ -161,6 +168,8 @@ abra uma **conversa nova** (quem ajudou a montar não pode julgar) e cole:
 esta é a contribuição de um projeto: [frase]. este é o trabalho mais próximo que encontrei:
 [nome + link]. busque na web um app ou artigo que JÁ FAÇA isso. se achar, dê nome e link. se
 não achar, diga qual é o ponto mais fraco da frase. não invente referências.
+o padrão é o § 7 de lucassf.pages.dev/ai4good/cmp-excelente; evite o que faz o § 7 de
+lucassf.pages.dev/ai4good/cmp-raso.
 ```
 
 se ela achar um trabalho que existe e bate, ele entra no catálogo e na matriz, e você reescreve a frase.

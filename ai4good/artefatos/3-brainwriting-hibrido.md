@@ -11,11 +11,11 @@ o artefato é publicado junto com a página da disciplina (copie e cole no termi
 
 <!-- guia-ia
 instruções para o agente / IA do estudante:
-1. a IA faz, o aluno domina: gere ideias, texto e críticas junto com o aluno, mas cada escolha é dele. mostre as opções, explique o porquê de cada uma e nunca escolha por ele. o aluno precisa explicar e defender tudo sem você: o que ele não souber explicar não será contabilizado.
-2. use a tríade (brw/modelo.md, brw/excelente.md, brw/raso.md): busque o rigor e os dados reais do excelente, e aponte na hora quando o rascunho cair nas armadilhas do raso (genérico, slop, superficial).
+1. a IA faz, o aluno domina: gere ideias, texto e críticas junto com o aluno, mas cada escolha é dele. mostre as opções e o porquê, e nunca escolha por ele: o que ele não souber explicar e defender sem você não conta.
+2. use os exemplos (links no passo 0): em cada passo, compare o rascunho com a mesma seção do excelente e do raso, busque o rigor e os dados reais do excelente, e aponte na hora as armadilhas do raso, citando a anotação do professor.
 3. antes do envio final, audite a produção contra os itens de verificação deste artefato.
-4. entreviste o aluno, em CADA DECISÃO, todas as mudanças, uma a uma, entreviste, converse com ele, exponha as opções. desenvolva uma interação dialogada e fracionada. cuidado com planos grandes por que nós humanos temos a tendência de não ler em detalhes eles. então é imprescindível um diálogo em partes.
-5. contexto grande custa mais e alucina mais: perto de 100k–200k tokens, grave o progresso no `brw.md` e proponha uma sessão nova com um handoff.
+4. entreviste o aluno em CADA decisão, uma por vez, expondo as opções. planos grandes não são lidos: dialogue em partes.
+5. perto de 100k–200k tokens, grave o progresso no `brw.md` e proponha uma sessão nova com um handoff.
 6. neste artefato: não descarte uma ideia só porque ela parece um clichê. clichês são clichês porque funcionam; o que se evita é a superficialidade. quando uma ideia parecer com um clichê, nomeie a sutileza que a diferencia.
 7. siga os passos na ordem; só avance quando o "pronto quando" for atendido e o aluno confirmar.
 -->
@@ -39,15 +39,13 @@ instruções para o agente / IA do estudante:
 **entra:** uma crise que importa a você. **sai:** a sua ideia completa, que alimenta o próximo artefato (competidores e contribuição) e a introdução do artigo.
 
 - **pré-requisitos:**
-  - [ ] uma IA conversacional: ChatGPT, Gemini, Claude (no browser ou no celular), ou um harness (antigravity, claude code, opencode)
+  - [ ] uma IA conversacional: ChatGPT, Gemini, Claude, ou um harness (antigravity, claude code, opencode)
   - [ ] o seu repositório git, o que você usa na disciplina: este trabalho vai nele, sugestão `va2/brw.md`
 - **apoio, não obrigatório:** a aula "crises e caminhos de transformação" e as aulas de arquiteturas e agentes. o artefato se sustenta sozinho.
 
 ---
 
 ## materiais (tríade de referência)
-
-os três arquivos têm a mesma estrutura: um em branco e dois preenchidos.
 
 - **[modelo](brw/modelo.md):** a folha em branco. você copia para o seu repositório e preenche, passo a passo.
 - **[exemplo excelente](brw/excelente.md):** a folha preenchida no padrão que buscamos, com as anotações do professor dizendo por quê.
@@ -57,9 +55,9 @@ os três arquivos têm a mesma estrutura: um em branco e dois preenchidos.
 
 ## passo a passo
 
-**o que acontece aqui.** esta seção é uma conversa com você, em passos. em cada passo você **lê**, **faz** (quase sempre com um prompt para a IA), **cola o resultado** no seu `brw.md`, e **só segue quando o "pronto quando" estiver atendido**. a IA gera, organiza e critica; quem decide é você. e decidir é saber explicar: o que você não souber explicar não conta.
+**o que acontece aqui.** em cada passo você **lê**, **faz** (quase sempre com um prompt para a IA), **cola o resultado** no seu `brw.md`, e **só segue quando o "pronto quando" estiver atendido**. a IA gera, organiza e critica; quem decide é você. e decidir é saber explicar: o que você não souber explicar não conta.
 
-**onde usar os prompts.** cada prompt diz se vai na **mesma conversa** ou numa **conversa nova** (um olhar que não ajudou a criar a ideia). num harness, peça ao agente que leia este guia e o seu `brw.md` e siga os passos com você.
+**onde usar os prompts.** cada prompt diz se vai na **mesma conversa** ou numa **conversa nova**. num harness, peça ao agente que leia este guia e o seu `brw.md` e siga os passos com você.
 
 ### passo 0 · prepare a folha
 
@@ -68,7 +66,10 @@ copie o [modelo](brw/modelo.md) para o seu repositório como `va2/brw.md` e abra
 ```text
 vou fazer um exercício de ideação de uma disciplina de IA for Good. nesta conversa você vai me
 ajudar passo a passo, mas eu decido tudo. não escolha por mim, mostre opções e explique o porquê.
-respostas curtas, em tabela quando eu pedir tabela.
+respostas curtas, em tabela quando eu pedir tabela. antes de tudo, leia o exemplo excelente
+(lucassf.pages.dev/ai4good/brw-excelente) e o quase bom (lucassf.pages.dev/ai4good/brw-raso).
+em cada passo, siga o padrão do excelente e me avise quando eu cair nas
+armadilhas do quase bom. se não conseguir abrir os links, me diga.
 ```
 
 **pronto quando:** o `brw.md` está no seu repositório e a conversa está aberta.
@@ -86,7 +87,7 @@ clichês são clichês porque funcionam em alguma coisa. listar os da sua crise 
 ```text
 minha crise é: [crise]. liste as 5 soluções que quase todo mundo proporia primeiro (os clichês).
 para cada uma, 1 linha do que ela acerta e 1 linha de onde fica superficial.
-tabela: clichê | o que acerta | onde fica raso.
+tabela: clichê | o que acerta | onde fica raso. compare com o § 2 dos exemplos.
 ```
 
 **pronto quando:** a tabela está no `brw.md` e você entende, em cada clichê, o que ele acerta.
@@ -102,7 +103,7 @@ para cada célula vazia, proponha UMA ideia que use exatamente aquela IA com aqu
 para atacar a crise. mantenha as minhas como estão. evite os clichês da tabela anterior, a não ser
 que a ideia tenha uma sutileza que a deixe diferente; nesse caso, diga qual.
 responda só com a tabela 3 × 3; em cada célula: nome curto · frase de até 20 palavras (quem usa,
-o que faz).
+o que faz). compare com o § 3 dos exemplos.
 ```
 
 agora posicione as 9 num mapa de dois eixos: **impacto** (quanto muda a crise se der certo) e **viabilidade** (o quanto dá para construir e testar neste semestre). cole:
@@ -110,7 +111,8 @@ agora posicione as 9 num mapa de dois eixos: **impacto** (quanto muda a crise se
 ```text
 posicione as 9 ideias da matriz num mapa impacto × viabilidade. para cada uma: impacto (alto ou
 baixo) e viabilidade no semestre (alta ou baixa), com 1 linha de justificativa de cada. depois
-desenhe a grade 2 × 2 com os nomes nos quadrantes. não recomende qual escolher.
+desenhe a grade 2 × 2 com os nomes nos quadrantes. não recomende qual escolher. compare com o § 3 dos
+exemplos.
 ```
 
 discorde da IA onde ela errou: o mapa é seu. então escolha **uma ideia**, a que você mais gosta e julga ter o melhor equilíbrio entre impacto e viabilidade, e escreva, **sem IA**, em até 3 linhas, por que ela. alto impacto com baixa viabilidade não é proibido: diga como você vai reduzir até caber no semestre.
@@ -142,7 +144,8 @@ funciona em outro domínio) · reescalar (100× menor ou 100× maior) · trocar 
 "sem tela?", "moeda = tempo?").
 não descarte uma variação por parecer um clichê: se ela se parecer com um, diga a sutileza que a
 deixa diferente. tabela: motor | o que foi [invertido, canalizado, transplantado…], dito em 1 linha |
-nome | frase de até 25 palavras | o que mudou em relação à ideia.
+nome | frase de até 25 palavras | o que mudou em relação à ideia. compare com o § 4 dos
+exemplos.
 ```
 
 **pronto quando:** a tabela das 9 variações está no `brw.md`. se uma variação é a mesma ideia com outro nome, peça de novo.
@@ -160,7 +163,7 @@ depois **misture** o que ficou numa ideia completa: nome e de 3 a 5 linhas dizen
 ```text
 estas são as minhas anotações: [cole]. proponha 2 formas de misturar o que eu gostei e achei
 interessante numa ideia completa (nome + 3 a 5 linhas), sem usar o que eu descartei.
-não escolha por mim.
+não escolha por mim. compare com o § 5 dos exemplos.
 ```
 
 **pronto quando:** as anotações e a sua ideia completa estão no `brw.md`, e a ideia completa é melhor que a escolhida no passo 3.
@@ -177,10 +180,9 @@ minha ideia completa é [cole]. primeiro, busque de 3 a 5 dados que mostrem o ta
 fonte (IBGE, ministérios, IPEA, artigos, jornais sérios). depois entreviste-me, UMA pergunta por
 vez, sem responder por mim, até fecharmos duas coisas: (a) se isto fosse usado pelo Brasil ou pelo
 mundo inteiro por 5 anos, o que mudaria na crise, em pontos específicos e com números arriscados
-a partir daqueles dados (ex.: quanto dinheiro deixaria de ir para grandes redes e circularia no
-bairro; quantas idas ao posto de saúde a menos); (b) por que cada pessoa usaria por interesse
+a partir daqueles dados; (b) por que cada pessoa usaria por interesse
 próprio INDIVIDUALISTA, sem heroísmo nem altruísmo, como no Waze, em que o motorista só quer a
-rota mais rápida e, sem querer, alimenta o mapa de todos. no fim, resuma em até 120 palavras.
+rota mais rápida e, sem querer, alimenta o mapa de todos. no fim, resuma em até 120 palavras. compare com o § 6a dos exemplos.
 ```
 
 a IA inventa números e fontes: **abra cada link** e confira o dado antes de usar. projeção é
@@ -192,7 +194,7 @@ aposta, e tudo bem: diga de qual dado ela parte e qual a sua hipótese.
 qual técnica de IA avançada é o coração da minha ideia (ex.: transformers, redes de grafos,
 modelos locais, visão computacional, agentes)? pergunte-me antes de concluir. depois explique
 em até 100 palavras por que, sem ela, a ideia não funcionaria, e o que uma solução sem IA
-perderia.
+perderia. compare com o § 6b dos exemplos.
 ```
 
 **c · críticas de quem está de fora.** abra uma **conversa nova**: quem critica não pode ter ajudado a criar a ideia. cole a sua ideia completa junto:
@@ -202,7 +204,8 @@ seja um avaliador cético e construtivo desta ideia: [ideia completa].
 dê as 3 críticas mais fortes (viabilidade, adoção, dano possível). para cada crítica, proponha
 2 saídas, usando: diminuir o escopo, atacar um público menor, mudar de plataforma, trocar a
 persona, começar por uma fase pequena, ou se apoiar num ator que já existe.
-tabela: crítica | saída 1 | saída 2. não decida por mim.
+tabela: crítica | saída 1 | saída 2. não decida por mim. o padrão é o § 6c de
+lucassf.pages.dev/ai4good/brw-excelente; evite o de lucassf.pages.dev/ai4good/brw-raso.
 ```
 
 **pronto quando:** está no `brw.md`:
