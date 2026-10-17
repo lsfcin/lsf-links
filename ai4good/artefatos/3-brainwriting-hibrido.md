@@ -13,7 +13,7 @@ o artefato é publicado junto com a página da disciplina (copie e cole no termi
 instruções para o agente / IA do estudante:
 1. a IA faz, o aluno domina: gere ideias, texto e críticas junto com o aluno, mas cada escolha é dele. mostre as opções e o porquê, e nunca escolha por ele: o que ele não souber explicar e defender sem você não conta.
 2. use os exemplos (links no passo 0): em cada passo, compare o rascunho com a mesma seção do excelente e do raso, busque o rigor e os dados reais do excelente, e aponte na hora as armadilhas do raso, citando a anotação do professor.
-3. antes do envio final, audite a produção contra os itens de verificação deste artefato.
+3. não avalie o que você ajudou a gerar: o mapa do passo 3, as críticas do 6c e a auditoria do passo 8 rodam numa conversa nova. lembre o aluno disso.
 4. entreviste o aluno em CADA decisão, uma por vez, expondo as opções. planos grandes não são lidos: dialogue em partes.
 5. perto de 100k–200k tokens, grave o progresso no `brw.md` e proponha uma sessão nova com um handoff.
 6. neste artefato: não descarte uma ideia só porque ela parece um clichê. clichês são clichês porque funcionam; o que se evita é a superficialidade. quando uma ideia parecer com um clichê, nomeie a sutileza que a diferencia.
@@ -27,7 +27,7 @@ instruções para o agente / IA do estudante:
 
 ### casos de referência: quando um mecanismo muda a sociedade
 
-- **waze:** o motorista só quer a rota mais rápida para si. ao navegar, transmite posição e velocidade e, sem querer, alimenta o mapa de trânsito de todos. lição: o que se sustenta não depende de heroísmo nem de altruísmo; canaliza o interesse próprio para o bem comum.
+- **waze:** o motorista só quer a rota mais rápida para si. ao navegar, alimenta sem querer o mapa de trânsito de todos. lição: o que se sustenta não depende de altruísmo; canaliza o interesse próprio. é a prova do passo 3.
 - **pix:** infraestrutura pública de pagamento instantâneo, criada no Banco Central sob a liderança de Ângelo Duarte, cearense formado no ITA. em cinco anos, economizou R$ 107 bilhões aos brasileiros (Exame) e virou referência internacional.
 - **vipassana:** cursos de meditação de dez dias, gratuitos, mantidos só por doações de quem já fez um curso, sem viés religioso. desde o primeiro centro, Dhamma Giri (Índia, 1976), espalhou-se pelo mundo sem nenhuma lógica de mercado: só ensinando autoconhecimento.
 - **feiras agroecológicas e agrofloresta:** e se todo mundo comprasse direto de quem planta? comida mais saudável e barata, menos filas em hospital.
@@ -40,32 +40,32 @@ instruções para o agente / IA do estudante:
 
 - **pré-requisitos:**
   - [ ] uma IA conversacional: ChatGPT, Gemini, Claude, ou um harness (antigravity, claude code, opencode)
-  - [ ] o seu repositório git, o que você usa na disciplina: este trabalho vai nele, sugestão `va2/brw.md`
-- **apoio, não obrigatório:** a aula "crises e caminhos de transformação" e as aulas de arquiteturas e agentes. o artefato se sustenta sozinho.
+  - [ ] o seu repositório git da disciplina, onde fica o `va2/brw.md`
+- **apoio, opcional:** a aula "crises e caminhos de transformação" e as aulas de arquiteturas e agentes.
 
 ---
 
 ## materiais (tríade de referência)
 
-- **[modelo](brw/modelo.md):** a folha em branco. você copia para o seu repositório e preenche, passo a passo.
-- **[exemplo excelente](brw/excelente.md):** a folha preenchida no padrão que buscamos, com as anotações do professor dizendo por quê.
-- **[exemplo quase bom / sem alma](brw/raso.md):** a folha toda preenchida, mas rasa. as anotações do professor mostram onde ela falha. use para se vigiar.
+- **[modelo](brw/modelo.md):** a folha em branco. copie para o seu repositório e preencha.
+- **[exemplo excelente](brw/excelente.md):** o padrão que buscamos, com anotações do professor.
+- **[exemplo quase bom / sem alma](brw/raso.md):** parece pronto, mas cada escolha é fraca. as anotações dizem por quê.
 
 ---
 
 ## passo a passo
 
-**o que acontece aqui.** em cada passo você **lê**, **faz** (quase sempre com um prompt para a IA), **cola o resultado** no seu `brw.md`, e **só segue quando o "pronto quando" estiver atendido**. a IA gera, organiza e critica; quem decide é você. e decidir é saber explicar: o que você não souber explicar não conta.
+**o que acontece aqui.** em cada passo você **lê**, **faz** (quase sempre com um prompt), **cola o resultado** no `brw.md` e **só segue quando o "pronto quando" estiver atendido**. a IA gera e critica; você decide, e decidir é saber explicar.
 
-**onde usar os prompts.** cada prompt diz se vai na **mesma conversa** ou numa **conversa nova**. num harness, peça ao agente que leia este guia e o seu `brw.md` e siga os passos com você.
+**onde usar os prompts.** cada prompt diz se vai na **mesma conversa**, a do passo 0, ou numa **conversa nova**, que só julga. num harness, peça ao agente que leia este guia e o `brw.md` e siga com você.
 
 ### passo 0 · prepare a folha
 
-copie o [modelo](brw/modelo.md) para o seu repositório como `va2/brw.md` e abra uma conversa com a IA. no início da conversa, cole:
+copie o [modelo](brw/modelo.md) para `va2/brw.md`, abra uma conversa com a IA e cole:
 
 ```text
-vou fazer um exercício de ideação de uma disciplina de IA for Good. nesta conversa você vai me
-ajudar passo a passo, mas eu decido tudo. não escolha por mim, mostre opções e explique o porquê.
+vou fazer um exercício de ideação da disciplina IA for Good. me ajude passo a passo, mas eu
+decido tudo: mostre opções e o porquê, sem escolher por mim.
 respostas curtas, em tabela quando eu pedir tabela. antes de tudo, leia o exemplo excelente
 (lucassf.pages.dev/ai4good/brw-excelente) e o quase bom (lucassf.pages.dev/ai4good/brw-raso).
 em cada passo, siga o padrão do excelente e me avise quando eu cair nas
@@ -97,8 +97,7 @@ tabela: clichê | o que acerta | onde fica raso. compare com o § 2 dos exemplos
 cada cruzamento de uma IA com uma infraestrutura é uma célula: 9 ideias. escreva primeiro as que você já tem. depois, cole na **mesma conversa**:
 
 ```text
-cruzei 3 tecnologias de IA (A, B, C: [quais]) com 3 infraestruturas (1, 2, 3: [quais]), o que dá
-9 células. já tenho estas ideias: [as suas, com a célula de cada uma].
+cruzei 3 IAs (A, B, C: [quais]) com 3 infraestruturas (1, 2, 3: [quais]): 9 células. já tenho estas ideias: [as suas, com a célula de cada uma].
 para cada célula vazia, proponha UMA ideia que use exatamente aquela IA com aquela infraestrutura
 para atacar a crise. mantenha as minhas como estão. evite os clichês da tabela anterior, a não ser
 que a ideia tenha uma sutileza que a deixe diferente; nesse caso, diga qual.
@@ -106,22 +105,24 @@ responda só com a tabela 3 × 3; em cada célula: nome curto · frase de até 2
 o que faz). compare com o § 3 dos exemplos.
 ```
 
-agora posicione as 9 num mapa de dois eixos: **impacto** (quanto muda a crise se der certo) e **viabilidade** (o quanto dá para construir e testar neste semestre). cole:
+agora quem avalia é uma **conversa nova**: quem gerou as ideias tende a gostar delas. cole a matriz junto:
 
 ```text
-posicione as 9 ideias da matriz num mapa impacto × viabilidade. para cada uma: impacto (alto ou
-baixo) e viabilidade no semestre (alta ou baixa), com 1 linha de justificativa de cada. depois
-desenhe a grade 2 × 2 com os nomes nos quadrantes. não recomende qual escolher. compare com o § 3 dos
-exemplos.
+avalie estas 9 ideias, que você não ajudou a criar, para a crise [crise]: [cole a matriz].
+para cada uma: impacto (alto ou baixo: quanto muda a crise se der certo) e viabilidade no semestre
+(alta ou baixa), 1 linha cada. depois a prova do Waze: quem usa, o que ganha PARA SI, sem
+altruísmo, e o que custa a ele em tempo, esforço ou dinheiro; passa se o ganho vence o custo.
+desenhe a grade 2 × 2 e a tabela ideia | ganho | custo | passa?. não recomende qual escolher.
+o padrão é o § 3 de lucassf.pages.dev/ai4good/brw-excelente; evite o de lucassf.pages.dev/ai4good/brw-raso.
 ```
 
-discorde da IA onde ela errou: o mapa é seu. então escolha **uma ideia**, a que você mais gosta e julga ter o melhor equilíbrio entre impacto e viabilidade, e escreva, **sem IA**, em até 3 linhas, por que ela. alto impacto com baixa viabilidade não é proibido: diga como você vai reduzir até caber no semestre.
+discorde da IA onde ela errou: o mapa e a prova são seus. escolha **uma ideia**, a que você mais gosta e julga ter o melhor equilíbrio, e escreva, **sem IA**, em até 3 linhas, por que ela. impacto alto com viabilidade baixa vale, se você disser como reduzir até caber no semestre; ideia que reprova na prova vale, se você disser como cortar o custo ou aumentar o ganho.
 
-**pronto quando:** a matriz, a grade e a sua ideia escolhida, com o porquê, estão no `brw.md`.
+**pronto quando:** a matriz, a grade, a prova e a ideia escolhida, com o porquê, estão no `brw.md`.
 
 ### passo 4 · ligue os motores
 
-um motor é um **verbo** que ajuda a pensar fora da caixa: uma ação que você aplica à sua ideia para empurrá-la a um lugar onde ela não chegaria sozinha. cada verbo já gerou invenções que mudaram o mundo, e entender o caso ajuda a usar o verbo:
+um motor é um **verbo** que você aplica à ideia para empurrá-la aonde ela não chegaria sozinha. cada verbo já gerou invenções que mudaram o mundo, e entender o caso ajuda a usar o verbo:
 
 | motor | o que o verbo faz | um caso real |
 |:--|:--|:--|
@@ -133,7 +134,7 @@ um motor é um **verbo** que ajuda a pensar fora da caixa: uma ação que você 
 | **juntar** | **junte** sua ideia com outra, de qualquer tabela, e veja se o todo vale mais que as partes. | em 2007, o iPhone **juntou** três aparelhos que já existiam, o celular, o tocador de música e o navegador de internet, numa tela só. cada um sozinho já existia; **juntos**, mudaram como o mundo se comunica.<br>**o que foi juntado:** três aparelhos numa tela só. |
 | **restringir** | **restrinja** de propósito: "e se o custo de nuvem fosse R$ 0?", "e se fosse sem tela?", "e se a energia fosse só solar?", "e se a moeda fosse o tempo?". | na ilha de Bougainville, nos anos 1990, um bloqueio cortou combustível e energia. **restringida**, a comunidade aprendeu a fazer combustível de óleo de coco e a gerar a própria energia: ficou conhecida como a revolução dos cocos.<br>**o que foi restringido:** o combustível e a energia de fora; sem eles, o coco virou fonte de energia. |
 
-aplique todos os motores à **sua ideia escolhida**. cole na **mesma conversa**:
+aplique todos os motores à **sua ideia escolhida**. volte à **mesma conversa** (a do passo 0) e cole:
 
 ```text
 minha ideia escolhida é [nome: frase]. aplique a ela cada um destes motores, gerando UMA variação
@@ -144,11 +145,11 @@ funciona em outro domínio) · reescalar (100× menor ou 100× maior) · trocar 
 "sem tela?", "moeda = tempo?").
 não descarte uma variação por parecer um clichê: se ela se parecer com um, diga a sutileza que a
 deixa diferente. tabela: motor | o que foi [invertido, canalizado, transplantado…], dito em 1 linha |
-nome | frase de até 25 palavras | o que mudou em relação à ideia. compare com o § 4 dos
-exemplos.
+nome | frase de até 25 palavras | o que mudou em relação à ideia | o que quem usa ganha para si.
+compare com o § 4 dos exemplos.
 ```
 
-**pronto quando:** a tabela das 9 variações está no `brw.md`. se uma variação é a mesma ideia com outro nome, peça de novo.
+**pronto quando:** a tabela das 9 variações está no `brw.md`. se uma variação é a mesma ideia com outro nome, ou o ganho serve para qualquer app ("mais praticidade"), peça de novo.
 
 ### passo 5 · o que fica e o que sai
 
@@ -180,9 +181,9 @@ minha ideia completa é [cole]. primeiro, busque de 3 a 5 dados que mostrem o ta
 fonte (IBGE, ministérios, IPEA, artigos, jornais sérios). depois entreviste-me, UMA pergunta por
 vez, sem responder por mim, até fecharmos duas coisas: (a) se isto fosse usado pelo Brasil ou pelo
 mundo inteiro por 5 anos, o que mudaria na crise, em pontos específicos e com números arriscados
-a partir daqueles dados; (b) por que cada pessoa usaria por interesse
-próprio INDIVIDUALISTA, sem heroísmo nem altruísmo, como no Waze, em que o motorista só quer a
-rota mais rápida e, sem querer, alimenta o mapa de todos. no fim, resuma em até 120 palavras. compare com o § 6a dos exemplos.
+a partir daqueles dados; (b) a prova do Waze da ideia completa: o que
+cada pessoa ganha PARA SI, sem altruísmo, e o que custa a ela. no fim, resuma em até 120 palavras.
+compare com o § 6a dos exemplos.
 ```
 
 a IA inventa números e fontes: **abra cada link** e confira o dado antes de usar. projeção é
@@ -219,11 +220,25 @@ em até 5 linhas, com as suas palavras: a crise, a ideia, como a IA entra, o que
 
 **pronto quando:** o resumo está escrito e o colega entendeu.
 
+### passo 8 · auditoria cega
+
+quem ajudou a fazer não pode dar a nota. abra uma **conversa nova** e cole:
+
+```text
+audite esta folha de ideação, que você não ajudou a fazer: [cole o brw.md inteiro].
+itens de verificação: [cole os 3 itens do fim do guia]. para cada item: passa ou não passa, com o
+trecho da folha que prova. depois aponte onde ela cai nas armadilhas anotadas em
+lucassf.pages.dev/ai4good/brw-raso e onde fica aquém de lucassf.pages.dev/ai4good/brw-excelente.
+não reescreva nada.
+```
+
+**pronto quando:** cada item passa, ou você corrigiu o que não passou e auditou de novo.
+
 ---
 
 ## itens de verificação
 
-1. [ ] **brw completo:** o `brw.md` com todos os passos preenchidos: crise e tecnologias marcadas, clichês, matriz 3 × 3 e mapa impacto × viabilidade, ideia escolhida com o porquê, as 9 variações dos motores, o que fica e o que sai, a ideia completa, as 3 críticas com a sua decisão em cada uma, e o resumo.
+1. [ ] **brw completo:** o `brw.md` com todos os passos preenchidos: crise e tecnologias marcadas, clichês, matriz 3 × 3, mapa impacto × viabilidade e prova do Waze, ideia escolhida com o porquê, as 9 variações dos motores, o que fica e o que sai, a ideia completa, as 3 críticas com a sua decisão em cada uma, e o resumo.
 2. [ ] **impacto claro:** que crise a ideia ataca, o tamanho dela hoje (com dado e fonte), o que muda de concreto se todo mundo usasse, e por que cada pessoa usaria por interesse próprio, como no Waze.
 3. [ ] **ia avançada indispensável:** a técnica com nome, e o que a ideia perde sem ela. se uma regra simples resolve, não conta.
 
