@@ -1,6 +1,6 @@
 # brw · [preencha: seu nome]
 
-> folha do artefato [brainwriting híbrido](../3-brainwriting-hibrido.md). siga o guia passo a passo
+> folha do artefato [brainwriting híbrido](../3-brainwriting-hibrido.md). siga o artefato passo a passo
 > e preencha cada seção aqui. as decisões são suas, e decidir é saber explicar.
 
 ## 1 · onde atacar
@@ -69,9 +69,9 @@ cada célula: **nome** · frase de até 20 palavras (quem usa, o que faz).
 | **impacto alto** | [preencha] | [preencha] |
 | **impacto baixo** | [preencha] | [preencha] |
 
-**as provas do Waze e da regra simples:**
+**as duas perguntas: o argumento do interesse próprio e a alternativa sem IA:**
 
-| ideia | quem usa ganha, para si | o que custa a ele | o que resolve sem IA avançada | passa? |
+| ideia | quem usa ganha, para si | o que custa a ele | o que resolve sem IA avançada | se sustenta? |
 |:--|:--|:--|:--|:--|
 | [preencha] | [preencha] | [preencha] |  | [preencha] |
 |  |  |  |  |  |
@@ -91,7 +91,7 @@ onde discordei da IA, e por quê: [preencha]
 
 ## 4 · motores
 
-| motor | o que foi [verbo] | nome | frase | o que mudou em relação à ideia | o que quem usa ganha para si | passa nas provas? |
+| motor | o que foi [verbo] | nome | frase | o que mudou em relação à ideia | o que quem usa ganha para si | se sustenta nas duas perguntas? |
 |:--|:--|:--|:--|:--|:--|:--|
 | inverter | o que foi invertido: [preencha] | [preencha] | | | | |
 | canalizar | o que foi canalizado: | | | | | |

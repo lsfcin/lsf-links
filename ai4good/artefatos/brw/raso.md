@@ -55,19 +55,19 @@ cada célula: **nome** · frase de até 20 palavras (quem usa, o que faz).
 | **impacto alto** | **feira inteligente** — tem bastante potencial e parece possível de fazer.<br>**feira por voz** — pode ajudar muita gente e falar parece simples. | **feira visual** — conecta muitas pessoas, mas reconhecer imagens parece difícil.<br>**pix inteligente** — pode melhorar bastante a gestão, mas exige uma análise mais avançada. |
 | **impacto baixo** | **dicas por foto** — oferece dicas, mas tem poucas funções; parece fácil de testar.<br>**chat da feira** — atende dúvidas específicas e um chatbot parece simples.<br>**áudio saudável** — informa sobre alimentação, mas faz pouca coisa; responder por áudio parece viável. | **painel visual** — fica limitado a gráficos e exige trabalhar com imagens.<br>**pix falado** — só fala sobre pagamentos e integrar tudo parece complicado. |
 
-**as provas do Waze e da regra simples:**
+**as duas perguntas: o argumento do interesse próprio e a alternativa sem IA:**
 
-| ideia | quem usa ganha, para si | o que custa a ele | o que resolve sem IA avançada | passa? |
+| ideia | quem usa ganha, para si | o que custa a ele | o que resolve sem IA avançada | se sustenta? |
 |:--|:--|:--|:--|:--|
-| feira visual | conhecer produtores | baixo | nada | passa |
-| dicas por foto | dicas melhores | tirar uma foto | nada | passa |
-| painel visual | ver as vendas | enviar os comprovantes | nada | passa |
-| feira inteligente | recomendações | nenhum | nada | passa |
-| chat da feira | tirar dúvidas | baixo | nada | passa |
-| pix inteligente | dicas de gestão | nenhum | nada | passa |
-| feira por voz | praticidade | baixo | nada | passa |
-| áudio saudável | informação | nenhum | nada | passa |
-| pix falado | praticidade | nenhum | nada | passa |
+| feira visual | conhecer produtores | baixo | nada | sim |
+| dicas por foto | dicas melhores | tirar uma foto | nada | sim |
+| painel visual | ver as vendas | enviar os comprovantes | nada | sim |
+| feira inteligente | recomendações | nenhum | nada | sim |
+| chat da feira | tirar dúvidas | baixo | nada | sim |
+| pix inteligente | dicas de gestão | nenhum | nada | sim |
+| feira por voz | praticidade | baixo | nada | sim |
+| áudio saudável | informação | nenhum | nada | sim |
+| pix falado | praticidade | nenhum | nada | sim |
 
 onde discordei da IA, e por quê: concordei com quase tudo. só passei “feira por voz” de viabilidade baixa para alta porque falar é simples e todo mundo já manda áudio. as outras posições parecem fazer sentido.
 
@@ -81,17 +81,17 @@ o chat da feira é comum demais; a feira inteligente parece mais equilibrada e i
 
 ## 4 · motores
 
-| motor | o que foi [verbo] | nome | frase | o que mudou em relação à ideia | o que quem usa ganha para si | passa nas provas? |
+| motor | o que foi [verbo] | nome | frase | o que mudou em relação à ideia | o que quem usa ganha para si | se sustenta nas duas perguntas? |
 |:--|:--|:--|:--|:--|:--|:--|
-| inverter | o foco. | **consumidor inteligente** | inverter o foco para o consumidor, com recomendações de produtos e produtores. | o foco passa a ser o consumidor e suas necessidades. | mais praticidade. | passa |
-| canalizar | os dados. | **feira conectada** | aproveitar os dados das compras dos usuários para gerar recomendações e melhorar as feiras. | as compras geram dados que podem ajudar todos. | ajudar as feiras. | passa |
-| transplantar | as redes sociais. | **feira social** | trazer a experiência das redes sociais para o aplicativo, com perfis, curtidas e compartilhamentos de produtos locais. | o aplicativo ganha recursos de redes sociais. | mais diversão. | passa |
-| reescalar | o tamanho. | **feira brasil** | ampliar o aplicativo para conectar produtores e consumidores de todo o país. | a abrangência passa a ser nacional. | mais opções. | passa |
-| trocar a persona | o público. | **chat do produtor** | oferecer as recomendações aos produtores, com um chatbot para responder dúvidas e melhorar suas vendas. | o público passa a ser o produtor. | mais praticidade. | passa |
-| trocar o contexto | a cidade. | **feira do interior** | adaptar o aplicativo para produtores e consumidores de cidades do interior. | o aplicativo passa a atender o interior. | mais praticidade. | passa |
-| trocar a tecnologia | a IA. | **feira generativa** | usar modelos de difusão para criar imagens de divulgação dos produtos e tornar o aplicativo mais atrativo. | entra uma tecnologia de geração de imagens, fora da matriz. | um app mais bonito. | passa |
-| juntar | duas ideias. | **feira completa** | juntar feira inteligente e chat da feira em uma solução mais completa para todos. | o marketplace passa a ter também um chatbot. | mais funções. | passa |
-| restringir | a tela. | **feira acessível** | permitir usar as recomendações do aplicativo sem tela, com perguntas e respostas por voz. | o sistema passa a funcionar sem tela. | mais praticidade. | passa |
+| inverter | o foco. | **consumidor inteligente** | inverter o foco para o consumidor, com recomendações de produtos e produtores. | o foco passa a ser o consumidor e suas necessidades. | mais praticidade. | sim |
+| canalizar | os dados. | **feira conectada** | aproveitar os dados das compras dos usuários para gerar recomendações e melhorar as feiras. | as compras geram dados que podem ajudar todos. | ajudar as feiras. | sim |
+| transplantar | as redes sociais. | **feira social** | trazer a experiência das redes sociais para o aplicativo, com perfis, curtidas e compartilhamentos de produtos locais. | o aplicativo ganha recursos de redes sociais. | mais diversão. | sim |
+| reescalar | o tamanho. | **feira brasil** | ampliar o aplicativo para conectar produtores e consumidores de todo o país. | a abrangência passa a ser nacional. | mais opções. | sim |
+| trocar a persona | o público. | **chat do produtor** | oferecer as recomendações aos produtores, com um chatbot para responder dúvidas e melhorar suas vendas. | o público passa a ser o produtor. | mais praticidade. | sim |
+| trocar o contexto | a cidade. | **feira do interior** | adaptar o aplicativo para produtores e consumidores de cidades do interior. | o aplicativo passa a atender o interior. | mais praticidade. | sim |
+| trocar a tecnologia | a IA. | **feira generativa** | usar modelos de difusão para criar imagens de divulgação dos produtos e tornar o aplicativo mais atrativo. | entra uma tecnologia de geração de imagens, fora da matriz. | um app mais bonito. | sim |
+| juntar | duas ideias. | **feira completa** | juntar feira inteligente e chat da feira em uma solução mais completa para todos. | o marketplace passa a ter também um chatbot. | mais funções. | sim |
+| restringir | a tela. | **feira acessível** | permitir usar as recomendações do aplicativo sem tela, com perguntas e respostas por voz. | o sistema passa a funcionar sem tela. | mais praticidade. | sim |
 
 ## 5 · o que fica e o que sai
 
@@ -139,8 +139,8 @@ cada anotação cita uma frase do exemplo e explica onde ela falha. compare com 
 1. **§ 2, clichês.** "já existem muitos; seria melhor inovar" e "é uma solução comum demais": estas linhas serviriam para qualquer tema. não dizem o que o clichê erra **na feira**, então não ensinam onde a ideia precisa ser diferente. no excelente, o marketplace é criticado porque "o catálogo fica parado".
 2. **§ 3, matriz.** "dicas por foto · consumidor envia imagens no WhatsApp e recebe dicas para comprar melhor na feira": foto de quê? que dica? quem lê não entende o que acontece. o mesmo vale para "feira inteligente" e "pix inteligente": a palavra "inteligente" no nome não explica o que a ideia faz.
 3. **§ 3, a escolha.** "concordei com quase tudo" e "escolhi a feira inteligente porque é a mais interessante": a escolha não tem motivo. e a feira inteligente é o mesmo marketplace que o próprio aluno chamou de "sem novidade" no § 2.
-4. **§ 3, a prova do Waze.** "nenhum" na coluna do custo, e as 9 passando: a prova não foi feita. a feira inteligente só recomenda um produtor se ele mantiver o catálogo em dia, de graça; é o mesmo "catálogo parado" do § 2. quem ganha é o consumidor, quem paga é o produtor, e quem paga sem ganhar abandona. no excelente, o confere banca reprova porque o gesto custa mais que o ganho.
-5. **§ 3, a regra simples.** "nada" na coluna do que resolve sem IA avançada, em todas as 9: o painel visual mostra vendas que o app do banco já mostra, e o chat da feira responde o que uma lista de perguntas frequentes responde. ideia que uma lista, uma regra simples ou um app que já existe resolve não precisa de IA avançada, e não passa.
+4. **§ 3, o argumento do interesse próprio.** "nenhum" na coluna do custo, e as 9 passando: a pergunta não foi respondida de verdade. a feira inteligente só recomenda um produtor se ele mantiver o catálogo em dia, de graça; é o mesmo "catálogo parado" do § 2. quem ganha é o consumidor, quem paga é o produtor, e quem paga sem ganhar abandona. no excelente, o confere banca não se sustenta porque o gesto custa mais que o ganho.
+5. **§ 3, a alternativa sem IA.** "nada" na coluna do que resolve sem IA avançada, em todas as 9: o painel visual mostra vendas que o app do banco já mostra, e o chat da feira responde o que uma lista de perguntas frequentes responde. ideia que uma lista, uma regra simples ou um app que já existe resolve não precisa de IA avançada, e não passa.
 6. **§ 4, motores.** "o foco passa a ser o consumidor": a ideia já recomendava produtos ao consumidor, então nada foi invertido. a coluna "o que foi invertido" diz só "o foco", sem dizer de quem para quem. motor que não muda o funcionamento da ideia é só troca de nome. e a coluna do ganho repete "mais praticidade": um ganho que serve para qualquer app não diz por que alguém usaria este.
 7. **§ 5, o que fica e o que sai.** "achei interessante levar o aplicativo para todo o Brasil": crescer não é ideia, é desejo. junto com "reúne mais funções" e "descarto… porque tem menos funcionalidades", mostra que o aluno escolheu por quantidade, e a ideia completa virou uma lista de recursos (chatbot, dashboard, curtidas…).
 8. **§ 6a, e se todo mundo usasse.** "a vida das pessoas melhoraria" e "as pessoas vão querer ajudar": não há um número de hoje, nem uma aposta que alguém possa conferir. e quem usa só por bondade para de usar no primeiro aperto. no excelente, o tamanho do problema vem com dado e fonte, e a projeção diz de qual dado parte.

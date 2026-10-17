@@ -27,7 +27,7 @@ instruções para o agente / IA do estudante:
 
 ### casos de referência: quando um mecanismo muda a sociedade
 
-- **waze:** o motorista só quer a rota mais rápida para si. ao navegar, alimenta sem querer o mapa de trânsito de todos. lição: o que se sustenta não depende de altruísmo; canaliza o interesse próprio. é a prova do passo 3.
+- **waze:** o motorista só quer a rota mais rápida para si. ao navegar, alimenta sem querer o mapa de trânsito de todos. lição: o que se sustenta não depende de altruísmo; canaliza o interesse próprio. é a primeira das duas perguntas do passo 3.
 - **pix:** infraestrutura pública de pagamento instantâneo, criada no Banco Central sob a liderança de Ângelo Duarte, cearense formado no ITA. em cinco anos, economizou R$ 107 bilhões aos brasileiros (Exame) e virou referência internacional.
 - **vipassana:** cursos de meditação de dez dias, gratuitos, mantidos só por doações de quem já fez um curso, sem viés religioso. desde o primeiro centro, Dhamma Giri (Índia, 1976), espalhou-se pelo mundo sem nenhuma lógica de mercado: só ensinando autoconhecimento.
 - **feiras agroecológicas e agrofloresta:** e se todo mundo comprasse direto de quem planta? comida mais saudável e barata, menos filas em hospital.
@@ -57,7 +57,7 @@ instruções para o agente / IA do estudante:
 
 **o que acontece aqui.** em cada passo você **lê**, **faz** (quase sempre com um prompt), **cola o resultado** no `brw.md` e **só segue quando o "pronto quando" estiver atendido**. a IA gera e critica; você decide, e decidir é saber explicar.
 
-**onde usar os prompts.** cada prompt diz se vai na **mesma conversa**, a do passo 0, ou numa **conversa nova**, que só julga. num harness, peça ao agente que leia este guia e o `brw.md` e siga com você.
+**onde usar os prompts.** cada prompt diz se vai na **mesma conversa**, a do passo 0, ou numa **conversa nova**, que só julga. num harness, peça ao agente que leia este artefato e o `brw.md` e siga com você.
 
 ### passo 0 · prepare a folha
 
@@ -110,17 +110,17 @@ agora quem avalia é uma **conversa nova**: quem gerou as ideias tende a gostar 
 ```text
 avalie estas 9 ideias, que você não ajudou a criar, para a crise [crise]: [cole a matriz].
 para cada uma: impacto (alto ou baixo: quanto muda a crise se der certo) e viabilidade no semestre
-(alta ou baixa), 1 linha cada. depois duas provas. a do Waze: quem usa, o que ganha PARA SI, sem
-altruísmo, e o que custa a ele em tempo, esforço ou dinheiro; passa se o ganho vence o custo. a da
-regra simples: o que resolveria sem IA avançada (uma lista, uma regra, um app que já existe); passa
-se nada resolve. desenhe a grade 2 × 2 e a tabela ideia | ganho | custo | sem IA avançada | passa?.
+(alta ou baixa), 1 linha cada. depois duas perguntas. a do interesse próprio: quem usa, o que ganha PARA
+SI, sem altruísmo, e o que custa a ele em tempo, esforço ou dinheiro; se sustenta quando o ganho vence o
+custo. a da alternativa sem IA: o que resolveria sem IA avançada (uma lista, uma regra, um app que já
+existe); se sustenta quando nada resolve. desenhe a grade 2 × 2 e a tabela ideia | ganho | custo | sem IA avançada | se sustenta?.
 não recomende qual escolher.
 o padrão é o § 3 de lucassf.pages.dev/ai4good/brw-excelente; evite o de lucassf.pages.dev/ai4good/brw-raso.
 ```
 
-discorde da IA onde ela errou: o mapa e as provas são seus. escolha **uma ideia de impacto alto**, a que você mais gosta e julga ter o melhor equilíbrio, e escreva, **sem IA**, em até 3 linhas, por que ela. viabilidade baixa vale, se você disser como reduzir até caber no semestre; ideia que reprova numa prova vale, e os motores do passo 4 vão tentar consertá-la.
+discorde da IA onde ela errou: o mapa e as respostas às duas perguntas são seus. escolha **uma ideia de impacto alto**, a que você mais gosta e julga ter o melhor equilíbrio, e escreva, **sem IA**, em até 3 linhas, por que ela. viabilidade baixa vale, se você disser como reduzir até caber no semestre; ideia que não se sustenta numa das duas perguntas vale, e os motores do passo 4 vão tentar consertá-la.
 
-**pronto quando:** a matriz, a grade, as provas e a ideia escolhida, com o porquê, estão no `brw.md`.
+**pronto quando:** a matriz, a grade, as duas perguntas e a ideia escolhida, com o porquê, estão no `brw.md`.
 
 ### passo 4 · ligue os motores
 
@@ -139,8 +139,8 @@ um motor é um **verbo** que você aplica à ideia para empurrá-la aonde ela n�
 aplique todos os motores à **sua ideia escolhida**. volte à **mesma conversa** (a do passo 0) e cole:
 
 ```text
-minha ideia escolhida é [nome: frase]. nas provas do Waze e da regra simples, ela [passou / reprovou
-em: …]; se reprovou, cada variação tenta consertar. aplique a ela cada um destes motores, gerando UMA variação
+minha ideia escolhida é [nome: frase]. nas duas perguntas (interesse próprio e alternativa sem IA), ela [se sustentou /
+não se sustentou em: …]; se não, cada variação tenta consertar. aplique a ela cada um destes motores, gerando UMA variação
 por motor: inverter (papel, fluxo ou incentivo) · canalizar (um comportamento que as pessoas já
 têm, mesmo egoísta ou vicioso, vira bem coletivo, como no Waze) · transplantar (um mecanismo que
 funciona em outro domínio) · reescalar (100× menor ou 100× maior) · trocar a persona · trocar o contexto
@@ -149,10 +149,10 @@ funciona em outro domínio) · reescalar (100× menor ou 100× maior) · trocar 
 não descarte uma variação por parecer um clichê: se ela se parecer com um, diga a sutileza que a
 deixa diferente. tabela: motor | o que foi [invertido, canalizado, transplantado…], dito em 1 linha |
 nome | frase de até 25 palavras | o que mudou em relação à ideia | o que quem usa ganha para si |
-passa nas provas?. compare com o § 4 dos exemplos.
+se sustenta nas duas perguntas?. compare com o § 4 dos exemplos.
 ```
 
-**pronto quando:** a tabela das 9 variações está no `brw.md`. se uma variação é a mesma ideia com outro nome, ou o ganho serve para qualquer app ("mais praticidade"), peça de novo. se a ideia reprovou numa prova, a ideia completa do passo 5 parte de uma variação que passa.
+**pronto quando:** a tabela das 9 variações está no `brw.md`. se uma variação é a mesma ideia com outro nome, ou o ganho serve para qualquer app ("mais praticidade"), peça de novo. se a ideia não se sustentou numa das duas perguntas, a ideia completa do passo 5 parte de uma variação que se sustenta.
 
 ### passo 5 · o que fica e o que sai
 
@@ -174,7 +174,7 @@ não escolha por mim. compare com o § 5 dos exemplos.
 
 ### passo 6 · refinamento
 
-três provas para a ideia completa. responda com as suas palavras; a IA pergunta e ajuda, você decide.
+três perguntas para a ideia completa. responda com as suas palavras; a IA pergunta e ajuda, você decide.
 
 **a · e se todo mundo usasse?** cole na **mesma conversa** e responda às perguntas uma a uma:
 
@@ -184,7 +184,7 @@ minha ideia completa é [cole]. primeiro, busque de 3 a 5 dados que mostrem o ta
 fonte (IBGE, ministérios, IPEA, artigos, jornais sérios). depois entreviste-me, UMA pergunta por
 vez, sem responder por mim, até fecharmos duas coisas: (a) se isto fosse usado pelo Brasil ou pelo
 mundo inteiro por 5 anos, o que mudaria na crise, em pontos específicos e com números arriscados
-a partir daqueles dados; (b) a prova do Waze da ideia completa: o que
+a partir daqueles dados; (b) o argumento do interesse próprio da ideia completa: o que
 cada pessoa ganha PARA SI, sem altruísmo, e o que custa a ela. no fim, resuma em até 120 palavras.
 compare com o § 6a dos exemplos.
 ```
@@ -229,7 +229,7 @@ quem ajudou a fazer não pode dar a nota. abra uma **conversa nova** e cole:
 
 ```text
 audite esta folha de ideação, que você não ajudou a fazer: [cole o brw.md inteiro].
-itens de verificação: [cole os 3 itens do fim do guia]. para cada item: passa ou não passa, com o
+itens de verificação: [cole os 3 itens do fim do artefato]. para cada item: passa ou não passa, com o
 trecho da folha que prova. depois aponte onde ela cai nas armadilhas anotadas em
 lucassf.pages.dev/ai4good/brw-raso e onde fica aquém de lucassf.pages.dev/ai4good/brw-excelente.
 não reescreva nada.
@@ -241,7 +241,7 @@ não reescreva nada.
 
 ## itens de verificação
 
-1. [ ] **brw completo:** o `brw.md` com todos os passos preenchidos: crise e tecnologias marcadas, clichês, matriz 3 × 3, mapa impacto × viabilidade, provas do Waze e da regra simples, ideia escolhida com o porquê, as 9 variações dos motores, o que fica e o que sai, a ideia completa, as 3 críticas com a sua decisão em cada uma, e o resumo.
+1. [ ] **brw completo:** o `brw.md` com todos os passos preenchidos: crise e tecnologias marcadas, clichês, matriz 3 × 3, mapa impacto × viabilidade, argumento do interesse próprio e alternativa sem IA, ideia escolhida com o porquê, as 9 variações dos motores, o que fica e o que sai, a ideia completa, as 3 críticas com a sua decisão em cada uma, e o resumo.
 2. [ ] **impacto claro:** que crise a ideia ataca, o tamanho dela hoje (com dado e fonte), o que muda de concreto se todo mundo usasse, e por que cada pessoa usaria por interesse próprio, como no Waze. uma ideia que as pessoas não usariam por interesse próprio não passa.
 3. [ ] **ia avançada indispensável:** a técnica com nome, e o que a ideia perde sem ela. se uma lista, uma regra simples ou um app que já existe resolve, não passa.
 
