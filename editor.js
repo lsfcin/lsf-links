@@ -15,6 +15,15 @@ window.lsfEditor = (ctx) => {
   };
 
   // A small form that opens right below what was clicked; one at a time. Without onSubmit it only shows.
+  // Esc closes the innermost thing open: a popover first (it may sit over the editor), then the editor
+  let closeEditor = null;
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    const open = document.querySelector('.popover');
+    if (open) open.remove();
+    else if (closeEditor) closeEditor();
+  });
+
   // lead: html that opens the button row (a link like "abrir entrega"), so every action sits on one line
   function popover(anchor, html, onSubmit, ok = 'ok', lead = '') {
     document.querySelectorAll('.popover').forEach((p) => p.remove());
@@ -124,7 +133,9 @@ window.lsfEditor = (ctx) => {
       if (area.value !== ctx.raw && area.value !== text && !confirm('fechar sem salvar?')) return;
       pane.remove();
       document.body.classList.remove('editing');
+      closeEditor = null;
     };
+    closeEditor = close;
     pane.querySelector('[data-act=update]').onclick = update;
     pane.querySelector('[data-act=save]').onclick = save;
     pane.querySelector('[data-act=close]').onclick = close;
