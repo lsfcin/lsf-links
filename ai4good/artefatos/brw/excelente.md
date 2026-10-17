@@ -55,19 +55,19 @@ cada célula: **nome** · frase de até 20 palavras (quem usa, o que faz).
 | **impacto alto** | **rastro da banca** — pode tornar a compra direta um hábito, sem cadastro extra; dá para testar com poucas bancas.<br>**reserva no gogó** — deixa a compra direta garantida para quem hoje vai ao supermercado por segurança; reserva com retirada cabe no semestre. | **lote à vista** — pode tirar o atravessador da venda dos lotes; mas precisa juntar compradores e manter a oferta em dia.<br>**encaixa colheita** — o pedido das cozinhas guiaria o que levar; mas precisa de cozinhas que se comprometam a comprar.<br>**pregão falado** — amplia a negociação direta; mas precisa de produtor e comprador ao mesmo tempo. |
 | **impacto baixo** | **placa que responde** — divulga, mas sozinha não muda a venda; fácil de testar com poucas placas.<br>**confere banca** — evita erro na conferência, mas não traz cliente novo; teste pequeno.<br>**recebe e escuta** — poupa olhar a tela, mas não muda a negociação; teste pequeno. | **sobra quanto** — ajuda cada um a se organizar, mas não abre mercado; juntar custos confiáveis é difícil. |
 
-**a prova do Waze:**
+**as provas do Waze e da regra simples:**
 
-| ideia | quem usa ganha, para si | o que custa a ele | passa? |
-|:--|:--|:--|:--|
-| lote à vista | o produtor vende o lote sem levar à feira | uma foto por lote, e manter a oferta em dia | passa |
-| placa que responde | o feirante avisa os clientes sem digitar | uma foto da placa que ele já escreve | passa |
-| confere banca | o feirante sabe se o Pix daquele pedido caiu | fotografar cada pedido no pico da feira, com a fila esperando | **reprova**: olhar o extrato custa menos |
-| encaixa colheita | o produtor vende antes de colher | dizer o que vai colher | passa |
-| rastro da banca | o feirante tem um caderno de pedidos sem redigitar | nenhum gesto novo: as mensagens já existem | passa |
-| sobra quanto | o produtor sabe quanto sobrou na semana | anotar cada custo, toda semana, antes de ver qualquer ganho | **reprova**: o custo vem antes do ganho |
-| pregão falado | o produtor negocia o lote sem viajar | um áudio, e esperar comprador | passa |
-| reserva no gogó | o feirante sai de casa com venda garantida | o áudio que ele já manda | passa |
-| recebe e escuta | o feirante confere o Pix sem largar a balança | nada | passa |
+| ideia | quem usa ganha, para si | o que custa a ele | o que resolve sem IA avançada | passa? |
+|:--|:--|:--|:--|:--|
+| lote à vista | o produtor vende o lote sem levar à feira | uma foto por lote, e manter a oferta em dia | um grupo com fotos mostra o lote, mas não diz quanto tem; a visão estima | passa |
+| placa que responde | o feirante avisa os clientes sem digitar | uma foto da placa que ele já escreve | um leitor pronto copia a placa, mas não avisa cada cliente do que ele costuma levar | passa |
+| confere banca | o feirante sabe se o Pix daquele pedido caiu | fotografar cada pedido no pico da feira, com a fila esperando | o extrato do banco | **reprova**: olhar o extrato custa menos |
+| encaixa colheita | o produtor vende antes de colher | dizer o que vai colher | uma planilha, se as cozinhas preencherem; o modelo lê o pedido como ele chega | passa |
+| rastro da banca | o feirante tem um caderno de pedidos sem redigitar | nenhum gesto novo: as mensagens já existem | uma planilha, se o feirante redigitar cada mensagem; o modelo lê áudio e texto soltos sem redigitar | passa |
+| sobra quanto | o produtor sabe quanto sobrou na semana | anotar cada custo, toda semana, antes de ver qualquer ganho | uma planilha de custos | **reprova**: o custo vem antes do ganho, e a planilha resolve |
+| pregão falado | o produtor negocia o lote sem viajar | um áudio, e esperar comprador | o áudio do WhatsApp negocia um a um; a voz vira oferta escrita para muitos | passa |
+| reserva no gogó | o feirante sai de casa com venda garantida | o áudio que ele já manda | nada pronto junta áudios soltos em reservas com hora de buscar | passa |
+| recebe e escuta | o feirante confere o Pix sem largar a balança | nada | um aviso sonoro simples, sem IA avançada | **reprova**: a regra simples resolve |
 
 onde discordei da IA, e por quê: a IA pôs o rastro da banca em viabilidade baixa porque teria de ligar várias feiras. passei para alta: consigo testar o caderno com 3 ou 4 bancas, comparando tempo e erros com o caderno de papel. isso não prova que a rede inteira funciona, só que o feirante ganha algo logo no começo. mantive o encaixa colheita em baixa: não dá para simular cozinha que se compromete a comprar só com um protótipo.
 
@@ -81,17 +81,17 @@ quero começar poupando trabalho de quem vende; depois ligo esse registro à org
 
 ## 4 · motores
 
-| motor | o que foi [verbo] | nome | frase | o que mudou em relação à ideia | o que quem usa ganha para si |
-|:--|:--|:--|:--|:--|:--|
-| inverter | quem faz o primeiro pedido: antes o feirante oferecia; agora a cozinha pede primeiro. | **pedido antes da roça** | cozinhas mandam o que precisam toda semana; o produtor responde com uma proposta antes de colher. | o caderno não começa mais na oferta do feirante: o comprador diz o que quer e o produtor responde antes de montar a carga. | o produtor vende antes de colher, sem sobra. |
-| canalizar | a conferência das próprias vendas, que o feirante já faz para não perder dinheiro. | **rastro coletivo** | ao conferir as próprias vendas, os feirantes juntos mostram o que mais sai e ajudam a planejar a próxima feira. | a conta que cada um já faz para si vira informação para todos, se ele aceitar; ninguém preenche relatório para ajudar os outros. | a conta que já faz, sem passo a mais. |
-| transplantar | o agendamento por horário, das consultas médicas para a retirada na feira. | **janela de retirada** | como numa consulta, o cliente marca a hora de buscar; o caderno espalha o trabalho de separar ao longo da feira. | o pedido ganha hora marcada, com vagas limitadas por horário. | separa os pedidos fora do pico. |
-| reescalar | o tamanho da operação: de uma banca inteira para uma caixa. | **feira de uma caixa** | os moradores de um prédio dividem uma caixa de feira; o caderno organiza quem pegou o quê. | em vez de uma banca inteira, uma caixa; o teste vira dividir produtos num prédio. | o morador faz feira barata sem ir à feira. |
-| trocar a persona | saiu o feirante, entrou a cozinheira de restaurante pequeno. | **compra da cozinha** | a dona de um restaurante pequeno organiza as mensagens dos fornecedores e vê quanto custa cada prato. | quem usa passa a ser quem compra; a pergunta vira quanto custa servir. | sabe quanto custa cada prato. |
-| trocar o contexto | do horário da feira para a troca de turno de quem trabalha. | **feira no intervalo** | produtores atendem reservas de quem trabalha por turno, com retirada na troca de expediente. | a feira vai até o horário de quem não consegue ir de manhã. | compra direto no horário que tem. |
-| trocar a tecnologia | de modelo local para rede neural de grafos. | **frete de volta** | uma rede neural de grafos estima o tempo de caminhões que voltam vazios; o produtor compara o custo antes de aceitar. | os pedidos viram carga para um frete que já existe; a rede de grafos estima os tempos e regras simples conferem custo e espaço. | o produtor paga menos frete. |
-| juntar | rastro da banca + reserva no gogó. | **colheita marcada** | as reservas por áudio entram no caderno antes da feira, e o produtor sabe o que levar. | o caderno deixa de só organizar mensagens: reserva confirmada e hora de buscar passam a dizer o que colher e levar. | o produtor leva só o que já foi reservado. |
-| restringir | a tela: o feirante não pode olhar o celular enquanto atende. | **banca sem tela** | sem olhar o celular, o feirante dita o pedido e ouve só o que precisa confirmar. | tudo tem de funcionar por voz durante o trabalho; a tela deixa de ser obrigatória. | registra sem largar a balança. |
+| motor | o que foi [verbo] | nome | frase | o que mudou em relação à ideia | o que quem usa ganha para si | passa nas provas? |
+|:--|:--|:--|:--|:--|:--|:--|
+| inverter | quem faz o primeiro pedido: antes o feirante oferecia; agora a cozinha pede primeiro. | **pedido antes da roça** | cozinhas mandam o que precisam toda semana; o produtor responde com uma proposta antes de colher. | o caderno não começa mais na oferta do feirante: o comprador diz o que quer e o produtor responde antes de montar a carga. | o produtor vende antes de colher, sem sobra. | passa |
+| canalizar | a conferência das próprias vendas, que o feirante já faz para não perder dinheiro. | **rastro coletivo** | ao conferir as próprias vendas, os feirantes juntos mostram o que mais sai e ajudam a planejar a próxima feira. | a conta que cada um já faz para si vira informação para todos, se ele aceitar; ninguém preenche relatório para ajudar os outros. | a conta que já faz, sem passo a mais. | passa |
+| transplantar | o agendamento por horário, das consultas médicas para a retirada na feira. | **janela de retirada** | como numa consulta, o cliente marca a hora de buscar; o caderno espalha o trabalho de separar ao longo da feira. | o pedido ganha hora marcada, com vagas limitadas por horário. | separa os pedidos fora do pico. | **reprova**: um app de agendamento resolve |
+| reescalar | o tamanho da operação: de uma banca inteira para uma caixa. | **feira de uma caixa** | os moradores de um prédio dividem uma caixa de feira; o caderno organiza quem pegou o quê. | em vez de uma banca inteira, uma caixa; o teste vira dividir produtos num prédio. | o morador faz feira barata sem ir à feira. | **reprova**: uma planilha resolve |
+| trocar a persona | saiu o feirante, entrou a cozinheira de restaurante pequeno. | **compra da cozinha** | a dona de um restaurante pequeno organiza as mensagens dos fornecedores e vê quanto custa cada prato. | quem usa passa a ser quem compra; a pergunta vira quanto custa servir. | sabe quanto custa cada prato. | passa |
+| trocar o contexto | do horário da feira para a troca de turno de quem trabalha. | **feira no intervalo** | produtores atendem reservas de quem trabalha por turno, com retirada na troca de expediente. | a feira vai até o horário de quem não consegue ir de manhã. | compra direto no horário que tem. | passa |
+| trocar a tecnologia | de modelo local para rede neural de grafos. | **frete de volta** | uma rede neural de grafos estima o tempo de caminhões que voltam vazios; o produtor compara o custo antes de aceitar. | os pedidos viram carga para um frete que já existe; a rede de grafos estima os tempos e regras simples conferem custo e espaço. | o produtor paga menos frete. | passa |
+| juntar | rastro da banca + reserva no gogó. | **colheita marcada** | as reservas por áudio entram no caderno antes da feira, e o produtor sabe o que levar. | o caderno deixa de só organizar mensagens: reserva confirmada e hora de buscar passam a dizer o que colher e levar. | o produtor leva só o que já foi reservado. | passa |
+| restringir | a tela: o feirante não pode olhar o celular enquanto atende. | **banca sem tela** | sem olhar o celular, o feirante dita o pedido e ouve só o que precisa confirmar. | tudo tem de funcionar por voz durante o trabalho; a tela deixa de ser obrigatória. | registra sem largar a balança. | passa |
 
 ## 5 · o que fica e o que sai
 
@@ -153,7 +153,7 @@ cada anotação cita uma frase do exemplo e explica por que ela é o padrão que
 2. **§ 2, clichês.** "o catálogo fica parado: não sabe o que já foi vendido na banca": o clichê (marketplace) não é criticado por ser comum, mas pelo que dá errado na feira. e essa falha vira a ideia dele: registrar pedidos "sem redigitar".
 3. **§ 3, matriz.** "feirante dita no WhatsApp o que tem; cliente responde por áudio e reserva para buscar": dá para ver quem faz o quê, com qual ferramenta. toda célula da matriz tem de ser lida assim, sem o leitor precisar perguntar "como assim?".
 4. **§ 3, onde discordei da IA.** "consigo testar o caderno com 3 ou 4 bancas, comparando tempo e erros com o caderno de papel": discordar da IA vale quando você mostra um teste que cabe no semestre, e não só a sua opinião.
-5. **§ 3, a prova do Waze.** "fotografar cada pedido no pico da feira, com a fila esperando": a prova olha o gesto de quem usa, não a tecnologia. o confere banca é viável e mesmo assim reprova, porque olhar o extrato custa menos. e a escolhida passa sem pedir gesto novo: as mensagens já existem.
+5. **§ 3, a prova do Waze.** "fotografar cada pedido no pico da feira, com a fila esperando": a prova olha o gesto de quem usa, não a tecnologia. o confere banca é viável e mesmo assim reprova, porque olhar o extrato custa menos. e a escolhida passa sem pedir gesto novo: as mensagens já existem. a regra simples corta junto: três das quatro de impacto baixo têm um extrato, uma planilha ou um aviso sonoro que já resolve, e nos motores a janela de retirada é só um app de agendamento.
 6. **§ 4, motores.** "o comprador diz o que quer e o produtor responde antes de montar a carga": isto é inverter de verdade, porque mudou quem começa o pedido. a coluna "o que foi invertido" diz isso em uma linha; se você não consegue escrevê-la, o motor não foi usado.
 7. **§ 5, o que eu descarto.** "dividir produtos num prédio não testa o atendimento de uma banca": descartar com motivo é o que faz a ideia completa ser uma escolha, e não uma soma de tudo o que apareceu.
 8. **§ 6a, e se todo mundo usasse.** "80,5% das crianças de 6 meses a 2 anos já comem ultraprocessados" e "uns R$ 50 bilhões por ano pagos direto a quem planta": primeiro o tamanho do problema, com número e fonte; depois uma aposta com número, que diz de qual dado parte e pode dar errado. e "trabalhar menos e vender mais" é interesse próprio, como no Waze: ninguém precisa querer ajudar.

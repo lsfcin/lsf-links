@@ -100,8 +100,8 @@ cada cruzamento de uma IA com uma infraestrutura é uma célula: 9 ideias. escre
 cruzei 3 IAs (A, B, C: [quais]) com 3 infraestruturas (1, 2, 3: [quais]): 9 células. já tenho estas ideias: [as suas, com a célula de cada uma].
 para cada célula vazia, proponha UMA ideia que use exatamente aquela IA com aquela infraestrutura
 para atacar a crise. mantenha as minhas como estão. evite os clichês da tabela anterior, a não ser
-que a ideia tenha uma sutileza que a deixe diferente; nesse caso, diga qual.
-responda só com a tabela 3 × 3; em cada célula: nome curto · frase de até 20 palavras (quem usa,
+que a ideia tenha uma sutileza que a deixe diferente; nesse caso, diga qual. não proponha o que
+uma lista, uma regra simples ou um app que já existe resolve. responda só com a tabela 3 × 3; em cada célula: nome curto · frase de até 20 palavras (quem usa,
 o que faz). compare com o § 3 dos exemplos.
 ```
 
@@ -110,15 +110,17 @@ agora quem avalia é uma **conversa nova**: quem gerou as ideias tende a gostar 
 ```text
 avalie estas 9 ideias, que você não ajudou a criar, para a crise [crise]: [cole a matriz].
 para cada uma: impacto (alto ou baixo: quanto muda a crise se der certo) e viabilidade no semestre
-(alta ou baixa), 1 linha cada. depois a prova do Waze: quem usa, o que ganha PARA SI, sem
-altruísmo, e o que custa a ele em tempo, esforço ou dinheiro; passa se o ganho vence o custo.
-desenhe a grade 2 × 2 e a tabela ideia | ganho | custo | passa?. não recomende qual escolher.
+(alta ou baixa), 1 linha cada. depois duas provas. a do Waze: quem usa, o que ganha PARA SI, sem
+altruísmo, e o que custa a ele em tempo, esforço ou dinheiro; passa se o ganho vence o custo. a da
+regra simples: o que resolveria sem IA avançada (uma lista, uma regra, um app que já existe); passa
+se nada resolve. desenhe a grade 2 × 2 e a tabela ideia | ganho | custo | sem IA avançada | passa?.
+não recomende qual escolher.
 o padrão é o § 3 de lucassf.pages.dev/ai4good/brw-excelente; evite o de lucassf.pages.dev/ai4good/brw-raso.
 ```
 
-discorde da IA onde ela errou: o mapa e a prova são seus. escolha **uma ideia**, a que você mais gosta e julga ter o melhor equilíbrio, e escreva, **sem IA**, em até 3 linhas, por que ela. impacto alto com viabilidade baixa vale, se você disser como reduzir até caber no semestre; ideia que reprova na prova vale, se você disser como cortar o custo ou aumentar o ganho.
+discorde da IA onde ela errou: o mapa e as provas são seus. escolha **uma ideia de impacto alto**, a que você mais gosta e julga ter o melhor equilíbrio, e escreva, **sem IA**, em até 3 linhas, por que ela. viabilidade baixa vale, se você disser como reduzir até caber no semestre; ideia que reprova numa prova vale, e os motores do passo 4 vão tentar consertá-la.
 
-**pronto quando:** a matriz, a grade, a prova e a ideia escolhida, com o porquê, estão no `brw.md`.
+**pronto quando:** a matriz, a grade, as provas e a ideia escolhida, com o porquê, estão no `brw.md`.
 
 ### passo 4 · ligue os motores
 
@@ -137,7 +139,8 @@ um motor é um **verbo** que você aplica à ideia para empurrá-la aonde ela n�
 aplique todos os motores à **sua ideia escolhida**. volte à **mesma conversa** (a do passo 0) e cole:
 
 ```text
-minha ideia escolhida é [nome: frase]. aplique a ela cada um destes motores, gerando UMA variação
+minha ideia escolhida é [nome: frase]. nas provas do Waze e da regra simples, ela [passou / reprovou
+em: …]; se reprovou, cada variação tenta consertar. aplique a ela cada um destes motores, gerando UMA variação
 por motor: inverter (papel, fluxo ou incentivo) · canalizar (um comportamento que as pessoas já
 têm, mesmo egoísta ou vicioso, vira bem coletivo, como no Waze) · transplantar (um mecanismo que
 funciona em outro domínio) · reescalar (100× menor ou 100× maior) · trocar a persona · trocar o contexto
@@ -145,11 +148,11 @@ funciona em outro domínio) · reescalar (100× menor ou 100× maior) · trocar 
 "sem tela?", "moeda = tempo?").
 não descarte uma variação por parecer um clichê: se ela se parecer com um, diga a sutileza que a
 deixa diferente. tabela: motor | o que foi [invertido, canalizado, transplantado…], dito em 1 linha |
-nome | frase de até 25 palavras | o que mudou em relação à ideia | o que quem usa ganha para si.
-compare com o § 4 dos exemplos.
+nome | frase de até 25 palavras | o que mudou em relação à ideia | o que quem usa ganha para si |
+passa nas provas?. compare com o § 4 dos exemplos.
 ```
 
-**pronto quando:** a tabela das 9 variações está no `brw.md`. se uma variação é a mesma ideia com outro nome, ou o ganho serve para qualquer app ("mais praticidade"), peça de novo.
+**pronto quando:** a tabela das 9 variações está no `brw.md`. se uma variação é a mesma ideia com outro nome, ou o ganho serve para qualquer app ("mais praticidade"), peça de novo. se a ideia reprovou numa prova, a ideia completa do passo 5 parte de uma variação que passa.
 
 ### passo 5 · o que fica e o que sai
 
@@ -238,8 +241,8 @@ não reescreva nada.
 
 ## itens de verificação
 
-1. [ ] **brw completo:** o `brw.md` com todos os passos preenchidos: crise e tecnologias marcadas, clichês, matriz 3 × 3, mapa impacto × viabilidade e prova do Waze, ideia escolhida com o porquê, as 9 variações dos motores, o que fica e o que sai, a ideia completa, as 3 críticas com a sua decisão em cada uma, e o resumo.
-2. [ ] **impacto claro:** que crise a ideia ataca, o tamanho dela hoje (com dado e fonte), o que muda de concreto se todo mundo usasse, e por que cada pessoa usaria por interesse próprio, como no Waze.
-3. [ ] **ia avançada indispensável:** a técnica com nome, e o que a ideia perde sem ela. se uma regra simples resolve, não conta.
+1. [ ] **brw completo:** o `brw.md` com todos os passos preenchidos: crise e tecnologias marcadas, clichês, matriz 3 × 3, mapa impacto × viabilidade, provas do Waze e da regra simples, ideia escolhida com o porquê, as 9 variações dos motores, o que fica e o que sai, a ideia completa, as 3 críticas com a sua decisão em cada uma, e o resumo.
+2. [ ] **impacto claro:** que crise a ideia ataca, o tamanho dela hoje (com dado e fonte), o que muda de concreto se todo mundo usasse, e por que cada pessoa usaria por interesse próprio, como no Waze. uma ideia que as pessoas não usariam por interesse próprio não passa.
+3. [ ] **ia avançada indispensável:** a técnica com nome, e o que a ideia perde sem ela. se uma lista, uma regra simples ou um app que já existe resolve, não passa.
 
 cada item só conta se você souber explicá-lo na checagem.

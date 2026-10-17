@@ -69,19 +69,19 @@ cada célula: **nome** · frase de até 20 palavras (quem usa, o que faz).
 | **impacto alto** | [preencha] | [preencha] |
 | **impacto baixo** | [preencha] | [preencha] |
 
-**a prova do Waze:**
+**as provas do Waze e da regra simples:**
 
-| ideia | quem usa ganha, para si | o que custa a ele | passa? |
-|:--|:--|:--|:--|
-| [preencha] | [preencha] | [preencha] | [preencha] |
-| | | | |
-| | | | |
-| | | | |
-| | | | |
-| | | | |
-| | | | |
-| | | | |
-| | | | |
+| ideia | quem usa ganha, para si | o que custa a ele | o que resolve sem IA avançada | passa? |
+|:--|:--|:--|:--|:--|
+| [preencha] | [preencha] | [preencha] |  | [preencha] |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
 
 onde discordei da IA, e por quê: [preencha]
 
@@ -91,17 +91,17 @@ onde discordei da IA, e por quê: [preencha]
 
 ## 4 · motores
 
-| motor | o que foi [verbo] | nome | frase | o que mudou em relação à ideia | o que quem usa ganha para si |
-|:--|:--|:--|:--|:--|:--|
-| inverter | o que foi invertido: [preencha] | [preencha] | | | |
-| canalizar | o que foi canalizado: | | | | |
-| transplantar | o que foi transplantado, e de onde: | | | | |
-| reescalar | o que foi reescalado: | | | | |
-| trocar a persona | quem saiu, quem entrou: | | | | |
-| trocar o contexto | de onde, para onde: | | | | |
-| trocar a tecnologia | de qual, para qual: | | | | |
-| juntar | o que foi juntado: | | | | |
-| restringir | o que foi restringido: | | | | |
+| motor | o que foi [verbo] | nome | frase | o que mudou em relação à ideia | o que quem usa ganha para si | passa nas provas? |
+|:--|:--|:--|:--|:--|:--|:--|
+| inverter | o que foi invertido: [preencha] | [preencha] | | | | |
+| canalizar | o que foi canalizado: | | | | | |
+| transplantar | o que foi transplantado, e de onde: | | | | | |
+| reescalar | o que foi reescalado: | | | | | |
+| trocar a persona | quem saiu, quem entrou: | | | | | |
+| trocar o contexto | de onde, para onde: | | | | | |
+| trocar a tecnologia | de qual, para qual: | | | | | |
+| juntar | o que foi juntado: | | | | | |
+| restringir | o que foi restringido: | | | | | |
 
 ## 5 · o que fica e o que sai
 
