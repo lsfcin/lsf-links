@@ -9,6 +9,7 @@ declare function artefato(md: any, doc: any): {
     items: any[];
 } | null;
 declare function legend(md: any): {};
+declare function readTsv(tsv: any, unescape?: boolean): Map<any, any>;
 declare function draw(id: any, rows: any, links: any, info: any): string;
 declare function remark(md: any, id: any, name: any, code: any, marks: any): any;
 declare function mount(ctx: any, { popover, post, password }: {

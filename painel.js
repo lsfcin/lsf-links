@@ -40,6 +40,16 @@ function legend(md) {
 
 const doneCount = (m) => [...m].filter((x) => x === 'v').length;
 
+// "name\tcode" → value, from a tsv the site writes (entregas.tsv, pareceres.tsv); a parecer cell escapes \n and \\
+function readTsv(tsv, unescape = false) {
+  const out = new Map();
+  tsv.split('\n').filter((l) => l && !l.startsWith('#')).forEach((l) => {
+    const [n, c, v] = l.split('\t');
+    if (v) out.set(`${n}\t${c}`, unescape ? v.replace(/\\(n|\\)/g, (_, x) => (x === 'n' ? '\n' : '\\')) : v);
+  });
+  return out;
+}
+
 // one panel as HTML whose text is painel.py's drawing; links: Set of "name\tcode", info(code) → {title, items}
 function draw(id, rows, links, info) {
   const width = Math.max(...rows.map(([n]) => n.length));
@@ -67,6 +77,7 @@ function remark(md, id, name, code, marks) {
 function mount(ctx, { popover, post, password }) {
   const { article, sitePath, pageDir, say } = ctx;
   const links = new Map(); // "name\tcode" → url
+  let notes = new Map(); // "name\tcode" → the teacher's parecer
   const infos = {};
   let names = {};
   const info = (c) => infos[c] || { title: names[c] || names[c.replace(/\d+$/, '')] || c, items: [] };
@@ -136,34 +147,45 @@ function mount(ctx, { popover, post, password }) {
     const top = `<div class="popover-title"><code>${esc(code)}</code> · ${esc(nome)}</div>${sub}`;
     const score = `<div class="popover-note">${2 * doneCount(marks)}/${2 * width} pts</div>`;
     const openLink = url ? `<a class="btn" href="${esc(url)}" target="_blank" rel="noopener">abrir entrega ↗</a>` : '';
+    const note = notes.get(`${nome}\t${code}`) || '';
     const pw = password();
     if (pw) {
       const boxes = [...marks].map((x, k) => `<li><label class="painel-check"><input type="checkbox" name="i${k}"${x === 'v' ? ' checked' : ''}>${esc(its[k])}</label></li>`).join('');
-      return popover(el, `${top}<ul class="painel-items">${boxes}</ul>${score}${openLink}`, async (data) => {
+      const noteBox = `<label>parecer (público, como o painel)<textarea name="parecer" placeholder="o que falta para cada item e como chegar lá">${esc(note)}</textarea></label>`;
+      return popover(el, `${top}<ul class="painel-items">${boxes}</ul>${score}${noteBox}`, async (data) => {
         const next = its.map((_, k) => (data[`i${k}`] ? 'v' : '-')).join('');
-        const { text, sha } = await post('load', { password: pw, path: sitePath });
-        const changed = remark(text, id, nome, code, next);
-        await post('save', { password: pw, path: sitePath, text: changed, sha });
-        ctx.raw = changed;
+        if (next !== marks) {
+          const { text, sha } = await post('load', { password: pw, path: sitePath });
+          const changed = remark(text, id, nome, code, next);
+          await post('save', { password: pw, path: sitePath, text: changed, sha });
+          ctx.raw = changed;
+        }
+        if (data.parecer.trim() !== note.trim()) {
+          await post('parecer', { password: pw, page: sitePath, nome, codigo: code, texto: data.parecer });
+          notes.set(`${nome}\t${code}`, data.parecer.trim());
+        }
         render();
-        say('marcado: no ar em ~1 min');
-      }, 'salvar marcações');
+        say('salvo: no ar em ~1 min');
+      }, 'salvar', openLink);
     }
     const list = `<ul class="painel-items">${[...marks].map((x, k) => `<li><span class="painel-box">${x === 'v' ? DONE : PENDING}</span> ${esc(its[k])}</li>`).join('')}</ul>`;
-    if (url) return popover(el, `${top}${list}${score}${openLink}`, null);
-    popover(el, `${top}${list}${score}${form(nome)}`, deliver(nome), 'entregar');
+    const shown = `${top}${list}${score}${note ? `<div class="painel-parecer">${esc(note)}</div>` : ''}`;
+    if (!url) return popover(el, `${shown}${form(nome)}`, deliver(nome), 'entregar');
+    // delivered: the link can be swapped (the marks stay), behind a button so a look never opens a keyboard
+    popover(el, shown, null, 'ok', `${openLink}<button type="button" class="btn" data-swap>trocar link</button>`);
+    document.querySelector('.popover [data-swap]').onclick = () => popover(el, `${top}${form(nome)}`, deliver(nome), 'trocar', openLink);
   }
 
-  // the legend comes from the artefatos the page links; the links from entregas.tsv beside it
+  // the legend comes from the artefatos the page links; the links and pareceres from the two tsv beside it
   const docs = [...new Set([...ctx.raw.matchAll(/\]\((artefatos\/[^)\s]+\.md)\)/g)].map((m) => m[1]))];
+  const tsv = (name) => fetch(`${pageDir}${name}`, { cache: 'no-store' }).then((r) => (r.ok ? r.text() : '')).catch(() => '');
   Promise.all([
-    fetch(`${pageDir}entregas.tsv`, { cache: 'no-store' }).then((r) => (r.ok ? r.text() : '')).catch(() => ''),
+    tsv('entregas.tsv'),
+    tsv('pareceres.tsv'),
     ...docs.map((doc) => fetch(`${pageDir}${doc}`).then((r) => (r.ok ? r.text() : '')).then((t) => artefato(t, doc)).catch(() => null)),
-  ]).then(([tsv, ...arts]) => {
-    tsv.split('\n').filter((l) => l && !l.startsWith('#')).forEach((l) => {
-      const [n, c, u] = l.split('\t');
-      if (u) links.set(`${n}\t${c}`, u);
-    });
+  ]).then(([delivered, judged, ...arts]) => {
+    readTsv(delivered).forEach((u, k) => links.set(k, u));
+    notes = readTsv(judged, true);
     arts.filter(Boolean).forEach((a) => { infos[a.code] = a; });
     render();
   });
@@ -172,4 +194,4 @@ function mount(ctx, { popover, post, password }) {
 }
 
 if (typeof window !== 'undefined') window.lsfPainel = mount;
-else globalThis.lsfPainelCore = { parse, artefato, legend, draw, remark };
+else globalThis.lsfPainelCore = { parse, artefato, legend, draw, remark, readTsv };

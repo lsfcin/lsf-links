@@ -15,12 +15,13 @@ window.lsfEditor = (ctx) => {
   };
 
   // A small form that opens right below what was clicked; one at a time. Without onSubmit it only shows.
-  function popover(anchor, html, onSubmit, ok = 'ok') {
+  // lead: html that opens the button row (a link like "abrir entrega"), so every action sits on one line
+  function popover(anchor, html, onSubmit, ok = 'ok', lead = '') {
     document.querySelectorAll('.popover').forEach((p) => p.remove());
     const box = document.createElement('form');
     box.className = 'popover';
     const submit = onSubmit ? `<button class="btn btn-primary">${ok}</button>` : '';
-    box.innerHTML = `${html}<div class="popover-actions"><button type="button" class="btn" data-close>${onSubmit ? 'cancelar' : 'fechar'}</button>${submit}</div><div class="popover-error"></div>`;
+    box.innerHTML = `${html}<div class="popover-actions">${lead}<button type="button" class="btn" data-close>${onSubmit ? 'cancelar' : 'fechar'}</button>${submit}</div><div class="popover-error"></div>`;
     document.body.appendChild(box);
     const r = anchor.getBoundingClientRect();
     const left = Math.max(8, Math.min(r.left + window.scrollX, window.scrollX + document.documentElement.clientWidth - box.offsetWidth - 8));

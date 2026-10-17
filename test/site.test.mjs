@@ -4,6 +4,7 @@ const L = new URL('..', import.meta.url).pathname.replace(/\/$/, '');
 const site = await import(`${L}/lib/index.js`);
 const { onRequestPost: entrega } = await import(`${L}/functions/api/entrega.js`);
 const { onRequestPost: save } = await import(`${L}/functions/api/save.js`);
+const { onRequestPost: parecer } = await import(`${L}/functions/api/parecer.js`);
 
 const PAGE = `# x\n\n<!-- painel:dados-va2\nedson: git=---, mlp·c=-----, brw=---\nvinicius: git=---, mlp·c=-----, brw=---\nandreza: git=vvv, mlp·c=-----, brw=---\n-->\n\n## outra\n\n- **edson** | \`pitch\`\n`;
 
@@ -94,6 +95,18 @@ test('a wrong matrícula writes nothing', async () => {
   assert.deepEqual(repo.commits, []);
 });
 
+test('a parecer is one escaped cell per student and code; empty removes it; only the teacher writes', async () => {
+  const repo = fakeWorld(PAGE);
+  const body = { password: 'pw', page: 'ai4good/disciplina.md', nome: 'edson', codigo: 'brw', texto: 'falta a prova.\npasso 3\t\\ fim ' };
+  assert.equal((await parecer(post({ ...body, password: 'no' }))).status, 401);
+  assert.equal((await parecer(post({ ...body, codigo: 'pitch' }))).status, 400);
+  assert.equal((await parecer(post(body))).status, 200);
+  assert.equal(repo.files['ai4good/pareceres.tsv'].text, `${site.PARECER_HEAD}edson\tbrw\tfalta a prova.\\npasso 3 \\\\ fim\n`);
+  assert.equal((await parecer(post({ ...body, texto: '  ' }))).status, 200);
+  assert.equal(repo.files['ai4good/pareceres.tsv'].text, site.PARECER_HEAD);
+  assert.deepEqual(repo.commits, ['parecer: edson brw', 'parecer: edson brw']);
+});
+
 test('save refuses a stale version and a bad password', async () => {
   const repo = fakeWorld(PAGE);
   assert.equal((await save(post({ password: 'pw', path: 'ai4good/disciplina.md', text: 'novo', sha: 'velho' }))).status, 409);
@@ -131,4 +144,11 @@ test('an artefato names its code and items; the legend names the rest', () => {
   const a = P.artefato('# [3] artefato · base git repo\n\n> **código no painel:** `git`  \n\n1. [ ] **commit inaugural:** x\n2. [ ] **árvore integrada:** y\n', 'artefatos/3.md');
   assert.deepEqual(a, { code: 'git', title: 'base git repo', doc: 'artefatos/3.md', items: ['commit inaugural', 'árvore integrada'] });
   assert.deepEqual(P.legend('> **cmp:** competidores · **artigo** técnico final\n'), { cmp: 'competidores', artigo: 'artigo técnico final' });
+});
+
+test('readTsv gives back the parecer the server escaped, line breaks and backslashes intact', () => {
+  const text = 'linha 1\nlinha 2 \\ com barra';
+  const tsv = site.upsert('', 'edson', 'brw', site.cell(text), site.PARECER_HEAD);
+  assert.equal(P.readTsv(tsv, true).get('edson\tbrw'), text);
+  assert.equal(P.readTsv(`${site.TSV_HEAD}andreza\tgit\thttps://a/\n`).get('andreza\tgit'), 'https://a/');
 });
