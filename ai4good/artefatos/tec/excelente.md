@@ -67,7 +67,7 @@ audios/pedido-3.ogg
 
 ## 4 · o vídeo
 
-**link:** [demo-excelente.mp4](https://lucassf.pages.dev/ai4good/artefatos/tec/demo-excelente.mp4) · **duração:** 20 s · **o que aparece:** o `git log` com os dois commits, o comando e a saída dos três pedidos.
+**link:** [demo-excelente.mp4](https://github.com/lsfcin/rastro-da-banca/releases/download/v1/demo-excelente.mp4), anexado a uma *release* do repositório, para não mexer nos dois commits · **duração:** 20 s · **o que aparece:** o `git log` com os dois commits, o comando e a saída dos três pedidos.
 
 ## 5 · o que deu certo e o que errou, sem IA
 
