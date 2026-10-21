@@ -132,6 +132,12 @@ a IA analisa os dados e oferece recomendações personalizadas.
 se todo mundo usasse, haveria mais qualidade de vida e sustentabilidade.  
 as pessoas participariam para ajudar os produtores e fortalecer a comunidade.
 
+## 8 · auditoria cega
+
+**o veredito da conversa nova:** "a folha está muito bem estruturada e atende a todos os itens de verificação."
+
+**a minha resposta, sem IA:** concordo com a auditoria.
+
 ## anotações do professor
 
 cada anotação cita uma frase do exemplo e explica onde ela falha. compare com o mesmo trecho no [exemplo excelente](excelente.md).
@@ -146,3 +152,4 @@ cada anotação cita uma frase do exemplo e explica onde ela falha. compare com 
 8. **§ 6a, e se todo mundo usasse.** "a vida das pessoas melhoraria" e "as pessoas vão querer ajudar": não há um número de hoje, nem uma aposta que alguém possa conferir. e quem usa só por bondade para de usar no primeiro aperto. no excelente, o tamanho do problema vem com dado e fonte, e a projeção diz de qual dado parte.
 9. **§ 6b, a IA que não pode faltar.** "o projeto usa IA para analisar os dados": recomendar o produtor mais perto se faz com uma lista ordenada por distância. se uma regra simples resolve, a IA não é indispensável, e o guia manda voltar ao passo 4 e trocar a tecnologia.
 10. **§ 6c, críticas.** "melhorar a segurança" e "adotar boas práticas": estas críticas e saídas serviriam para qualquer aplicativo. falta dizer qual dado vaza, para quem, e o que exatamente o aluno decidiu fazer.
+11. **§ 8, auditoria cega.** "atende a todos os itens" e "concordo com a auditoria": três falhas. (a) o veredito não veio na tabela do prompt do passo 8, sem trecho que prova nem o que resolve sem IA, então a auditoria não foi feita como pedido, ou rodou na conversa que ajudou a escrever, que tende a aprovar. (b) o prompt manda cada item começar como "não passa" e nomear o app, a lista ou a regra que resolve sem IA; feito assim, o painel visual (o app do banco já mostra) e o chat da feira (uma lista de perguntas frequentes responde) reprovariam o item 3. (c) "concordo" não é resposta: o aluno precisa dizer, item por item, o que mudou ou por que discorda. no excelente, a auditoria reprova o item 3 e o aluno responde com motivo.

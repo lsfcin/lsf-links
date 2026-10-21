@@ -145,6 +145,21 @@ um transformer de voz e um modelo no celular tiram os dados do áudio; regras fa
 se todo mundo usasse, bilhões passariam a ir direto para quem planta, e menos ultraprocessado chegaria à mesa das crianças.  
 o feirante usa para trabalhar menos e vender mais; o cliente, para garantir o que quer.
 
+## 8 · auditoria cega
+
+**o veredito da conversa nova:**
+
+| item | passa ou não passa | trecho que prova | o que já resolve sem IA avançada |
+|:--|:--|:--|:--|
+| 1 · brw completo | passa | todas as seções, do § 1 ao resumo | — |
+| 2 · impacto claro | passa | "80,5% das crianças de 6 meses a 2 anos já comem ultraprocessados"; "trabalhar menos e vender mais" | — |
+| 3 · ia avançada | **não passa** | "um transformer de voz e um modelo no celular tiram os dados do áudio" | o catálogo do WhatsApp Business já recebe reservas |
+
+**a minha resposta, sem IA:**
+1. nada a mudar.
+2. nada a mudar.
+3. discordo em parte: a cliente reserva por áudio no meio da conversa e não abre o catálogo. mas é uma aposta, então o § 6b diz o teste que me faria retirar a IA.
+
 ## anotações do professor
 
 cada anotação cita uma frase do exemplo e explica por que ela é o padrão que buscamos.

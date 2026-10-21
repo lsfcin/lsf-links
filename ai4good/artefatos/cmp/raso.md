@@ -87,6 +87,12 @@ existem várias plataformas de venda de alimentos, mas nenhuma usa inteligência
 a feira conectada une chatbot, dashboard e recomendações em um só lugar.  
 assim, produtores e consumidores ficam mais conectados.
 
+## 9 · auditoria cega
+
+**o veredito da conversa nova:** "a folha está completa e bem organizada; os três itens passam."
+
+**a minha resposta, sem IA:** concordo com a auditoria.
+
 ## anotações do professor
 
 cada anotação cita uma frase do exemplo e explica por que ela fica aquém do padrão.
@@ -97,3 +103,4 @@ cada anotação cita uma frase do exemplo e explica por que ela fica aquém do p
 4. **§ 4, os mais próximos.** "Whisper: usa a mesma tecnologia": o Whisper é uma peça, não um concorrente; ninguém vende verdura com ele. e "também usa IA" é exatamente o que a ficha de proximidade diz que não basta.
 5. **§ 5, a matriz.** "usa IA · tem chatbot · tem dashboard": os eixos saíram da própria ideia, então a última linha é ✔ em tudo, por construção. não há "?" nem evidência: o Pix do Anota AI foi chutado. compare com os eixos do campo no excelente, onde a ideia perde em dois.
 6. **§ 6 e § 7, a frase.** "uma experiência mais completa": somar funcionalidades não é contribuição, e a derrubada que "não achou nada" sem nome nem link não testou a frase. a pergunta certa era: o agente de vendas do próprio WhatsApp já faz isso?
+7. **§ 9, auditoria cega.** "os três itens passam" e "concordo com a auditoria": três falhas. (a) o veredito não veio na tabela do prompt do passo 9, sem trecho, sem links abertos e sem o trabalho que já faz a contribuição, então a auditoria não foi feita como pedido, ou rodou na conversa que ajudou a montar, que tende a aprovar. (b) o prompt manda cada item começar como "não passa" e buscar quem já faz a contribuição; feito assim, o agente de vendas do próprio WhatsApp reprovaria o item 3, e o resumo estendido do CHI reprovaria o item 2. (c) "concordo" não é resposta: o aluno precisa dizer, item por item, o que mudou ou por que discorda. no excelente, a auditoria reprova um item e o aluno responde com motivo, mesmo discordando.

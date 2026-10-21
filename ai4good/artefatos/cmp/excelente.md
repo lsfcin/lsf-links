@@ -103,6 +103,21 @@ nenhum entende o áudio no celular do feirante e diz o que colher.
 a minha ideia faz as duas coisas sem tirar a conversa do lugar.  
 a pesquisa de Patel me avisa do risco: com pouca escolaridade, a fala erra mais que o teclado, e o piloto precisa medir isso.
 
+## 9 · auditoria cega
+
+**o veredito da conversa nova:**
+
+| item | passa ou não passa | trecho que prova | o que encontrei |
+|:--|:--|:--|:--|
+| 1 · ferramentas | passa | 10 no catálogo, 3 escolhidas com motivo | abri WhatsApp Business, Kyte e Anota AI: existem e batem |
+| 2 · artigos | **não passa** | um dos 3 escolhidos é de 2009 | a fala no celular mudou muito desde então |
+| 3 · contribuição | passa | "a minha contribuição está nos dados que ficam no celular e na colheita marcada" | só o agente de vendas da Meta chega perto, e já está no § 7 |
+
+**a minha resposta, sem IA:**
+1. nada a mudar.
+2. discordo: o artigo de 2009 é revisado por pares e é o único que mede a fala com quem lê pouco. ficou, e o risco que ele aponta está no resumo.
+3. nada a mudar: a busca achou o mesmo concorrente que a derrubada do § 7.
+
 ## anotações do professor
 
 cada anotação cita uma frase do exemplo e explica por que ela é o padrão que buscamos.
@@ -113,3 +128,4 @@ cada anotação cita uma frase do exemplo e explica por que ela é o padrão que
 4. **§ 5, eixos do campo.** "os dois últimos são onde a minha ideia perde": os eixos vieram dos 6 trabalhos, não da ideia, e a ideia perde em dois. assim a matriz mede, em vez de enfeitar.
 5. **§ 5, o "?".** "não achei no site se entende áudio: ficou '?'": um "?" honesto vale mais que um ✘ chutado. é ele que diz o que conferir antes da banca.
 6. **§ 7, derrubada que muda a frase.** "'entender a conversa' deixou de ser diferencial": a conversa nova achou um concorrente real e a frase foi refeita em cima do que sobrou. contribuição é o que resiste a essa busca.
+7. **§ 9, auditoria que reprova.** "discordo: o artigo de 2009 é revisado por pares": a auditoria veio na tabela do prompt, com trecho e links abertos, e reprovou um item, como deve fazer uma auditoria que começa de "não passa". o aluno respondeu, sem IA, item por item, e onde discordou deu o motivo. discordar vale tanto quanto corrigir, desde que você saiba dizer por quê.
