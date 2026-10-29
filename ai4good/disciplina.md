@@ -150,7 +150,7 @@ thiago m.   ◻◻◻ ◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻�
 > **git:** base git repo · **tex:** latex project · **mlp·c:** mlp git repo · **mlp·p:** mlp tech report · **arq·c:** arquitetura git repo · **arq·p:** arquitetura tech report · **arn·c:** arena git repo · **arn·p:** arena tech report · **enigmas:** 14 investigações em sala
 
 <!-- painel:dados-va2
-albérico: brw=vvv, cmp=vvv, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
+albérico: brw=vvv, cmp=vvv, tec=v--, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
 andreza: brw=vvv, cmp=---, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
 artur: brw=vvv, cmp=---, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
 carlos: brw=vvv, cmp=---, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
