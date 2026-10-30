@@ -5,14 +5,14 @@
 
 ## 0 · a minha ideia completa
 
-**rastro da banca · colheita marcada.** feirantes usam as mensagens e áudios que já trocam com clientes para registrar pedidos; o cliente reserva e combina a hora de buscar. um transformer de voz transcreve, e um modelo pequeno no celular tira produto, quantidade e hora; o feirante confirma falando, e as contas são feitas por regra. antes da feira, o caderno junta as encomendas e diz o que levar; depois, se cada feirante aceitar, a associação vê só o total do que mais saiu.
+**rastro da banca · colheita marcada.** feirantes usam as mensagens e áudios que já trocam com clientes para registrar pedidos; o cliente reserva e combina a hora de buscar. um transformer de voz transcreve no celular do feirante, regras tiram produto, quantidade e hora, e o feirante confere e confirma. antes da feira, o caderno junta as encomendas e diz o que levar; depois, se cada feirante aceitar, a associação vê só o total do que mais saiu.
 
 ## 1 · a ficha da ideia
 
 - **cenário:** feira livre de bairro, com venda direta do produtor.
 - **usuário:** feirante da agricultura familiar, que vende sozinho ou com a família.
 - **problema do usuário:** perde pedidos anotados no papel e em áudios, e não sabe quanto colher e levar.
-- **tecnologia:** transcrição de voz + modelo de linguagem pequeno rodando no celular.
+- **tecnologia:** transcrição de voz rodando no celular, e regras sobre a lista da banca.
 
 ## 2 · catálogo de ferramentas
 
@@ -21,6 +21,7 @@ ficha: **C**enário · **U**suário · **P**roblema · **T**ecnologia, cada um *
 | ferramenta | o que faz | no que é bom | onde falha | C U P T |
 |:--|:--|:--|:--|:-:|
 | **[WhatsApp Business](https://whatsappbusiness.com/pt-br/)** | catálogo, etiquetas e respostas rápidas no WhatsApp. | é onde a conversa já acontece: feirantes de feira agroecológica já vendem por ele. | organiza conversas, não pedidos: nada soma o que levar. | = = ≈ ≠ |
+| **o caderno da feirante** (a prática de hoje, achado no exp) | ouvir cada áudio e anotar o pedido à mão. | não custa nada, não depende de internet, e quem anota conhece cada cliente. | numa feira cheia, o pedido se perde entre um atendimento e outro; nada soma o que levar. | = = = ≠ |
 | **[Kyte](https://www.kyteapp.com/pt)** | catálogo on-line, caixa e estoque para MEI; o pedido do catálogo chega pelo WhatsApp. | o pedido vira registro com status, e as vendas viram relatório. | o cliente precisa pedir pelo catálogo; áudio não vira pedido. | ≈ ≈ = ≠ |
 | **[Anota AI](https://anota.ai/)** | robô com IA que atende pelo WhatsApp e manda o pedido para a cozinha. | entende pedido escrito em texto livre, no número do próprio negócio. | feito para cardápio fixo de restaurante; pago; os dados ficam na empresa (comprada pelo iFood). | ≠ ≈ ≈ ≈ |
 | [Sementes](https://gitlab.com/eita/sementes) | plugin livre de WordPress para cestas agroecológicas, com ciclos de pedido. | brasileiro, livre, e o ciclo de pedido acompanha a colheita. | o pedido entra por um site; quem organiza é a cesta, não o feirante. | ≈ = ≈ ≠ |
@@ -42,7 +43,7 @@ ficha: **C**enário · **U**suário · **P**roblema · **T**ecnologia, cada um *
 | [Food Democracy in the Making](https://doi.org/10.1145/3173574.3173907) (Prost et al., 2018) | CHI · A1 | redes locais de comida numa plataforma de venda direta, em bairros pobres. | as tensões entre preço justo, renda do produtor e quem governa a plataforma. | mesma rede do artigo de 2019, olhada antes. | ≈ = ≈ ≠ |
 | [Job Opportunities through Entertainment](https://doi.org/10.1145/2470654.2481389) (Raza et al., 2013) | CHI · A1 | serviço de voz por telefone que se espalha por diversão, para quem lê pouco. | 85 mil usuários sem treino nenhum. | anúncios de emprego, não pedidos. | ≠ ≈ ≠ ≈ |
 | [Whisper](https://proceedings.mlr.press/v202/radford23a.html) (Radford et al., 2023) | ICML · A1 | reconhecimento de fala treinado em 680 mil horas de áudio. | a base técnica da transcrição. | não sabe nada de feira: é uma peça. | ≠ ≠ ≠ = |
-| [MobileLLM](https://proceedings.mlr.press/v235/liu24ce.html) (Liu et al., 2024) | ICML · A1 | modelos de linguagem com menos de 1 bilhão de parâmetros, para o celular. | mostra que um modelo pequeno no aparelho é viável. | avaliado em benchmarks, não com usuário. | ≠ ≠ ≠ = |
+| [MobileLLM](https://proceedings.mlr.press/v235/liu24ce.html) (Liu et al., 2024) | ICML · A1 | modelos de linguagem com menos de 1 bilhão de parâmetros, para o celular. | mostra que um modelo pequeno no aparelho é viável. | avaliado em benchmarks, não com usuário. | ≠ ≠ ≠ ≈ |
 | [A Situated-Infrastructuring of WhatsApp for Business](https://doi.org/10.1145/3613905.3651034) (De, 2024) | CHI EA · **resumo estendido** | como a Meta molda o WhatsApp Business na Índia. | o risco de depender de uma plataforma que muda as regras. | não é artigo completo: não conta como veículo de excelência. | ≈ ≈ ≈ ≠ |
 | ["Business on WhatsApp is tough now"](https://arxiv.org/abs/2502.10913) (De, 2025) | arXiv | entrevista 14 donas de pequenos negócios sobre as mudanças no WhatsApp Business. | a voz de quem vende pelo WhatsApp. | arXiv, sem revisão por pares. | ≈ ≈ ≈ ≠ |
 | [Sementes no Armazém do Campo](https://cadernos.aba-agroecologia.org.br/cadernos/article/view/8664) (Alvear et al., 2024) | Cadernos de Agroecologia · fora da lista | relato da construção do software Sementes para o MST-RJ. | brasileiro, e conta o que travava as cestas: a logística de pedidos. | relato técnico, fora da lista de veículos. | ≈ = ≈ ≠ |
@@ -56,7 +57,7 @@ ficha: **C**enário · **U**suário · **P**roblema · **T**ecnologia, cada um *
 - **fala vs. teclado (Patel et al., 2009):** mesma tecnologia (entrada por fala) para o mesmo usuário. escolhi porque ele pode me contrariar.
 - **Infrastructuring Food Democracy:** entra pela exceção "o mesmo problema com tecnologia próxima": juntar pedidos de produtores locais para retirada, mas por loja web. ficou à frente do artigo de 2018 porque mostra o hub funcionando.
 
-ficaram de fora: Whisper e MobileLLM (só a tecnologia bate), o resumo estendido e o arXiv (não contam como veículo), e o Sementes, que guardo para a seção de trabalhos relacionados do artigo.
+ficaram de fora: Whisper (só a tecnologia bate), MobileLLM (a ideia já não usa modelo de linguagem), o resumo estendido e o arXiv (não contam como veículo), e o Sementes, que guardo para a seção de trabalhos relacionados do artigo.
 
 ## 5 · a matriz
 

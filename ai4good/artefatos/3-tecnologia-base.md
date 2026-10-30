@@ -139,7 +139,7 @@ tabela: item | passa ou não passa | trecho que prova | o que encontrei (links a
 
 cole a tabela, sem editar, no § 6 do `tec.md`. embaixo dela, **você**, sem IA, escreve uma linha por item: o que mudou por causa da auditoria, ou por que você discorda dela. escrita por IA, essa parte não conta.
 
-**pronto quando:** cada item passa, ou você corrigiu e auditou de novo; a tabela e as suas linhas estão no § 6 do `tec.md`.
+**pronto quando:** cada item passa, ou você corrigiu e auditou de novo; a tabela e as suas linhas estão no § 6 do `tec.md`; e as folhas do brw e do cmp não contradizem esta.
 
 ---
 

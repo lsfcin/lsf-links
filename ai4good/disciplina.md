@@ -87,7 +87,7 @@ para o agente que apoia um aluno desta disciplina:
 | · 19 ·<br>14/10<br>· qua · | prática<br>**brainwriting híbrido** | [`[3] artefato · brainwriting híbrido`](artefatos/3-brainwriting-hibrido.md) |
 | · 20 ·<br>16/10<br>· sex · | mentoria<br>**definição da contribuição** | [`[3] artefato · competidores e contribuição`](artefatos/3-competidores-e-contribuicao.md) |
 | · 21 ·<br>21/10<br>· qua · | prática<br>**tecnologia base e fluxograma** | [`[3] artefato · tecnologia base demonstrável`](artefatos/3-tecnologia-base.md)<br>[`[3] artefato · fluxograma e arquitetura`](artefatos/3-fluxograma-e-arquitetura.md) |
-| · 22 ·<br>23/10<br>· sex · | prática<br>**desenho dos experimentos** | `[x] artefato · tbd` |
+| · 22 ·<br>23/10<br>· sex · | prática<br>**desenho dos experimentos** | [`[3] artefato · desenho dos experimentos`](artefatos/3-desenho-dos-experimentos.md) |
 | · -- ·<br>28/10<br>· qua · | feriado<br>**dia do servidor público federal** | |
 | · 23 ·<br>30/10<br>· sex · | checagem<br>**verificação geral, ponto a ponto** | |
 | · 24 ·<br>04/11<br>· qua · | seminário<br>**iteração 1, preliminares** | `[x] seminário · tbd` |
@@ -167,9 +167,9 @@ vinicius: brw=vvv, cmp=---, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem
 ```text
             brw cmp tec flx exp sem1 sem2 sem3 artigo demo  pitch         nota 2
  albérico   ◼◼◼ ◼◼◼ ◼◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  14 pts
-  andreza   ◼◼◼ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  06 pts
+  andreza   ◼◼◼ ◼◼◼ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  12 pts
     artur   ◼◼◼ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  06 pts
-   carlos   ◼◼◼ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  06 pts
+   carlos   ◼◼◼ ◼◼◼ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  12 pts
      cauã   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
      davi   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
     edson   ◼◼◼ ◼◼◼ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  12 pts

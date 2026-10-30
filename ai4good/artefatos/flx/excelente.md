@@ -6,7 +6,7 @@
 
 ## 0 · a minha ideia e o que eu medi
 
-**rastro da banca · colheita marcada.** feirantes usam as mensagens e áudios que já trocam com clientes para registrar pedidos; o cliente reserva e combina a hora de buscar. um transformer de voz transcreve, e um modelo pequeno no celular tira produto, quantidade e hora; o feirante confirma falando, e as contas são feitas por regra.
+**rastro da banca · colheita marcada.** feirantes usam as mensagens e áudios que já trocam com clientes para registrar pedidos; o cliente reserva e combina a hora de buscar. um transformer de voz transcreve no celular do feirante, regras tiram produto, quantidade e hora, e o feirante confere e confirma.
 
 **o que eu medi no tec:** no meu notebook, em CPU, o whisper `small` e o qwen3:4b levaram uns 13 segundos para os três pedidos, contando a carga dos dois modelos; baixar os dois foi cerca de 3 GB. o whisper trocou "jerimum" por "de limão"; o qwen errou número e hora, e mudava a resposta a cada rodada.
 
@@ -22,7 +22,7 @@
 | 4 | achar cada produto na lista da banca; fora da lista vira "?" | regra | |
 | 5 | quantidade e unidade, por uma tabela de palavras ("uma dúzia" = 12) | regra | |
 | 6 | hora de buscar, por uma tabela de expressões ("lá pelas dez e meia" = 10:30) | regra | |
-| 7 | feirante ouve o áudio, confere o pedido na tela, corrige o "?" e escreve o primeiro nome de quem pediu | pessoa | |
+| 7 | a tela abre no "?" e toca o áudio; a feirante confere, corrige e escreve o primeiro nome de quem pediu | pessoa | |
 | 8 | conta: preço da banca × quantidade | regra | |
 | 9 | feirante compartilha a confirmação de volta no WhatsApp | pessoa | |
 | 10 | cliente recebe o pedido, o total e a hora | pessoa | |
@@ -36,7 +36,7 @@
 |:--|:--|:--|:--|:--|:--|:--|
 | WhatsApp da banca | o áudio da cliente | o áudio, para o app; a confirmação, para a cliente | nos dois celulares: a cliente e a dona Cida já usam | | 0 | não muda nada do que já fazem |
 | app (tela, compartilhar, pedidos do dia) | o áudio | o pedido conferido, a confirmação, a lista de separação | celular da dona Cida | | 0 | |
-| whisper `small` (faster-whisper) | o áudio, ~20 s, e a lista da banca | o texto | celular da dona Cida: na feira a internet cai, e a voz da cliente não precisa sair dali | no notebook: 13 s para 3 pedidos, contando a carga de 2 modelos · no celular: não medi | 0 | tempo **medido** no tec. memória **estimada**: ~2 GB para o `small`, 1 GB para o `base` ([tabela de modelos do whisper](https://github.com/openai/whisper#available-models-and-languages), 28/10/2026) |
+| whisper (whisper.cpp no celular, faster-whisper no notebook) | o áudio, ~20 s, e a lista da banca | o texto | celular da dona Cida: na feira a internet cai, e a voz da cliente não precisa sair dali | no notebook: 13 s para 3 pedidos, contando a carga de 2 modelos · no celular, pelo adb: o `small` leva 2,89 vezes o áudio, e o `base` é a saída | 0 | tempo **medido** no tec e no exp. memória **estimada**: ~2 GB para o `small`, 1 GB para o `base` ([tabela de modelos do whisper](https://github.com/openai/whisper#available-models-and-languages), 28/10/2026) |
 | regras (produto, quantidade, hora, conta, lista) | o texto, a lista e os preços da banca | o pedido com total e hora | celular da dona Cida | menos de 1 s, sem modelo | 0 | **estimado**: são comparações com listas curtas |
 | alternativa, não escolhida: transcrição na nuvem (gpt-4o-mini-transcribe) | o áudio | o texto | servidor da OpenAI | depende da internet na feira | ~US$ 0,24 (80 min × US$ 0,003): menos de R$ 2 com qualquer dólar abaixo de R$ 8 | **estimado**: [openrouter.ai/openai/gpt-4o-mini-transcribe](https://openrouter.ai/openai/gpt-4o-mini-transcribe), 28/10/2026; a cobrança é por token, o preço por minuto é aproximado |
 
@@ -49,6 +49,7 @@
 | áudio do pedido (a voz) | cliente | cópia no app, no celular da dona Cida | dona Cida | até ela confirmar o pedido | o app apaga a cópia na confirmação; a do WhatsApp segue como sempre |
 | texto transcrito | cliente | memória do app | ninguém além do app | segundos | junto com o áudio |
 | primeiro nome e pedido | cliente | pedidos do dia, no celular da dona Cida | dona Cida | até o fim da feira | no fim da feira; fica só o total vendido, sem nome |
+| registro de correções (o que o app mostrou e o que ela mudou, sem áudio nem nome) | da banca | celular da dona Cida | ela, e a pesquisa se ela aceitar | até o fim do experimento | no fim do experimento |
 
 **o que sai do aparelho de quem usa, e para onde:** nada além do que já saía: o áudio vem pelo WhatsApp e a confirmação volta por ele. o app não tem servidor.
 
@@ -59,7 +60,7 @@
 o qwen saiu. no tec, hora e quantidade já tinham passado para regra; desenhando, achar o produto na lista da banca também virou regra, e o modelo de linguagem ficou sem trabalho.  
 sem ele, são 2,5 GB a menos, e o celular dá conta: tudo roda sem internet, e a voz da cliente não sai dali.  
 a nuvem custaria menos de R$ 2 por mês: o motivo de ficar no celular é a rede da feira e a voz, não o dinheiro.  
-o "jerimum" que vira "limão" nenhuma regra pega, porque limão está na lista: quem pega é a dona Cida ouvindo o áudio no passo 7. o experimento mede quantos pedidos ela precisa corrigir ali, e quanto o whisper demora no celular.
+o "jerimum" que vira "limão" a regra pega: limão não está na lista, e vira "?". o que nenhuma regra pega é o item que some calado: "dois pés de alface" virou "dois peixes", e o pedido saiu só com o maracujá. quem pega é a dona Cida ouvindo o áudio no passo 7. o experimento mede quantos pedidos ela precisa corrigir ali, e quanto o whisper demora no celular.
 
 ## 5 · auditoria cega
 
@@ -82,7 +83,7 @@ cada anotação cita uma frase do exemplo e explica por que ela é o padrão que
 
 1. **§ 1, o fluxograma.** de 11 passos, só 1 é IA, e a frase dele diz por que uma regra não basta: "não dá para listar à mão todas as formas de dizer". o resto é regra ou pessoa. IA onde precisa, regra onde basta: é isso que torna a ideia barata, explicável e estável.
 2. **§ 1, do gesto ao retorno.** o caminho começa na cliente gravando o áudio e termina nela recebendo o total. os passos de pessoa (o feirante conferindo, o feirante compartilhando) estão no desenho, porque é neles que o erro da IA é pego.
-3. **§ 2, medido ou estimado.** "tempo **medido** no tec", "memória **estimada**", "no celular: não medi": cada número diz de onde veio, e o que não foi medido vira tarefa do experimento, em vez de virar chute.
+3. **§ 2, medido ou estimado.** "tempo **medido** no tec e no exp", "memória **estimada**": cada número diz de onde veio, e o que o flx não pôde medir virou tarefa do experimento, que voltou com o número.
 4. **§ 2, a alternativa com preço.** a nuvem custaria "menos de R$ 2": o aluno pôs na mesa a opção que não escolheu, com fonte e data, e mostrou que o dinheiro não decide. quem decide é a rede da feira e a voz da cliente, e a folha diz isso.
 5. **§ 3, cada dado com prazo.** "o app apaga a cópia na confirmação", "fica só o total vendido, sem nome": cada dado pessoal tem dono, lugar, quem vê e quando some. e "o telefone, não": guardar menos é a melhor proteção.
 6. **§ 4, desenhar mudou a ideia.** "o qwen saiu": o fluxograma mostrou que uma peça inteira não tinha trabalho. é para isso que o artefato existe: o desenho mostra o que sobra antes de alguém programar.

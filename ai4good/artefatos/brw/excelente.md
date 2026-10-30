@@ -104,7 +104,7 @@ quero começar poupando trabalho de quem vende; depois ligo esse registro à org
 **minha ideia completa:** **rastro da banca · colheita marcada**
 
 feirantes usam as mensagens e áudios que já trocam com clientes para registrar pedidos; o cliente reserva e combina a hora de buscar.  
-um transformer de voz transcreve, e um modelo pequeno no celular tira produto, quantidade e hora; o feirante confirma falando, e as contas são feitas por regra.  
+um transformer de voz transcreve no celular do feirante, regras tiram produto, quantidade e hora, e o feirante confere e confirma.  
 antes da feira, o caderno junta as encomendas e diz o que levar; depois, se cada feirante aceitar, a associação vê só o total do que mais saiu, sem preço nem cliente de ninguém.  
 comprar comida fresca fica tão garantido quanto ir ao supermercado: menos famílias trocam a feira pelo biscoito e pelo congelado por falta de tempo, e o produtor vende mais sem atravessador.
 
@@ -125,9 +125,9 @@ se todo mundo usasse por 5 anos (a minha aposta):
 
 por que cada pessoa usaria: o feirante, para trabalhar menos e vender mais; o cliente, para garantir o que quer sem viagem perdida. ninguém precisa querer ajudar.
 
-**b · a IA que não pode faltar.** técnica: um transformer de reconhecimento de fala e um modelo de linguagem pequeno rodando no celular
+**b · a IA que não pode faltar.** técnica: um transformer de reconhecimento de fala rodando no celular
 
-por que sem ela não roda: o primeiro transforma o áudio em texto; o segundo tira produto, unidade, quantidade e hora, e pergunta quando algo está ambíguo ("meia caixa de quê?"). contas, horários e Pix são feitos por regra. sem os modelos, o feirante poderia anotar tudo à mão, mas aí some o que faz a ideia funcionar: aproveitar a conversa que ele já tem, sem cadastro extra. se no teste um formulário simples for tão fácil quanto, eu retiro a IA e volto aos motores.
+por que sem ela não roda: ele transforma o áudio em texto, e nenhuma regra faz isso. produto, unidade, quantidade e hora saem por regra, com a lista da banca, e o que a regra não acha vira "?" na tela do feirante. contas, horários e Pix também. sem o modelo, o feirante poderia anotar tudo à mão, mas aí some o que faz a ideia funcionar: aproveitar a conversa que ele já tem, sem cadastro extra. se no teste um formulário simples for tão fácil quanto, eu retiro a IA e volto aos motores.
 
 **c · críticas de quem está de fora**
 

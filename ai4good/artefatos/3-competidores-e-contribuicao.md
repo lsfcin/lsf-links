@@ -202,7 +202,7 @@ tabela: item | passa ou não passa | trecho que prova | o que encontrei (links a
 
 cole a tabela, sem editar, no § 9 do `cmp.md`. embaixo dela, **você**, sem IA, escreve uma linha por item: o que mudou na folha por causa da auditoria, ou por que você discorda dela. escrita por IA, essa parte não conta.
 
-**pronto quando:** cada item passa, ou você corrigiu e auditou de novo; a tabela e as suas linhas estão no § 9 do `cmp.md`.
+**pronto quando:** cada item passa, ou você corrigiu e auditou de novo; a tabela e as suas linhas estão no § 9 do `cmp.md`; e a folha do brw não contradiz esta.
 
 ---
 

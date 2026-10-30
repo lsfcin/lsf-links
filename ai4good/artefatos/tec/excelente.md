@@ -6,16 +6,17 @@
 
 ## 0 · a minha ideia completa
 
-**rastro da banca · colheita marcada.** feirantes usam as mensagens e áudios que já trocam com clientes para registrar pedidos; o cliente reserva e combina a hora de buscar. um transformer de voz transcreve, e um modelo pequeno no celular tira produto, quantidade e hora; o feirante confirma falando, e as contas são feitas por regra.
+**rastro da banca · colheita marcada.** feirantes usam as mensagens e áudios que já trocam com clientes para registrar pedidos; o cliente reserva e combina a hora de buscar. um transformer de voz transcreve no celular do feirante, regras tiram produto, quantidade e hora, e o feirante confere e confirma.
 
-técnica do § 6b do brw: transformer de voz (fala → texto), com um modelo de linguagem pequeno, local, para organizar o pedido.
+técnica do § 6b do brw: transformer de voz (fala → texto), rodando no celular; o pedido sai por regras.
 
 ## 1 · as peças
 
 | peça | central ou apoio | o que faz na ideia | link oficial | licença | por que esta, e não as alternativas |
 |:--|:--|:--|:--|:--|:--|
-| faster-whisper | central | transforma o áudio do pedido em texto | [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) | MIT | roda em CPU com o modelo `small` e aceita uma frase de contexto. o [whisper.cpp](https://github.com/ggml-org/whisper.cpp) (MIT) roda melhor em celular, mas o exemplo é em C++, que eu não domino; o [whisper original](https://github.com/openai/whisper) (MIT) faz o mesmo, mas é mais lento em CPU, como mostra a comparação no README do faster-whisper. |
-| qwen3:4b, no Ollama | apoio | tira produto, quantidade e hora do texto | [Qwen3-4B](https://huggingface.co/Qwen/Qwen3-4B), [Ollama](https://github.com/ollama/ollama) | Apache 2.0 · MIT | cabe num notebook e devolve o pedido num formato fixo. o gemma3:4b tem licença própria, com restrições de uso; uma regra de texto não entende "uma dúzia" nem "lá pelas dez e meia". |
+| faster-whisper | central | transforma o áudio do pedido em texto | [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) | MIT | roda em CPU com o modelo `small` e aceita uma frase de contexto: é onde eu testo e meço, no notebook. o [whisper original](https://github.com/openai/whisper) (MIT) faz o mesmo, mas é mais lento em CPU, como mostra a comparação no README do faster-whisper. |
+| [whisper.cpp](https://github.com/ggml-org/whisper.cpp) | central, no celular | o mesmo modelo, rodando no Android | [ggml-org/whisper.cpp](https://github.com/ggml-org/whisper.cpp) | MIT | o faster-whisper não roda no Android. medido no exp: num Redmi Note 10 Pro, o `small` leva 2,89 vezes a duração do áudio, então o celular usa o `base`, ou transcreve enquanto a feirante atende. |
+| qwen3:4b, no Ollama | apoio, só no começo | tirou produto, quantidade e hora do texto, no commit da alteração mínima | [Qwen3-4B](https://huggingface.co/Qwen/Qwen3-4B), [Ollama](https://github.com/ollama/ollama) | Apache 2.0 · MIT | cabe num notebook e devolve o pedido num formato fixo. saiu no flx, e as regras ficaram no lugar dele: no exp, com o qwen o pedido exato cai de 47% para 20%. |
 
 ## 2 · o exemplo oficial, rodando
 
@@ -95,7 +96,7 @@ isso confirma o "o feirante confirma falando" da ideia, e é a primeira medida d
 
 cada anotação cita uma frase do exemplo e explica por que ela é o padrão que buscamos.
 
-1. **§ 1, as peças.** "o whisper.cpp roda melhor em celular, mas o exemplo é em C++, que eu não domino": a escolha tem um motivo do aluno, e não da moda. e a peça de apoio também tem link, licença e alternativa: quase toda ideia usa mais de uma técnica, e todas entram na conta.
+1. **§ 1, as peças.** "o faster-whisper não roda no Android" e "o `small` leva 2,89 vezes a duração do áudio": cada escolha tem um motivo, medido, e não da moda. e a peça de apoio também tem link, licença e o número que a tirou: quase toda ideia usa mais de uma técnica, e todas entram na conta.
 2. **§ 2, o exemplo oficial.** "só duas escolhas que o README oferece": o primeiro commit é o exemplo do projeto, reconhecível por qualquer pessoa que abra o README dele. é o que prova que a técnica roda na máquina do aluno antes de qualquer mudança.
 3. **§ 3, a alteração mínima.** o diff do segundo commit muda a entrada (os áudios e a frase de contexto) e a saída (o pedido num formato fixo), e o resto do exemplo continua ali. o aluno também diz como o dado de teste difere do real: "a voz real tem sotaque e pressa, e vai errar mais".
 4. **§ 3, onde a saída erra.** "'jerimum' virou 'de limão'": a saída foi colada como veio, com os erros. uma demonstração que só mostra acerto esconde exatamente o que o experimento precisa medir.
