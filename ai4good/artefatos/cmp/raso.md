@@ -40,7 +40,7 @@ ficha: **C**enário · **U**suário · **P**roblema · **T**ecnologia, cada um *
 | **[Food Democracy in the Making](https://doi.org/10.1145/3173574.3173907)** (Prost et al., 2018) | CHI · A1 | redes locais de comida. | tema muito próximo. | não usa IA. | = = = ≈ |
 | [Whisper](https://proceedings.mlr.press/v202/radford23a.html) (Radford et al., 2023) | ICML · A1 | reconhecimento de fala. | estado da arte. | não é sobre feiras. | ≈ ≈ ≈ = |
 | [MobileLLM](https://proceedings.mlr.press/v235/liu24ce.html) (Liu et al., 2024) | ICML · A1 | modelos pequenos para celular. | eficiente. | não é sobre feiras. | ≈ ≈ ≈ = |
-| [Avaaj Otalo](https://hci.stanford.edu/publications/2010/p50-patel.pdf) (Patel et al., 2010) | CHI · A1 | fórum de voz para agricultores. | premiado. | antigo. | ≈ = ≈ ≈ |
+| [Avaaj Otalo](https://doi.org/10.1145/1753326.1753434) (Patel et al., 2010) | CHI · A1 | fórum de voz para agricultores. | premiado. | antigo. | ≈ = ≈ ≈ |
 | [Infrastructuring Food Democracy](https://doi.org/10.1145/3359159) (Prost et al., 2019) | CSCW · A1 | hub de comida local. | participativo. | não usa IA. | = = = ≈ |
 | [Job Opportunities through Entertainment](https://doi.org/10.1145/2470654.2481389) (Raza et al., 2013) | CHI · A1 | serviço de voz viral. | muitos usuários. | não é sobre comida. | ≈ ≈ ≈ ≈ |
 | [Sementes no Armazém do Campo](https://cadernos.aba-agroecologia.org.br/cadernos/article/view/8664) (Alvear et al., 2024) | Cadernos de Agroecologia | software para cestas. | brasileiro. | não usa IA. | = = = ≈ |
