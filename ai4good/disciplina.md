@@ -90,7 +90,7 @@ para o agente que apoia um aluno desta disciplina:
 | · 22 ·<br>23/10<br>· sex · | prática<br>**desenho dos experimentos** | [`[3] artefato · desenho dos experimentos`](artefatos/3-desenho-dos-experimentos.md) |
 | · -- ·<br>28/10<br>· qua · | feriado<br>**dia do servidor público federal** | |
 | · 23 ·<br>30/10<br>· sex · | checagem<br>**verificação geral, ponto a ponto** | |
-| · 24 ·<br>04/11<br>· qua · | seminário<br>**iteração 1, preliminares** | `[x] seminário · tbd` |
+| · 24 ·<br>04/11<br>· qua · | seminário<br>**iteração 1, preliminares** | [`[4] seminário · preliminares`](artefatos/4-seminario-preliminares.md) |
 | · 25 ·<br>06/11<br>· sex · | mentoria<br>**código e artigo** | |
 | · 26 ·<br>11/11<br>· qua · | seminário<br>**iteração 2, evolução** | `[x] seminário · tbd` |
 | · 27 ·<br>13/11<br>· sex · | mentoria<br>**código e artigo** | |
