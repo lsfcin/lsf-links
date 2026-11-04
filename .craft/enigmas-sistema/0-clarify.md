@@ -2,7 +2,7 @@
 name: enigmas-sistema | branch: feature/enigmas-sistema | root: /mnt/workspace/outputs/links
 provider: anthropic | chain-deleg: deleg=anthropic→openai-codex (4a/4b by `codex exec`; agy from 2026-11-07)
 level-map: anthropic | verified-on: 2026-11-04
-test-cmd: `node --test test/` | e2e-cmd: manual on a preview deploy (student test login, keyboard only, screen reader)
+test-cmd: `node --test test/*.test.mjs` | e2e-cmd: manual on a preview deploy (student test login, keyboard only, screen reader)
 criticality: normal | verdict: standard
 subtree: feature | supervision: io-signoff=yes arch-review=per-feature arch-review-supervised=yes
 criteria:

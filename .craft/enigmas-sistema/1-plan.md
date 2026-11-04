@@ -2,7 +2,7 @@
 name: enigmas-sistema | branch: feature/enigmas-sistema | root: /mnt/workspace/outputs/links
 provider: anthropic | chain-deleg: deleg=anthropic→openai-codex (4a/4b by `codex exec`; agy from 2026-11-07)
 level-map: anthropic | verified-on: 2026-11-04
-test-cmd: `node --test test/` | e2e-cmd: manual on a preview deploy (student test login, keyboard only, screen reader)
+test-cmd: `node --test test/*.test.mjs` | e2e-cmd: manual on a preview deploy (student test login, keyboard only, screen reader)
 criticality: normal | verdict: standard
 subtree: feature | supervision: io-signoff=yes arch-review=per-feature arch-review-supervised=yes
 criteria:
@@ -37,7 +37,7 @@ Fixed facts every row may rely on:
 - Hard params (C7): combo index = uint32 big-endian of the first 4 bytes of HMAC-SHA256(ENIGMA_SECRET, `${matricula}|${stem}|${qid}|${n}|${versao}`) mod combos.length; n = attempt number, starts at 1.
 - Deck rule (C4 — proposal, Lucas confirms at the 3b I/O sign-off): queues F (easy ids) and D (hard ids), initial order = ids sorted by HMAC hex of `${matricula}|${stem}|${id}`. An attempt serves the heads: min(2,|F|) easy + min(1,|D|) hard; stored as `aberta:{n, ids}` so a reload serves the same attempt. Right → id leaves its queue; wrong → id to the tail. Full attempt (3 served) all right → close. A short attempt (<3 served) = exhausted: `acumulado` starts at the rights of the last full attempt, adds each short attempt's rights; close at acumulado ≥ 3, or when F and D are both empty.
 - Hard answer: accepts `2,5`/`2.5`/spaces; not a number → 400, attempt not graded. Right iff |given − valor| ≤ tolerancia + 1e-9. Wrong → every `erros[].feedback` within tolerance (collision = all of them, C6); none matches → fixed sentence `"não bate com nenhum erro previsto: refaça as etapas com calma"`. Easy wrong → `feedback[letter]`. Right → `parabens`.
-- Codex prompt per row: `.craft/enigmas-sistema/codex/Tn.md` = this row's text + its `3b-contracts.md` section + "touch only the files column; run `node --test test/`". Written by the 4a/4b executor before each `codex exec`.
+- Codex prompt per row: `.craft/enigmas-sistema/codex/Tn.md` = this row's text + its `3b-contracts.md` section + "touch only the files column; run `node --test test/*.test.mjs`". Written by the 4a/4b executor before each `codex exec`.
 
 | id | task | files | done-when | level | effort |
 |----|------|-------|-----------|------|--------|
