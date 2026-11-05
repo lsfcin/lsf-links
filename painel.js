@@ -194,4 +194,4 @@ function mount(ctx, { popover, post, password }) {
 }
 
 if (typeof window !== 'undefined') window.lsfPainel = mount;
-else globalThis.lsfPainelCore = { parse, artefato, legend, draw, remark, readTsv };
+export { parse, artefato, legend, draw, remark, readTsv };

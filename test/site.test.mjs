@@ -63,6 +63,65 @@ function fakeWorld(text) {
 const env = { GITHUB_TOKEN: 't', EDIT_PASSWORD: 'pw', TURMAS: JSON.stringify({ ai4good: { matriculas: { edson: '111', vinicius: '222', andreza: '333' }, duplas: [['edson', 'vinicius']] } }) };
 const post = (body) => ({ request: new Request('https://x/api', { method: 'POST', body: JSON.stringify(body) }), env });
 
+test('readFile and writeFile use the chosen repo and branch, with site defaults', async (t) => {
+  const calls = [];
+  t.mock.method(globalThis, 'fetch', async (url, init) => {
+    calls.push({ url, init });
+    return { ok: true, status: 200, json: async () => init.method
+      ? { content: { sha: 's1' } }
+      : { content: Buffer.from('matrícula').toString('base64'), sha: 's0' } };
+  });
+  const options = { repo: 'lsfcin/academy-teaching', branch: 'enigmas-site' };
+  const path = 'ai4good/disciplina.md';
+  assert.deepEqual(await site.readFile(env, path, options), { text: 'matrícula', sha: 's0' });
+  assert.equal(calls[0].url, `https://api.github.com/repos/lsfcin/academy-teaching/contents/${path}?ref=enigmas-site`);
+  assert.deepEqual(await site.writeFile(env, path, 'matrícula', 's0', 'teste', options), { sha: 's1' });
+  assert.equal(calls[1].url, `https://api.github.com/repos/lsfcin/academy-teaching/contents/${path}`);
+  assert.deepEqual(JSON.parse(calls[1].init.body), {
+    message: 'teste', content: Buffer.from('matrícula').toString('base64'), sha: 's0', branch: 'enigmas-site',
+  });
+  await site.readFile(env, path);
+  await site.writeFile(env, path, '', 's0', 'teste');
+  assert.equal(calls[2].url, `https://api.github.com/repos/lsfcin/lsf-links/contents/${path}?ref=main`);
+  assert.equal(calls[3].url, `https://api.github.com/repos/lsfcin/lsf-links/contents/${path}`);
+  assert.equal(JSON.parse(calls[3].init.body).branch, 'main');
+});
+
+test('writeFile retries conflicts and sha validation errors, but throws other errors', async (t) => {
+  for (const [status, message, stale] of [
+    [409, '', true], [422, 'sha does not match', true], [422, 'Invalid SHA', true],
+    [422, 'content is not valid Base64', false], [500, 'server error', false],
+  ]) {
+    t.mock.method(globalThis, 'fetch', async () => ({ ok: false, status, json: async () => ({ message }) }));
+    const write = site.writeFile(env, 'ai4good/entregas.tsv', '', 's0', 'teste');
+    if (stale) assert.deepEqual(await write, { stale: true });
+    else await assert.rejects(write, new RegExp(`github ${status}`));
+  }
+});
+
+test('retry3 stops at the first non-stale result and returns null after three stale writes', async () => {
+  const result = { sha: 's1' };
+  for (const stale of [0, 1, 2, 3]) {
+    let calls = 0;
+    assert.equal(await site.retry3(async () => ++calls <= stale ? { stale: true } : result), stale === 3 ? null : result);
+    assert.equal(calls, Math.min(stale + 1, 3));
+  }
+  const error = new Error('validation failed');
+  let calls = 0;
+  await assert.rejects(site.retry3(async () => { calls++; throw error; }), (e) => e === error);
+  assert.equal(calls, 1);
+});
+
+test('aluno identifies a matrícula with digits only and requires the given name to match', async () => {
+  assert.equal(await site.aluno(env, 'ai4good', '3.3-3'), 'andreza');
+  assert.equal(await site.aluno(env, 'ai4good', '2.2-2', 'vinicius'), 'vinicius');
+  const start = Date.now();
+  assert.equal(await site.aluno(env, 'ai4good', '111', 'andreza'), null);
+  assert.ok(Date.now() - start >= 2000);
+  assert.equal(await site.aluno(env, 'ai4good', '999'), null);
+  assert.equal(await site.aluno(env, 'unknown', '111'), null);
+});
+
 test('a pair delivers once and both slots fill', async () => {
   const repo = fakeWorld(PAGE);
   const r = await entrega(post({ page: 'ai4good/disciplina.md', nome: 'vinicius', codigo: 'brw', matricula: '222', url: 'https://d/1' }));
@@ -85,13 +144,16 @@ test('delivered from the header, the matrícula says who the student is', async 
   const r = await entrega(post({ page: 'ai4good/disciplina.md', codigo: 'git', matricula: '333', url: 'https://d/2' }));
   assert.deepEqual((await r.json()).nomes, ['andreza']);
   assert.deepEqual(repo.commits, ['entrega: andreza git']);
-  assert.equal((await entrega(post({ page: 'ai4good/disciplina.md', codigo: 'git', matricula: '999', url: 'https://d/2' }))).status, 401);
+  const missing = await entrega(post({ page: 'ai4good/disciplina.md', codigo: 'git', matricula: '999', url: 'https://d/2' }));
+  assert.equal(missing.status, 401);
+  assert.deepEqual(await missing.json(), { error: 'matrícula não encontrada na turma' });
 });
 
 test('a wrong matrícula writes nothing', async () => {
   const repo = fakeWorld(PAGE);
   const r = await entrega(post({ page: 'ai4good/disciplina.md', nome: 'andreza', codigo: 'brw', matricula: '111', url: 'https://d/1' }));
   assert.equal(r.status, 401);
+  assert.deepEqual(await r.json(), { error: 'essa matrícula não é a de andreza' });
   assert.deepEqual(repo.commits, []);
 });
 
@@ -117,9 +179,46 @@ test('save refuses a stale version and a bad password', async () => {
   assert.deepEqual(repo.commits, ['editor: ai4good/disciplina.md']);
 });
 
+test('entrega and parecer reread after conflicts and keep their messages when retries run out', async (t) => {
+  for (const [handler, file, body, success, error] of [
+    [entrega, 'entregas.tsv', { matricula: '333', url: 'https://d/1' }, { nomes: ['andreza'] }, 'muita gente entregando agora: tente de novo em alguns segundos'],
+    [parecer, 'pareceres.tsv', { password: 'pw', texto: 'revisar' }, { ok: true }, 'o arquivo mudou agora: tente de novo em alguns segundos'],
+  ]) {
+    for (const conflicts of [1, 3]) {
+      const repo = fakeWorld(PAGE);
+      const fetcher = globalThis.fetch;
+      const path = `ai4good/${file}`;
+      let reads = 0, writes = 0;
+      const mock = t.mock.method(globalThis, 'fetch', async (url, init = {}) => {
+        if (String(url).includes(`/contents/${path}`)) {
+          if (!init.method) reads++;
+          else {
+            assert.equal(JSON.parse(init.body).sha, repo.files[path]?.sha);
+            if (++writes <= conflicts) {
+              repo.files[path] = { text: `edson\tgit\tconcurrent-${writes}\n`, sha: `race${writes}` };
+              return { ok: false, status: 409 };
+            }
+          }
+        }
+        return fetcher(url, init);
+      });
+      const r = await handler(post({ page: 'ai4good/disciplina.md', nome: 'andreza', codigo: 'brw', ...body }));
+      assert.equal(r.status, conflicts === 3 ? 409 : 200);
+      assert.deepEqual(await r.json(), conflicts === 3 ? { error } : success);
+      assert.equal(reads, conflicts === 3 ? 3 : 2);
+      assert.equal(writes, reads);
+      assert.equal(repo.commits.length, conflicts === 3 ? 0 : 1);
+      if (conflicts === 1) {
+        assert.ok(repo.files[path].text.includes('edson\tgit\tconcurrent-1\n'));
+        assert.ok(repo.files[path].text.includes(`andreza\tbrw\t${body.url || body.texto}\n`));
+      }
+      mock.mock.restore();
+    }
+  }
+});
+
 // painel.js draws the panel from its data block: stripped of its spans, it must be painel.py's drawing, character for character
-await import(`${L}/painel.js`);
-const P = globalThis.lsfPainelCore;
+const P = await import(`${L}/painel.js`);
 const COURSE = `${L}/ai4good/disciplina.md`; // the published mirror: cfpages publish keeps it equal to the workspace page
 test('the clickable panel is the text painel.py drew, on the real page', async () => {
   const md = (await import('node:fs')).readFileSync(COURSE, 'utf8');

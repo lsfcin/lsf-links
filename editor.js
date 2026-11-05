@@ -60,6 +60,7 @@ window.lsfEditor = (ctx) => {
   // The panel (delivery, legend, the teacher's marks) lives in painel.js; the editor re-draws it after a save.
   let painel = () => {};
   const pjs = document.createElement('script');
+  pjs.type = 'module';
   pjs.src = '/painel.js';
   pjs.onload = () => { painel = window.lsfPainel(ctx, { popover, post, password: () => remembered() }); };
   document.head.appendChild(pjs);
