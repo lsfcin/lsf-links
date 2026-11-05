@@ -85,4 +85,5 @@ edges:
 - enigmas.js → painel.js draw(abertas) — bool[13] — MATCH
 contract-check: n/a — lsf-links is not a code/ project with SPEC.md modules; edges checked by hand
 io-signoff: requested → APPROVED by user 2026-11-04 (D1 ES module, D2 names, D3 deck rule, D4 accept + shuffle letters, D5 + risks a/b/c)
-open for Loop 5: `cfpages secrets --push` sets production only, so a preview deploy has no GITHUB_TOKEN/ENIGMA_SECRET; the e2e runs on production behind the switch, or cmd_secrets also sets preview
+Loop 5 (Lucas, 2026-11-05; panel DISAGREE on shared data → isolate): `cmd_secrets` sets production AND preview; preview also gets `ENIGMA_STORE_BRANCH=enigmas-teste` and `ENIGMA_PAGE_BRANCH=feature/enigmas-sistema`. tentativa.js and enigmas.js read the store branch from `env.ENIGMA_STORE_BRANCH || 'enigmas-site'`; tentativa.js writes ◼ to `env.ENIGMA_PAGE_BRANCH || 'main'`.
+Banks at T3 (Lucas, 2026-11-05): perceptron, historia, crises; autocodificadores and regressao-linear after Lucas samples them (publica.py rerun).
