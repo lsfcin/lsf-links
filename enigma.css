@@ -1,0 +1,44 @@
+/* enigma.css — accessible enigma cards and their round/result animations. */
+.popover.enigma-popover { color: var(--text); overflow-wrap: anywhere; }
+.enigma-cards { display: grid; gap: 0.9rem; min-width: 0; padding: 0.25rem 0.4rem 0.4rem; overflow: hidden; }
+.enigma-card {
+  min-width: 0; margin: 0; padding: 0.75rem; border: 1px solid var(--border);
+  border-radius: 8px; background: var(--card); color: var(--text);
+  animation: enigma-enter 240ms ease-out both;
+}
+.enigma-card:nth-child(2) { animation-delay: 40ms; }
+.enigma-card:nth-child(3) { animation-delay: 80ms; }
+.enigma-card legend { max-width: 100%; padding: 0 0.3rem; font-weight: 600; color: var(--text); }
+.enigma-question, .enigma-result p { white-space: pre-wrap; }
+.enigma-question { margin-bottom: 0.6rem; }
+.enigma-card label + label { margin-top: 0.45rem; }
+.enigma-card input { min-width: 0; max-width: 100%; width: 100%; }
+.enigma-card .enigma-choice { flex-direction: row; align-items: baseline; gap: 0.5rem; color: var(--text); }
+.enigma-choice input[type="radio"] { flex: 0 0 auto; width: auto; accent-color: var(--link); }
+.enigma-choice span { min-width: 0; }
+.enigma-result { margin-top: 0.7rem; }
+.enigma-result p + p { margin-top: 0.3rem; }
+.enigma-right { border-color: var(--at-b); animation: enigma-right 360ms ease-out both; }
+.enigma-right .enigma-result { color: var(--at-b); }
+.enigma-wrong { border-color: var(--ac-b); animation: enigma-wrong 360ms ease-out both; }
+.enigma-wrong .enigma-result { color: var(--ac-b); }
+.enigma-popover :focus-visible, .enigma-popover legend:focus, .enigma-popover [role="status"]:focus {
+  outline: 2px solid var(--link); outline-offset: 2px;
+}
+@keyframes enigma-enter {
+  from { transform: translateY(12px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@keyframes enigma-right {
+  0% { transform: perspective(600px) rotateY(-16deg); opacity: 0.7; }
+  65% { transform: perspective(600px) rotateY(4deg); opacity: 1; }
+  100% { transform: perspective(600px) rotateY(0); opacity: 1; }
+}
+@keyframes enigma-wrong {
+  0% { transform: translate(0, 0); opacity: 1; }
+  65% { transform: translate(10px, 12px); opacity: 0.55; }
+  100% { transform: translate(4px, 4px); opacity: 0.85; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .enigma-popover *, .enigma-popover *::before, .enigma-popover *::after { animation: none !important; transition: none !important; }
+}

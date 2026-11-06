@@ -1,5 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { Script, runInNewContext } from 'node:vm';
 const L = new URL('..', import.meta.url).pathname.replace(/\/$/, '');
 const site = await import(`${L}/lib/index.js`);
 const { onRequestPost: entrega } = await import(`${L}/functions/api/entrega.js`);
@@ -220,6 +222,127 @@ test('entrega and parecer reread after conflicts and keep their messages when re
 // painel.js draws the panel from its data block: stripped of its spans, it must be painel.py's drawing, character for character
 const P = await import(`${L}/painel.js`);
 const COURSE = `${L}/ai4good/disciplina.md`; // the published mirror: cfpages publish keeps it equal to the workspace page
+const ENIGMA_ROWS = [['ana', [['enigmas', 'v------------'], ['git', 'v-']]]];
+const panelInfo = () => ({ title: 'x & y', items: [] });
+
+test('draw with abertas null preserves the original HTML byte for byte', () => {
+  // Captured from draw before adding individual enigma buttons.
+  const before = '<span class="ln"><span class="nm">      </span><span class="hd off" data-col="0" title="x &amp; y">enigmas</span>       <span class="hd" tabindex="0" role="button" data-col="1" title="x &amp; y">git</span> <span class="pts"> nota 1</span></span><span class="ln"><span class="nm" data-row="0"><span class="who">ana</span>   </span><span class="g off" data-row="0" data-col="0"><span title="1 · item 1">◼</span><span title="2 · item 2">◻</span><span title="3 · item 3">◻</span><span title="4 · item 4">◻</span><span title="5 · item 5">◻</span><span title="6 · item 6">◻</span><span title="7 · item 7">◻</span><span title="8 · item 8">◻</span><span title="9 · item 9">◻</span><span title="10 · item 10">◻</span><span title="11 · item 11">◻</span><span title="12 · item 12">◻</span><span title="13 · item 13">◻</span></span> <span class="g has" tabindex="0" role="button" data-row="0" data-col="1"><span title="1 · item 1">◼</span><span title="2 · item 2">◻</span></span> <span class="pts"> 04 pts</span></span>';
+  const links = new Set(['ana\tgit']);
+  assert.equal(P.draw('va1', ENIGMA_ROWS, links, panelInfo, null), before);
+  assert.equal(P.draw('va1', ENIGMA_ROWS, links, panelInfo), before);
+  assert.equal(P.draw('va1', ENIGMA_ROWS, links, panelInfo, [true]), before);
+});
+
+test('only open enigma boxes are individual keyboard buttons; other groups are unchanged', () => {
+  const rows = [...ENIGMA_ROWS, ['bia', [['enigmas', '-------------'], ['git', '--']]]];
+  const links = new Set(['ana\tgit']);
+  const before = P.draw('va1', rows, links, panelInfo);
+  const abertas = Array.from({ length: 13 }, (_, k) => [0, 4, 12].includes(k));
+  const after = P.draw('va1', rows, links, panelInfo, abertas);
+  const buttons = [...after.matchAll(/<span data-k="(\d+)" tabindex="0" role="button" class="ek"[^>]*>/g)];
+  assert.deepEqual(buttons.map((m) => +m[1]), [0, 4, 12, 0, 4, 12]);
+  assert.equal((after.match(/data-k=/g) || []).length, buttons.length);
+  assert.equal((after.match(/tabindex="0"/g) || []).length, buttons.length + 3); // git header and both git groups
+  assert.equal((after.match(/<span class="g" data-row="\d" data-col="0">/g) || []).length, 2);
+  const git = (html) => [...html.matchAll(/<span class="g[^"\n]*"[^>]*data-col="1">(?:<span[^>]*>[^<]*<\/span>)*<\/span>/g)].map((m) => m[0]);
+  assert.equal(git(after).length, 2);
+  assert.deepEqual(git(after), git(before));
+  const heads = (html) => html.slice(0, html.indexOf('<span class="ln">', 1));
+  assert.equal(heads(after), heads(before));
+  const closed = P.draw('va1', rows, links, panelInfo, Array(13).fill(false));
+  assert.doesNotMatch(closed, /data-k=/);
+  assert.doesNotMatch(closed, /class="g off"/);
+});
+
+test('enigma is plain browser JS; its keyframes animate only transform and opacity', () => {
+  new Script(readFileSync(`${L}/enigma.js`, 'utf8'));
+  const css = readFileSync(`${L}/enigma.css`, 'utf8');
+  const frames = [...css.matchAll(/@keyframes\s+[\w-]+\s*\{((?:[^{}]|\{[^{}]*\})*)\}/g)];
+  assert.ok(frames.length >= 3);
+  assert.equal(frames.length, (css.match(/@keyframes\b/g) || []).length);
+  for (const [, body] of frames) {
+    for (const [, declarations] of body.matchAll(/\{([^{}]*)\}/g)) {
+      for (const declaration of declarations.split(';').filter((s) => s.trim())) {
+        assert.ok(['transform', 'opacity'].includes(declaration.split(':')[0].trim()), declaration);
+      }
+    }
+  }
+  assert.match(css, /@media\s*\(prefers-reduced-motion:\s*reduce\)\s*\{[\s\S]*animation:\s*none\s*!important;\s*transition:\s*none\s*!important/);
+});
+
+test('enigma keeps the matrícula across rounds, escapes content, focuses steps and closes once', async () => {
+  const calls = [], shown = [], styles = [];
+  let focused, closed = 0;
+  const document = {
+    querySelector(selector) {
+      if (selector === 'link[data-lsf-enigma]') return styles[0];
+      assert.equal(selector, '.popover');
+      return { classList: { add() {} }, querySelector: (s) => ({ focus() { focused = s; } }) };
+    },
+    createElement: () => ({ setAttribute() {} }),
+    head: { appendChild: (el) => styles.push(el) },
+  };
+  const window = {};
+  runInNewContext(readFileSync(`${L}/enigma.js`, 'utf8'), { window, document });
+  const questoes = [
+    { id: 'q1', tipo: 'facil', enunciado: '<img src=x> & "texto"', alternativas: Object.fromEntries(['A', 'B', 'C', 'D', 'E'].map((a) => [a, `<${a}>`])) },
+    { id: 'q2', tipo: 'dificil', enunciado: 'número' },
+    { id: 'q3', tipo: 'dificil', enunciado: 'outro' },
+  ];
+  let n = 0, finish = false;
+  const opts = { page: 'ai4good/disciplina.md', caixa: 4, nome: 'ana <x>', onClose: () => closed++,
+    popover: (el, html, submit, ok) => shown.push({ html, submit, ok }),
+    post: async (action, body) => {
+      calls.push(JSON.parse(JSON.stringify({ action, body })));
+      if (!body.respostas) return { n: ++n, questoes };
+      return { fechou: finish, resultados: questoes.map((q, k) => ({ id: q.id, certo: finish || k === 0, feedback: ['<feedback>', 'mais & "dica"'] })) };
+    },
+  };
+  window.lsfEnigma({}, opts);
+  assert.equal(shown.at(-1).ok, 'começar');
+  assert.match(shown.at(-1).html, /enigma · ana &lt;x&gt;/);
+  await shown.at(-1).submit({ matricula: '123' });
+  assert.equal(focused, 'legend');
+  assert.equal(shown.at(-1).ok, 'enviar');
+  assert.equal((shown.at(-1).html.match(/<fieldset/g) || []).length, 3);
+  assert.equal((shown.at(-1).html.match(/type="radio" name="q1"/g) || []).length, 5);
+  assert.match(shown.at(-1).html, /&lt;img src=x&gt; &amp; &quot;texto&quot;/);
+  assert.match(shown.at(-1).html, /inputmode="decimal" autocomplete="off"/);
+  const respostas = { q1: 'A', q2: '2,5', q3: '3.5' };
+  await shown.at(-1).submit(respostas);
+  assert.equal(focused, '[role="status"]');
+  assert.equal(shown.at(-1).ok, 'nova rodada');
+  assert.match(shown.at(-1).html, /✓ certa/);
+  assert.match(shown.at(-1).html, /✗ incorreta/);
+  assert.equal((shown.at(-1).html.match(/&lt;feedback&gt;/g) || []).length, 3);
+  assert.equal((shown.at(-1).html.match(/mais &amp; &quot;dica&quot;/g) || []).length, 3);
+  assert.match(shown.at(-1).html, /role="status" aria-live="polite"/);
+  assert.equal(closed, 0);
+  await shown.at(-1).submit({});
+  finish = true;
+  await shown.at(-1).submit(respostas);
+  assert.equal(closed, 1);
+  assert.match(shown.at(-1).html, /◼ caixa fechada!/);
+  assert.equal(shown.at(-1).submit, null);
+  assert.deepEqual(calls, [
+    { action: 'tentativa', body: { page: opts.page, caixa: 4, matricula: '123' } },
+    { action: 'tentativa', body: { page: opts.page, caixa: 4, matricula: '123', n: 1, respostas } },
+    { action: 'tentativa', body: { page: opts.page, caixa: 4, matricula: '123' } },
+    { action: 'tentativa', body: { page: opts.page, caixa: 4, matricula: '123', n: 2, respostas } },
+  ]);
+  window.lsfEnigma({}, { ...opts, post: async () => ({ fechou: true }) });
+  await shown.at(-1).submit({ matricula: '123' });
+  assert.match(shown.at(-1).html, /esta caixa já está fechada/);
+  assert.equal(shown.at(-1).submit, null);
+  assert.equal(focused, '[role="status"]');
+  assert.equal(styles.length, 1);
+  assert.equal(styles[0].href, '/enigma.css');
+  window.lsfEnigma({}, { ...opts, post: async () => { throw new Error('matrícula inválida'); } });
+  await assert.rejects(shown.at(-1).submit({ matricula: '999' }), /matrícula inválida/);
+  assert.equal(shown.at(-1).ok, 'começar');
+});
+
 test('the clickable panel is the text painel.py drew, on the real page', async () => {
   const md = (await import('node:fs')).readFileSync(COURSE, 'utf8');
   const panels = P.parse(md);

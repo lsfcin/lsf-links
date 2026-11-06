@@ -27,3 +27,5 @@ export const TSV_HEAD: "# aluno\tc\u00F3digo\tlink \u2014 escrito pelo site (fun
 export const PARECER_HEAD: "# aluno\tc\u00F3digo\tparecer \u2014 escrito pelo site (functions/api/parecer.js); quebras de linha como \\n\n";
 export function cell(text: any): string;
 export function json(body: any, status?: number): Response;
+export { novo, servir, corrigir, publico } from "./baralho.js";
+export { parse, remark } from "../painel.js";

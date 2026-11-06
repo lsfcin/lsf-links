@@ -39,6 +39,17 @@ function legend(md) {
 }
 
 const doneCount = (m) => [...m].filter((x) => x === 'v').length;
+let enigmaScript;
+function loadEnigma() {
+  if (!enigmaScript) enigmaScript = new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    script.src = '/enigma.js';
+    script.onload = resolve;
+    script.onerror = () => { script.remove(); enigmaScript = null; reject(new Error('não foi possível abrir o enigma. tente de novo.')); };
+    document.head.appendChild(script);
+  });
+  return enigmaScript;
+}
 
 // "name\tcode" → value, from a tsv the site writes (entregas.tsv, pareceres.tsv); a parecer cell escapes \n and \\
 function readTsv(tsv, unescape = false) {
@@ -51,15 +62,17 @@ function readTsv(tsv, unescape = false) {
 }
 
 // one panel as HTML whose text is painel.py's drawing; links: Set of "name\tcode", info(code) → {title, items}
-function draw(id, rows, links, info) {
+function draw(id, rows, links, info, abertas = null) {
+  const enigmas = Array.isArray(abertas) && abertas.length === 13;
   const width = Math.max(...rows.map(([n]) => n.length));
   const live = (c) => (NO_SLOT.has(c) ? ' off"' : '" tabindex="0" role="button"');
   const head = rows[0][1].map(([c, m], gi) => `<span class="hd${live(c)} data-col="${gi}" title="${esc(info(c).title)}">${esc(c)}</span>${' '.repeat(Math.max(0, m.length - c.length))}`).join(' ');
   const lines = rows.map(([name, items], ri) => {
     const groups = items.map(([c, m], gi) => {
       const its = info(c).items;
-      const boxes = [...m].map((x, k) => `<span title="${esc(`${k + 1} · ${its[k] || `item ${k + 1}`}`)}">${x === 'v' ? DONE : PENDING}</span>`).join('');
-      return `<span class="g${links.has(`${name}\t${c}`) ? ' has' : ''}${live(c)} data-row="${ri}" data-col="${gi}">${boxes}</span>`;
+      const active = enigmas && c === 'enigmas';
+      const boxes = [...m].map((x, k) => `<span${active && abertas[k] ? ` data-k="${k}" tabindex="0" role="button" class="ek"` : ''} title="${esc(`${k + 1} · ${its[k] || `item ${k + 1}`}`)}">${x === 'v' ? DONE : PENDING}</span>`).join('');
+      return `<span class="g${links.has(`${name}\t${c}`) ? ' has' : ''}${active ? '"' : live(c)} data-row="${ri}" data-col="${gi}">${boxes}</span>`;
     }).join(' ');
     const pts = String(2 * items.reduce((s, [, m]) => s + doneCount(m), 0)).padStart(2, '0').padStart(3);
     return `<span class="ln"><span class="nm" data-row="${ri}">${' '.repeat(width - name.length)}<span class="who">${esc(name)}</span>   </span>${groups} <span class="pts">${pts} pts</span></span>`;
@@ -78,6 +91,7 @@ function mount(ctx, { popover, post, password }) {
   const { article, sitePath, pageDir, say } = ctx;
   const links = new Map(); // "name\tcode" → url
   let notes = new Map(); // "name\tcode" → the teacher's parecer
+  let aberto = false, caixas = null;
   const infos = {};
   let names = {};
   const info = (c) => infos[c] || { title: names[c] || names[c.replace(/\d+$/, '')] || c, items: [] };
@@ -99,15 +113,48 @@ function mount(ctx, { popover, post, password }) {
       const pre = anchorOf(id);
       if (!pre) continue;
       pre.classList.add('painel');
-      pre.querySelector('code').innerHTML = draw(id, rows, new Set(links.keys()), info);
+      pre.querySelector('code').innerHTML = draw(id, rows, new Set(links.keys()), info, aberto ? caixas : null);
+      if (password()) {
+        const gi = rows[0][1].findIndex(([c]) => c === 'enigmas');
+        if (gi !== -1) pre.querySelector(`.hd[data-col="${gi}"]`).insertAdjacentHTML('afterend', `<button type="button" class="btn ek-toggle">enigmas: ${aberto ? 'abertos' : 'fechados'}</button>`);
+      }
       if (!pre.previousElementSibling?.classList.contains('painel-hint')) {
         pre.insertAdjacentHTML('beforebegin', '<p class="painel-hint"><span class="has">azul</span> = entregue · cinza = a entregar · toque num código ou nas suas caixas</p>');
       }
-      pre.onclick = (e) => { const el = e.target.closest('.g:not(.off), .hd:not(.off)'); if (el) open(id, rows, el); };
-      pre.onkeydown = (e) => { const el = e.target.closest('.g:not(.off), .hd:not(.off)'); if (el && e.key === 'Enter') open(id, rows, el); };
+      pre.onclick = (e) => activate(e, id, rows);
+      pre.onkeydown = (e) => { if (e.key === 'Enter' && !e.target.closest('button')) { e.preventDefault(); activate(e, id, rows); } };
       pre.onmouseover = (e) => aim(pre, e, true);
       pre.onmouseout = (e) => aim(pre, e, false);
     }
+  }
+
+  async function activate(e, id, rows) {
+    const toggle = e.target.closest('.ek-toggle');
+    if (toggle) {
+      try {
+        const data = await post('enigmas', { password: password(), aberto: !aberto });
+        aberto = data.aberto;
+        render();
+        say(`enigmas: ${aberto ? 'abertos' : 'fechados'}`);
+      } catch (err) { say(err.message); }
+      return;
+    }
+    const box = e.target.closest('.ek');
+    if (box) {
+      const nome = rows[+box.closest('.g').dataset.row][0];
+      const k = +box.dataset.k;
+      try {
+        await loadEnigma();
+        window.lsfEnigma(box, { popover, post, page: sitePath, caixa: k, nome, onClose: () => {
+          const current = parse(ctx.raw).find((p) => p.id === id)?.rows.find(([n]) => n === nome)?.[1].find(([c]) => c === 'enigmas')?.[1];
+          if (current) ctx.raw = remark(ctx.raw, id, nome, 'enigmas', [...current].map((x, i) => i === k ? 'v' : x).join(''));
+          render();
+        } });
+      } catch (err) { say(err.message); }
+      return;
+    }
+    const el = e.target.closest('.g[role="button"], .hd[role="button"]');
+    if (el) open(id, rows, el);
   }
 
   function aim(pre, e, on) {
@@ -179,6 +226,11 @@ function mount(ctx, { popover, post, password }) {
   // the legend comes from the artefatos the page links; the links and pareceres from the two tsv beside it
   const docs = [...new Set([...ctx.raw.matchAll(/\]\((artefatos\/[^)\s]+\.md)\)/g)].map((m) => m[1]))];
   const tsv = (name) => fetch(`${pageDir}${name}`, { cache: 'no-store' }).then((r) => (r.ok ? r.text() : '')).catch(() => '');
+  post('enigmas', {}).then((data) => {
+    aberto = data.aberto;
+    caixas = data.caixas;
+    render();
+  }).catch(() => {});
   Promise.all([
     tsv('entregas.tsv'),
     tsv('pareceres.tsv'),
