@@ -159,7 +159,7 @@ davi: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=vvvv, sem2=----, sem3=--
 edson: brw=vvv, cmp=vvv, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
 gian: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
 rayane: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=vvvv, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
-thiago b.: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
+thiago b.: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=vvvv, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
 thiago m.: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
 vinicius: brw=vvv, cmp=---, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
 -->
