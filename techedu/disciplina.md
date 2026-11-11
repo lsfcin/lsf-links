@@ -1,12 +1,15 @@
+<!-- a página pública da disciplina (lucassf.pages.dev/techedu): regras, cronograma, painel e habilidades. -->
+![banner techedu](https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1600&auto=format&fit=crop&q=80)
+
 # tecnologias na educação · techedu
 
 > prof. lucas silva figueiredo  
 > ufrpe · departamento de computação (dc)  
 > 2026.2 · quartas às 18h30 e sextas às 20h10 · sala 37
 
-![banner techedu](https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1600&auto=format&fit=crop&q=80)
-
 <!-- publicacao
+guia passo a passo para o professor (links curtos, atualização e publicação sem IA):
+   academy/teaching/classes/guia-links.md
 para o professor (ou o agente dele): marcar itens em painel:dados-va1 e painel:dados-va2 ('v' feito, '-' pendente);
 se cronograma, ementa ou slides foram alterados, conferir se academy/teaching/classes/techedu/arvore.yaml
 precisa de novos nós ou ajuste de links. depois um comando só (redesenha painel + árvore e publica, ~30 s):
@@ -28,9 +31,14 @@ para o agente que apoia um aluno desta disciplina:
 
 ## comunicação
 
-- [`telegram`](https://t.me/+mW8Smp8VbBlkNjkx) · avisos e dúvidas da turma
-- [`google meet`](https://meet.google.com/zxu-ffar-qrj) · sala para encontros e acompanhamento remoto
+- [`telegram`](https://lucassf.pages.dev/techedu/telegram) · avisos e dúvidas da turma
+- [`google meet`](https://lucassf.pages.dev/techedu/meet) · sala para encontros e acompanhamento remoto
+- [`excalidraw`](https://lucassf.pages.dev/techedu/draw) · quadro das atividades entre equipes
 - [`questionário setup`](https://lucassf.pages.dev/techedu/setup) · cadastro instrumental e nivelamento
+- [`painel de entregas`](https://lucassf.pages.dev/techedu/painel) · planilha mestre das entregas
+- [`avaliação intragrupo`](https://lucassf.pages.dev/techedu/intragrupo) · formulário em que você avalia a sua equipe
+- [`avaliação entre equipes`](https://lucassf.pages.dev/techedu/entre-equipes) · planilha em que cada equipe avalia as outras a cada status report
+- [`folha de avaliação da banca`](https://lucassf.pages.dev/techedu/banca) · critérios do pitch final
 
 ---
 
@@ -89,7 +97,7 @@ para o agente que apoia um aluno desta disciplina:
 | · 23 ·<br>30/10<br>· sex · | prática<br>**iteração do protótipo e experimentos** | |
 | · 24 ·<br>04/11<br>· qua · | teoria<br>**métricas e coleta empírica** | [`[1] slides · testes empíricos`](https://lucassf.pages.dev/techedu/testes-empiricos) |
 | · 25 ·<br>06/11<br>· sex · | prática<br>**análise de dados e resultados** | [`[5] artefato · dados de testes`](artefatos/5-dados-de-testes.md) |
-| · 26 ·<br>11/11<br>· qua · | checagem<br>**status report · validação empírica** | [`[5] artefato · resultados preliminares`](artefatos/5-resultados-preliminares.md) |
+| · 26 ·<br>11/11<br>· qua · | checagem<br>**status report · validação empírica** | [`[5] artefato · resultados preliminares`](artefatos/5-resultados-preliminares.md)<br>[`[1] slides · como escrever um artigo`](https://lucassf.pages.dev/techedu/artigo) |
 | · 27 ·<br>13/11<br>· sex · | prática<br>**revisão cruzada entre equipes** | |
 | · 28 ·<br>18/11<br>· qua · | teoria<br>**técnicas de pitch e comunicação** | [`[1] slides · pitch e comunicação`](https://lucassf.pages.dev/techedu/pitch-comunicacao) |
 | · -- ·<br>20/11<br>· sex · | feriado<br>**dia nacional da consciência negra** | |
@@ -223,7 +231,12 @@ leituras de base, artigos seminais e recursos de suporte.
 
 - [**doshi & hauser (2023)**](https://www.science.org/doi/10.1126/sciadv.adn5290) — generative ai enhances individual creativity but reduces the collective diversity of novel content.
 - [**design kit ideo**](https://www.designkit.org/) — métodos centrados no humano para inovação social e educacional.
-- [**toolkit tcu**](https://portal.tcu.gov.br/) — ferramentas de design thinking aplicadas ao setor público e serviços sociais.
+- [**toolkit tcu**](https://sites.tcu.gov.br/design_thinking/) — ferramentas de design thinking aplicadas ao setor público e serviços sociais.
+- [**ideo · can't wait**](https://cantwait.ideo.com/) · [**design toolkit uoc**](http://design-toolkit.uoc.edu/es/) — mais técnicas de design thinking.
+- [**objetivos de desenvolvimento sustentável**](https://brasil.un.org/pt-br/sdgs) — as metas da onu, para situar o problema.
+- [**projetão · youtube**](https://www.youtube.com/@Projetao/streams) — a disciplina do cin-ufpe que inspira esta; [**exemplos de pitch**](https://www.youtube.com/live/-ZefRHf6lUc?si=0eTIjntG5vsjquFW&t=853) e o [**vencedor da imagine cup 2019**](https://www.youtube.com/watch?v=J4rfNJJVa_U&t=104s&ab_channel=ImagineCupCommunity).
+- [**material para storyboard**](https://www.canva.com/design/DAFpmol7T1M/mjCYRRwMSJLXuep88S1ntg/edit) — modelo no canva.
+- [**artigos em alta**](https://huggingface.co/papers/trending) · [**repositórios em alta**](https://github.com/trending) — o que está saindo agora.
 
 ---
 
