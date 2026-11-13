@@ -94,9 +94,9 @@ para o agente que apoia um aluno desta disciplina:
 | · 25 ·<br>06/11<br>· sex · | mentoria<br>**código e artigo** | |
 | · 26 ·<br>11/11<br>· qua · | seminário<br>**iteração 2, demonstração** | [`[4] seminário · demonstração`](artefatos/4-seminario-demonstracao.md) |
 | · 27 ·<br>13/11<br>· sex · | mentoria<br>**código e artigo** | |
-| · 28 ·<br>18/11<br>· qua · | checagem<br>**revisão cética, crítica e construtiva** | |
+| · 28 ·<br>18/11<br>· qua · | seminário<br>**iteração 3, como vai ser o teste** | [`[4] seminário · teste`](artefatos/4-seminario-teste.md) |
 | · -- ·<br>20/11<br>· sex · | feriado<br>**dia nacional da consciência negra** | |
-| · 29 ·<br>25/11<br>· qua · | seminário<br>**iteração 3, experimento** | `[x] seminário · tbd` |
+| · 29 ·<br>25/11<br>· qua · | prática<br>**execução do teste e artigo** | |
 | · 30 ·<br>27/11<br>· sex · | mentoria<br>**acompanhamento final e polimento** | |
 | · 31 ·<br>02/12<br>· qua · | seminário<br>**pitch para banca externa** | `[x] seminário · tbd` |
 | · 32 ·<br>04/12<br>· sex · | checagem<br>**va2 · artigo e demo** | `[x] artefato · tbd`<br>`[x] artefato · tbd` |
@@ -166,18 +166,18 @@ vinicius: brw=vvv, cmp=---, tec=---, flx=---, exp=---, sem1=vvvv, sem2=----, sem
 <!-- painel-va2:start -->
 ```text
             brw cmp tec flx exp sem1 sem2 sem3 artigo demo  pitch         nota 2
- albérico   ◼◼◼ ◼◼◼ ◼◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  14 pts
-  andreza   ◼◼◼ ◼◼◼ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  12 pts
-    artur   ◼◼◼ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  06 pts
-   carlos   ◼◼◼ ◼◼◼ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  12 pts
-     cauã   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
-     davi   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
-    edson   ◼◼◼ ◼◼◼ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  12 pts
-     gian   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
-   rayane   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
-thiago b.   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
+ albérico   ◼◼◼ ◼◼◼ ◼◻◻ ◻◻◻ ◻◻◻ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  22 pts
+  andreza   ◼◼◼ ◼◼◼ ◻◻◻ ◻◻◻ ◻◻◻ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  20 pts
+    artur   ◼◼◼ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  14 pts
+   carlos   ◼◼◼ ◼◼◼ ◻◻◻ ◻◻◻ ◻◻◻ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  20 pts
+     cauã   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  08 pts
+     davi   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  08 pts
+    edson   ◼◼◼ ◼◼◼ ◻◻◻ ◻◻◻ ◻◻◻ ◼◼◼◼ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  28 pts
+     gian   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  08 pts
+   rayane   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  08 pts
+thiago b.   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  08 pts
 thiago m.   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
- vinicius   ◼◼◼ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  06 pts
+ vinicius   ◼◼◼ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  14 pts
 ```
 <!-- painel-va2:end -->
 
