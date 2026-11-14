@@ -154,7 +154,7 @@ albérico: brw=vvv, cmp=vvv, tec=v--, flx=---, exp=---, sem1=vvvv, sem2=----, se
 andreza: brw=vvv, cmp=vvv, tec=---, flx=---, exp=---, sem1=vvvv, sem2=vvvv, sem3=----, artigo=------, demo=-----, pitch=------------
 artur: brw=vvv, cmp=---, tec=---, flx=---, exp=---, sem1=vvvv, sem2=vvvv, sem3=----, artigo=------, demo=-----, pitch=------------
 carlos: brw=vvv, cmp=vvv, tec=---, flx=---, exp=---, sem1=vvvv, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
-cauã: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=vvvv, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
+cauã: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=vvvv, sem2=vvvv, sem3=----, artigo=------, demo=-----, pitch=------------
 davi: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=vvvv, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
 edson: brw=vvv, cmp=vvv, tec=---, flx=---, exp=---, sem1=vvvv, sem2=vvvv, sem3=----, artigo=------, demo=-----, pitch=------------
 gian: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=vvvv, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
