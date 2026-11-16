@@ -96,10 +96,10 @@ para o agente que apoia um aluno desta disciplina:
 | · 27 ·<br>13/11<br>· sex · | mentoria<br>**código e artigo** | |
 | · 28 ·<br>18/11<br>· qua · | seminário<br>**iteração 3, como vai ser o teste** | [`[4] seminário · teste`](artefatos/4-seminario-teste.md) |
 | · -- ·<br>20/11<br>· sex · | feriado<br>**dia nacional da consciência negra** | |
-| · 29 ·<br>25/11<br>· qua · | prática<br>**execução do teste e artigo** | |
+| · 29 ·<br>25/11<br>· qua · | prática<br>**execução do teste e artigo** | [`[1] slides · artigo`](https://lucassf.pages.dev/ai4good/artigo-deck)<br>[`[6] artefato · artigo`](artefatos/6-artigo.md) |
 | · 30 ·<br>27/11<br>· sex · | mentoria<br>**acompanhamento final e polimento** | |
 | · 31 ·<br>02/12<br>· qua · | seminário<br>**pitch para banca externa** | `[x] seminário · tbd` |
-| · 32 ·<br>04/12<br>· sex · | checagem<br>**va2 · artigo e demo** | `[x] artefato · tbd`<br>`[x] artefato · tbd` |
+| · 32 ·<br>04/12<br>· sex · | checagem<br>**va2 · artigo e demo** | [`[6] artefato · artigo`](artefatos/6-artigo.md)<br>`[x] artefato · tbd` |
 | · 33 ·<br>09/12<br>· qua · | checagem<br>**va3 · avaliação escrita** | |
 | · 34 ·<br>11/12<br>· sex · | checagem<br>**va4 · exame final institucional** | |
 
@@ -126,7 +126,7 @@ edson: git=---, tex=---v, mlp·c=-----, mlp·p=-----, arq·c=-----, arq·p=-----
 gian: git=vvv, tex=vvvv, mlp·c=vvvvv, mlp·p=vvvvv, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=-------------
 rayane: git=vvv, tex=vvvv, mlp·c=vvvvv, mlp·p=vvvvv, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=-------------
 thiago b.: git=vvv, tex=vvvv, mlp·c=vvvvv, mlp·p=vvvvv, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=-------------
-thiago m.: git=---, tex=---v, mlp·c=-----, mlp·p=-----, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=-------------
+thiago m.: git=---, tex=----, mlp·c=-----, mlp·p=-----, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=-------------
 vinicius: git=---, tex=---v, mlp·c=-----, mlp·p=-----, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=-------------
 -->
 <!-- painel-va1:start -->
@@ -142,7 +142,7 @@ vinicius: git=---, tex=---v, mlp·c=-----, mlp·p=-----, arq·c=-----, arq·p=--
      gian   ◼◼◼ ◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  34 pts
    rayane   ◼◼◼ ◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  34 pts
 thiago b.   ◼◼◼ ◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  34 pts
-thiago m.   ◻◻◻ ◻◻◻◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  02 pts
+thiago m.   ◻◻◻ ◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
  vinicius   ◻◻◻ ◻◻◻◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  02 pts
 ```
 <!-- painel-va1:end -->

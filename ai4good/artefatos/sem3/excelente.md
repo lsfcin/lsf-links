@@ -17,7 +17,7 @@
 1. **o competidor:** o caminho na nuvem (whisper `large-v3-turbo` + DeepSeek), nos meus 30 pedidos a 10 dB, errou calado 7%, contando o pedido inteiro, como o SLURP avalia.
 2. **o que quero mostrar:** quero mostrar que a minha ideia melhora o pedido que sai do áudio para a dona Cida, sem internet na feira, comparada ao caminho na nuvem, que precisa de rede: no máximo 1 em 10 errado sem aviso, em áudios sintéticos, que é a parte técnica da promessa.
 3. **a comparação:** 70 pedidos novos, cada um numa das 4 vozes, com o mesmo burburinho, passam pelos dois caminhos; muda só quem ouve e quem extrai.
-4. **o caminho até o pitch:** os scripts já rodam; dia 25 rodo os 70, dia 27 confiro com o professor, e se a rede cair, a nuvem roda depois.
+4. **o caminho até o pitch:** os scripts já rodam; dia 25 rodo os 70, e se a rede cair, a nuvem roda depois.
 
 ## slide 1 · o competidor e o que ele consegue · 60 s
 
@@ -39,11 +39,11 @@
 - **as condições:** A, o meu caminho, com o `small` que o sem2 manteve; B, o da nuvem. a linha de base são as regras lendo a fala certa: o teto, que mostra se o erro vem do ouvido ou das regras.
 - **o que fica igual:** os mesmos 70 áudios, o mesmo burburinho a 10 dB (gerado pelo `gerar_audios.py`), a mesma lista da banca, o mesmo julgamento do `avaliar.py`, a mesma máquina.
 - **o gabarito:** a própria fala: eu escrevo o pedido antes de gerar o áudio, então o gabarito existe antes do teste.
-- **eu falo:** "no piloto, a voz pesou mais que qualquer peça: a `cadu` acertou 7 de 8 pedidos, a `jeff`, 1 de 8. então a tabela sai também por voz. se uma voz sozinha puxa o erro, eu mostro. e o que isso não prova: nada sobre voz de gente. são quatro vozes de máquina. o teste mede a técnica, não a feira. e quem julga se o pedido saiu certo não sou eu, na hora: é o `avaliar.py`, que compara item, quantidade e unidade com a fala que eu escrevi antes do áudio. no dia 27, o professor confere à mão 10 pedidos sorteados, para ver se o script julga como uma pessoa julgaria."
+- **eu falo:** "no piloto, a voz pesou mais que qualquer peça: a `cadu` acertou 7 de 8 pedidos, a `jeff`, 1 de 8. então a tabela sai também por voz. se uma voz sozinha puxa o erro, eu mostro. e o que isso não prova: nada sobre voz de gente. são quatro vozes de máquina. o teste mede a técnica, não a feira. e quem julga se o pedido saiu certo não sou eu, na hora: é o `avaliar.py`, que compara item, quantidade e unidade com a fala que eu escrevi antes do áudio."
 
 ## slide 4 · como chegar ao pitch com resultado · 55 s
 
-- **aparece:** "18/11 a regra · 19–24/11 as 70 falas e os áudios · 25/11 os dois caminhos · 27/11 conferência · 02/12 a tabela".
+- **aparece:** "18/11 a regra · 19–24/11 as 70 falas e os áudios · 25/11 os dois caminhos · 02/12 a tabela".
 - **já pronto:** `gerar_audios.py`, `avaliar.py` e o caminho da nuvem, todos do piloto.
 - **o teste pequeno:** rodei os dois caminhos com 5 falas novas, de ponta a ponta, sem mudar o código. a tabela por voz sai do `e1-pedidos.tsv`, que já guarda a voz de cada pedido.
 - **plano B:** o caminho A roda sem rede. se o OpenRouter falhar no dia 25, rodo o B em casa no dia 26, com os mesmos áudios.
