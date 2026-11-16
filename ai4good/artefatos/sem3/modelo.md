@@ -1,7 +1,7 @@
 # sem3 · [preencha: seu nome]
 
 > roteiro do [seminário · iteração 3, como vai ser o teste](../4-seminario-teste.md). de 4 a 6 slides,
-> de 3 a 5 minutos. em cada slide: o que aparece, o que você fala e quanto tempo leva.
+> de 5 a 7 minutos. em cada slide: o que aparece, o que você fala e quanto tempo leva.
 
 **link dos slides:** [preencha]
 
