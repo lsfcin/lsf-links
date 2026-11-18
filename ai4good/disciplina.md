@@ -94,9 +94,9 @@ para o agente que apoia um aluno desta disciplina:
 | · 25 ·<br>06/11<br>· sex · | mentoria<br>**código e artigo** | |
 | · 26 ·<br>11/11<br>· qua · | seminário<br>**iteração 2, demonstração** | [`[4] seminário · demonstração`](artefatos/4-seminario-demonstracao.md) |
 | · 27 ·<br>13/11<br>· sex · | mentoria<br>**código e artigo** | |
-| · 28 ·<br>18/11<br>· qua · | seminário<br>**iteração 3, como vai ser o teste** | [`[4] seminário · teste`](artefatos/4-seminario-teste.md) |
+| · 28 ·<br>18/11<br>· qua · | seminário<br>**iteração 3, como vai ser o teste** | [`[4] seminário · teste`](artefatos/4-seminario-teste.md)<br>[`[1] slides · artigo`](https://lucassf.pages.dev/ai4good/artigo-deck) |
 | · -- ·<br>20/11<br>· sex · | feriado<br>**dia nacional da consciência negra** | |
-| · 29 ·<br>25/11<br>· qua · | prática<br>**execução do teste e artigo** | [`[1] slides · artigo`](https://lucassf.pages.dev/ai4good/artigo-deck)<br>[`[6] artefato · artigo`](artefatos/6-artigo.md) |
+| · 29 ·<br>25/11<br>· qua · | prática<br>**execução do teste e artigo** | [`[6] artefato · artigo`](artefatos/6-artigo.md) |
 | · 30 ·<br>27/11<br>· sex · | mentoria<br>**acompanhamento final e polimento** | |
 | · 31 ·<br>02/12<br>· qua · | seminário<br>**demonstração em pôster: a banca testa e conversa** | `[x] seminário · tbd` |
 | · 32 ·<br>04/12<br>· sex · | checagem<br>**va2 · entrega do artigo** | [`[6] artefato · artigo`](artefatos/6-artigo.md) |
