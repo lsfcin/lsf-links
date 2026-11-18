@@ -101,10 +101,10 @@ para o agente que apoia um aluno desta disciplina:
 | · 27 ·<br>13/11<br>· sex · | prática<br>**revisão cruzada entre equipes** | |
 | · 28 ·<br>18/11<br>· qua · | teoria<br>**técnicas de pitch e comunicação** | [`[1] slides · pitch e comunicação`](https://lucassf.pages.dev/techedu/pitch-comunicacao) |
 | · -- ·<br>20/11<br>· sex · | feriado<br>**dia nacional da consciência negra** | |
-| · 29 ·<br>25/11<br>· qua · | checagem<br>**status report · artigo e demo** | [`[5] artefato · artigo preliminar`](artefatos/5-artigo-preliminar.md) |
-| · 30 ·<br>27/11<br>· sex · | mentoria<br>**polimento final e ensaio de pitch** | |
-| · 31 ·<br>02/12<br>· qua · | seminário<br>**pitch final para banca externa** | `[12] seminário · banca examinadora` |
-| · 32 ·<br>04/12<br>· sex · | checagem<br>**va2 · fechamento artigo e demo** | [`[6] artefato · artigo final`](artefatos/6-artigo-final.md)<br>[`[5] artefato · demonstração funcional`](artefatos/5-demonstracao-funcional.md) |
+| · 29 ·<br>25/11<br>· qua · | prática<br>**testes no hall do departamento, com pelo menos 15 pessoas** | |
+| · 30 ·<br>27/11<br>· sex · | checagem<br>**testes no hall e, no fim do dia, checklist do pitch** | |
+| · 31 ·<br>02/12<br>· qua · | seminário<br>**pitch final para banca externa: 7 a 10 min, demo ao vivo e vídeo de reserva** | `[12] seminário · banca examinadora`<br>[`[5] artefato · demonstração funcional`](artefatos/5-demonstracao-funcional.md) |
+| · 32 ·<br>04/12<br>· sex · | checagem<br>**va2 · entrega do artigo, com veículo-alvo** | [`[6] artefato · artigo final`](artefatos/6-artigo-final.md) |
 | · 33 ·<br>09/12<br>· qua · | checagem<br>**va3 · avaliação escrita** | |
 | · 34 ·<br>11/12<br>· sex · | checagem<br>**va4 · exame final institucional** | |
 
