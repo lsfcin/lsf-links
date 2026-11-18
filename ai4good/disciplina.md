@@ -81,8 +81,8 @@ para o agente que apoia um aluno desta disciplina:
 | · 13 ·<br>23/09<br>· qua · | teoria<br>**superinteligência e singularidade** | [`[0] slides · agência`](https://lucassf.pages.dev/ai4good/agencia)<br>[`[1] slides · autoaprimoramento`](https://lucassf.pages.dev/ai4good/autoaprimoramento)<br>[`[0] slides · autopreservação`](https://lucassf.pages.dev/ai4good/autopreservacao) |
 | · 14 ·<br>25/09<br>· sex · | prática<br>**multiagentes distopia x utopia** | [`[5] artefato · arena git repo`](artefatos/5-arena-git-repo.md)<br>[`[5] artefato · arena tech report`](artefatos/5-arena-tech-report.md) |
 | · 15 ·<br>30/09<br>· qua · | teoria<br>**crises e caminhos de transformação** | [`[1] slides · crises`](https://lucassf.pages.dev/ai4good/crises) |
-| · 16 ·<br>02/10<br>· sex · | prática<br>**brainwriting híbrido** | `[x] artefato · tbd` |
-| · 17 ·<br>07/10<br>· qua · | prática<br>**competidores e contribuição** | `[x] artefato · tbd` |
+| · 16 ·<br>02/10<br>· sex · | prática<br>**brainwriting híbrido** | |
+| · 17 ·<br>07/10<br>· qua · | prática<br>**competidores e contribuição** | |
 | · 18 ·<br>09/10<br>· sex · | mentoria<br>**refinamento da contribuição** | |
 | · 19 ·<br>14/10<br>· qua · | prática<br>**brainwriting híbrido** | [`[3] artefato · brainwriting híbrido`](artefatos/3-brainwriting-hibrido.md) |
 | · 20 ·<br>16/10<br>· sex · | mentoria<br>**definição da contribuição** | [`[3] artefato · competidores e contribuição`](artefatos/3-competidores-e-contribuicao.md) |
@@ -98,7 +98,7 @@ para o agente que apoia um aluno desta disciplina:
 | · -- ·<br>20/11<br>· sex · | feriado<br>**dia nacional da consciência negra** | |
 | · 29 ·<br>25/11<br>· qua · | prática<br>**execução do teste e artigo** | [`[6] artefato · artigo`](artefatos/6-artigo.md) |
 | · 30 ·<br>27/11<br>· sex · | mentoria<br>**acompanhamento final e polimento** | |
-| · 31 ·<br>02/12<br>· qua · | seminário<br>**demonstração em pôster: a banca testa e conversa** | `[x] seminário · tbd` |
+| · 31 ·<br>02/12<br>· qua · | seminário<br>**demonstração em pôster: a banca testa e conversa** | [`[5] seminário · demonstração em pôster`](artefatos/5-demonstracao-poster.md) |
 | · 32 ·<br>04/12<br>· sex · | checagem<br>**va2 · entrega do artigo** | [`[6] artefato · artigo`](artefatos/6-artigo.md) |
 | · 33 ·<br>09/12<br>· qua · | checagem<br>**va3 · avaliação escrita** | |
 | · 34 ·<br>11/12<br>· sex · | checagem<br>**va4 · exame final institucional** | |
@@ -113,71 +113,71 @@ para o agente que apoia um aluno desta disciplina:
 
 ## painel
 
-acompanhamento transparente dos itens de verificação (2 pontos por ◻). lista estritamente alfabética.
+acompanhamento transparente dos itens de verificação (2 pontos por ◼). lista estritamente alfabética. ◻ é item ainda não verificado, não item zerado: entregou depois, vale o mesmo.
 
 <!-- painel:dados-va1
-albérico: git=---, tex=---v, mlp·c=-----, mlp·p=-----, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=-------------
-andreza: git=vvv, tex=vvvv, mlp·c=vvvvv, mlp·p=vvvvv, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=-------------
-artur: git=vvv, tex=vvvv, mlp·c=vvvvv, mlp·p=vvvvv, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=-------------
-carlos: git=vvv, tex=vvvv, mlp·c=vvvvv, mlp·p=vvvv-, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=-------------
-cauã: git=vvv, tex=vvvv, mlp·c=vvvvv, mlp·p=vvvvv, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=-------------
-davi: git=vvv, tex=vvvv, mlp·c=vvvvv, mlp·p=vvvvv, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=-------------
-edson: git=---, tex=---v, mlp·c=-----, mlp·p=-----, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=-------------
-gian: git=vvv, tex=vvvv, mlp·c=vvvvv, mlp·p=vvvvv, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=-------------
-rayane: git=vvv, tex=vvvv, mlp·c=vvvvv, mlp·p=vvvvv, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=-------------
-thiago b.: git=vvv, tex=vvvv, mlp·c=vvvvv, mlp·p=vvvvv, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=-------------
+albérico: git=vvv, tex=vvvv, mlp·c=vvvvv, mlp·p=vvvvv, arq·c=vvvvv, arq·p=vvvvv, arn·c=vvvvv, arn·p=vvvvv, enigmas=-------------
+andreza: git=vvv, tex=vvvv, mlp·c=vvvvv, mlp·p=vvvvv, arq·c=vvvvv, arq·p=vvvvv, arn·c=vvvvv, arn·p=vvvvv, enigmas=-------------
+artur: git=vvv, tex=vvvv, mlp·c=vvvvv, mlp·p=vvvvv, arq·c=vvvvv, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=-------------
+carlos: git=vvv, tex=vvvv, mlp·c=vvvvv, mlp·p=vvvvv, arq·c=vvvvv, arq·p=vvvvv, arn·c=-----, arn·p=-----, enigmas=-------------
+cauã: git=vvv, tex=vvvv, mlp·c=vvvvv, mlp·p=vvvvv, arq·c=vvvvv, arq·p=vvvvv, arn·c=vvvvv, arn·p=vvvvv, enigmas=-------------
+davi: git=vvv, tex=vvvv, mlp·c=vvvvv, mlp·p=vvvvv, arq·c=vvvvv, arq·p=vvvvv, arn·c=-----, arn·p=-----, enigmas=-------------
+edson: git=vvv, tex=vvvv, mlp·c=vvvvv, mlp·p=vvvvv, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=-------------
+gian: git=vvv, tex=vvvv, mlp·c=vvvvv, mlp·p=vvvvv, arq·c=-----, arq·p=vvvvv, arn·c=-----, arn·p=-----, enigmas=-------------
+rayane: git=vvv, tex=vvvv, mlp·c=vvvvv, mlp·p=vvvvv, arq·c=vvvvv, arq·p=vvvvv, arn·c=-----, arn·p=-----, enigmas=-------------
+thiago b.: git=vvv, tex=vvvv, mlp·c=vvvvv, mlp·p=vvvvv, arq·c=vvvvv, arq·p=vvvvv, arn·c=-----, arn·p=-----, enigmas=-------------
 thiago m.: git=---, tex=----, mlp·c=-----, mlp·p=-----, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=-------------
-vinicius: git=---, tex=---v, mlp·c=-----, mlp·p=-----, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=-------------
+vinicius: git=vvv, tex=vvvv, mlp·c=vvvvv, mlp·p=vvvvv, arq·c=-----, arq·p=-----, arn·c=-----, arn·p=-----, enigmas=-------------
 -->
 <!-- painel-va1:start -->
 ```text
             git tex  mlp·c mlp·p arq·c arq·p arn·c arn·p enigmas        nota 1
- albérico   ◻◻◻ ◻◻◻◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  02 pts
-  andreza   ◼◼◼ ◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  34 pts
-    artur   ◼◼◼ ◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  34 pts
-   carlos   ◼◼◼ ◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  32 pts
-     cauã   ◼◼◼ ◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  34 pts
-     davi   ◼◼◼ ◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  34 pts
-    edson   ◻◻◻ ◻◻◻◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  02 pts
-     gian   ◼◼◼ ◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  34 pts
-   rayane   ◼◼◼ ◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  34 pts
-thiago b.   ◼◼◼ ◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  34 pts
+ albérico   ◼◼◼ ◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻◻◻◻◻◻◻◻◻  74 pts
+  andreza   ◼◼◼ ◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻◻◻◻◻◻◻◻◻  74 pts
+    artur   ◼◼◼ ◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  44 pts
+   carlos   ◼◼◼ ◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  54 pts
+     cauã   ◼◼◼ ◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻◻◻◻◻◻◻◻◻  74 pts
+     davi   ◼◼◼ ◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  54 pts
+    edson   ◼◼◼ ◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  34 pts
+     gian   ◼◼◼ ◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  44 pts
+   rayane   ◼◼◼ ◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  54 pts
+thiago b.   ◼◼◼ ◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  54 pts
 thiago m.   ◻◻◻ ◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
- vinicius   ◻◻◻ ◻◻◻◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  02 pts
+ vinicius   ◼◼◼ ◼◼◼◼ ◼◼◼◼◼ ◼◼◼◼◼ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻◻  34 pts
 ```
 <!-- painel-va1:end -->
 
 > **git:** base git repo · **tex:** latex project · **mlp·c:** mlp git repo · **mlp·p:** mlp tech report · **arq·c:** arquitetura git repo · **arq·p:** arquitetura tech report · **arn·c:** arena git repo · **arn·p:** arena tech report · **enigmas:** 13 investigações em sala
 
 <!-- painel:dados-va2
-albérico: brw=vvv, cmp=vvv, tec=v--, flx=---, exp=---, sem1=vvvv, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
-andreza: brw=vvv, cmp=vvv, tec=---, flx=---, exp=---, sem1=vvvv, sem2=vvvv, sem3=----, artigo=------, demo=-----, pitch=------------
+albérico: brw=vvv, cmp=vvv, tec=vvv, flx=vvv, exp=vvv, sem1=vvvv, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
+andreza: brw=vvv, cmp=vvv, tec=vvv, flx=vvv, exp=vvv, sem1=vvvv, sem2=vvvv, sem3=----, artigo=------, demo=-----, pitch=------------
 artur: brw=vvv, cmp=---, tec=---, flx=---, exp=---, sem1=vvvv, sem2=vvvv, sem3=----, artigo=------, demo=-----, pitch=------------
-carlos: brw=vvv, cmp=vvv, tec=---, flx=---, exp=---, sem1=vvvv, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
-cauã: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=vvvv, sem2=vvvv, sem3=----, artigo=------, demo=-----, pitch=------------
-davi: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=vvvv, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
-edson: brw=vvv, cmp=vvv, tec=---, flx=---, exp=---, sem1=vvvv, sem2=vvvv, sem3=----, artigo=------, demo=-----, pitch=------------
+carlos: brw=vvv, cmp=vvv, tec=vvv, flx=vvv, exp=vvv, sem1=vvvv, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
+cauã: brw=vvv, cmp=vvv, tec=vvv, flx=vvv, exp=vvv, sem1=vvvv, sem2=vvvv, sem3=----, artigo=------, demo=-----, pitch=------------
+davi: brw=vvv, cmp=vvv, tec=---, flx=---, exp=---, sem1=vvvv, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
+edson: brw=vvv, cmp=vvv, tec=vvv, flx=---, exp=---, sem1=vvvv, sem2=vvvv, sem3=----, artigo=------, demo=-----, pitch=------------
 gian: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=vvvv, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
-rayane: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=vvvv, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
-thiago b.: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=vvvv, sem2=vvvv, sem3=----, artigo=------, demo=-----, pitch=------------
+rayane: brw=vvv, cmp=---, tec=---, flx=---, exp=---, sem1=vvvv, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
+thiago b.: brw=vvv, cmp=vvv, tec=---, flx=---, exp=---, sem1=vvvv, sem2=vvvv, sem3=----, artigo=------, demo=-----, pitch=------------
 thiago m.: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
-vinicius: brw=vvv, cmp=---, tec=---, flx=---, exp=---, sem1=vvvv, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
+vinicius: brw=vvv, cmp=vvv, tec=vvv, flx=vvv, exp=vvv, sem1=vvvv, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
 -->
 <!-- painel-va2:start -->
 ```text
             brw cmp tec flx exp sem1 sem2 sem3 artigo demo  pitch         nota 2
- albérico   ◼◼◼ ◼◼◼ ◼◻◻ ◻◻◻ ◻◻◻ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  22 pts
-  andreza   ◼◼◼ ◼◼◼ ◻◻◻ ◻◻◻ ◻◻◻ ◼◼◼◼ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  28 pts
+ albérico   ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  38 pts
+  andreza   ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼◼ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  46 pts
     artur   ◼◼◼ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◼◼◼◼ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  22 pts
-   carlos   ◼◼◼ ◼◼◼ ◻◻◻ ◻◻◻ ◻◻◻ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  20 pts
-     cauã   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◼◼◼◼ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  16 pts
-     davi   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  08 pts
-    edson   ◼◼◼ ◼◼◼ ◻◻◻ ◻◻◻ ◻◻◻ ◼◼◼◼ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  28 pts
+   carlos   ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  38 pts
+     cauã   ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼◼ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  46 pts
+     davi   ◼◼◼ ◼◼◼ ◻◻◻ ◻◻◻ ◻◻◻ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  20 pts
+    edson   ◼◼◼ ◼◼◼ ◼◼◼ ◻◻◻ ◻◻◻ ◼◼◼◼ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  34 pts
      gian   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  08 pts
-   rayane   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  08 pts
-thiago b.   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◼◼◼◼ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  16 pts
+   rayane   ◼◼◼ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  14 pts
+thiago b.   ◼◼◼ ◼◼◼ ◻◻◻ ◻◻◻ ◻◻◻ ◼◼◼◼ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  28 pts
 thiago m.   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
- vinicius   ◼◼◼ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  14 pts
+ vinicius   ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  38 pts
 ```
 <!-- painel-va2:end -->
 
@@ -200,10 +200,10 @@ thiago m.   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻�
 
 <!-- habilidades:start -->
 - **[ia simbólica (gofai)](https://docs.google.com/presentation/d/1MnhRGXDw31GqStyQ-FrsTDMTvfNNCk1w_GhnOKZInhA/present#slide=5)**
-  - **[busca em grafo de estados](https://docs.google.com/presentation/d/1PgIp_SX2wlMYEbGT3i5MMrciRB3NUC_xzDLvCU7O6B0/present#slide=24)**
+  - **[busca em grafo de estados](https://docs.google.com/presentation/d/1MnhRGXDw31GqStyQ-FrsTDMTvfNNCk1w_GhnOKZInhA/present)**
     - **[problema das 8 rainhas](https://docs.google.com/presentation/d/1MnhRGXDw31GqStyQ-FrsTDMTvfNNCk1w_GhnOKZInhA/present#slide=16)**
     - **[algoritmo a* (a-star)](https://docs.google.com/presentation/d/1MnhRGXDw31GqStyQ-FrsTDMTvfNNCk1w_GhnOKZInhA/present#slide=9)**
-      - **[heurística admissível](https://docs.google.com/presentation/d/1mqFfYtF0yyQd2JAnQoaQ6TnJ0dqpWVmxZcmxEG1K67U/present#slide=14)**
+      - **[heurística admissível](https://docs.google.com/presentation/d/1MnhRGXDw31GqStyQ-FrsTDMTvfNNCk1w_GhnOKZInhA/present)**
     - **[buscas competitivas](https://docs.google.com/presentation/d/1ZwKk0oeow4-fI4jTbrQjbEfmtCgRByUh7RivOR9eUbA/present#slide=11)**
       - **[algoritmo minimax](https://docs.google.com/presentation/d/1MnhRGXDw31GqStyQ-FrsTDMTvfNNCk1w_GhnOKZInhA/present#slide=17)**
       - **[jogos de soma zero](https://docs.google.com/presentation/d/1MnhRGXDw31GqStyQ-FrsTDMTvfNNCk1w_GhnOKZInhA/present#slide=17)**
@@ -221,41 +221,41 @@ thiago m.   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻�
       - **[taxa de aprendizagem (alpha / learning rate)](https://docs.google.com/presentation/d/1XmA8_9dIaCdky66leSKl2UbE9N83fbZxINQADmlFKa8/present#slide=43)**
         - **[subamortecimento vs. divergência de taxa](https://docs.google.com/presentation/d/1XmA8_9dIaCdky66leSKl2UbE9N83fbZxINQADmlFKa8/present#slide=86)**
 - **[neurônio artificial](https://docs.google.com/presentation/d/1TRjPEFhnQy_j5W5P__X1m_LLPgTi1sHd0f4_3nDc2d8/present#slide=51)**
-  - **[pesos sinápticos (weights - w)](https://docs.google.com/presentation/d/1mqFfYtF0yyQd2JAnQoaQ6TnJ0dqpWVmxZcmxEG1K67U/present#slide=4)**
-  - **[termo de polarização (bias - b)](https://docs.google.com/presentation/d/1K-_hzKBDIWuE66QOInEZ7bj_H0Ev6i_qbTLBevYEilE/present#slide=13)**
+  - **[pesos sinápticos (weights - w)](https://docs.google.com/presentation/d/1TRjPEFhnQy_j5W5P__X1m_LLPgTi1sHd0f4_3nDc2d8/present)**
+  - **[termo de polarização (bias - b)](https://docs.google.com/presentation/d/1TRjPEFhnQy_j5W5P__X1m_LLPgTi1sHd0f4_3nDc2d8/present)**
   - **[combinação linear](https://docs.google.com/presentation/d/1XmA8_9dIaCdky66leSKl2UbE9N83fbZxINQADmlFKa8/present#slide=67)**
-  - **[função de ativação](https://docs.google.com/presentation/d/1PgIp_SX2wlMYEbGT3i5MMrciRB3NUC_xzDLvCU7O6B0/present#slide=51)**
-    - **[função degrau (step function)](https://docs.google.com/presentation/d/1o7MWYdm74XMNbwWRD7OWXsayB0UQLBTbrcshAkom3cM/present#slide=50)**
+  - **[função de ativação](https://docs.google.com/presentation/d/1TRjPEFhnQy_j5W5P__X1m_LLPgTi1sHd0f4_3nDc2d8/present)**
+    - **[função degrau (step function)](https://docs.google.com/presentation/d/1TRjPEFhnQy_j5W5P__X1m_LLPgTi1sHd0f4_3nDc2d8/present)**
     - **[função sigmoide (logística)](https://docs.google.com/presentation/d/1TRjPEFhnQy_j5W5P__X1m_LLPgTi1sHd0f4_3nDc2d8/present#slide=137)**
     - **[função relu (rectified linear unit)](https://docs.google.com/presentation/d/1TRjPEFhnQy_j5W5P__X1m_LLPgTi1sHd0f4_3nDc2d8/present#slide=12)**
     - **[função softmax](https://docs.google.com/presentation/d/1TRjPEFhnQy_j5W5P__X1m_LLPgTi1sHd0f4_3nDc2d8/present#slide=58)**
 - **[perceptron multicamadas (mlp)](https://docs.google.com/presentation/d/1TRjPEFhnQy_j5W5P__X1m_LLPgTi1sHd0f4_3nDc2d8/present#slide=1)**
-  - **[camadas ocultas (hidden layers)](https://docs.google.com/presentation/d/1K-_hzKBDIWuE66QOInEZ7bj_H0Ev6i_qbTLBevYEilE/present#slide=21)**
+  - **[camadas ocultas (hidden layers)](https://docs.google.com/presentation/d/1TRjPEFhnQy_j5W5P__X1m_LLPgTi1sHd0f4_3nDc2d8/present)**
   - **[propagação direta (forward pass)](https://docs.google.com/presentation/d/1xw1QMYfhase1Su0dlT8bYHlYaLouiPOFT2poTHX0i0k/present#slide=103)**
   - **[retropropagação do erro (backpropagation)](https://docs.google.com/presentation/d/1TRjPEFhnQy_j5W5P__X1m_LLPgTi1sHd0f4_3nDc2d8/present#slide=88)**
     - **[regra da cadeia (chain rule)](https://docs.google.com/presentation/d/1TRjPEFhnQy_j5W5P__X1m_LLPgTi1sHd0f4_3nDc2d8/present)**
-  - **[dinâmica de pesos](https://docs.google.com/presentation/d/1URlyhECYlbZ0Lg4Eq7GK_5GvpDZL5HX8FZ2_UUc7NcU/present#slide=58)**
+  - **[dinâmica de pesos](https://docs.google.com/presentation/d/1TRjPEFhnQy_j5W5P__X1m_LLPgTi1sHd0f4_3nDc2d8/present)**
   - **[épocas de treinamento (epochs)](https://docs.google.com/presentation/d/1TRjPEFhnQy_j5W5P__X1m_LLPgTi1sHd0f4_3nDc2d8/present#slide=37)**
   - **[lote de treinamento (batch size)](https://docs.google.com/presentation/d/1TRjPEFhnQy_j5W5P__X1m_LLPgTi1sHd0f4_3nDc2d8/present#slide=48)**
   - **[sobreajuste (overfitting)](https://docs.google.com/presentation/d/1TRjPEFhnQy_j5W5P__X1m_LLPgTi1sHd0f4_3nDc2d8/present#slide=32)**
   - **[subajuste (underfitting)](https://docs.google.com/presentation/d/1TRjPEFhnQy_j5W5P__X1m_LLPgTi1sHd0f4_3nDc2d8/present)**
   - **[normalização e padronização](https://docs.google.com/presentation/d/1xw1QMYfhase1Su0dlT8bYHlYaLouiPOFT2poTHX0i0k/present#slide=96)**
   - **[valores discrepantes (outliers)](https://docs.google.com/presentation/d/1TRjPEFhnQy_j5W5P__X1m_LLPgTi1sHd0f4_3nDc2d8/present#slide=7)**
-- **[rede neural convolucional (cnn)](https://docs.google.com/presentation/d/1PgIp_SX2wlMYEbGT3i5MMrciRB3NUC_xzDLvCU7O6B0/present#slide=169)**
-  - **[operação de convolução](https://docs.google.com/presentation/d/1K-_hzKBDIWuE66QOInEZ7bj_H0Ev6i_qbTLBevYEilE/present#slide=26)**
-    - **[kernel / filtro](https://docs.google.com/presentation/d/1K-_hzKBDIWuE66QOInEZ7bj_H0Ev6i_qbTLBevYEilE/present#slide=26)**
+- **[rede neural convolucional (cnn)](https://docs.google.com/presentation/d/1URlyhECYlbZ0Lg4Eq7GK_5GvpDZL5HX8FZ2_UUc7NcU/present)**
+  - **[operação de convolução](https://docs.google.com/presentation/d/1URlyhECYlbZ0Lg4Eq7GK_5GvpDZL5HX8FZ2_UUc7NcU/present)**
+    - **[kernel / filtro](https://docs.google.com/presentation/d/1URlyhECYlbZ0Lg4Eq7GK_5GvpDZL5HX8FZ2_UUc7NcU/present)**
       - **[filtro de sobel](https://docs.google.com/presentation/d/1URlyhECYlbZ0Lg4Eq7GK_5GvpDZL5HX8FZ2_UUc7NcU/present)**
       - **[filtro laplaciano](https://docs.google.com/presentation/d/1URlyhECYlbZ0Lg4Eq7GK_5GvpDZL5HX8FZ2_UUc7NcU/present)**
     - **[passo de deslocamento (stride)](https://docs.google.com/presentation/d/1URlyhECYlbZ0Lg4Eq7GK_5GvpDZL5HX8FZ2_UUc7NcU/present#slide=24)**
     - **[preenchimento (padding)](https://docs.google.com/presentation/d/1URlyhECYlbZ0Lg4Eq7GK_5GvpDZL5HX8FZ2_UUc7NcU/present)**
-  - **[redução espacial / pooling](https://docs.google.com/presentation/d/1K-_hzKBDIWuE66QOInEZ7bj_H0Ev6i_qbTLBevYEilE/present#slide=22)**
+  - **[redução espacial / pooling](https://docs.google.com/presentation/d/1URlyhECYlbZ0Lg4Eq7GK_5GvpDZL5HX8FZ2_UUc7NcU/present)**
     - **[max-pooling](https://docs.google.com/presentation/d/1URlyhECYlbZ0Lg4Eq7GK_5GvpDZL5HX8FZ2_UUc7NcU/present#slide=22)**
   - **[invariância por translação](https://docs.google.com/presentation/d/1URlyhECYlbZ0Lg4Eq7GK_5GvpDZL5HX8FZ2_UUc7NcU/present)**
   - **[mapas de características (feature maps)](https://docs.google.com/presentation/d/1URlyhECYlbZ0Lg4Eq7GK_5GvpDZL5HX8FZ2_UUc7NcU/present)**
 - **[autocodificador (autoencoder)](https://docs.google.com/presentation/d/1GZ2W2YAFJkd5Z5uJM8kjuQzZK8SsEPnzO2NWbk1Ji5w/present#slide=15)**
   - **[codificador (encoder)](https://docs.google.com/presentation/d/1GZ2W2YAFJkd5Z5uJM8kjuQzZK8SsEPnzO2NWbk1Ji5w/present#slide=102)**
   - **[gargalo (bottleneck) / espaço latente](https://docs.google.com/presentation/d/1GZ2W2YAFJkd5Z5uJM8kjuQzZK8SsEPnzO2NWbk1Ji5w/present#slide=19)**
-  - **[decodificador (decoder)](https://docs.google.com/presentation/d/1mqFfYtF0yyQd2JAnQoaQ6TnJ0dqpWVmxZcmxEG1K67U/present#slide=16)**
+  - **[decodificador (decoder)](https://docs.google.com/presentation/d/1GZ2W2YAFJkd5Z5uJM8kjuQzZK8SsEPnzO2NWbk1Ji5w/present)**
   - **[perda de reconstrução](https://docs.google.com/presentation/d/1GZ2W2YAFJkd5Z5uJM8kjuQzZK8SsEPnzO2NWbk1Ji5w/present#slide=35)**
   - **[autocodificador variacional (vae)](https://docs.google.com/presentation/d/1GZ2W2YAFJkd5Z5uJM8kjuQzZK8SsEPnzO2NWbk1Ji5w/present#slide=3)**
   - **[anonimização & privacidade profunda](https://docs.google.com/presentation/d/12uqqaF05i5hs1B1Q4rH9odjlpF8M-QxT6sG_lkkKU1E/present#slide=49)**
@@ -285,32 +285,32 @@ thiago m.   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻�
 - **[mecanismo de atenção](https://docs.google.com/presentation/d/1xw1QMYfhase1Su0dlT8bYHlYaLouiPOFT2poTHX0i0k/present#slide=37)**
   - **[gargalo sequencial das rnns](https://docs.google.com/presentation/d/1xw1QMYfhase1Su0dlT8bYHlYaLouiPOFT2poTHX0i0k/present#slide=19)**
   - **[autoatenção (self-attention)](https://docs.google.com/presentation/d/1xw1QMYfhase1Su0dlT8bYHlYaLouiPOFT2poTHX0i0k/present#slide=39)**
-    - **[vetor de pergunta (query - q)](https://docs.google.com/presentation/d/1mqFfYtF0yyQd2JAnQoaQ6TnJ0dqpWVmxZcmxEG1K67U/present#slide=4)**
-    - **[vetor de chave (key - k)](https://docs.google.com/presentation/d/12uqqaF05i5hs1B1Q4rH9odjlpF8M-QxT6sG_lkkKU1E/present#slide=26)**
-    - **[vetor de valor (value - v)](https://docs.google.com/presentation/d/1K-_hzKBDIWuE66QOInEZ7bj_H0Ev6i_qbTLBevYEilE/present#slide=26)**
+    - **[vetor de pergunta (query - q)](https://docs.google.com/presentation/d/1xw1QMYfhase1Su0dlT8bYHlYaLouiPOFT2poTHX0i0k/present)**
+    - **[vetor de chave (key - k)](https://docs.google.com/presentation/d/1xw1QMYfhase1Su0dlT8bYHlYaLouiPOFT2poTHX0i0k/present)**
+    - **[vetor de valor (value - v)](https://docs.google.com/presentation/d/1xw1QMYfhase1Su0dlT8bYHlYaLouiPOFT2poTHX0i0k/present)**
     - **[produto escalar escalonado](https://docs.google.com/presentation/d/1xw1QMYfhase1Su0dlT8bYHlYaLouiPOFT2poTHX0i0k/present)**
     - **[atenção multicabeça (multi-head attention)](https://docs.google.com/presentation/d/1xw1QMYfhase1Su0dlT8bYHlYaLouiPOFT2poTHX0i0k/present#slide=121)**
   - **[codificação posicional senoidal](https://docs.google.com/presentation/d/1xw1QMYfhase1Su0dlT8bYHlYaLouiPOFT2poTHX0i0k/present)**
   - **[conexões residuais & normalização (add & norm)](https://docs.google.com/presentation/d/1xw1QMYfhase1Su0dlT8bYHlYaLouiPOFT2poTHX0i0k/present#slide=127)**
   - **[camada feed-forward (ffn)](https://docs.google.com/presentation/d/1xw1QMYfhase1Su0dlT8bYHlYaLouiPOFT2poTHX0i0k/present#slide=103)**
-- **[modelo de linguagem (language model)](https://docs.google.com/presentation/d/1mqFfYtF0yyQd2JAnQoaQ6TnJ0dqpWVmxZcmxEG1K67U/present#slide=32)**
+- **[modelo de linguagem (language model)](https://docs.google.com/presentation/d/1ekjPPdj6sbkpNv3DGjE8HH9CntqY8S7HkIMrYNuspt0/present)**
   - **[tokenização (bpe e wordpiece)](https://docs.google.com/presentation/d/1ekjPPdj6sbkpNv3DGjE8HH9CntqY8S7HkIMrYNuspt0/present#slide=44)**
-  - **[embeddings de contexto](https://docs.google.com/presentation/d/1K-_hzKBDIWuE66QOInEZ7bj_H0Ev6i_qbTLBevYEilE/present#slide=16)**
-  - **[decoder-only (gpt)](https://docs.google.com/presentation/d/1mqFfYtF0yyQd2JAnQoaQ6TnJ0dqpWVmxZcmxEG1K67U/present#slide=16)**
-    - **[predição autoregressiva de próximo token](https://docs.google.com/presentation/d/1mqFfYtF0yyQd2JAnQoaQ6TnJ0dqpWVmxZcmxEG1K67U/present#slide=4)**
+  - **[embeddings de contexto](https://docs.google.com/presentation/d/1ekjPPdj6sbkpNv3DGjE8HH9CntqY8S7HkIMrYNuspt0/present)**
+  - **[decoder-only (gpt)](https://docs.google.com/presentation/d/1ekjPPdj6sbkpNv3DGjE8HH9CntqY8S7HkIMrYNuspt0/present)**
+    - **[predição autoregressiva de próximo token](https://docs.google.com/presentation/d/1ekjPPdj6sbkpNv3DGjE8HH9CntqY8S7HkIMrYNuspt0/present)**
   - **[encoder-only (bert)](https://docs.google.com/presentation/d/1ekjPPdj6sbkpNv3DGjE8HH9CntqY8S7HkIMrYNuspt0/present#slide=10)**
     - **[token [cls] e classificação](https://docs.google.com/presentation/d/1ekjPPdj6sbkpNv3DGjE8HH9CntqY8S7HkIMrYNuspt0/present#slide=183)**
   - **[encoder-decoder (bart / t5)](https://docs.google.com/presentation/d/1ekjPPdj6sbkpNv3DGjE8HH9CntqY8S7HkIMrYNuspt0/present#slide=19)**
   - **[temperatura de geração](https://docs.google.com/presentation/d/1ekjPPdj6sbkpNv3DGjE8HH9CntqY8S7HkIMrYNuspt0/present#slide=24)**
   - **[amostragem top-p (nucleus sampling)](https://docs.google.com/presentation/d/1ekjPPdj6sbkpNv3DGjE8HH9CntqY8S7HkIMrYNuspt0/present#slide=24)**
   - **[prompt caching](https://docs.google.com/presentation/d/1ekjPPdj6sbkpNv3DGjE8HH9CntqY8S7HkIMrYNuspt0/present#slide=82)**
-  - **[modelos de decisão rápida (sistema 1)](https://docs.google.com/presentation/d/12uqqaF05i5hs1B1Q4rH9odjlpF8M-QxT6sG_lkkKU1E/present#slide=4)**
-  - **[lora (low-rank adaptation)](https://docs.google.com/presentation/d/1mqFfYtF0yyQd2JAnQoaQ6TnJ0dqpWVmxZcmxEG1K67U/present#slide=5)**
+  - **[modelos de decisão rápida (sistema 1)](https://docs.google.com/presentation/d/1ekjPPdj6sbkpNv3DGjE8HH9CntqY8S7HkIMrYNuspt0/present)**
+  - **[lora (low-rank adaptation)](https://docs.google.com/presentation/d/1ekjPPdj6sbkpNv3DGjE8HH9CntqY8S7HkIMrYNuspt0/present)**
   - **[rag (retrieval-augmented generation)](https://docs.google.com/presentation/d/1ekjPPdj6sbkpNv3DGjE8HH9CntqY8S7HkIMrYNuspt0/present#slide=100)**
-- **[agente de ia](https://docs.google.com/presentation/d/1mqFfYtF0yyQd2JAnQoaQ6TnJ0dqpWVmxZcmxEG1K67U/present#slide=5)**
+- **[agente de ia](https://docs.google.com/presentation/d/12uqqaF05i5hs1B1Q4rH9odjlpF8M-QxT6sG_lkkKU1E/present)**
   - **[harness de agente](https://docs.google.com/presentation/d/1ekjPPdj6sbkpNv3DGjE8HH9CntqY8S7HkIMrYNuspt0/present#slide=82)**
     - **[protocolo de contexto de modelo (mcp)](https://docs.google.com/presentation/d/12uqqaF05i5hs1B1Q4rH9odjlpF8M-QxT6sG_lkkKU1E/present#slide=25)**
-    - **[uso de ferramentas (tool use / function calling)](https://docs.google.com/presentation/d/1mhJFLULrPU_HoZ5emkeC7AiHCkw5HkHRLm-bCq3e_cE/present#slide=6)**
+    - **[uso de ferramentas (tool use / function calling)](https://docs.google.com/presentation/d/12uqqaF05i5hs1B1Q4rH9odjlpF8M-QxT6sG_lkkKU1E/present)**
   - **[risco de permissões excessivas (root)](https://docs.google.com/presentation/d/12uqqaF05i5hs1B1Q4rH9odjlpF8M-QxT6sG_lkkKU1E/present#slide=26)**
   - **[ciberataques orquestrados por ia](https://docs.google.com/presentation/d/12uqqaF05i5hs1B1Q4rH9odjlpF8M-QxT6sG_lkkKU1E/present#slide=5)**
   - **[robótica e armas autônomas letais (laws)](https://docs.google.com/presentation/d/12uqqaF05i5hs1B1Q4rH9odjlpF8M-QxT6sG_lkkKU1E/present#slide=5)**
@@ -322,48 +322,48 @@ thiago m.   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻�
   - **[chantagem oportunística de modelos](https://docs.google.com/presentation/d/1o7MWYdm74XMNbwWRD7OWXsayB0UQLBTbrcshAkom3cM/present#slide=26)**
   - **[horizontes temporais de autonomia (metr)](https://docs.google.com/presentation/d/1mqFfYtF0yyQd2JAnQoaQ6TnJ0dqpWVmxZcmxEG1K67U/present#slide=41)**
 - **[autoaprimoramento recursivo (rsi)](https://docs.google.com/presentation/d/1mqFfYtF0yyQd2JAnQoaQ6TnJ0dqpWVmxZcmxEG1K67U/present#slide=1)**
-  - **[os 4 eixos de aprimoramento](https://docs.google.com/presentation/d/1K-_hzKBDIWuE66QOInEZ7bj_H0Ev6i_qbTLBevYEilE/present#slide=6)**
+  - **[os 4 eixos de aprimoramento](https://docs.google.com/presentation/d/1mqFfYtF0yyQd2JAnQoaQ6TnJ0dqpWVmxZcmxEG1K67U/present)**
   - **[o loop 'a ia escreve a ia'](https://docs.google.com/presentation/d/1mqFfYtF0yyQd2JAnQoaQ6TnJ0dqpWVmxZcmxEG1K67U/present#slide=13)**
   - **[dream-rsi](https://docs.google.com/presentation/d/1mqFfYtF0yyQd2JAnQoaQ6TnJ0dqpWVmxZcmxEG1K67U/present#slide=4)**
   - **[seal](https://docs.google.com/presentation/d/1mqFfYtF0yyQd2JAnQoaQ6TnJ0dqpWVmxZcmxEG1K67U/present#slide=4)**
   - **[darwin gödel machine (dgm)](https://docs.google.com/presentation/d/1mqFfYtF0yyQd2JAnQoaQ6TnJ0dqpWVmxZcmxEG1K67U/present#slide=4)**
   - **[alphaevolve](https://docs.google.com/presentation/d/1mqFfYtF0yyQd2JAnQoaQ6TnJ0dqpWVmxZcmxEG1K67U/present#slide=5)**
-- **[sistemas multiagente](https://docs.google.com/presentation/d/1mqFfYtF0yyQd2JAnQoaQ6TnJ0dqpWVmxZcmxEG1K67U/present#slide=19)**
+- **[sistemas multiagente](https://docs.google.com/presentation/d/12uqqaF05i5hs1B1Q4rH9odjlpF8M-QxT6sG_lkkKU1E/present)**
   - **[arena dialética (distopia vs. utopia)](https://docs.google.com/presentation/d/1o7MWYdm74XMNbwWRD7OWXsayB0UQLBTbrcshAkom3cM/present#slide=55)**
   - **[recompensas por desalinhamento (misalignment bounty)](https://docs.google.com/presentation/d/12uqqaF05i5hs1B1Q4rH9odjlpF8M-QxT6sG_lkkKU1E/present#slide=3)**
   - **[red teaming automatizado](https://docs.google.com/presentation/d/12uqqaF05i5hs1B1Q4rH9odjlpF8M-QxT6sG_lkkKU1E/present#slide=46)**
 - **[crise ambiental & consumo de energia](https://docs.google.com/presentation/d/1PgIp_SX2wlMYEbGT3i5MMrciRB3NUC_xzDLvCU7O6B0/present#slide=5)**
   - **[pegada de carbono de modelos](https://docs.google.com/presentation/d/1PgIp_SX2wlMYEbGT3i5MMrciRB3NUC_xzDLvCU7O6B0/present#slide=167)**
   - **[consumo hídrico de resfriamento](https://docs.google.com/presentation/d/1PgIp_SX2wlMYEbGT3i5MMrciRB3NUC_xzDLvCU7O6B0/present#slide=6)**
-  - **[lixo eletrônico de aceleradores](https://docs.google.com/presentation/d/1MnhRGXDw31GqStyQ-FrsTDMTvfNNCk1w_GhnOKZInhA/present#slide=52)**
-- **[crise do trabalho & deslocamento](https://docs.google.com/presentation/d/12uqqaF05i5hs1B1Q4rH9odjlpF8M-QxT6sG_lkkKU1E/present#slide=24)**
+  - **[lixo eletrônico de aceleradores](https://docs.google.com/presentation/d/1PgIp_SX2wlMYEbGT3i5MMrciRB3NUC_xzDLvCU7O6B0/present)**
+- **[crise do trabalho & deslocamento](https://docs.google.com/presentation/d/1PgIp_SX2wlMYEbGT3i5MMrciRB3NUC_xzDLvCU7O6B0/present)**
   - **[desqualificação profissional (deskilling)](https://docs.google.com/presentation/d/1PgIp_SX2wlMYEbGT3i5MMrciRB3NUC_xzDLvCU7O6B0/present)**
   - **[trabalho fantasma de anotação](https://docs.google.com/presentation/d/1PgIp_SX2wlMYEbGT3i5MMrciRB3NUC_xzDLvCU7O6B0/present)**
 - **[monopólio epistêmico de big techs](https://docs.google.com/presentation/d/1PgIp_SX2wlMYEbGT3i5MMrciRB3NUC_xzDLvCU7O6B0/present#slide=52)**
 - **[homogeneização criativa (doshi & hauser)](https://docs.google.com/presentation/d/1PgIp_SX2wlMYEbGT3i5MMrciRB3NUC_xzDLvCU7O6B0/present)**
 - **[poluição sintética & ai slop](https://docs.google.com/presentation/d/1PgIp_SX2wlMYEbGT3i5MMrciRB3NUC_xzDLvCU7O6B0/present)**
   - **[colapso de modelos (model collapse)](https://docs.google.com/presentation/d/1PgIp_SX2wlMYEbGT3i5MMrciRB3NUC_xzDLvCU7O6B0/present#slide=127)**
-- **[ideação híbrida humano-ia](https://docs.google.com/presentation/d/1mhJFLULrPU_HoZ5emkeC7AiHCkw5HkHRLm-bCq3e_cE/present#slide=107)**
-  - **[brainwriting híbrido (método 6-3-5)](https://docs.google.com/presentation/d/1mhJFLULrPU_HoZ5emkeC7AiHCkw5HkHRLm-bCq3e_cE/present)**
-  - **[o princípio do 'passo a mais'](https://docs.google.com/presentation/d/1mhJFLULrPU_HoZ5emkeC7AiHCkw5HkHRLm-bCq3e_cE/present)**
-    - **[alavanca 1: inverter um componente](https://docs.google.com/presentation/d/1mhJFLULrPU_HoZ5emkeC7AiHCkw5HkHRLm-bCq3e_cE/present)**
-    - **[alavanca 2: trocar a persona](https://docs.google.com/presentation/d/1mhJFLULrPU_HoZ5emkeC7AiHCkw5HkHRLm-bCq3e_cE/present)**
-    - **[alavanca 3: juntar pontos não-usuais](https://docs.google.com/presentation/d/1mhJFLULrPU_HoZ5emkeC7AiHCkw5HkHRLm-bCq3e_cE/present)**
-    - **[alavanca 4: inverter o objetivo](https://docs.google.com/presentation/d/1mhJFLULrPU_HoZ5emkeC7AiHCkw5HkHRLm-bCq3e_cE/present)**
-    - **[alavanca 5: restrição dura como motor](https://docs.google.com/presentation/d/1mhJFLULrPU_HoZ5emkeC7AiHCkw5HkHRLm-bCq3e_cE/present)**
-    - **[alavanca 6: trocar quem faz o trabalho](https://docs.google.com/presentation/d/1mhJFLULrPU_HoZ5emkeC7AiHCkw5HkHRLm-bCq3e_cE/present)**
-    - **[alavanca 7: mudar o momento](https://docs.google.com/presentation/d/1mhJFLULrPU_HoZ5emkeC7AiHCkw5HkHRLm-bCq3e_cE/present)**
-- **[repositório estruturado de pesquisa (git)](https://docs.google.com/presentation/d/1mhJFLULrPU_HoZ5emkeC7AiHCkw5HkHRLm-bCq3e_cE/present#slide=49)**
-- **[ambiente latex & integração overleaf](https://docs.google.com/presentation/d/1mhJFLULrPU_HoZ5emkeC7AiHCkw5HkHRLm-bCq3e_cE/present#slide=9)**
-- **[mapeamento de trabalhos relacionados (related work)](https://docs.google.com/presentation/d/1mhJFLULrPU_HoZ5emkeC7AiHCkw5HkHRLm-bCq3e_cE/present#slide=1)**
-  - **[matriz de competidores](https://docs.google.com/presentation/d/1mhJFLULrPU_HoZ5emkeC7AiHCkw5HkHRLm-bCq3e_cE/present)**
-- **[tecnologia base demonstrável](https://docs.google.com/presentation/d/1mhJFLULrPU_HoZ5emkeC7AiHCkw5HkHRLm-bCq3e_cE/present#slide=4)**
-- **[arquitetura de sistema & fluxograma](https://docs.google.com/presentation/d/1K-_hzKBDIWuE66QOInEZ7bj_H0Ev6i_qbTLBevYEilE/present#slide=15)**
-- **[desenho experimental rigoroso](https://docs.google.com/presentation/d/1mqFfYtF0yyQd2JAnQoaQ6TnJ0dqpWVmxZcmxEG1K67U/present#slide=19)**
-  - **[linha de base (baseline)](https://docs.google.com/presentation/d/1URlyhECYlbZ0Lg4Eq7GK_5GvpDZL5HX8FZ2_UUc7NcU/present#slide=59)**
-  - **[estudo de ablação (ablation study)](https://docs.google.com/presentation/d/1mqFfYtF0yyQd2JAnQoaQ6TnJ0dqpWVmxZcmxEG1K67U/present#slide=18)**
-- **[relatório técnico científico (tech report)](https://docs.google.com/presentation/d/1mhJFLULrPU_HoZ5emkeC7AiHCkw5HkHRLm-bCq3e_cE/present#slide=13)**
-  - **[seminários iterativos de pesquisa](https://docs.google.com/presentation/d/1mhJFLULrPU_HoZ5emkeC7AiHCkw5HkHRLm-bCq3e_cE/present#slide=12)**
-  - **[pitch para banca externa](https://docs.google.com/presentation/d/1mhJFLULrPU_HoZ5emkeC7AiHCkw5HkHRLm-bCq3e_cE/present)**
-  - **[rubrica de avaliação em 4 dimensões](https://docs.google.com/presentation/d/1mhJFLULrPU_HoZ5emkeC7AiHCkw5HkHRLm-bCq3e_cE/present)**
+- **[ideação híbrida humano-ia](artefatos/3-brainwriting-hibrido.md)**
+  - **[brainwriting híbrido (método 6-3-5)](artefatos/3-brainwriting-hibrido.md)**
+  - **[o princípio do 'passo a mais'](artefatos/3-brainwriting-hibrido.md)**
+    - **[alavanca 1: inverter um componente](artefatos/3-brainwriting-hibrido.md)**
+    - **[alavanca 2: trocar a persona](artefatos/3-brainwriting-hibrido.md)**
+    - **[alavanca 3: juntar pontos não-usuais](artefatos/3-brainwriting-hibrido.md)**
+    - **[alavanca 4: inverter o objetivo](artefatos/3-brainwriting-hibrido.md)**
+    - **[alavanca 5: restrição dura como motor](artefatos/3-brainwriting-hibrido.md)**
+    - **[alavanca 6: trocar quem faz o trabalho](artefatos/3-brainwriting-hibrido.md)**
+    - **[alavanca 7: mudar o momento](artefatos/3-brainwriting-hibrido.md)**
+- **[repositório estruturado de pesquisa (git)](artefatos/3-base-git-repo.md)**
+- **[ambiente latex & integração overleaf](artefatos/4-latex-project.md)**
+- **[mapeamento de trabalhos relacionados (related work)](artefatos/3-competidores-e-contribuicao.md)**
+  - **[matriz de competidores](artefatos/3-competidores-e-contribuicao.md)**
+- **[tecnologia base demonstrável](artefatos/3-tecnologia-base.md)**
+- **[arquitetura de sistema & fluxograma](artefatos/3-fluxograma-e-arquitetura.md)**
+- **[desenho experimental rigoroso](artefatos/3-desenho-dos-experimentos.md)**
+  - **[linha de base (baseline)](artefatos/3-desenho-dos-experimentos.md)**
+  - **[estudo de ablação (ablation study)](artefatos/3-desenho-dos-experimentos.md)**
+- **[relatório técnico científico (tech report)](artefatos/6-artigo.md)**
+  - **[seminários iterativos de pesquisa](artefatos/4-seminario-preliminares.md)**
+  - **[pitch para banca externa](artefatos/5-demonstracao-poster.md)**
+  - **[rubrica de avaliação em 4 dimensões](artefatos/5-demonstracao-poster.md)**
 <!-- habilidades:end -->
