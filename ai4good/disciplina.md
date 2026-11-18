@@ -98,8 +98,8 @@ para o agente que apoia um aluno desta disciplina:
 | · -- ·<br>20/11<br>· sex · | feriado<br>**dia nacional da consciência negra** | |
 | · 29 ·<br>25/11<br>· qua · | prática<br>**execução do teste e artigo** | [`[1] slides · artigo`](https://lucassf.pages.dev/ai4good/artigo-deck)<br>[`[6] artefato · artigo`](artefatos/6-artigo.md) |
 | · 30 ·<br>27/11<br>· sex · | mentoria<br>**acompanhamento final e polimento** | |
-| · 31 ·<br>02/12<br>· qua · | seminário<br>**pitch para banca externa** | `[x] seminário · tbd` |
-| · 32 ·<br>04/12<br>· sex · | checagem<br>**va2 · artigo e demo** | [`[6] artefato · artigo`](artefatos/6-artigo.md)<br>`[x] artefato · tbd` |
+| · 31 ·<br>02/12<br>· qua · | seminário<br>**demonstração em pôster: a banca testa e conversa** | `[x] seminário · tbd` |
+| · 32 ·<br>04/12<br>· sex · | checagem<br>**va2 · entrega do artigo** | [`[6] artefato · artigo`](artefatos/6-artigo.md) |
 | · 33 ·<br>09/12<br>· qua · | checagem<br>**va3 · avaliação escrita** | |
 | · 34 ·<br>11/12<br>· sex · | checagem<br>**va4 · exame final institucional** | |
 
