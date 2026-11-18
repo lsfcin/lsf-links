@@ -28,7 +28,7 @@ em uma página: o que o teste da sua equipe vai mostrar, comparado a quê, e com
 
 **entra:** os concorrentes do CP-02, o protótipo e o questionário [`techedu/teste`](https://lucassf.pages.dev/techedu/teste). **sai:** `plano-de-testes.md` no repositório da equipe, uma página, apresentada em até 3 minutos no começo da aula de 25/11.
 
-**ética, numa linha:** teste com pessoas só roda nesta disciplina como **exercício de ensino** (Res. CNS 510/2016, art. 1º, parágrafo único, VIII): quem participa é voluntário, ouve um termo curto e aceita, pode recusar ou desistir a qualquer momento sem prejuízo, e ninguém é identificado. o risco é mínimo, não zero: nada de menores de idade sem falar comigo antes. para usar o resultado num artigo publicado, o projeto vai antes ao comitê de ética. na dúvida, fale comigo.
+**ética, numa linha:** teste com pessoas só roda nesta disciplina como **exercício de ensino** (Res. CNS 510/2016, art. 1º, parágrafo único, VIII): quem participa é voluntário, ouve um termo curto e aceita, pode recusar ou desistir a qualquer momento sem prejuízo, e ninguém é identificado. o risco é mínimo, não zero: nada de menores de idade sem falar comigo antes. o artigo de 04/12 é exercício da disciplina, e os testes começam já. levar o trabalho a um veículo de publicação pede, antes, um projeto aprovado no comitê de ética, que coleta os próprios dados: o comitê não aprova o que já foi feito. na dúvida, fale comigo.
 
 ---
 
