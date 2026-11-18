@@ -72,39 +72,39 @@ para o agente que apoia um aluno desta disciplina:
 | data | descrição | materiais |
 |:---:|:---|:---|
 | · 01 ·<br>12/08<br>· qua · | teoria<br>**abertura, perfis e equipes** | [`[1] slides · abertura`](https://lucassf.pages.dev/techedu/abertura) |
-| · 02 ·<br>14/08<br>· sex · | prática<br>**configuração do ambiente e harness** | [`[3] artefato · base git repo`](artefatos/3-base-git-repo.md)<br>[`[4] artefato · latex project`](artefatos/4-latex-project.md) |
+| · 02 ·<br>14/08<br>· sex · | prática<br>**configuração do ambiente e harness** | [`[3] artefato · base git repo`](https://lucassf.pages.dev/techedu/configuracao)<br>[`[4] artefato · latex project`](https://lucassf.pages.dev/techedu/configuracao) |
 | · 03 ·<br>19/08<br>· qua · | teoria<br>**design thinking e problemas reais** | [`[1] slides · design thinking`](https://lucassf.pages.dev/techedu/design-thinking) |
-| · 04 ·<br>21/08<br>· sex · | prática<br>**mapeamento de dores e personas** | [`[5] artefato · personas e dores`](artefatos/5-personas-e-dores.md) |
+| · 04 ·<br>21/08<br>· sex · | prática<br>**mapeamento de dores e personas** | [`[5] artefato · personas e dores`](https://lucassf.pages.dev/techedu/empatia) |
 | · 05 ·<br>26/08<br>· qua · | teoria<br>**árvore de tecnologias emergentes** | [`[1] slides · tecnologias emergentes`](https://lucassf.pages.dev/techedu/tecnologias-emergentes) |
-| · 06 ·<br>28/08<br>· sex · | prática<br>**tecnologias demonstráveis locais** | [`[5] artefato · tecnologias demonstráveis`](artefatos/5-tecnologias-demonstraveis.md) |
+| · 06 ·<br>28/08<br>· sex · | prática<br>**tecnologias demonstráveis locais** | [`[5] artefato · tecnologias demonstráveis`](https://lucassf.pages.dev/techedu/missao-tecnologias) |
 | · 07 ·<br>02/09<br>· qua · | mentoria<br>**refinamento do problema educacional** | |
 | · 08 ·<br>04/09<br>· sex · | prática<br>**acoplamento problema-tecnologia** | |
 | · 09 ·<br>09/09<br>· qua · | prática<br>**pré-seleção problem-tech fit** | |
-| · 10 ·<br>11/09<br>· sex · | prática<br>**artigo: contextualização e introdução** | [`[5] artefato · introdução do artigo`](artefatos/5-introducao-artigo.md) |
-| · 11 ·<br>16/09<br>· qua · | checagem<br>**status report · problem-tech fit** | [`[5] artefato · problem-tech fit git`](artefatos/5-ptf-git-repo.md)<br>[`[5] artefato · problem-tech fit report`](artefatos/5-ptf-tech-report.md) |
+| · 10 ·<br>11/09<br>· sex · | prática<br>**artigo: contextualização e introdução** | [`[5] artefato · introdução do artigo`](https://lucassf.pages.dev/techedu/artigo) |
+| · 11 ·<br>16/09<br>· qua · | checagem<br>**status report · problem-tech fit** | [`[5] artefato · problem-tech fit git`](https://lucassf.pages.dev/techedu/missao-ptf)<br>[`[5] artefato · problem-tech fit report`](https://lucassf.pages.dev/techedu/missao-ptf) |
 | · 12 ·<br>18/09<br>· sex · | teoria<br>**análise competitiva e diferenciais** | [`[1] slides · concorrentes`](https://lucassf.pages.dev/techedu/concorrentes) |
-| · 13 ·<br>23/09<br>· qua · | checagem<br>**status report · concorrentes** | [`[5] artefato · concorrentes report`](artefatos/5-concorrentes-tech-report.md) |
-| · 14 ·<br>25/09<br>· sex · | prática<br>**storyboard da experiência de uso** | [`[5] artefato · storyboard e fluxo`](artefatos/5-storyboard-fluxo.md) |
-| · 15 ·<br>30/09<br>· qua · | checagem<br>**status report · storyboard** | [`[5] artefato · storyboard report`](artefatos/5-storyboard-tech-report.md) |
+| · 13 ·<br>23/09<br>· qua · | checagem<br>**status report · concorrentes** | [`[5] artefato · concorrentes report`](https://lucassf.pages.dev/techedu/missao-concorrentes) |
+| · 14 ·<br>25/09<br>· sex · | prática<br>**storyboard da experiência de uso** | [`[5] artefato · storyboard e fluxo`](https://lucassf.pages.dev/techedu/missao-storyboard) |
+| · 15 ·<br>30/09<br>· qua · | checagem<br>**status report · storyboard** | [`[5] artefato · storyboard report`](https://lucassf.pages.dev/techedu/missao-storyboard) |
 | · 16 ·<br>02/10<br>· sex · | prática<br>**seleção de conceito e refinamento** | |
 | · 17 ·<br>07/10<br>· qua · | teoria<br>**prototipagem de baixa fidelidade** | [`[1] slides · baixa fidelidade`](https://lucassf.pages.dev/techedu/baixa-fidelidade) |
-| · 18 ·<br>09/10<br>· sex · | prática<br>**protótipo papel e metodologia** | [`[5] artefato · protótipo baixa fidelidade`](artefatos/5-prototipo-baixa-fidelidade.md) |
+| · 18 ·<br>09/10<br>· sex · | prática<br>**protótipo papel e metodologia** | [`[5] artefato · protótipo baixa fidelidade`](https://lucassf.pages.dev/techedu/missao-baixa-fidelidade) |
 | · 19 ·<br>14/10<br>· qua · | teoria<br>**prototipagem de alta fidelidade** | [`[1] slides · alta fidelidade`](https://lucassf.pages.dev/techedu/alta-fidelidade) |
-| · 20 ·<br>16/10<br>· sex · | prática<br>**arquitetura de software e código** | [`[5] artefato · arquitetura técnica`](artefatos/5-arquitetura-tecnica.md) |
-| · 21 ·<br>21/10<br>· qua · | checagem<br>**status report · prototipação** | [`[5] artefato · protótipo funcional`](artefatos/5-prototipo-funcional.md) |
+| · 20 ·<br>16/10<br>· sex · | prática<br>**arquitetura de software e código** | [`[5] artefato · arquitetura técnica`](https://lucassf.pages.dev/techedu/missao-alta-fidelidade) |
+| · 21 ·<br>21/10<br>· qua · | checagem<br>**status report · prototipação** | [`[5] artefato · protótipo funcional`](https://lucassf.pages.dev/techedu/missao-prototipacao) |
 | · 22 ·<br>23/10<br>· sex · | prática<br>**desenho de testes com usuários** | [`[5] artefato · plano de testes`](artefatos/5-plano-de-testes.md) |
 | · -- ·<br>28/10<br>· qua · | feriado<br>**dia do servidor público federal** | |
 | · 23 ·<br>30/10<br>· sex · | prática<br>**iteração do protótipo e experimentos** | |
 | · 24 ·<br>04/11<br>· qua · | teoria<br>**métricas e coleta empírica** | [`[1] slides · testes empíricos`](https://lucassf.pages.dev/techedu/testes-empiricos) |
-| · 25 ·<br>06/11<br>· sex · | prática<br>**análise de dados e resultados** | [`[5] artefato · dados de testes`](artefatos/5-dados-de-testes.md) |
-| · 26 ·<br>11/11<br>· qua · | checagem<br>**status report · validação empírica** | [`[5] artefato · resultados preliminares`](artefatos/5-resultados-preliminares.md)<br>[`[1] slides · como escrever um artigo`](https://lucassf.pages.dev/techedu/artigo) |
+| · 25 ·<br>06/11<br>· sex · | prática<br>**análise de dados e resultados** | [`[5] artefato · dados de testes`](https://lucassf.pages.dev/techedu/missao-testes) |
+| · 26 ·<br>11/11<br>· qua · | checagem<br>**status report · validação empírica** | [`[5] artefato · resultados preliminares`](https://lucassf.pages.dev/techedu/missao-testes)<br>[`[1] slides · como escrever um artigo`](https://lucassf.pages.dev/techedu/artigo) |
 | · 27 ·<br>13/11<br>· sex · | prática<br>**revisão cruzada entre equipes** | |
 | · 28 ·<br>18/11<br>· qua · | teoria<br>**técnicas de pitch e comunicação** | [`[1] slides · pitch e comunicação`](https://lucassf.pages.dev/techedu/pitch-comunicacao) |
 | · -- ·<br>20/11<br>· sex · | feriado<br>**dia nacional da consciência negra** | |
 | · 29 ·<br>25/11<br>· qua · | prática<br>**plano de teste revisado no começo da aula; testes com pelo menos 15 pessoas** | [`[5] artefato · plano de testes`](artefatos/5-plano-de-testes.md) |
 | · 30 ·<br>27/11<br>· sex · | checagem<br>**testes e, no fim do dia, checklist do pitch** | |
-| · 31 ·<br>02/12<br>· qua · | seminário<br>**pitch final para banca externa: 7 a 10 min, demo ao vivo e vídeo de reserva** | `[12] seminário · banca examinadora`<br>[`[5] artefato · demonstração funcional`](artefatos/5-demonstracao-funcional.md) |
-| · 32 ·<br>04/12<br>· sex · | checagem<br>**va2 · entrega do artigo, com veículo-alvo** | [`[6] artefato · artigo final`](artefatos/6-artigo-final.md) |
+| · 31 ·<br>02/12<br>· qua · | seminário<br>**pitch final para banca externa: 7 a 10 min, demo ao vivo e vídeo de reserva** | [`[12] seminário · banca examinadora`](https://lucassf.pages.dev/techedu/banca)<br>[`[5] artefato · demonstração funcional`](https://lucassf.pages.dev/techedu/missao-pitch) |
+| · 32 ·<br>04/12<br>· sex · | checagem<br>**va2 · entrega do artigo, com veículo-alvo** | [`[6] artefato · artigo final`](https://lucassf.pages.dev/techedu/artigo) |
 | · 33 ·<br>09/12<br>· qua · | checagem<br>**va3 · avaliação escrita** | |
 | · 34 ·<br>11/12<br>· sex · | checagem<br>**va4 · exame final institucional** | |
 
@@ -118,7 +118,7 @@ para o agente que apoia um aluno desta disciplina:
 
 ## painel
 
-acompanhamento transparente dos itens de verificação (2 pontos por ◻ · 50 caixas = 100 pontos por va). lista estritamente alfabética.
+acompanhamento transparente dos itens de verificação (2 pontos por ◼ · 50 caixas = 100 pontos por va). lista estritamente alfabética. ◻ é item ainda não verificado, não item zerado: entregou depois, vale o mesmo.
 
 <!-- painel:dados-va1 caixas=50
 aécio: git=vvv, tex=vvv-, ptf·c=vvvvv, ptf·r=vvvvv, cmp·r=-----, sty·r=-----, rep1=----, rep2=----, eng=---------------
@@ -206,25 +206,6 @@ guilherme   ◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻�
 
 ---
 
-## entregue
-
-repositórios e artigos científicos validados na turma atual.
-
-- **equipe beta** | [`git`](url) · [`artigo`](url) · [`slides`](url)
-- **equipe gamma** | [`git`](url) · [`artigo`](url) · [`slides`](url)
-- **equipe zeta** | [`git`](url) · [`artigo`](url) · [`slides`](url)
-
----
-
-## legado
-
-projetos de turmas anteriores para inspiração e referência metodológica.
-
-- **projeto a** | [`git`](url) · [`artigo`](url) · [`demo`](url)
-- **projeto b** | [`git`](url) · [`artigo`](url)
-
----
-
 ## referências
 
 leituras de base, artigos seminais e recursos de suporte.
@@ -242,44 +223,19 @@ leituras de base, artigos seminais e recursos de suporte.
 
 ## habilidades
 
-árvore de habilidades e conhecimento desenvolvida ao longo da disciplina. cada conceito aponta para o slide exato onde o fundamento é ensinado (gerado automaticamente via arvore.py a partir de arvore.yaml em minúsculas).
+árvore de habilidades da disciplina, em versão reduzida: cada conceito aponta para o deck em que é ensinado. a árvore completa está em construção.
 
 <!-- habilidades:start -->
-- **[design thinking e problematização](https://lucassf.pages.dev/techedu/design-thinking#slide=1)**
-  - **[dor educacional autêntica](https://lucassf.pages.dev/techedu/problemas#slide=1)**
-    - **[escuta de professores e estudantes](https://lucassf.pages.dev/techedu/problemas#slide=5)**
-    - **[dados empíricos de contexto escolar](https://lucassf.pages.dev/techedu/problemas#slide=10)**
-  - **[personas e empatia](https://lucassf.pages.dev/techedu/personas#slide=1)**
-    - **[rotinas e atritos diários](https://lucassf.pages.dev/techedu/personas#slide=8)**
-  - **[as 7 alavancas contra o óbvio](https://lucassf.pages.dev/techedu/alavancas#slide=1)**
-    - **[inversão de componente](https://lucassf.pages.dev/techedu/alavancas#slide=4)**
-    - **[troca de persona](https://lucassf.pages.dev/techedu/alavancas#slide=6)**
-    - **[restrição dura como motor](https://lucassf.pages.dev/techedu/alavancas#slide=8)**
-    - **[troca de quem faz o trabalho](https://lucassf.pages.dev/techedu/alavancas#slide=10)**
-  - **[análise competitiva](https://lucassf.pages.dev/techedu/concorrentes#slide=1)**
-    - **[diferencial competitivo](https://lucassf.pages.dev/techedu/concorrentes#slide=5)**
-  - **[storyboard e narrativa](https://lucassf.pages.dev/techedu/storyboard#slide=1)**
-- **[tecnologias emergentes na educação](https://lucassf.pages.dev/techedu/tecnologias#slide=1)**
-  - **[agentes e ferramentas](https://lucassf.pages.dev/techedu/agentes#slide=1)**
-    - **[loop agêntico com ferramentas](https://lucassf.pages.dev/techedu/agentes#slide=4)**
-    - **[multiagente colaborativo](https://lucassf.pages.dev/techedu/agentes#slide=8)**
-  - **[recuperação e rag](https://lucassf.pages.dev/techedu/rag#slide=1)**
-    - **[rag clássico sobre documentos](https://lucassf.pages.dev/techedu/rag#slide=4)**
-    - **[busca híbrida léxica e vetorial](https://lucassf.pages.dev/techedu/rag#slide=8)**
-  - **[modelos locais e no navegador](https://lucassf.pages.dev/techedu/modelos-locais#slide=1)**
-    - **[execução local sem nuvem](https://lucassf.pages.dev/techedu/modelos-locais#slide=4)**
-    - **[llm no navegador (webgpu/transformers.js)](https://lucassf.pages.dev/techedu/modelos-locais#slide=8)**
-  - **[voz e áudio](https://lucassf.pages.dev/techedu/voz#slide=1)**
-    - **[transcrição local de fala](https://lucassf.pages.dev/techedu/voz#slide=4)**
-    - **[síntese de voz aberta](https://lucassf.pages.dev/techedu/voz#slide=8)**
-- **[engenharia pedagógica e validação](https://lucassf.pages.dev/techedu/engenharia#slide=1)**
-  - **[prototipagem iterativa](https://lucassf.pages.dev/techedu/prototipagem#slide=1)**
-    - **[protótipo de baixa fidelidade](https://lucassf.pages.dev/techedu/prototipagem#slide=4)**
-    - **[protótipo funcional de alta fidelidade](https://lucassf.pages.dev/techedu/prototipagem#slide=10)**
-  - **[desenho de testes empíricos](https://lucassf.pages.dev/techedu/testes#slide=1)**
-    - **[protocolos de teste com usuários](https://lucassf.pages.dev/techedu/testes#slide=5)**
-    - **[análise quantitativa e qualitativa](https://lucassf.pages.dev/techedu/testes#slide=12)**
-  - **[escrita científica e comunicação](https://lucassf.pages.dev/techedu/comunicacao#slide=1)**
-    - **[relatório técnico no padrão sbc](https://lucassf.pages.dev/techedu/comunicacao#slide=4)**
-    - **[pitch para banca examinadora](https://lucassf.pages.dev/techedu/comunicacao#slide=10)**
+- **[design thinking e problematização](https://lucassf.pages.dev/techedu/design-thinking)**
+  - **[personas e empatia](https://lucassf.pages.dev/techedu/empatia)**
+  - **[análise competitiva e diferencial](https://lucassf.pages.dev/techedu/concorrentes)**
+  - **[storyboard e narrativa](https://lucassf.pages.dev/techedu/storyboard)**
+- **[tecnologias emergentes na educação](https://lucassf.pages.dev/techedu/tecnologias-emergentes)**
+  - **[tecnologias demonstráveis](https://lucassf.pages.dev/techedu/missao-tecnologias)**
+- **engenharia pedagógica e validação**
+  - **[protótipo de baixa fidelidade](https://lucassf.pages.dev/techedu/baixa-fidelidade)**
+  - **[protótipo funcional de alta fidelidade](https://lucassf.pages.dev/techedu/alta-fidelidade)**
+  - **[desenho de testes empíricos](https://lucassf.pages.dev/techedu/testes-empiricos)**
+  - **[escrita científica](https://lucassf.pages.dev/techedu/artigo)**
+  - **[pitch para banca examinadora](https://lucassf.pages.dev/techedu/pitch-comunicacao)**
 <!-- habilidades:end -->
