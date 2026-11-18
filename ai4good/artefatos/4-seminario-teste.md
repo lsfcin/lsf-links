@@ -31,7 +31,7 @@ um teste é uma **comparação**. dar o app para uns colegas e perguntar se gost
 
 - **materiais:** [modelo](sem3/modelo.md) (o roteiro em branco) · [exemplo excelente](sem3/excelente.md) · [exemplo quase bom](sem3/raso.md). os dois exemplos têm anotações do professor.
 - **ferramenta:** a que você quiser (Canva, Google Slides, PowerPoint, LaTeX). o roteiro vai no repositório, sugestão `va2/sem3.md`, com o link dos slides.
-- **ética, numa linha:** teste com pessoas só roda nesta disciplina como **exercício de ensino** (Res. CNS 510/2016, art. 1º, parágrafo único, VIII): quem participa é voluntário, ouve um termo curto e aceita, ninguém é identificado e ninguém corre risco. o que foi feito como exercício não vira resultado de pesquisa: para usar num artigo, o projeto vai antes ao comitê de ética. na dúvida, fale comigo. teste sem pessoas (dados sintéticos, públicos, casos que você monta) também vale.
+- **ética, numa linha:** teste com pessoas só roda nesta disciplina como **exercício de ensino** (Res. CNS 510/2016, art. 1º, parágrafo único, VIII): quem participa é voluntário, ouve um termo curto e aceita, pode recusar ou desistir a qualquer momento sem prejuízo, e ninguém é identificado. o risco é mínimo, não zero: nada de menores de idade sem falar comigo antes. o artigo de 04/12 é exercício da disciplina, e os testes começam já. levar o trabalho a um veículo de publicação pede, antes, um projeto aprovado no comitê de ética, que coleta os próprios dados: o comitê não aprova o que já foi feito. na dúvida, fale comigo. teste sem pessoas (dados sintéticos, públicos, casos que você monta) também vale.
 
 ---
 
