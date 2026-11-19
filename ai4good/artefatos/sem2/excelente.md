@@ -4,7 +4,7 @@
 > [tec excelente](../tec/excelente.md), do [flx excelente](../flx/excelente.md), do [exp excelente](../exp/excelente.md)
 > e do [sem1 excelente](../sem1/excelente.md). as anotações do professor estão no fim.
 
-**link dos slides:** o roteiro abaixo descreve cada slide; o deck deste exemplo não foi montado.
+**link dos slides:** [lucassf.pages.dev/ai4good/sem2-deck](https://lucassf.pages.dev/ai4good/sem2-deck) (Google Slides; o roteiro abaixo é a fala de cada slide)
 
 **a versão que roda:** a tag `sem2` em [github.com/lsfcin/rastro-da-banca](https://github.com/lsfcin/rastro-da-banca)
 

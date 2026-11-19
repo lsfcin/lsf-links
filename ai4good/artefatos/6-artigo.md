@@ -42,6 +42,7 @@ instruções para o agente / IA do estudante:
   - [ ] as folhas do brw, do cmp, do tec, do flx e do exp
   - [ ] o projeto latex conectado ao Overleaf (artefato `tex`) e o seu repositório git da disciplina
   - [ ] uma IA conversacional ou um harness
+- **materiais:** [modelo](artigo/modelo.md) (o registro em branco, marco a marco) · [exemplo excelente](artigo/excelente.md) · [exemplo quase bom](artigo/raso.md). os dois exemplos têm anotações do professor.
 
 **ordem de escrita:** 0 → 1 (como rascunho) → 2, já, porque as folhas estão prontas. 3 e 4 antes do teste de 25/11. 5 depois do teste. 6 por último. a introdução é revista no fim, quando os resultados existirem.
 
@@ -57,7 +58,7 @@ instruções para o agente / IA do estudante:
 
 ### passo 0 · veículo e modelo
 
-escolha o **veículo alvo** a partir dos [veículos de excelência](cmp/veiculos.md), olhando o tema, o formato e o prazo, e o **artigo base**, um artigo publicado do mesmo tipo do seu, que serve de molde. baixe o modelo latex do veículo, suba no Overleaf e compile vazio. crie `va2/artigo.md` com o nome do veículo, o link do artigo base e uma seção por marco.
+escolha o **veículo alvo** a partir dos [veículos de excelência](cmp/veiculos.md), olhando o tema, o formato e o prazo, e o **artigo base**, um artigo publicado do mesmo tipo do seu, que serve de molde. baixe o modelo latex do veículo, suba no Overleaf e compile vazio. copie o [modelo](artigo/modelo.md) para `va2/artigo.md` e preencha o veículo e o artigo base.
 
 **pronto quando:** o modelo do veículo compila no Overleaf, e o artigo base está anotado no `artigo.md`.
 

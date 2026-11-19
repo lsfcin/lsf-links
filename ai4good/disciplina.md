@@ -98,7 +98,7 @@ para o agente que apoia um aluno desta disciplina:
 | · -- ·<br>20/11<br>· sex · | feriado<br>**dia nacional da consciência negra** | |
 | · 29 ·<br>25/11<br>· qua · | prática<br>**execução do teste e artigo** | [`[6] artefato · artigo`](artefatos/6-artigo.md) |
 | · 30 ·<br>27/11<br>· sex · | mentoria<br>**acompanhamento final e polimento** | |
-| · 31 ·<br>02/12<br>· qua · | seminário<br>**demonstração em pôster: a banca testa e conversa** | [`[5] seminário · demonstração em pôster`](artefatos/5-demonstracao-poster.md) |
+| · 31 ·<br>02/12<br>· qua · | seminário<br>**demonstração: a banca testa e conversa** | [`[5] seminário · demonstração`](artefatos/5-demonstracao.md) |
 | · 32 ·<br>04/12<br>· sex · | checagem<br>**va2 · entrega do artigo** | [`[6] artefato · artigo`](artefatos/6-artigo.md) |
 | · 33 ·<br>09/12<br>· qua · | checagem<br>**va3 · avaliação escrita** | |
 | · 34 ·<br>11/12<br>· sex · | checagem<br>**va4 · exame final institucional** | |
@@ -173,11 +173,11 @@ vinicius: brw=vvv, cmp=vvv, tec=vvv, flx=vvv, exp=vvv, sem1=vvvv, sem2=vvvv, sem
      cauã   ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼◼ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  46 pts
      davi   ◼◼◼ ◼◼◼ ◻◻◻ ◻◻◻ ◻◻◻ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  20 pts
     edson   ◼◼◼ ◼◼◼ ◼◼◼ ◻◻◻ ◻◻◻ ◼◼◼◼ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  34 pts
-     gian   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  08 pts
+     gian   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◼◼◼◼ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  16 pts
    rayane   ◼◼◼ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  14 pts
 thiago b.   ◼◼◼ ◼◼◼ ◻◻◻ ◻◻◻ ◻◻◻ ◼◼◼◼ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  28 pts
 thiago m.   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  00 pts
- vinicius   ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  38 pts
+ vinicius   ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼ ◼◼◼◼ ◼◼◼◼ ◻◻◻◻ ◻◻◻◻◻◻ ◻◻◻◻◻ ◻◻◻◻◻◻◻◻◻◻◻◻  46 pts
 ```
 <!-- painel-va2:end -->
 
@@ -364,6 +364,6 @@ thiago m.   ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻ ◻◻◻◻ ◻�
   - **[estudo de ablação (ablation study)](artefatos/3-desenho-dos-experimentos.md)**
 - **[relatório técnico científico (tech report)](artefatos/6-artigo.md)**
   - **[seminários iterativos de pesquisa](artefatos/4-seminario-preliminares.md)**
-  - **[pitch para banca externa](artefatos/5-demonstracao-poster.md)**
-  - **[rubrica de avaliação em 4 dimensões](artefatos/5-demonstracao-poster.md)**
+  - **[pitch para banca externa](artefatos/5-demonstracao.md)**
+  - **[rubrica de avaliação em 4 dimensões](artefatos/5-demonstracao.md)**
 <!-- habilidades:end -->

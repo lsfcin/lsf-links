@@ -4,7 +4,7 @@
 > [exp excelente](../exp/excelente.md) e do [sem2 excelente](../sem2/excelente.md). todo resultado aqui é do
 > piloto, que já rodou; o resto é plano. as anotações do professor estão no fim.
 
-**link dos slides:** o roteiro abaixo descreve cada slide; o deck deste exemplo não foi montado.
+**link dos slides:** [lucassf.pages.dev/ai4good/sem3-deck](https://lucassf.pages.dev/ai4good/sem3-deck) (Google Slides; o roteiro abaixo é a fala de cada slide)
 
 **o commit da regra:** as emendas 12 a 15, "antes do teste (18/11/2026)", no [experimentos.md](https://github.com/lsfcin/rastro-da-banca/blob/main/experimentos.md), sem reescrever o que estava lá.
 
