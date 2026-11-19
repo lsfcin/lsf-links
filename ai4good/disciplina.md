@@ -161,7 +161,7 @@ gian: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=vvvv, sem2=----, sem3=--
 rayane: brw=vvv, cmp=---, tec=---, flx=---, exp=---, sem1=vvvv, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
 thiago b.: brw=vvv, cmp=vvv, tec=---, flx=---, exp=---, sem1=vvvv, sem2=vvvv, sem3=----, artigo=------, demo=-----, pitch=------------
 thiago m.: brw=---, cmp=---, tec=---, flx=---, exp=---, sem1=----, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
-vinicius: brw=vvv, cmp=vvv, tec=vvv, flx=vvv, exp=vvv, sem1=vvvv, sem2=----, sem3=----, artigo=------, demo=-----, pitch=------------
+vinicius: brw=vvv, cmp=vvv, tec=vvv, flx=vvv, exp=vvv, sem1=vvvv, sem2=vvvv, sem3=----, artigo=------, demo=-----, pitch=------------
 -->
 <!-- painel-va2:start -->
 ```text
