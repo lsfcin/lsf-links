@@ -1,1 +1,1 @@
-{ "version": 1, "include": ["/api/*"], "exclude": [] }
+{ "version": 1, "include": ["/*"], "exclude": ["/*.md", "/*.css", "/*.js", "/*.json", "/*.tsv", "/*.png", "/*.jpg", "/*.webp", "/*.svg", "/*.ico", "/*.pdf", "/*.woff2"] }

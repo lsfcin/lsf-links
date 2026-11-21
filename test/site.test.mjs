@@ -152,3 +152,38 @@ test('readTsv gives back the parecer the server escaped, line breaks and backsla
   assert.equal(P.readTsv(tsv, true).get('edson\tbrw'), text);
   assert.equal(P.readTsv(`${site.TSV_HEAD}andreza\tgit\thttps://a/\n`).get('andreza\tgit'), 'https://a/');
 });
+
+const T = await import(`${L}/lib/texto.js`);
+const SHELL = '<!doctype html><head><title>t</title></head><body data-markdown="disciplina.md">\n  <div class="container" id="app">carregando disciplina...</div>\n</body>';
+const FILES = { '/ai4good/disciplina.md': '# Disciplina <script>x</script> & mais', '/ai4good/artefatos/a.md': '# Artefato A', '/404.html': '<p>404</p>' };
+const assets = { fetch: async (href) => { const f = FILES[new URL(href).pathname]; return f === undefined ? new Response('<html>home</html>', { headers: { 'content-type': 'text/html' } }) : new Response(f, { headers: { 'content-type': f.startsWith('<') ? 'text/html' : 'text/markdown' } }); } };
+const page = (url, { status = 200, type = 'text/html; charset=utf-8', body = SHELL, method = 'GET' } = {}) => T.comTexto({
+  request: new Request(url, { method }), env: { ASSETS: assets },
+  next: async () => new Response(status === 302 ? null : body, { status, headers: { 'content-type': type, etag: '"shell"', ...(status === 302 ? { location: '/x' } : {}) } }),
+});
+
+test('a page without JavaScript carries its markdown, escaped, where "carregando" was', async () => {
+  const r = await page('https://s/ai4good/');
+  const html = await r.text();
+  assert.match(html, /<pre id="bruto"># Disciplina &lt;script&gt;x&lt;\/script&gt; &amp; mais<\/pre><\/div>/);
+  assert.ok(!html.includes('carregando'));
+  assert.equal(r.headers.get('etag'), null);
+});
+
+test('?doc= wins over data-markdown and resolves beside the page', async () => {
+  assert.match(await (await page('https://s/ai4good/?doc=artefatos/a.md')).text(), /# Artefato A/);
+});
+
+test('a ?doc= the deploy lacks is a real 404', async () => {
+  const r = await page('https://s/ai4good/?doc=artefatos/nada.md');
+  assert.equal(r.status, 404);
+  assert.equal(await r.text(), '<p>404</p>');
+});
+
+test('a redirect, a non-HTML asset, a POST and an off-site doc pass untouched', async () => {
+  assert.equal((await page('https://s/ai4good/brw', { status: 302 })).status, 302);
+  assert.equal(await (await page('https://s/x.md', { type: 'text/markdown', body: '# md' })).text(), '# md');
+  assert.equal(await (await page('https://s/ai4good/', { method: 'POST' })).text(), SHELL);
+  assert.equal(await (await page('https://s/ai4good/?doc=https://mal/x.md')).text(), SHELL);
+  assert.equal(await (await page('https://s/ai4good/?doc=../../404.html')).text(), SHELL);
+});

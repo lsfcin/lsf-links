@@ -1,8 +1,8 @@
 // Every /api failure reaches the page as a sentence, never a bare 500: the person at the form is the
-// one who has to say what went wrong.
-import { json } from '../lib/index.js';
+// one who has to say what went wrong. Then every page carries its own markdown, for readers without JavaScript.
+import { comTexto, json } from '../lib/index.js';
 
-export async function onRequest({ next }) {
+async function erros({ next }) {
   try {
     return await next();
   } catch (e) {
@@ -10,3 +10,5 @@ export async function onRequest({ next }) {
     return json({ error: `o servidor falhou: ${e.message}${hint}` }, 500);
   }
 }
+
+export const onRequest = [erros, comTexto];
